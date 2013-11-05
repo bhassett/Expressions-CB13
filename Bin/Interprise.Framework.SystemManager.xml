@@ -1,0 +1,1146 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Framework.SystemManager
+</name>
+</assembly>
+<members>
+<member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemHelpTopicDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemHelpTopicContentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemSellingLanguageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemHelpTopicsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemHelpTopicRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemHelpTopicContentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemSellingLanguageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemHelpTopicsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemHelpTopicRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemHelpTopicContentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemSellingLanguageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet.SystemHelpTopicsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.HelpManagerDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BackUpAndRestoreDataset.SystemBackUpLogViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BackUpAndRestoreDataset.SystemBackUpLogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BackUpAndRestoreDataset.SystemBackUpLogViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BackUpAndRestoreDataset.SystemBackUpLogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BackUpAndRestoreDataset.SystemBackUpLogViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BackUpAndRestoreDataset.SystemBackUpLogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BackUpAndRestoreDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.RelationshipDataset.SystemRelationshipDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.RelationshipDataset.SystemRelationshipRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.RelationshipDataset.SystemRelationshipRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.RelationshipDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Interprise.Framework.SystemManager.DatasetGateway.ImportDatasetGatewaySerializer.DerivedType">
+	<summary>
+ Overrides the property Interprise.Framework.Base.DatasetGateway.BaseDatasetGatewaySerializer.DerivedType
+ </summary>
+	<value>The Type object of the gateway (ImportDatasetGateway)</value>
+	<returns>The Type object of the gateway (ImportDatasetGateway)</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.SystemManager.DatasetGateway.TaxSchemeDatasetGateway.SetTableDefaults">
+	<summary>
+ Sets the table defaults
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.JobRoleDataset.SystemJobRoleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.JobRoleDataset.SystemJobRoleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.JobRoleDataset.SystemJobRoleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.JobRoleDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SalutationDataset.SystemSalutationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SalutationDataset.SystemSalutationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SalutationDataset.SystemSalutationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SalutationDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemDashboardManagerListViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemListOfTablesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemListOfViewsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageContentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageContentDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemDashboardManagerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemDashboardManagerFieldFormatDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemDashboardManagerListViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemListOfTablesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemListOfViewsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageContentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageContentDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemDashboardManagerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemDashboardManagerFieldFormatRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemDashboardManagerListViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemListOfTablesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemListOfViewsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageContentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemUserRoleMenuDashboardPageContentDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemDashboardManagerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset.SystemDashboardManagerFieldFormatRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DashboardManagerDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxSchemeDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxSchemeDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTempTaxDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxSchemeViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemItemTaxExemptionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.TempSystemItemTaxExemptionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxSchemeDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxSchemeDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTempTaxDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxSchemeViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemItemTaxExemptionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.TempSystemItemTaxExemptionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxSchemeDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxSchemeDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTempTaxDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemTaxSchemeViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.SystemItemTaxExemptionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset.TempSystemItemTaxExemptionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TaxSchemeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TeamDataset.SystemTeamDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TeamDataset.SystemTeamMemberDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TeamDataset.SystemUserAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TeamDataset.SystemTeamRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TeamDataset.SystemTeamMemberRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TeamDataset.SystemUserAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TeamDataset.SystemTeamRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TeamDataset.SystemTeamMemberRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TeamDataset.SystemUserAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.TeamDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemPostalCodeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemPostalCodeViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemClassTemplateRuleViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemPostalCodeTaxDataViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemPostalCodeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemPostalCodeViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemClassTemplateRuleViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemPostalCodeTaxDataViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemPostalCodeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemPostalCodeViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemClassTemplateRuleViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset.SystemPostalCodeTaxDataViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PostalCodeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Interprise.Framework.SystemManager.Shared.EventArguments.CurrencyFormattingEventArgs.#ctor(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="symbol">The symbol for the currency.</param>
+	<param name="positivePattern">Positive patterns for the currency format.</param>
+	<param name="negativePattern">Negative patterns for the currency format.</param>
+	<param name="decimalSeparator">Decimal Separator for the currency. (i.e -,/))</param>
+	<param name="decimalDigits">Decimal Digits for the currency. </param>
+	<param name="groupSeparator">Group separator for currency</param>
+	<param name="groupSizes">Group size for currency</param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.SystemManager.Shared.EventArguments.CurrencyFormattingEventArgs.CurrencyFormatInfo">
+	<summary>
+ Return sets of currency format info.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportableTablesViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportSourceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportStatusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportMappingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.TreeMappingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.SelectedMappingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportErrorLogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportableTablesViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportSourceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportStatusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportMappingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.TreeMappingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.SelectedMappingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportErrorLogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportableTablesViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportSourceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportStatusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportMappingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.TreeMappingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.SelectedMappingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset.ImportErrorLogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ImportDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCountryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCurrencyViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCurrencyDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCurrencyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCountryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCurrencyViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCurrencyDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCurrencyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCountryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCurrencyViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCurrencyDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset.SystemCurrencyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CurrencyDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodDataset.SystemShippingMethodDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodDataset.SystemShippingMethodDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodDataset.SystemShippingMethodDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodDataset.SystemShippingMethodRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodDataset.SystemShippingMethodDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodDataset.SystemShippingMethodRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemSearchManagerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.DataDictionaryColumnDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemSearchManagerStaticListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemUserRoleSearchManagerViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemUserRoleSearchManagerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SearchMappingColumnDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.UserFilterColumnDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.TableColumnObjectsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemSearchManagerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.DataDictionaryColumnRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemSearchManagerStaticListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemUserRoleSearchManagerViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemUserRoleSearchManagerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SearchMappingColumnRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.UserFilterColumnRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.TableColumnObjectsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemSearchManagerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.DataDictionaryColumnRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemSearchManagerStaticListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemUserRoleSearchManagerViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SystemUserRoleSearchManagerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.SearchMappingColumnRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.UserFilterColumnRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet.TableColumnObjectsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SearchManagerDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessTitleDataset.SystemBusinessTitleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessTitleDataset.SystemBusinessTitleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessTitleDataset.SystemBusinessTitleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessTitleDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermDataset.SystemPaymentTermDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermDataset.SystemPaymentTermRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermDataset.SystemPaymentTermRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodGroupDataset.SystemShippingMethodDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodGroupDataset.SystemShippingMethodGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodGroupDataset.SystemShippingMethodGroupDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodGroupDataset.SystemShippingMethodRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodGroupDataset.SystemShippingMethodGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodGroupDataset.SystemShippingMethodGroupDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodGroupDataset.SystemShippingMethodRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodGroupDataset.SystemShippingMethodGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodGroupDataset.SystemShippingMethodGroupDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.ShippingMethodGroupDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SystemPreferenceDataSet.SystemManagerPreferenceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SystemPreferenceDataSet.SystemManagerPreferenceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SystemPreferenceDataSet.SystemManagerPreferenceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SystemPreferenceDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CompanyInformationDataset.SystemCompanyInformationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CompanyInformationDataset.SystemCompanyInformationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CompanyInformationDataset.SystemCompanyInformationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CompanyInformationDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetDatabaseDiskSpaceLeftDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerVolumeCustomersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerVolumeInventoryItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerVolumeSuppliersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerDatabaseSizeChangeInformationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetDatabaseDiskSpaceLeftRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerVolumeCustomersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerVolumeInventoryItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerVolumeSuppliersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerDatabaseSizeChangeInformationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetDatabaseDiskSpaceLeftRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerVolumeCustomersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerVolumeInventoryItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerVolumeSuppliersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset.GetBusinessSystemManagerDatabaseSizeChangeInformationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.BusinessIntelligenceDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DepartmentDataset.SystemDepartmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DepartmentDataset.SystemDepartmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DepartmentDataset.SystemDepartmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DepartmentDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CountryDataset.SystemLayoutDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CountryDataset.SystemLanguageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CountryDataset.SystemCountryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CountryDataset.SystemLayoutRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CountryDataset.SystemLanguageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CountryDataset.SystemCountryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CountryDataset.SystemLayoutRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CountryDataset.SystemLanguageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CountryDataset.SystemCountryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.CountryDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.NewCompanyDataset.SystemCheckListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.NewCompanyDataset.SystemCompanyInformationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.NewCompanyDataset.SystemNewCompanyChecklistStatusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.NewCompanyDataset.SystemCheckListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.NewCompanyDataset.SystemCompanyInformationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.NewCompanyDataset.SystemNewCompanyChecklistStatusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.NewCompanyDataset.SystemCheckListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.NewCompanyDataset.SystemCompanyInformationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.NewCompanyDataset.SystemNewCompanyChecklistStatusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.NewCompanyDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTypeDataSet.SystemPaymentTypeViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTypeDataSet.SystemPaymentTypeInputsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTypeDataSet.SystemPaymentTypeViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTypeDataSet.SystemPaymentTypeInputsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTypeDataSet.SystemPaymentTypeViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTypeDataSet.SystemPaymentTypeInputsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTypeDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DocumentTypeDataset.SystemDocumentTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DocumentTypeDataset.SystemDocumentTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DocumentTypeDataset.SystemDocumentTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.DocumentTypeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentMethodDataset.SystemPaymentMethodDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentMethodDataset.SystemPaymentMethodRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentMethodDataset.SystemPaymentMethodRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentMethodDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermGroupDataset.SystemPaymentTermGroupDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermGroupDataset.SystemPaymentTermGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermGroupDataset.SystemPaymentTermDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermGroupDataset.SystemPaymentTermGroupDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermGroupDataset.SystemPaymentTermGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermGroupDataset.SystemPaymentTermRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermGroupDataset.SystemPaymentTermGroupDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermGroupDataset.SystemPaymentTermGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermGroupDataset.SystemPaymentTermRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.PaymentTermGroupDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SourceDataset.SystemSourceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SourceDataset.SystemSourceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SourceDataset.SystemSourceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SourceDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.AutoNumberingDataset.SystemStartingNumberDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.AutoNumberingDataset.SystemStartingNumberRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.AutoNumberingDataset.SystemStartingNumberRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.AutoNumberingDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SuffixDataset.SystemSuffixDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SuffixDataset.SystemSuffixRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SuffixDataset.SystemSuffixRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.SystemManager.DatasetComponent.SuffixDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

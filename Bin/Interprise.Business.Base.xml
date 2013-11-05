@@ -1,0 +1,815 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Business.Base
+</name>
+</assembly>
+<members>
+<member name="M:Interprise.Business.Base.CRM.EMailMessageRule.VerifyOutgoingEmailServer(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="emailAccountCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.ResetEmailStatus(System.String,System.String)">
+	<summary>
+ Resets the Email Status from Sending to ReadyToSend
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.SendPendingEmails(System.String,System.String)">
+	<summary>Procedure to send pending emails.</summary>
+	<remarks>Pending emails in outbox folder.</remarks>
+	<param name="connectionString"></param>
+	<param name="emailAccountCode">The email address to use for sending pending emails.</param>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.SendPendingEmailsByAction(System.String,System.String,System.String)">
+	<summary>Procedure to send email.</summary>
+	<remarks>.</remarks>
+	<param name="connectionString"></param>
+	<param name="emailAccountCode">The email address to use for sending pending emails.</param>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.BuildEmailFilter(System.String[])">
+	<summary>
+	</summary>
+	<param name="messageCodes"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.DeleteEmail(System.String,System.String[],System.Boolean)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="messageCodes"></param>
+	<param name="deletePermanently"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.DeleteEmailsFromMailServer(System.String,System.Data.DataTable)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="deletedEmails"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.DeleteEmailsFromServer(System.String,System.String,System.String[])">
+	<summary>
+ Delete emails from server using an array of UIDLs or server IDs
+ </summary>
+	<param name="connectionString"></param>
+	<param name="emailAccountCode"></param>
+	<param name="serverIDs"></param>
+	<returns></returns>
+	<remarks>Used in delete on server when deleted from "Deleted Items" setting.</remarks>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.GetEmailBody(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="messageCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.IsEmailSending(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="messageCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.IsDeleteEmailFromServer(System.String,System.String)">
+	<summary>
+ Function to check if "Delete on email server if emails where deleted from deleted
+ items folder" is enabled.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="emailaccountCode">The email account to use for this process.</param>
+</member><member name="M:Interprise.Business.Base.CRM.EMailMessageRule.MoveEmailToFolder(System.String,System.String,System.String,Interprise.Framework.Base.Shared.Enum.EMailStatus,System.String[])">
+	<summary>  
+ Procedure to move an email to a folder.
+ </summary>
+	<param name="connectionstring"></param>
+	<param name="emailAccountCode">The email account to use</param>
+	<param name="folderCode">The destination folder.</param>
+	<param name="status">The email status.</param>
+	<param name="messageCodes">The email messages to move.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.CampaignWaveRule.SendEmailToTargetList(System.String,System.String,System.Int32@,System.Int32,System.String,System.String,System.Boolean,System.String,System.Boolean,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="emailAccountCode"></param>
+	<param name="batchIndex"></param>
+	<param name="numberOfEmail"></param>
+	<param name="waveCode"></param>
+	<param name="mimeTemplate"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.CampaignWaveRule.SendTestEmail(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="emailAccountCode"></param>
+	<param name="testMessage"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.CampaignWaveRule.GetEmail(System.Data.DataRow,System.String,System.String[],System.String)">
+	<summary>
+	</summary>
+	<param name="contactInfo"></param>
+	<param name="mimeMessage"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.CampaignWaveRule.DoMailMerge(System.String,System.Data.DataRow)">
+	<summary>
+	</summary>
+	<param name="emailTemplate"></param>
+	<param name="rowSource"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.CampaignWaveRule.GetMergeFields(System.Data.DataTable,System.String)">
+	<summary>
+	</summary>
+	<param name="sourceTable"></param>
+	<param name="emailTemplate"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.CampaignWaveRule.GetCustomerContactSQLScript(System.String,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="getOne"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CRM.CampaignWaveRule.GetLeadContactSQLScript(System.String,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="getOne"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.BackupServerInstance">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.BackupInstance">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.RestoreInstance">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.DatabaseName">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.BackupEntityDatabase(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<param name="fileName"></param>
+	<param name="connectionString"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.NotifyOnBackUpProgress(Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.OnBackUpDatabaseProgress)">
+	<summary>
+	</summary>
+	<param name="method"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.NotifyOnRestoreProgress(Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.OnRestoreDatabaseProgress)">
+	<summary>
+	</summary>
+	<param name="method"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.m_smoBackup_Complete(System.Object,Microsoft.SqlServer.Management.Common.ServerMessageEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.m_smoBackup_PercentComplete(System.Object,Microsoft.SqlServer.Management.Smo.PercentCompleteEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.m_smoRestore_Complete(System.Object,Microsoft.SqlServer.Management.Common.ServerMessageEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.BackUpAndRestoreRule.m_smoRestore_PercentComplete(System.Object,Microsoft.SqlServer.Management.Smo.PercentCompleteEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SearchRule.ReadCustomSearchResultsData(System.String,System.String,System.String,System.String,System.Data.DataSet,System.Int32,System.Boolean,System.String,System.String[],System.Boolean)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="tableName"></param>
+	<param name="sqlQueryCommand"></param>
+	<param name="whereClause"></param>
+	<param name="dsData"></param>
+	<param name="recordCount"></param>
+	<param name="viewAll"></param>
+	<param name="maxRecordsFilter"></param>
+	<param name="searchColumns"></param>
+	<param name="withNoLock"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SearchRule.BuildCustomSearchResultsSQL(System.String,System.String,System.Int32,System.String,System.String[],System.Boolean,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="sqlCommandText"></param>
+	<param name="strWhereClause"></param>
+	<param name="intGetRecords"></param>
+	<param name="maxRecordsFilter"></param>
+	<param name="searchColumns"></param>
+	<param name="viewAll"></param>
+	<param name="withNoLock"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.BackupInstance">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.RestoreInstance">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.ServerInstance">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.BackUpDeviceFile">
+	<summary>
+ The full path of the back up device file.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.ModelConnectionString">
+	<summary>
+ Connection string uses to connect to ISSIMODEL database.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.Async">
+	<summary>
+ Use in checking if the creating of the database is asynchronous or not.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.NewDatabaseName">
+	<summary>
+ The name of the database to be created.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.BackupDatabase(System.String,System.String,System.Boolean)">
+	<summary>
+ Creates new back up file of ISSIMODEL
+ </summary>
+	<param name="newDatabaseName">The name of the database to be created.</param>
+	<param name="connectionString">The connection string to be used in creation of the database.</param>
+	<returns>The name of the back up file.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.RestoreDatabase(System.String,System.Boolean)">
+	<summary>
+ Restore the back up file.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.RestoreDatabase(System.String[])">
+	<summary>
+ Restore the back up file.
+ </summary>
+	<param name="RestoreSetting">The required value in restoring back up file. Ordering in paramarray RestoreSetting(DatabaseName,BackupFileName,Connectiostring)</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.ConnectToISSIMODEL">
+	<summary>
+ Opens new connection to ISSIMODEL.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.NewISSIModelDBName">
+	<summary>
+ 'Get the ISSIMODELDATABASENAME.
+ </summary>
+	<returns></returns>
+ Added by pete.a 11-24-2010
+ <remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.NotifyOnDatabaseCompletion(Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.OnDatabaseCompletion)">
+	<summary>
+ Assign the method in creation of database.
+ </summary>
+	<param name="method">The method assigned</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.NotifyOnCreateProgress(Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.OnCreateDatabaseProgress)">
+	<summary>
+ Assign the method in creation of database.
+ </summary>
+	<param name="method">The method assigned</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.NotifyOnRestoreProgress(Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.OnRestoreDatabaseProgress)">
+	<summary>
+ Assign the method in creation of database.
+ </summary>
+	<param name="method">The method assigned</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.ShowErrorMessage(Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.OnError)">
+	<summary>
+ Assign the method in creation of database.
+ </summary>
+	<param name="method">The method assigned</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.DumpBackupFile(System.Boolean,System.String)">
+	<summary>
+ 'Performs a clean up procedure. Clears the .bak file that was created during the process.
+ </summary>
+	<param name="IsDropDatabase">Flag if the to be drop the newly created database or not.</param>
+	<param name="ConnectionString">Connection string to be used in deleting the back up file and dropping the database.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.GetModelDatabaseLocation">
+	<summary>
+ Gets the database location of the ISSIMODEL.
+ </summary>
+	<returns>The database path.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.GetLogicalFileName(System.Boolean)">
+	<summary>
+ Gets the logical file of the ISSIMODEL
+ </summary>
+	<param name="IsLogFile">If true then it will return the logical file of log file else then it will return the logical file name of data.</param>
+	<returns>Data or log file.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.SetHomeCurrency(System.String,System.String)">
+	<summary>
+ Set the home currency of the newly created the database.
+ </summary>
+	<param name="homeCurrencyCode"></param>
+	<param name="connectionString"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.UpdateSystemCheckListStatus(System.String)">
+	<summary>
+ Updates the status of the check list whether it is finished or not.
+ </summary>
+	<param name="strConnectionString"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.BackupCompleted(System.Object,Microsoft.SqlServer.Management.Common.ServerMessageEventArgs)">
+	<summary>
+ Raise this event when backing up is completed.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.BackupInformation(System.Object,Microsoft.SqlServer.Management.Common.ServerMessageEventArgs)">
+	<summary>
+ Raise this event when error appears in creation.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.BackupProgress(System.Object,Microsoft.SqlServer.Management.Smo.PercentCompleteEventArgs)">
+	<summary>
+ Raise this event in backing up operation
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.RestoreCompleted(System.Object,Microsoft.SqlServer.Management.Common.ServerMessageEventArgs)">
+	<summary>
+ Raise this event when restoration is completed.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.RestoreInformation(System.Object,Microsoft.SqlServer.Management.Common.ServerMessageEventArgs)">
+	<summary>
+ Raise this event when error appears in creation.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.NewCompanyWizard.NewCompanyWizardRule.RestoreProgress(System.Object,Microsoft.SqlServer.Management.Smo.PercentCompleteEventArgs)">
+	<summary>
+ Raise this event in creating database.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.SystemManager.DataDictionaryRule.AutoUpdatePK">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.DataDictionaryRule.GetObjectSchema(Microsoft.SqlServer.Management.Smo.Database,System.String,Microsoft.SqlServer.Management.Smo.DatabaseObjectTypes)">
+	<summary>
+	</summary>
+	<param name="datadase"></param>
+	<param name="objectName"></param>
+	<param name="DatabaseObjectType"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.SystemManager.DataDictionaryRule.CreateTrigger(System.String,System.String,Microsoft.SqlServer.Management.Smo.Database,System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<param name="SQLdb"></param>
+	<param name="assemblyID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Business.Base.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Business.Base.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Business.Base.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Interprise.Business.Base.CacheManagerRule.RestoreInProgress">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.AbortCreateCacheDatabase">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.ConnectToMaster(System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.ConnectToDatabase(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.CreateBackupDeviceItem">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.CreateDataseFromBackupFile(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.DropDatabase(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="cacheDatabaseName"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.GetLDFLogicalName(System.Data.DataTable)">
+	<summary>
+	</summary>
+	<param name="fileList"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.GetMDFLogicalName(System.Data.DataTable)">
+	<summary>
+	</summary>
+	<param name="fileList"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.GetNewCacheData(System.String,System.String,System.DateTime,System.Int32,System.Int32,System.Int32@)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="tableName"></param>
+	<param name="cacheDate"></param>
+	<param name="batchIndex"></param>
+	<param name="NoOfRecords"></param>
+	<param name="remaining"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.GetNewPluginCacheData(System.String,System.String,System.DateTime,System.Int32,System.Int32,System.Int32@,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="tableName"></param>
+	<param name="cacheDate"></param>
+	<param name="batchIndex"></param>
+	<param name="noOfRecords"></param>
+	<param name="remaining"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.GetCacheTablesModified(System.String,System.Object[][])">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="cacheData"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.GetRemainingRecords(System.String,System.String,System.DateTime,System.Int32,System.Int32)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="tableName"></param>
+	<param name="cacheDate"></param>
+	<param name="batchIndex"></param>
+	<param name="NoOfRecords"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.GetRemainingRecordCacheTablesDeleteLog(System.String,System.String,System.DateTime,System.Int32,System.Int32)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="tableName"></param>
+	<param name="cacheDate"></param>
+	<param name="batchIndex"></param>
+	<param name="NoOfRecords"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.ManageSMORestoreHandler(Microsoft.SqlServer.Management.Smo.Restore,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="smoRestore"></param>
+	<param name="add"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.RestartSQLServer(System.String)">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.SetSQLServerConnection(Microsoft.SqlServer.Management.Smo.Server,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.UpdateCacheTablesModified(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="tableName"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.SMORestore_Complete(System.Object,Microsoft.SqlServer.Management.Common.ServerMessageEventArgs)">
+	<summary>
+ Raise this event when restoration is completed.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.SMORestore_Information(System.Object,Microsoft.SqlServer.Management.Common.ServerMessageEventArgs)">
+	<summary>
+ Raise this event when error appears in creation.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.CacheManagerRule.SMORestore_PercentComplete(System.Object,Microsoft.SqlServer.Management.Smo.PercentCompleteEventArgs)">
+	<summary>
+ Raise this event in creating database.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.Accounting.BaseRule.GetAccountingCurrentPeriod(System.String)">
+	<summary>
+ Method to get the current accounting period.
+ </summary>
+	<returns>Array of string containing the period detail. PeriodCode,AccountingYear,DateFrom,DateTo,PeriodDescription,FiscalYearCode</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.Accounting.BaseRule.GetAccountingPeriod(System.String,System.DateTime)">
+	<summary>
+Returns an array string containing the period detail where the specified date falls..
+PeriodCode,AccountingYear,DateFrom,DateTo,PeriodDescription,FiscalYearCode
+ </summary>
+	<param name="connectionString">Current Connection String settings.</param>
+	<param name="dateToSearch">The date to be search in the AccountingFiscalPeriod table to get the period detail where this specified date belongs.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.Accounting.BaseRule.GenerateAccountingFiscalYear(System.String,System.String)">
+	<summary>
+ Method to generate accounting fiscal year
+ </summary>
+	<param name="connectionString">The connectionString to be used when to connecting to the database.</param>
+	<param name="userCode">The userCode is the one login from the system.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.Accounting.BaseRule.GetAccountingFiscalYearDetail(System.String,System.String)">
+	<summary>
+ Gets the details of the specified accounting fiscal year and the succeeding and preceeded fiscal year details.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="fiscalYearCodeToGet"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.Accounting.BaseRule.UpdateFiscalPeriod(System.String)">
+	<summary>
+ Mehod update the fiscal period between starting date ending date pass from the UI.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BackupRestore.RestoreRule.RestoreEntityDatabase(System.String,System.String,System.String,System.String,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="sourceDatabase"></param>
+	<param name="targetDatabase"></param>
+	<param name="filePath"></param>
+	<param name="connectionString"></param>
+	<param name="createCompany"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.LoadDataSet(System.String,System.String[][],System.Data.DataSet)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="commandSet"></param>
+	<param name="dsDataContainer"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.LoadDataSet(System.String,System.String[][],System.String[][],System.Data.DataSet)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="commandSet"></param>
+	<param name="parameters"></param>
+	<param name="dsDataContainer"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.LoadDataset(System.String,System.Data.CommandType,System.String,System.String[],System.String[][])">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="commandType"></param>
+	<param name="commandText"></param>
+	<param name="tableNames"></param>
+	<param name="param"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.AddMenuToTemplate(System.String,System.String,System.String,System.String)">
+	<summary>
+ Add newly created menu to menu template.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="roleCode"></param>
+	<param name="userCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.CreateUserRoleMenu(System.String,System.String,System.String)">
+	<summary>
+ Creates menus for newly created role.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="roleCode"></param>
+	<param name="userCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.ExecuteNonQuery(System.String,System.Data.CommandType,System.String,System.String[][],System.String[][]@)">
+	<summary>
+ Executes a command from the database.
+ </summary>
+	<param name="connectionString">The connection to the database.</param>
+	<param name="commandType">Sets the type of the command(text or stored procedure)</param>
+	<param name="command">The name/SQL statement of the command.</param>
+	<param name="parameters">The parameters of the command. Every string array represents the parameter and 
+ its accompaning value. (Ex. New String()() {New String() {"@Parameter", 1}}
+ Set to nothing if there are no parameters.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.ExecuteNonQuery(System.String,System.Data.CommandType,System.String,System.String[][],System.String[][]@,System.Int32)">
+	<summary>
+ Executes a command from the database.
+ </summary>
+	<param name="connectionString">The connection to the database.</param>
+	<param name="commandType">Sets the type of the command(text or stored procedure)</param>
+	<param name="command">The name/SQL statement of the command.</param>
+	<param name="parameters">The parameters of the command. Every string array represents the parameter and 
+ its accompaning value. (Ex. New String()() {New String() {"@Parameter", 1}}
+ Set to nothing if there are no parameters.</param>
+	<param name="commandTimeOut">Sets the number of seconds it will take the command to execute.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.ExecuteNonQuery(Microsoft.Practices.EnterpriseLibrary.Data.Sql.SqlDatabase,System.Data.Common.DbCommand,System.Int32)">
+	<summary>
+ Executes a command from the database.
+ </summary>
+	<param name="sqlDatabase">Instance of Microsoft.Practices.EnterpriseLibrary.Data.Sql.SqlDatabase.</param>
+	<param name="command">Object of type System.Data.Common.DbCommand</param>
+	<param name="numberOfTries">Number of times to retry when timeout error is encountered.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.ExecuteScript(System.String,System.String)">
+	<summary>
+ Executes TSQL scripts to the database.
+ </summary>
+	<param name="connectionString">The connection to the database.</param>
+	<param name="command">The name/SQL statement of the command.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.GetFieldByText(System.String,System.String,System.String,System.String)">
+	<summary>
+ Get a Field value on the database using Command Text.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="fieldName"></param>
+	<param name="tableName"></param>
+	<param name="condition"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.GetFieldByCommand(System.String,System.String,System.Data.CommandType,System.String[][])">
+	<summary>
+ Get the field value that satisfy the given condition from database table
+ </summary>
+	<param name="connectionString"></param>
+	<param name="commandText"></param>
+	<param name="commandType"></param>
+	<param name="param"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.GetRow(System.String,System.String[],System.String,System.String)">
+	<summary>
+ Get Data Row from the database that contains the fields specified.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="fieldNames"></param>
+	<param name="tableName"></param>
+	<param name="condition"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.GetRows(System.String,System.String[],System.String,System.String)">
+	<summary>
+ Get Data Rows from the database that contains the fields specified.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="fieldNames"></param>
+	<param name="tableName"></param>
+	<param name="condition"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.SetUserRoleBasedOnProductEdition(System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="activationCode"></param>
+	<param name="salt"></param>
+	<param name="vector"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.UpdatePluginAssembly(System.String,Interprise.Framework.Base.Shared.Structure.AssemblyInformation[])">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="assemblyInformation"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.UpdatePluginAssemblyID(System.String,System.String,System.String)">
+	<summary>
+ Returns the date modified for updated row.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="assemblyName"></param>
+	<param name="assemblyID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.UpdatePluginLocation(System.String,System.String,System.String)">
+	<summary>
+ Returns the date modified for updated row.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="assemblyName"></param>
+	<param name="location"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.BaseRule.UpdateBillOhHoldStatus(System.String,System.String,System.Boolean,System.String)">
+	<summary>
+ Updates the on hold columns of the SupplierBill table; OnHold and OnHoldReason.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="p_billCode"></param>
+	<param name="p_onHold"></param>
+	<param name="p_onHoldReason"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Base.Supplier.BaseRule.AssignDocumentCode(System.String,Interprise.Framework.Base.Shared.Enum.TransactionType,System.Data.DataRowView)">
+	<summary>
+ Assign generated document code for the specified transaction
+ </summary>
+	<param name="connectionString"></param>
+	<param name="transaction"></param>
+	<param name="headerRow"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

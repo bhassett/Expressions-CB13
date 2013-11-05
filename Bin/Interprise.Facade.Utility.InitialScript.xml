@@ -1,0 +1,332 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Facade.Utility.InitialScript
+</name>
+</assembly>
+<members>
+<member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.CB_3173">
+	<summary>
+  Looks up a localized string similar to IF EXISTS (SELECT 1 FROM sys.tables WHERE name = 'ReportPrintSetting') 
+ DELETE FROM ReportPrintSetting.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.CB_5127">
+	<summary>
+  Looks up a localized string similar to IF EXISTS (SELECT TOP 1 1 FROM sys.tables WHERE [name] = 'ReportLayout')
+	DELETE FROM ReportLayout
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.CB_6886">
+	<summary>
+  Looks up a localized string similar to IF EXISTS (SELECT TOP 1 1 FROM sys.tables WHERE [name] = 'ReportEmailSetting')
+BEGIN
+	IF EXISTS (SELECT TOP 1 1 from sys.columns WHERE [name] IN ('IsCustom', 'ReportCode') AND OBJECT_NAME(object_id) = 'ReportEmailSetting')
+		BEGIN
+		UPDATE ReportEmailSetting
+		SET IsCustom = 0 
+		WHERE ReportCode LIKE 'SRP%'
+		END
+END
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.CustomerSalesCoupon">
+	<summary>
+  Looks up a localized string similar to UPDATE SystemStartingNumber
+SET TableTransaction = 'CustomerSalesCoupon', TableName = 'CustomerSalesCoupon', ColumnName = 'CouponID', TransactionDescription = 'Customer Sales Coupon', ParentEntity = 'Customer', DateModified = GETDATE()
+WHERE TableTransaction = 'WebCoupon'.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.CustomScriptSetting">
+	<summary>
+  Looks up a localized string similar to &lt;?xml version="1.0" standalone="yes"?&gt;
+&lt;DocumentElement&gt;	
+  &lt;!--&lt;CustomScript&gt;
+    &lt;ScriptID&gt;GenerateSP&lt;/ScriptID&gt;
+    &lt;SortOrder&gt;1&lt;/SortOrder&gt;
+	&lt;Version&gt;6.0.0.0&lt;/Version&gt;
+  &lt;/CustomScript&gt;--&gt;
+		&lt;CustomScript&gt;
+		&lt;ScriptID&gt;SILVERTOUCH_149&lt;/ScriptID&gt;
+		&lt;SortOrder&gt;4&lt;/SortOrder&gt;
+	&lt;/CustomScript&gt;
+	 &lt;CustomScript&gt;
+    &lt;ScriptID&gt;DuplicateRemoved&lt;/ScriptID&gt;
+    &lt;SortOrder&gt;5&lt;/SortOrder&gt;
+  &lt;/CustomScript&gt;
+  &lt;CustomScript&gt;
+    &lt;ScriptID&gt;CustomerSalesCoupon&lt;/ScriptID&gt;
+    &lt;SortOrder&gt;6&lt;/SortOrder&gt;
+  &lt;/ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.DeleteOldPlugins">
+	<summary>
+  Looks up a localized string similar to IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[DeleteAssembly]') AND type in (N'P', N'PC'))
+  DROP PROCEDURE [dbo].[DeleteAssembly]
+GO  
+CREATE  PROCEDURE [dbo].[DeleteAssembly]
+	@AssemblyName NVARCHAR(150)
+AS
+
+DELETE FROM SystemPluginAssembly Where AssemblyName = @AssemblyName              
+DELETE FROM SystemPluginAssemblyCountry Where AssemblyName = @AssemblyName              
+DELETE FROM SystemPluginAssemblyDependency Where AssemblyName = @AssemblyName              
+ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.DuplicateRemoved">
+	<summary>
+  Looks up a localized string similar to 
+;WITH CTE_Removed 
+AS
+(
+SELECT ROW_NUMBER () OVER (PARTITION BY PurchaseReceiptCode, PurchaseReceiptLineNum,BillCode,BillLineNum,ItemCode ORDER BY PurchaseReceiptCode, PurchaseReceiptLineNum) AS RNumber,* 
+FROM InventoryCostHistory 
+)
+--select * from CTE_Removed where RNumber &gt; 1
+
+DELETE dbo.InventoryCostHistory 
+FROM dbo.InventoryCostHistory AS a 
+WHERE EXISTS 
+(
+SELECT * FROM CTE_Removed AS b WHERE a.PurchaseReceiptCode = b.PurchaseReceiptCode AND a.PurchaseReceiptLineNum = b.PurchaseReceipt [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.GenerateSP">
+	<summary>
+  Looks up a localized string similar to IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[GenerateSP]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[GenerateSP]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+  
+CREATE PROCEDURE [dbo].[GenerateSP]
+(      
+ @TableName NVARCHAR(128),  
+ @isGenerateReadSP Bit = 0  
+) AS      
+SET NOCOUNT ON;      
+CREATE TABLE [#GeneratedProcedure] (      
+Counter INT IDENTITY (1, 1) NOT NULL      
+, ProcedureType NVARCHAR(128)      
+, LineStatement Varchar (MAX)); [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.INTVIPTI_1147">
+	<summary>
+  Looks up a localized string similar to GO
+IF object_id('EcommerceNewsDetail') IS NOT NULL
+AND EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.Columns WHERE TABLE_NAME = 'EcommerceNewsDetail' AND COLUMN_NAME = 'NewsGUID')
+AND EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.Columns WHERE TABLE_NAME = 'EcommerceNewsDetail' AND COLUMN_NAME = 'ExpiresOn')
+AND EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.Columns WHERE TABLE_NAME = 'EcommerceNewsDetail' AND COLUMN_NAME = 'Published')
+AND EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.Columns WHERE TABLE_NAME = 'Ecommerce [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.INTVIPTI_1509">
+	<summary>
+  Looks up a localized string similar to GO
+SET NOCOUNT ON
+
+
+IF EXISTS (SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID(N'dbo.SystemJobExecutionQueue') AND OBJECTPROPERTY(ID, N'IsTable') = 1)
+BEGIN
+	DELETE FROM SystemJobExecutionQueue WHERE PlanCode = 'PLN-000001'
+END
+ 
+
+SET NOCOUNT OFF
+GO
+ 
+ .
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.INTVIPTI_4226">
+	<summary>
+  Looks up a localized string similar to IF EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME= 'CustomerShipTo' AND COLUMN_NAME = 'ResidenceType' )
+BEGIN
+	IF EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME= 'CustomerShipTo' AND COLUMN_NAME = 'AddressType' )
+	BEGIN
+		-- Merge ResidenceType To AddressType
+		DECLARE @q1 NVARCHAR(100)
+		SET @q1 = 'UPDATE CustomerShipTo SET AddressType = ResidenceType WHERE ResidenceType &lt;&gt; ''Unknown'''
+		EXEC sp_executesql @q1
+	END
+END.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.INTVIPTI_5054">
+	<summary>
+  Looks up a localized string similar to IF EXISTS (SELECT 1 FROM sys.objects O	JOIN	sys.columns C ON O.object_id = C.object_id
+			WHERE O.type = 'U'
+				AND (o.name = N'SystemUserRoleMenuForm' or o.name = N'SystemUserRoleMenuFormDescription' or o.name = N'SystemUserRoleMenuFormSection' or o.name = N'SystemUserRoleMenuFormSectionDescription')
+				AND (c.name = 'IsCustomizable'))
+
+BEGIN
+---- UPDATE ISCUSTOMIZABLE COLUMN for USER ROLE MENU ----
+
+IF EXISTS (SELECT 1 FROM SystemUserRoleMenuForm WHERE ISCUSTOMIZABLE =1)
+BEGIN
+-- Shipping --
+ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.INTVIPTI_5747">
+	<summary>
+  Looks up a localized string similar to 
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[InventoryWarehouseStoreData]') AND type in (N'U'))
+BEGIN
+DROP TABLE InventoryWarehouseStoreData
+END
+
+GO
+
+
+SELECT *
+INTO InventoryWarehouseStoreData FROM InventoryWarehouse
+
+
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.INTVIPTI_5954">
+	<summary>
+  Looks up a localized string similar to IF EXISTS(SELECT * FROM SYS.OBJECTS WHERE NAME = 'TempWarehouseCriteria' AND TYPE = 'U')
+BEGIN
+DROP TABLE TempWarehouseCriteria
+END
+
+
+IF EXISTS(SELECT * FROM Sys.Columns WHERE  Name=N'SCWarehouseCode_DEV000972'  AND object_Id=Object_Id('SolidCommerceCriteria_DEV000972'))
+BEGIN
+
+    DECLARE @INSERT_INTO_TEMP_WAREHOUSE NVARCHAR(MAX)
+    
+    SET   @INSERT_INTO_TEMP_WAREHOUSE = 'SELECT CriteriaCode_DEV000972, SCWarehouseCode_DEV000972 INTO TempWarehouseCriteria FROM SolidCommerceCriteria_DEV000972 W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.INTVIPTI_6740">
+	<summary>
+  Looks up a localized string similar to DECLARE @SQLString nvarchar(max)
+
+IF EXISTS (SELECT 1
+			FROM
+				sys.objects O
+				JOIN
+				sys.columns C ON O.object_id = C.object_id
+			WHERE
+				O.type = 'U'
+				AND o.name = N'SystemPostalCode'
+				AND (c.name = 'RowID'))
+BEGIN
+
+	RETURN
+END	
+ELSE
+BEGIN
+	IF EXISTS 
+	(
+	SELECT 1 FROM sys.objects 
+	WHERE object_id = OBJECT_ID(N'dbo.SystemPostalCode') 
+	AND [type] = N'U'
+	)
+		BEGIN
+
+			SET @SQLString = 'ALTER TABLE dbo.SystemPostalCode
+			ADD RowID UNIQUEIDENTIFIER DEFAULT(newid() [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.INTVIPTI4503">
+	<summary>
+  Looks up a localized string similar to IF NOT EXISTS (SELECT 1
+			FROM
+				sys.objects O
+				JOIN
+				sys.columns C ON O.object_id = C.object_id
+			WHERE
+				O.type = 'U'
+				AND o.name = N'SystemPostalCode'
+				AND (c.name = 'StateSalesTax' OR c.name =  'CountySalesTax' OR c.name =  'CitySalesTax' OR c.name =  'MTASalesTax' OR c.name =  'SPDSalesTax' OR c.name =  'Other1SalesTax'
+					OR c.name = 'Other2SalesTax' OR c.name = 'Other3SalesTax' OR c.name = 'Other4SalesTax'
+					)
+			)
+BEGIN
+	RETURN
+END	
+ELSE
+BEGIN
+	IF EXISTS 
+	(
+ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.ISE_83">
+	<summary>
+  Looks up a localized string similar to /*
+Copy data from old Ecommerce tables into temporary tables.
+Copied data would later be used in execution of Final script.
+*/
+
+-- WebAddress
+IF object_id('WebAddress') IS NOT NULL
+SELECT 
+CustomerID, 
+Email, 
+BillToName, 
+BillToAddress, 
+BillToCity, 
+BillToState, 
+BillToPostalCode, 
+BillToCountry, 
+BillToCounty, 
+BillToPhone, 
+BillToResidenceType, 
+ShipToName, 
+ShipToAddress, 
+ShipToCity, 
+ShipToState, 
+ShipToPostalCode, 
+ShipToCountry, 
+ShipToCounty, 
+ShipToPhone, 
+ShipToResiden [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.ReportMigration">
+	<summary>
+  Looks up a localized string similar to IF EXISTS (SELECT TOP 1 1 FROM sys.tables WHERE [name] = 'EcommerceSite')
+UPDATE EcommerceSite
+SET OrderConfirmationReport = NULL,
+ReportCode = NULL,
+ProductAvailabilityNotificationReport = NULL,
+RegularPriceNotificationReport = NULL,
+PromotionalPriceNotificationReport = NULL
+GO
+IF EXISTS (SELECT TOP 1 1 FROM sys.tables WHERE [name] = 'WebSite')
+UPDATE WebSite
+SET OrderConfirmationReport = NULL,
+ReportCode = NULL
+GO
+IF EXISTS (SELECT TOP 1 1 FROM sys.tables WHERE [name] = 'ShipmentCarrier')
+UP [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.InitialScript.My.Resources.Resources.SILVERTOUCH_149">
+	<summary>
+  Looks up a localized string similar to /******************************************************************************  
+**  File: SILVERTOUCH_149.sql  
+**  Name: SILVERTOUCH_149
+**  Desc: 
+**      Updates the MerchantLogin column in EcommerceSite and SystemPaymentType tables
+**  
+**  Auth: Honey Abrau
+**  Date: March 29, 2011
+*******************************************************************************  
+**  Change History  
+*******************************************************************************  
+**  Date:		Author:			 Desc [rest of string was truncated]";.
+</summary>
+</member><member name="T:Interprise.Facade.Utility.InitialScript.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

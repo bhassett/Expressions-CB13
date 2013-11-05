@@ -1,0 +1,73 @@
+﻿<script id="orderHistoryTemplate" type="x-jquery-tmpl">   
+   <div>
+        <div id="pagingHeader"></div>
+        <div class="clear-both"></div>
+        <div id="content">
+            <table id="tblOrderHistory" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th class="order-row"></th>
+                        <th class="order-number">${stringResource.orderNumber}</th>
+                        <th class="order-shipping-status">${stringResource.shippingStatus}</th>
+                    </tr>
+                </thead>
+                <tbody id="orderHistoryContent"></tbody>
+            </table>
+            <div id="orderHistoryDisplayRange"></div>
+        </div>
+        <div id="pager"></div>
+   </div>
+</script>
+
+<script id="orderHistoryPaginationTemplate" type="x-jquery-tmpl">
+<div>
+    <ul class="order-history-pagination">
+    {{each paging}}
+        <li class="order-history-page-number" data-pageNumber="${$value.current}" data-allPages="${allPages}">
+            <a href="javascript:void(0);">${$value.current}</a> &nbsp;
+        </li>
+        {{/each}}
+    </ul>
+</div>
+</script>
+
+<script id="orderHistoryContentTemplate" type="x-jquery-tmpl">
+  <table>
+    {{each salesOrder}}
+        <tr>
+            <td class="rownumber"> ${$value.row} </td>
+            <td>
+                <a href="receipt.aspx?OrderNumber=${$value.salesOrderCode}">${$value.salesOrderCode}</a>
+                <a class="lnkReOrder" data-orderNumber="${$value.salesOrderCode}" href="javascript:void(0);">${stringResource.reorderCaption}</a>
+            </td>
+            <td>
+                {{if $value.trackingNumber != null && $value.trackingURL != null }}
+                    ${stringResource.shippedCaption} ${stringResource.onCaption} ${$value.shippingDate} <br/>
+                    ${stringResource.trackingNumberCaption} <br/>
+                    <a href="${$value.trackingURL}" target="_blank">${$value.trackingNumber}</a>
+                {{else}}
+                    ${$value.shippingStatus}
+                {{/if}}
+            </td>
+        </tr>
+    {{/each}}
+    </table>
+</script>
+
+<script id="orderHistoryRangeTemplate" type="x-jquery-tmpl">
+<div>
+    ${stringResource.viewing} &#xa0; ${start} &#xa0;-&#xa0; ${end} &#xa0; ${stringResource.ofText} &#xa0; ${rows}
+</div>
+</script>
+
+<script id="orderHistoryPager" type="x-jquery-tmpl">
+<div>
+    <div class="order-history-pager">
+        <span>${stringResource.display}</span>
+        &#xa0;
+        <input id="txtPages" type="text" size="5" maxlength="4" value="${count}" name="Pages" style="text-align: right"/>
+        &#xa0;
+        <a id="reset" href="javascript:void(0);">${stringResource.reset}</a>
+    </div>
+</div>
+</script>

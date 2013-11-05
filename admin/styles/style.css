@@ -1,0 +1,279 @@
+﻿body, div, p, h1, h2, h3, h4, ul, li, table
+{
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+body
+{
+	font-family: Verdana, Arial, sans-serif;
+	font-size:75%;
+}
+
+.dateFilter
+{
+	cursor:pointer;
+	border:solid 1px Black;
+}
+
+.divDateFilterOptions
+{
+	/*margin-left:500px;*/
+	border:solid 1px Black;
+	width:150px;
+}
+
+.applyDateFilterButton
+{
+	/*color:Olive;*/
+	margin: 5px 5px 5px 5px;
+	border:solid 1px black;
+	background-color:Yellow;
+}
+
+.divFilterContainer
+{
+	color:#333333;
+	font-family:Verdana;
+}
+
+.pnlFilterPopup
+{
+	background-color:White;
+}
+
+.divFilterHeader
+{
+	width:100%;
+	height:20px;
+	background-color:Gray;
+	border-bottom:solid 1px Black;
+}
+
+.divNavigation
+{
+	padding-top:1em;
+	padding-bottom:1em;
+}
+
+.divShowQuery
+{
+	visibility:visible; /* hidden */
+	margin: 10px 10px 10px 10px;
+	background-color:#CCCCCC;
+	font-family:Lucida Console;
+	border:solid 1px Black;
+}
+
+.popupShow
+{
+	position:absolute;
+	visibility:visible;
+	border: solid 1px Black;
+	color:Black;
+	background-color:White;
+}
+
+.popupHide
+{
+	visibility:hidden;
+}
+
+.popupImage
+{
+	cursor:hand;
+	cursor:pointer;
+}
+
+.filterHeader
+{
+	background-color:#b7cfee;
+	color:Black;
+	font-size:small;
+	text-align:center;	
+	width:100%;	
+	border:solid 1px Black;
+}
+
+.filterSubHeader
+{
+	background-color:Teal;
+	color:Black;
+}
+
+.filterContent
+{
+	
+}
+
+.filterHeaderDate
+{
+	background-color:#b7cfee;
+	color:Black;
+	font-size:small;
+	text-align:center;	
+	width:100%;	
+	border:solid 1px Black;
+	margin-left:2px;
+}
+
+.filterContentDate
+{
+	border:solid 1px Black;
+	margin: 0px 2px 2px 2px;
+}
+
+.filterContentHidden
+{
+	margin-left:10px;
+	display:none;
+	background-color:Green;
+}
+
+.controlFlat
+{
+	border: solid 1px #000000;
+	cursor:hand;
+}
+
+.buttonContainer
+{
+	border-top:solid 1px Black;
+	margin-left:2px;
+	margin-right:2px;
+}
+
+.buttonFilter
+{
+	background-color:#b7cfee;
+	color:Black;
+	font-size:small;
+	text-align:center;	
+	border:solid 1px Black;
+	cursor:pointer;
+	margin:2px 2px 2px 2px;
+	vertical-align:middle;
+}
+
+.errorLg
+{
+    color: Red;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.titleBar
+{
+	border: solid 1px black;
+	padding: 4px;
+	background-color:#5d7b9d;
+	color:White;
+}
+
+.title
+{
+	 width:50%;
+	 vertical-align:top;
+	 font-weight:bold;
+	 font-size:1.1em;
+}
+
+.addNewForm
+{
+	background-color:#999999;
+	border:solid 1px black;
+	padding:4px;
+}
+
+.addNewForm tr td:first-child
+{
+	text-align:right;
+	vertical-align:top;
+}
+
+.commands
+{
+	float:right;
+}
+
+.addNewFormCommands
+{
+	padding-top:2px;
+	padding-right:2px;
+	text-align:right;
+}
+
+.gridView
+{
+	width:100%;
+	table-layout:fixed;
+	color:#333333;
+	border: solid 1px black;
+}
+
+.gridViewColumn td, th
+{
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	word-break:break-all;
+	padding:4px 4px 4px 4px;
+}
+
+.gridHeader,
+.gridHeader a:link,
+.gridHeader a:visited,
+.gridFooter,
+.gridFooter a:link,
+.gridFooter a:visited
+{
+	background-color:#5D7B9D;
+	font-weight:bold;
+	color:White;
+}
+
+
+.gridHeader a:link,
+.gridHeader a:visited
+{
+}
+
+.gridRow,
+.gridRow a:link,
+.gridRow a:visited
+{
+	background-color:#F7F6F3;
+	color:#333333;
+}
+
+.gridAlternatingRow,
+.gridAlternatingRow a:link,
+.gridAlternatingRow a:visited
+{
+	background-color:White;
+	color:#284775;
+}
+
+.gridEditRow,
+.gridEditRow a:link,
+.gridEditRow a:visited
+{
+	background-color:#999999;
+	color:White;
+}
+
+.gridSelectedRow
+{
+	background-color:#E2DED6;
+	font-weight:bold;
+	color:#333333;
+}
+
+.gridPager,
+.gridPager a:link,
+.gridPager a:visited
+{
+	background-color:#284775;
+	color:White;
+}

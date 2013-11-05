@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Extendable.SystemManager
+</name>
+</assembly>
+<members>
+<member name="M:Interprise.Extendable.SystemManager.Presentation.ManageMultipleUserSignIn.IManageMultipleUserSignInControlInterface.SetIncludeAllUser(System.Boolean)">
+	<summary>
+ To include/exclude all user to be force sign out.
+ </summary>
+	<param name="p_isSelect">True, to select all user to be force sign out. False, to exclude all user for sign out.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.SystemManager.Presentation.ManageMultipleUserSignIn.IManageMultipleUserSignInControlInterface.ForceSignOut">
+	<summary>
+ Signed out a user.
+ </summary>
+	<remarks>Method to sign out the user.</remarks>
+</member>
+</members>
+</doc>

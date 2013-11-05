@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Business.Customer
+</name>
+</assembly>
+<members>
+<member name="M:Interprise.Business.Customer.InvoiceRule.Dispose(System.Boolean)">
+	<summary>
+ Release the resources from all the datasets used by the System.ComponentModel.MarshalByValueComponent
+ </summary>
+	<param name="disposing"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Customer.InvoiceRule.UpdateAuditTrail(System.String,System.Data.DataSet)">
+	<summary>
+	</summary>
+	<param name="dsChanges"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,69 @@
+User-agent: *
+Disallow: /bin/
+Disallow: /descriptions/
+Disallow: /download/
+Disallow: /images/
+Disallow: /skins/
+Disallow: /EntityHelper/
+Disallow: /ActionService.asmx
+Disallow: /account1.aspx
+Disallow: /addtocart.aspx
+Disallow: /cancelnotification.aspx
+Disallow: /checkout2.aspx
+Disallow: /captcha.ashx
+Disallow: /checkoutanon.aspx
+Disallow: /checkoutpayment.aspx
+Disallow: /checkoutreview.aspx
+Disallow: /checkoutshipping.aspx
+Disallow: /checkoutshippingmult.aspx
+Disallow: /checkoutshippingmult2.aspx
+Disallow: /createaccount.aspx
+Disallow: /driver.aspx
+Disallow: /driver2.aspx
+Disallow: /disclaimer.aspx
+Disallow: /editaddress.aspx
+Disallow: /editaddress_process.aspx
+Disallow: /editaddress1.aspx
+Disallow: /engine.aspx
+Disallow: /gcCallback.aspx
+Disallow: /googlecheckout_postsale.aspx
+Disallow: /leadform1.aspx
+Disallow: /notification.aspx
+Disallow: /orderconfirmation.aspx
+Disallow: /orderfailed.aspx
+Disallow: /pageError.aspx
+Disallow: /pollvote.aspx
+Disallow: /popup.aspx
+Disallow: /ratecomment.aspx
+Disallow: /rateit.aspx
+Disallow: /receipt.aspx
+Disallow: /remove.aspx
+Disallow: /reorder.aspx
+Disallow: /secureauth.aspx
+Disallow: /secureform.aspx
+Disallow: /secureprocess.aspx
+Disallow: /selectaddress.aspx
+Disallow: /sendform.aspx
+Disallow: /setcurrency.aspx
+Disallow: /setlocale.aspx
+Disallow: /setvatsetting.aspx
+Disallow: /shoppingcart.aspx
+Disallow: /signin.aspx
+Disallow: /signout.aspx
+Disallow: /selectaddress1.aspx
+Disallow: /selectaddress_process.aspx
+Disallow: /tableorder_process.aspx
+Disallow: /Version.aspx
+Disallow: /wishlist.aspx
+Disallow: /watermark.axd
+
+
+
+
+
+
+
+
+
+
+

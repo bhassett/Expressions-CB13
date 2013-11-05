@@ -1,0 +1,60 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Extendable.Inventory
+</name>
+</assembly>
+<members>
+<member name="M:Interprise.Extendable.Inventory.Presentation.Item.ItemWizard.IItemWizardFormInterface.AddData(Interprise.Framework.Base.Shared.Enum.ItemType,System.String)">
+	<summary>
+ Add new item of specific item type.
+ </summary>
+	<param name="itemType">Type of the new item.</param>
+	<param name="itemName">Display name of the new item.</param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Inventory.Presentation.SharedControl.IItemInterface.LanguageCode">
+	<summary>
+ Use to filter the item that will be viewed based on the user selected language.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Inventory.Presentation.SharedControl.IItemInterface.MoveRecord(Interprise.Framework.Base.Shared.Enum.Movement)">
+	<summary>
+	</summary>
+	<param name="movement"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Inventory.Presentation.SystemManager.Category.ICategoryListDetailInterface.SelectedPageName">
+	<summary>
+ Sets the selected page that will be displayed.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Inventory.Presentation.SystemManager.Category.ICategoryListDetailInterface.LanguageCode">
+	<summary>
+ The language code that is currently loaded with respect to category description.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Inventory.Presentation.SystemManager.Category.ICategoryListDetailInterface.UploadImage">
+	<summary>
+ Upload the web images to the web server
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Inventory.Presentation.SystemManager.Category.ICategoryListDetailInterface.ResetCache">
+	<summary>
+ Reset web cache.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Inventory.Presentation.SystemManager.Category.ICategoryListDetailInterface.RemoveItemMapping">
+	<summary>
+ Remove items that are attached to a particular category.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

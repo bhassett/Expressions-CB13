@@ -1,0 +1,2058 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nsoftware.InEBank</name>
+    </assembly>
+    <members>
+        <member name="T:nsoftware.InEBank.AccountConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.AccountErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.AccountSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.AccountSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Account.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Account.GetInfo">
+            <summary>Identifies and describes all of the accounts accessible by the signed-on user.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Account.ReadOFXDataFile(System.String)">
+            <summary>Reads an OFX response from a file.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Account.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Account.WriteOFXDataFile(System.String)">
+            <summary>Writes the OFX response sent by the server to a file.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Account.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Account.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Account.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Account.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.Accounts">
+            <summary>A list of accounts the currently logged on user has with the FI.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.FIId">
+            <summary>Financial institution identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.FIOrganization">
+            <summary>Financial institution organization name.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.FIUrl">
+            <summary>Financial institution URL.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.LastUpdate">
+            <summary>Date and time of last update to account information on the server.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.OFXAccessKey">
+            <summary>Access key value received after a MFA authentication in a previous signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.OFXAppId">
+            <summary>OFX application identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.OFXAppVersion">
+            <summary>OFX application version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.OFXPassword">
+            <summary>User's password.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.OFXRequest">
+            <summary>The current OFX request aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.OFXResponse">
+            <summary>The current OFX response aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.OFXUser">
+            <summary>User's id.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.OFXVersion">
+            <summary>OFX API version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Account.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BankstatementConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BankstatementErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BankstatementSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BankstatementSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Bankstatement.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Bankstatement.GetClosingInfo">
+            <summary>Download a statement closing information for a bank account.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Bankstatement.GetImage(System.String,System.String)">
+            <summary>Request and retrieve a check or statement image (if available).</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Bankstatement.GetStatement">
+            <summary>Download a bank statement.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Bankstatement.ReadOFXDataFile(System.String)">
+            <summary>Reads an OFX response from a file.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Bankstatement.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Bankstatement.WriteOFXDataFile(System.String)">
+            <summary>Writes the OFX response sent by the server to a file.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Bankstatement.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Bankstatement.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Bankstatement.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Bankstatement.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.ClosingInfos">
+            <summary>A list of bank statement closing information for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.Transactions">
+            <summary>A list of transactions in a bank statement for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.AccountId">
+            <summary>The account number used for the next statement download.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.AccountType">
+            <summary>Indicates the type of bank account.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.AvailableBalance">
+            <summary>Amount of the available balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.AvailableBalanceDate">
+            <summary>Date of the available balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.BankId">
+            <summary>Number that identifies the bank.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.CurrencyCode">
+            <summary>Default currency code for this statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.EndDate">
+            <summary>End date of statement requested.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.FIId">
+            <summary>Financial institution identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.FIOrganization">
+            <summary>Financial institution organization name.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.FIUrl">
+            <summary>Financial institution URL.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.ImageFileName">
+            <summary>Filename and location to save the image content of a transaction or statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.IncludeImages">
+            <summary>Whether the server has to return data for bank transactions or closing statements images.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.LedgerBalance">
+            <summary>Amount of the ledger balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.LedgerBalanceDate">
+            <summary>Date of the ledger balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.OFXAccessKey">
+            <summary>Access key value received after a MFA authentication in a previous signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.OFXAppId">
+            <summary>OFX application identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.OFXAppVersion">
+            <summary>OFX application version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.OFXPassword">
+            <summary>User's password.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.OFXRequest">
+            <summary>The current OFX request aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.OFXResponse">
+            <summary>The current OFX response aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.OFXUser">
+            <summary>User's id.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.OFXVersion">
+            <summary>OFX API version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.StartDate">
+            <summary>Start date of requested transaction list.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Bankstatement.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BanktransferConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BanktransferErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BanktransferSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BanktransferSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BanktransferSyncTransfersEventArgs">
+            <summary>Event arguments for the SyncTransfers event.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Banktransfer.CancelTransfer(System.String)">
+            <summary>Cancels a scheduled transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Banktransfer.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Banktransfer.ModifyTransfer(System.String)">
+            <summary>Modifies a scheduled transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Banktransfer.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Banktransfer.SynchronizeTransfers(System.String)">
+            <summary>Synchronizes transfers on the client side with transfers on record on the server side.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Banktransfer.TransferFunds">
+            <summary>Transfers money from one account to another within the same or different Financial Institution(s).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Banktransfer.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Banktransfer.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Banktransfer.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Banktransfer.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Banktransfer.OnSyncTransfers">
+            <summary>Fired for each intrabank transfer transaction included in the synchronization response.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.SyncTransfers">
+            <summary>A list of bank transfers being synchronized.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.Transfer">
+            <summary>Identifies the bank transfer to be initiated or modified.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.FIId">
+            <summary>Financial institution identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.FIOrganization">
+            <summary>Financial institution organization name.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.FIUrl">
+            <summary>Financial institution URL.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.LostSync">
+            <summary>Whether the token in the synchronization request is older.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.OFXAccessKey">
+            <summary>Access key value received after a MFA authentication in a previous signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.OFXAppId">
+            <summary>OFX application identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.OFXAppVersion">
+            <summary>OFX application version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.OFXPassword">
+            <summary>User's password.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.OFXRequest">
+            <summary>The current OFX request aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.OFXResponse">
+            <summary>The current OFX response aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.OFXUser">
+            <summary>User's id.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.OFXVersion">
+            <summary>OFX API version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Banktransfer.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BillpaymentConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BillpaymentErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BillpaymentSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BillpaymentSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BillpaymentSyncPayeesEventArgs">
+            <summary>Event arguments for the SyncPayees event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.BillpaymentSyncPaymentsEventArgs">
+            <summary>Event arguments for the SyncPayments event.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.AddPayee">
+            <summary>Add a payee to server's payee list.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.CancelPayment(System.String)">
+            <summary>Cancels a scheduled bill payment.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.DeletePayee(System.String)">
+            <summary>Deletes a payee identified by ListId from the server payee list.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.GetStatus(System.String)">
+            <summary>Obtains the current processing status of a payment.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.ModifyPayee(System.String)">
+            <summary>Modifies a payee identified by ListId that already exists in the payee list.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.ModifyPayment(System.String)">
+            <summary>Modifies a scheduled payment.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.PayBill">
+            <summary>Pays a bill to a given payee.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.SynchronizePayees(System.String)">
+            <summary>Synchronizes payees on the client side with payees on record on the server side.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Billpayment.SynchronizePayments(System.String)">
+            <summary>Synchronizes bills paid on the client side with paid bills on record on the server side.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Billpayment.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Billpayment.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Billpayment.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Billpayment.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Billpayment.OnSyncPayees">
+            <summary>Fired for each payee included in the synchronization response.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Billpayment.OnSyncPayments">
+            <summary>Fired for each payment transaction included in the synchronization response.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.Payee">
+            <summary>Identifies the payee to be added, modified or paid to.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.Payment">
+            <summary>Identifies the payment to be scheduled or modified.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.SyncPayees">
+            <summary>A list of payees being synchronized.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.SyncPayments">
+            <summary>A list of bill payments being synchronized.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.FIId">
+            <summary>Financial institution identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.FIOrganization">
+            <summary>Financial institution organization name.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.FIUrl">
+            <summary>Financial institution URL.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.LostSync">
+            <summary>Whether the token in the synchronization request is older.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.OFXAccessKey">
+            <summary>Access key value received after a MFA authentication in a previous signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.OFXAppId">
+            <summary>OFX application identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.OFXAppVersion">
+            <summary>OFX application version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.OFXPassword">
+            <summary>User's password.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.OFXRequest">
+            <summary>The current OFX request aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.OFXResponse">
+            <summary>The current OFX response aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.OFXUser">
+            <summary>User's id.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.OFXVersion">
+            <summary>OFX API version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Billpayment.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.CcstatementConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.CcstatementErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.CcstatementSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.CcstatementSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ccstatement.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ccstatement.GetClosingInfo">
+            <summary>Download a credit card statement closing information.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ccstatement.GetImage(System.String,System.String)">
+            <summary>Request and retrieve a statement closing information image (if available).</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ccstatement.GetStatement">
+            <summary>Downloads statement for a credit card account.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ccstatement.ReadOFXDataFile(System.String)">
+            <summary>Reads an OFX response from a file.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ccstatement.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ccstatement.WriteOFXDataFile(System.String)">
+            <summary>Writes the OFX response sent by the server to a file.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Ccstatement.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Ccstatement.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Ccstatement.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Ccstatement.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.ClosingInfos">
+            <summary>A list of credit card statement closing information for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.Transactions">
+            <summary>A list of transactions in a credit card statement for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.AvailableBalance">
+            <summary>Amount of the available balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.AvailableBalanceDate">
+            <summary>Date of the available balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.CardNumber">
+            <summary>Credit card number.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.CurrencyCode">
+            <summary>Default currency code for this statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.EndDate">
+            <summary>End date of statement requested.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.FIId">
+            <summary>Financial institution identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.FIOrganization">
+            <summary>Financial institution organization name.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.FIUrl">
+            <summary>Financial institution URL.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.ImageFileName">
+            <summary>Filename and location to save the image content of a closing statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.IncludeImages">
+            <summary>Whether the server has to return data for closing statements images.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.LedgerBalance">
+            <summary>Amount of the ledger balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.LedgerBalanceDate">
+            <summary>Date of the ledger balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.OFXAccessKey">
+            <summary>Access key value received after a MFA authentication in a previous signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.OFXAppId">
+            <summary>OFX application identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.OFXAppVersion">
+            <summary>OFX application version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.OFXPassword">
+            <summary>User's password.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.OFXRequest">
+            <summary>The current OFX request aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.OFXResponse">
+            <summary>The current OFX response aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.OFXUser">
+            <summary>User's id.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.OFXVersion">
+            <summary>OFX API version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.StartDate">
+            <summary>Start date of requested transaction list.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ccstatement.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.FiprofileConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.FiprofileErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.FiprofileSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.FiprofileSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Fiprofile.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Fiprofile.GetProfile">
+            <summary>Download the message set profile for a given Financial Institution.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Fiprofile.ReadOFXDataFile(System.String)">
+            <summary>Reads an OFX response from a file.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Fiprofile.RequestChallengeQuestions">
+            <summary>Download the challenge questions when Multi-Factor Authentication (MFA) is required.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Fiprofile.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Fiprofile.SendChallengeAnswers">
+            <summary>Send the answers to challenge questions for a Multi-Factor Authentication (MFA).</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Fiprofile.WriteOFXDataFile(System.String)">
+            <summary>Writes the OFX response sent by the server to a file.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Fiprofile.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Fiprofile.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Fiprofile.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Fiprofile.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.ChallengeQuestions">
+            <summary>A list of MFA challenge question/answer pairs required for Multi-Factor Authentication.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.MessageSets">
+            <summary>A list of message sets supported by the current Financial Institution.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.SignOnDetails">
+            <summary>A list of sign on details for the current Financial Institution.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.ClientRouting">
+            <summary>Client routing capabilities of the Financial Institution.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIAddress1">
+            <summary>Street address.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIAddress2">
+            <summary>Street address.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIAddress3">
+            <summary>Street address.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FICity">
+            <summary>City.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FICountry">
+            <summary>Country.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FICustomerServicePhone">
+            <summary>Phone number for Customer Service.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIEmailAddress">
+            <summary>Email address for contacting the Financial Institution.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIHomePage">
+            <summary>Home web page for general information about the Financial Institution.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIId">
+            <summary>Financial institution identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIName">
+            <summary>Name.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIOrganization">
+            <summary>Financial institution organization name.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIPostalCode">
+            <summary>Postal Code.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIProfileDate">
+            <summary>The date the current profile was posted.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIState">
+            <summary>State.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FITechSupportPhone">
+            <summary>Phone number for Technical Support.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.FIUrl">
+            <summary>Financial institution URL.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.LastUpdate">
+            <summary>Date and time of the last profile update.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.OFXAccessKey">
+            <summary>Access key value received after a MFA authentication in a previous signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.OFXAppId">
+            <summary>OFX application identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.OFXAppVersion">
+            <summary>OFX application version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.OFXPassword">
+            <summary>User's password.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.OFXRequest">
+            <summary>The current OFX request aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.OFXResponse">
+            <summary>The current OFX response aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.OFXUser">
+            <summary>User's id.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.OFXVersion">
+            <summary>OFX API version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Fiprofile.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.InvstatementConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.InvstatementErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.InvstatementSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.InvstatementSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Invstatement.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Invstatement.GetClosingInfo">
+            <summary>Download a statement closing information for an investment account.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Invstatement.GetImage(System.String,System.String)">
+            <summary>Request and retrieve a check or statement image (if available).</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Invstatement.GetStatement">
+            <summary>Downloads statement for an investment account.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Invstatement.ReadOFXDataFile(System.String)">
+            <summary>Reads an OFX response from a file.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Invstatement.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Invstatement.WriteOFXDataFile(System.String)">
+            <summary>Writes the OFX response sent by the server to a file.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Invstatement.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Invstatement.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Invstatement.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Invstatement.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.Balances">
+            <summary>A list of balances in an investment statement for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.ClosingInfos">
+            <summary>A list of investment statement closing information for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.OpenOrders">
+            <summary>A list of open orders in an investment statement for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.Positions">
+            <summary>A list of positions in an investment statement for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.Securities">
+            <summary>A list of securities in an investment statement for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.Transactions">
+            <summary>A list of transactions in an investment statement for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.AccountId">
+            <summary>The account number used for the next statement download.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.AsOfDate">
+            <summary>Date for returned list of positions.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.AvailableCash">
+            <summary>Cash balance across all sub-accounts.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.BrokerId">
+            <summary>Unique identifier for the FI.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.BuyingPower">
+            <summary>Buying power.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.CurrencyCode">
+            <summary>Default currency code for this statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.EndDate">
+            <summary>End date of requested transaction list.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.FIId">
+            <summary>Financial institution identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.FIOrganization">
+            <summary>Financial institution organization name.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.FIUrl">
+            <summary>Financial institution URL.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.ImageFileName">
+            <summary>Filename and location to save the image content of a transaction or statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.IncludeBalances">
+            <summary>Specifies whether or not to include balances in the statement download.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.IncludeImages">
+            <summary>Whether the server has to return data for bank transactions or closing statements images.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.IncludeOpenOrders">
+            <summary>Specifies whether or not to include open orders in the response.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.IncludePositions">
+            <summary>Specifies whether or not to include positions in the statement download.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.IncludeTransactions">
+            <summary>Whether to include transactions in the statement download.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.MarginBalance">
+            <summary>Margin balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.MarketingInfo">
+            <summary>Marketing information (at most one).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.OFXAccessKey">
+            <summary>Access key value received after a MFA authentication in a previous signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.OFXAppId">
+            <summary>OFX application identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.OFXAppVersion">
+            <summary>OFX application version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.OFXPassword">
+            <summary>User's password.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.OFXRequest">
+            <summary>The current OFX request aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.OFXResponse">
+            <summary>The current OFX response aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.OFXUser">
+            <summary>User's id.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.OFXVersion">
+            <summary>OFX API version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.ShortBalance">
+            <summary>Market value of all short positions.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.StartDate">
+            <summary>Start date of requested transaction list.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.StatementDate">
+            <summary>Date and time for the statement download.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Invstatement.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.LoanstatementConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.LoanstatementErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.LoanstatementSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.LoanstatementSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Loanstatement.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Loanstatement.GetClosingInfo">
+            <summary>Download a statement closing information for a bank account.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Loanstatement.GetImage(System.String,System.String)">
+            <summary>Request and retrieve a check or statement image (if available).</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Loanstatement.GetStatement">
+            <summary>Download a loan statement.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Loanstatement.ReadOFXDataFile(System.String)">
+            <summary>Reads an OFX response from a file.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Loanstatement.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Loanstatement.WriteOFXDataFile(System.String)">
+            <summary>Writes the OFX response sent by the server to a file.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Loanstatement.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Loanstatement.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Loanstatement.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Loanstatement.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.ClosingInfos">
+            <summary>A list of loan statement closing information for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.Transactions">
+            <summary>A list of transactions in a bank statement for the date range ( StartDate and EndDate ) selected.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.AccountId">
+            <summary>The account number used for the next statement download.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.AccountType">
+            <summary>Indicates the type of the loan account.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.AvailableBalance">
+            <summary>Amount of the available balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.AvailableBalanceDate">
+            <summary>Date of the available balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.CurrencyCode">
+            <summary>Default currency code for this statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.EndDate">
+            <summary>End date of statement requested.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.FIId">
+            <summary>Financial institution identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.FIOrganization">
+            <summary>Financial institution organization name.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.FIUrl">
+            <summary>Financial institution URL.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.ImageFileName">
+            <summary>Filename and location to save the image content of a transaction or statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.IncludeImages">
+            <summary>Whether the server has to return data for bank transactions or closing statements images.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.OFXAccessKey">
+            <summary>Access key value received after a MFA authentication in a previous signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.OFXAppId">
+            <summary>OFX application identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.OFXAppVersion">
+            <summary>OFX application version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.OFXPassword">
+            <summary>User's password.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.OFXRequest">
+            <summary>The current OFX request aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.OFXResponse">
+            <summary>The current OFX response aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.OFXUser">
+            <summary>User's id.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.OFXVersion">
+            <summary>OFX API version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.PrincipalBalance">
+            <summary>Amount of the loan principal balance for the current statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.PrincipalBalanceDate">
+            <summary>Date and time of the current loan principal balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.StartDate">
+            <summary>Start date of requested transaction list.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.TotalPrincipalLTD">
+            <summary>Total principal paid loan to date.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Loanstatement.TotalPrincipalYTD">
+            <summary>Total principal paid year to date.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ofxaggregate.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ofxaggregate.HasXPath(System.String)">
+            <summary>Checks whether a certain XPath exists inside the aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxaggregate.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxaggregate.Namespaces">
+            <summary>Collection of namespaces in the current namespace stack.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxaggregate.XChildren">
+            <summary>Collection of child elements of the current element.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxaggregate.Aggregate">
+            <summary>The full text of the current aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxaggregate.XElement">
+            <summary>The name of the current element.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxaggregate.XNamespace">
+            <summary>The namespace of the current element.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxaggregate.XParent">
+            <summary>The parent of the current element.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxaggregate.XPath">
+            <summary>Provides a way to point to a specific element in the document.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxaggregate.XPrefix">
+            <summary>The prefix of the current element.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxaggregate.XText">
+            <summary>The text of the current element.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.OfxbatchConnectionStatusEventArgs">
+            <summary>Event arguments for the ConnectionStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.OfxbatchErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.OfxbatchSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InEBank.OfxbatchSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ofxbatch.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ofxbatch.PostRequest">
+            <summary>Submits a batch of requests to an OFX server through a single connection.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ofxbatch.ReadOFXDataFile(System.String)">
+            <summary>Reads an OFX response from a file.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ofxbatch.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Ofxbatch.WriteOFXDataFile(System.String)">
+            <summary>Writes the OFX response sent by the server to a file.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Ofxbatch.OnConnectionStatus">
+            <summary>Fired to indicate changes in connection state.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Ofxbatch.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Ofxbatch.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InEBank.Ofxbatch.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.Firewall">
+            <summary>A set of properties related to firewall access.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.OFXBatchItems">
+            <summary>A list of items (requests/response pairs) that make up the current OFX batch.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.FIId">
+            <summary>Financial institution identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.FIOrganization">
+            <summary>Financial institution organization name.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.FIUrl">
+            <summary>Financial institution URL.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.OFXAppId">
+            <summary>OFX application identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.OFXAppVersion">
+            <summary>OFX application version.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.OFXPassword">
+            <summary>User's password.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.OFXUser">
+            <summary>User's id.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Ofxbatch.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.AccType">
+            <summary>Indicates the type of account.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.Aggregate">
+            <summary>Wrapper for an account information.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.BankId">
+            <summary>If the returned ServiceType is BANK, the BankId indicates routing and transit number of  the account.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.BranchId">
+            <summary>This is applicable for bank accounts only (neither credit card, nor investment accounts).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.Checking">
+            <summary>Whether the account has check writing privileges (applicable for investment accounts only).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.Description">
+            <summary>This is optional to be returned in the response and applicable to all service types  (BANK, INVESTMENT, CREDITCARD).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.Id">
+            <summary>This is the account number available at the current FI.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.IsTransferDestination">
+            <summary>This is not applicable for investment accounts (i.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.IsTransferSource">
+            <summary>This is not applicable for investment accounts (i.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.Key">
+            <summary>This is not applicable for investment accounts (i.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.Phone">
+            <summary>Telephone number for the account.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.ServiceType">
+            <summary>Service-specific account type.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.Status">
+            <summary>The status of the current account.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.SupportDownload">
+            <summary>True if account supports transaction detail downloads.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.AccountDetail.USProductType">
+            <summary>The USProductType classifies investment accounts according to their account type.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Firewall.#ctor">
+            <summary>The firewall the component will connect through.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Firewall.AutoDetect">
+            <summary>This property tells the component whether or not to automatically detect and use firewall system settings, if available.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Firewall.FirewallType">
+            <summary>This property determines the type of firewall to connect through.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Firewall.Host">
+            <summary>This property contains the name or IP address of firewall (optional).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Firewall.Password">
+            <summary>This property contains a password if authentication is to be used when connecting through the firewall.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Firewall.Port">
+            <summary>This property contains the TCP port for the firewall Host .</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Firewall.User">
+            <summary>This property contains a user name if authentication is to be used connecting through a firewall.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Certificate.#ctor">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Certificate.#ctor(System.String)">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Certificate.#ctor(System.Byte[])">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Certificate.#ctor(nsoftware.InEBank.CertStoreTypes,System.String,System.String,System.String)">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Certificate.#ctor(nsoftware.InEBank.CertStoreTypes,System.String,System.String,System.Byte[])">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Certificate.#ctor(nsoftware.InEBank.CertStoreTypes,System.Byte[],System.String,System.String)">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Certificate.#ctor(nsoftware.InEBank.CertStoreTypes,System.Byte[],System.String,System.Byte[])">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.EffectiveDate">
+            <summary>The date which this certificate becomes valid.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.EncodedB">
+            <summary>The certificate (PEM/base64 encoded).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.Encoded">
+            <summary>The certificate (PEM/base64 encoded).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.ExpirationDate">
+            <summary>The date the certificate expires.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.ExtendedKeyUsage">
+            <summary>A comma-delimited list of extended key usage identifiers.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.Issuer">
+            <summary>The issuer of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.PrivateKey">
+            <summary>The private key of the certificate (if available).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.PrivateKeyAvailable">
+            <summary>Shows whether a PrivateKey is available for the  selected certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.PrivateKeyContainer">
+            <summary>The name of the PrivateKey container for the  certificate (if available).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.PublicKey">
+            <summary>The public key of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.PublicKeyAlgorithm">
+            <summary>Textual description of the public key algorithm of the  certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.PublicKeyLength">
+            <summary>The length of the certificate public key (in bits).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.SerialNumber">
+            <summary>The serial number of the certificate encoded as a  string.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.SignatureAlgorithm">
+            <summary>Textual description of the signature algorithm of the  certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.StoreB">
+            <summary>The name of the certificate store for the client certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.Store">
+            <summary>The name of the certificate store for the client certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.StorePassword">
+            <summary>If the certificate store is of a type that requires  a password, this property is used to specify that  password in order to open the certificate store.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.StoreType">
+            <summary>The type of certificate store for this certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.Subject">
+            <summary>The subject of the certificate used for client authentication.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.SubjectAltNames">
+            <summary>A comma-separted lists of alternative subject names of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.ThumbprintMD5">
+            <summary>MD5 hash of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.ThumbprintSHA1">
+            <summary>SHA1 hash of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.Usage">
+            <summary>Textual description of UsageFlags .</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.UsageFlags">
+            <summary>Flags that show intended use for the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Certificate.Version">
+            <summary>The certificate's version number.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.Aggregate">
+            <summary>Aggregates are pieces of XML taken from the financial institution's original response.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.BalanceClosing">
+            <summary>Closing statement balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.BalanceOpening">
+            <summary>Opening statement balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.CreditLimit">
+            <summary>Current credit limit.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.DateClose">
+            <summary>Closing statement date.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.DateDue">
+            <summary>Next payment due date.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.DateEnd">
+            <summary>End date of transaction data for this statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.DateOpen">
+            <summary>Opening statement date.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.DateStart">
+            <summary>Start date of transaction data for this statement.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.FITID">
+            <summary>Unique identifier assigned by financial institution to identify this particular statement closing information.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.ImageRef">
+            <summary>Server specified unique identifier for the statement closing image.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.ImageRefType">
+            <summary>Type of retrieval method for actual statement closing image.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.InterestRate">
+            <summary>Current loan interest rate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.InterestRateType">
+            <summary>Type of the current loan interest rate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.MinimumPayment">
+            <summary>Next minimum amount due.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.TotalCredit">
+            <summary>Total credit posted on the account for this statement (period indicated by DateStart and DateEnd ).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.TotalDebit">
+            <summary>Total of debit posted on the account for this statement (period indicated by DateStart and DateEnd ).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.TotalFees">
+            <summary>Total fees.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ClosingDetail.TotalInterest">
+            <summary>Total interest.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.Aggregate">
+            <summary>Wrapper for a bank transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.Amount">
+            <summary>This is the amount of money exchanged during a given transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.CheckNumber">
+            <summary>The check number as found on the original check.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.Date">
+            <summary>This is the date the transaction was made by the account holder as recorded by the financial institution,  stored as a string.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.DatePosted">
+            <summary>This is the date the transaction was posted to the financial institution, stored as a string.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.Escrow">
+            <summary>This is the total amount of payment applied to Escrow.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.FITID">
+            <summary>Transaction Id assigned by the financial institution.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.ImageRef">
+            <summary>Server specified unique identifier for the transaction image.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.ImageRefType">
+            <summary>Type of retrieval method for actual transaction image.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.Interest">
+            <summary>This is the amount of payment applied to Interest.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.Memo">
+            <summary>The memo field stores a notice from the payee to the customer as a string.</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:nsoftware.InEBank.TransactionDetail.PayeeName" -->
+        <member name="P:nsoftware.InEBank.TransactionDetail.Principal">
+            <summary>This is the amount of payment applied to Principal.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.TxType">
+            <summary>This is the type of transaction that was made on the account.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransactionDetail.TypeDescription">
+            <summary>A description of the transaction type.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor(System.String,System.String,System.String,System.Int32,System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor(System.String,System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.String)">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor(System.String,System.String,System.Int32,System.String,System.Int32,System.String,System.String)">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Int32,System.String)">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor(System.String,System.String,System.Int32,System.String,System.Int32,System.String)">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor(System.String,System.String,System.Int32)">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.TransferDetail.#ctor(System.String)">
+            <summary>This type corresponds to a single bank transfer.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.Aggregate">
+            <summary>Wrapper for a bank transfer being initiated, modified or synchronized.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.Amount">
+            <summary>Amount of the bank transfer being initiated, modified or synchronized.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.CurrencyCode">
+            <summary>Default currency code for this transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.DateDue">
+            <summary>Date the bank transfer (being initiated, modified or synchronized) is scheduled to be sent.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.DatePosted">
+            <summary>Posted date of the bank transfer being initiated, modified or synchronized.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.DateProcessed">
+            <summary>Transfer processing date.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.DateProjected">
+            <summary>Projected date of the transfer.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.FromAccountId">
+            <summary>Account number where the transfer (being initiated, modified or synchronized) is originating from.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.FromAccountKey">
+            <summary>Checksum for the bank where money has to be withdrawn (international banks only).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.FromAccountType">
+            <summary>Type of account where the transfer is originating from.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.FromBankId">
+            <summary>Number that identifies the bank where the transfer is originating from.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.FromBranchId">
+            <summary>Identifier for the bank where the transfer is originating from (international banks only).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.Id">
+            <summary>Server-assigned id of the bank transfer being initiated, modified or synchronized.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.Status">
+            <summary>Processing staus code of the bank transfer being initiated, modified, canceled or synchronized.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.ToAccountId">
+            <summary>Account number where the bank transfer ((being initiated, modified or synchronized) is made to.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.ToAccountKey">
+            <summary>Checksum for the bank where money has to be deposited to (international banks only).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.ToAccountType">
+            <summary>Type of account where money has to be deposited to.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.ToBankId">
+            <summary>Number that identifies the bank where money has to be deposited to.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.ToBranchId">
+            <summary>Identifier for the bank where money has to be deposited to (international banks only).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.TransferDetail.TxType">
+            <summary>Transaction type of the bank transfer being synchronized.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PayeeDetail.#ctor">
+            <summary>This type corresponds to a single payee.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PayeeDetail.#ctor(System.String)">
+            <summary>This type corresponds to a single payee.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PayeeDetail.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>This type corresponds to a single payee.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PayeeDetail.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>This type corresponds to a single payee.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.Account">
+            <summary>User's account number with the payee.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.Addr1">
+            <summary>Payee's address line 1.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.Addr2">
+            <summary>Payee's address line 2.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.Addr3">
+            <summary>Payee's address line 3.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.Aggregate">
+            <summary>Wrapper for payee details.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.City">
+            <summary>Payee's city.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.Country">
+            <summary>Payee's country.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.DaysToPay">
+            <summary>Minimum number of business days required to complete the payment transaction to this payee.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.Id">
+            <summary>Server-assigned payee identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.IdScope">
+            <summary>Scope of the payee Id .</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.ListId">
+            <summary>Server-assigned payee list record ID for this payee.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.Name">
+            <summary>Name of the payee to whom the given Id or ListId corresponds.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.Phone">
+            <summary>Payee's phone.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.PostalCode">
+            <summary>Payee's postal code.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.State">
+            <summary>Payee's state This is required to be provided in : a payment request if payee detailed information is used to identify the payee (i.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PayeeDetail.TxType">
+            <summary>Transaction type performed on the payee being synchronized.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PaymentDetail.#ctor">
+            <summary>This type corresponds to a single bill payment.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PaymentDetail.#ctor(System.String,System.String,System.String,System.Int32,System.String,System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>This type corresponds to a single bill payment.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PaymentDetail.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>This type corresponds to a single bill payment.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PaymentDetail.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>This type corresponds to a single bill payment.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PaymentDetail.#ctor(System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>This type corresponds to a single bill payment.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PaymentDetail.#ctor(System.String,System.String,System.String,System.Int32)">
+            <summary>This type corresponds to a single bill payment.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PaymentDetail.#ctor(System.String,System.String,System.Int32)">
+            <summary>This type corresponds to a single bill payment.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.PaymentDetail.#ctor(System.String)">
+            <summary>This type corresponds to a single bill payment.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.Aggregate">
+            <summary>Wrapper for a payment details.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.Amount">
+            <summary>Payment amount.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.BillRef">
+            <summary>Biller-supplied reference information when paying a bill, if available.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.CheckNumber">
+            <summary>Check number assigned by the server to this payment.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.CurrencyCode">
+            <summary>Default currency code for this transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.DateDue">
+            <summary>Processing date requested by user for the payment to be sent.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.DateProcessed">
+            <summary>Payment processing date.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.FromAccountId">
+            <summary>Account number from which the money for this payment is drawn.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.FromAccountType">
+            <summary>Indicates the type of account from which the money for this payment is drawn.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.FromBankId">
+            <summary>Number that identifies the bank where the money is to be withdrawn.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.Id">
+            <summary>Transaction Id assigned by the server to the payment.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.Memo">
+            <summary>Memo attached to this payment from the customer to payee.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.PayeeAccount">
+            <summary>User's account number with the payee this payment was sent to.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.PayeeAggregate">
+            <summary>Wrapper for the payee details this payment was sent to.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.PayeeId">
+            <summary>Server-assigned identifier to the payee this payment was sent to.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.PayeeListId">
+            <summary>Server-assigned payee list record ID for the payee this payment was sent to.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.Status">
+            <summary>Payment processing status.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.ToAccountId">
+            <summary>Account number to which the money for this payment is sent.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.ToAccountType">
+            <summary>Indicates the type of account to which this payment is sent.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.ToBankId">
+            <summary>Number that identifies the bank where the money is to be deposited.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PaymentDetail.TxType">
+            <summary>Transaction type performed on the payment being synchronized.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.ChallengeDetail.#ctor">
+            <summary>This type corresponds to a single MFA challenge question/answer pair.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.ChallengeDetail.#ctor(System.String)">
+            <summary>This type corresponds to a single MFA challenge question/answer pair.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.ChallengeDetail.#ctor(System.String,System.String)">
+            <summary>This type corresponds to a single MFA challenge question/answer pair.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ChallengeDetail.Aggregate">
+            <summary>Wrapper for a MFA challenge question.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ChallengeDetail.Answer">
+            <summary>User's answer to the challenge question identified by QuestionId .</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ChallengeDetail.Question">
+            <summary>The textual challenge question.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.ChallengeDetail.QuestionId">
+            <summary>Identifier for the challenge question.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.Aggregate">
+            <summary>Wrapper for a message set.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.ClosingInfoAvailability">
+            <summary>This is an indicator of the Financial Institution's statement closing information capabilities.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.ClosingInfoImage">
+            <summary>This is an indicator of the Financial Institution's statement closing image capabilities.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.Language">
+            <summary>Languages the server supports.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.Name">
+            <summary>Name of a message set supported by the given FI.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.Recovery">
+            <summary>This is an indicator of the Financial Institution's error-recovery capabilities.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.Refresh">
+            <summary>If true, the server can support Synchronized Refresh.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.SecurityLevel">
+            <summary>Security level of the Message Set.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.ServiceProvider">
+            <summary>If the OFX server has been outsourced to a service provider other than the Financial Institution, then the name of that provider should appear here.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.SignOnRealm">
+            <summary>This is the name of the SignOn realm used by this message set.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.SyncMode">
+            <summary>Level of synchronization offered by the server for this message set.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.TransportSecurity">
+            <summary>It indicates whether any security measures are taken at the Transport Layer for this message set.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.TxImage">
+            <summary>It indicates whether FI supports transaction image download for this message set.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.URL">
+            <summary>This is the address of the server to which OFX (HTTP) connections are made for this particular message set.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.FIMessageSet.Version">
+            <summary>This version number corresponds to the version of the OFX Specification which the server uses for the message set.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.Aggregate">
+            <summary>Wrapper for signon information.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.AuthToken">
+            <summary>Text label for the Authentication Token.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.AuthTokenFirst">
+            <summary>Indicates whether server requires clients to send the Authentication Token as part of first signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.AuthTokenUrl">
+            <summary>URL where Authentication Token information is provided by the institution operating the OFX server.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.CaseSensitive">
+            <summary>Indicates whether the password is case-sensitive or not.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.CharType">
+            <summary>Type of characters the password can contain.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.ClientUIdReq">
+            <summary>Indicates whether the Client Unique Identifier is required to be included in the signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.MaxPwdLength">
+            <summary>Maximum number of characters a SignOn password on this server can have.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.MFAChallengeFirst">
+            <summary>Indicates whether the Multi-Factor Authentication (MFA) challenge is required to be included in the first signon  to this server.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.MFAChallengeReq">
+            <summary>Indicates whether the Multi-Factor Authentication (MFA) challenge is required by this FI server.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.MinPwdLength">
+            <summary>Minimum number of characters a SignOn password on this server can have.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.PINChange">
+            <summary>It indicates whether the server accepts any PIN Change Requests at all.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.PINChangeFirst">
+            <summary>Indicates whether server requires clients to change password as part of first signon.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.Realm">
+            <summary>SignOn realm used by this message set.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.Spaces">
+            <summary>It indicates whether the password can contain whitespaces.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.Special">
+            <summary>It indicates whether the password can contain special characters.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.UserCred1Q">
+            <summary>Text prompt for user credential.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SignOnDetail.UserCred2Q">
+            <summary>Text prompt for user credential.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.BalanceDetail.Aggregate">
+            <summary>Wrapper for an investment balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.BalanceDetail.Amount">
+            <summary>The value of the current balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.BalanceDetail.BalType">
+            <summary>The type of balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.BalanceDetail.Description">
+            <summary>A description of the current balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.BalanceDetail.Name">
+            <summary>The name for the current balance.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.BalanceDetail.TypeDescription">
+            <summary>A description of the balance type.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.Aggregate">
+            <summary>Wrapper for a general open order, each pertaining to a different aggregate type.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.BuyType">
+            <summary>Type of purchase for this open order.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.DatePlaced">
+            <summary>Date-time the order was placed.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.Duration">
+            <summary>Indicates how long the open order is good for.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.FITID">
+            <summary>Transaction Id assigned by the financial institution.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.Memo">
+            <summary>Other information about an open order (at most one).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.OOType">
+            <summary>Type for general open order aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.Restriction">
+            <summary>Special restriction on the open order.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.SecurityId">
+            <summary>Security ID for this open order.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.SellType">
+            <summary>Type of sale.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.SubAccountType">
+            <summary>This identifies the type of a sub-account.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.TypeDescription">
+            <summary>A description of the open order type.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.Units">
+            <summary>Quantity of the security the open order is for.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OpenOrderDetail.UnitType">
+            <summary>What the units represent.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.Account">
+            <summary>Indicates the type of sub-account where the position is held in.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.Aggregate">
+            <summary>Wrapper for a position information.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.DatePriceAsOf">
+            <summary>Date and time of unit price and market value.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.MarketValue">
+            <summary>Current market value of this position.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.Memo">
+            <summary>Memo regarding this position.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.Option">
+            <summary>Indicates position type for the given sub-account where this position takes place.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.PosType">
+            <summary>Type for general position aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.SecurityId">
+            <summary>The security ID for this position.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.TypeDescription">
+            <summary>A description of the postion type.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.UnitPrice">
+            <summary>Unit price.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.PositionDetail.Units">
+            <summary>Quantity of positions.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.Aggregate">
+            <summary>Wrapper for security information.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.AssetClass">
+            <summary>Asset Class for the security (at most one).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.FITID">
+            <summary>Transaction Id assigned by the financial institution.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.Memo">
+            <summary>Memo regarding this security.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.Name">
+            <summary>Full name of the security.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.SecType">
+            <summary>The type of security.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.SecurityId">
+            <summary>Security identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.Ticker">
+            <summary>Ticker symbol of the security.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.TypeDescription">
+            <summary>A description of the security type.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.UnitPrice">
+            <summary>This is the current unit price of the security as provided by the server.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.SecurityDetail.Yield">
+            <summary>Current yield reported as portion of the fund's assets (at most one).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.Aggregate">
+            <summary>Wrapper for an investment statement transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.Date">
+            <summary>For other than banking transactions, this is the date when the transaction trade occurred,  and for stock splits, this is the day of record stored as a string.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.DateSettle">
+            <summary>For other than banking transactions, this is the date when settlement occurred,  and for stock splits, this is the execution date.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.FITID">
+            <summary>Transaction Id assigned by the financial institution.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.Memo">
+            <summary>Other information (memo) regarding this transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.Name">
+            <summary>Name for this bank transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.SecurityId">
+            <summary>Security ID for this investment transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.SubAccountFund">
+            <summary>The sub-account associated with the funds for the transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.SubAccountSec">
+            <summary>Sub-account type for the security.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.Total">
+            <summary>Transaction amount.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.TxType">
+            <summary>This is the type of transaction that was made on the account.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.TypeDescription">
+            <summary>A description of the transaction type.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.UnitPrice">
+            <summary>Price per commonly-quoted unit, excluding markup/markdown.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.InvTransactionDetail.Units">
+            <summary>The quantity for security-based actions other than stock splits.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.XMLNamespace.#ctor">
+            <summary>An XML namespace from the current namespace stack.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.XMLNamespace.#ctor(System.String,System.String)">
+            <summary>An XML namespace from the current namespace stack.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.XMLNamespace.Prefix">
+            <summary>The Prefix for the Namespace.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.XMLNamespace.URI">
+            <summary>Namespace URI associated with the corresponding Prefix .</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.XMLElement.#ctor">
+            <summary>An element contained within the XML document.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.XMLElement.Name">
+            <summary>The Name field provides the local name (without prefix) of the element.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.XMLElement.Namespace">
+            <summary>Namespace of the element.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.XMLElement.Prefix">
+            <summary>Prefix of the element (if any).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.XMLElement.XText">
+            <summary>The inner text of the element.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.OFXBatchItem.#ctor">
+            <summary>This type corresponds to a single OFX batch item in the list of OFX batch items.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OFXBatchItem.Request">
+            <summary>OFX request aggregate.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OFXBatchItem.RequestType">
+            <summary>The type of OFX request included in the batch.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OFXBatchItem.RequestUID">
+            <summary>The current batch item's unique transaction ID.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.OFXBatchItem.Response">
+            <summary>The OFX response aggregate.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Proxy.#ctor">
+            <summary>The proxy the component will connect to.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Proxy.#ctor(System.String,System.Int32)">
+            <summary>The proxy the component will connect to.</summary>
+        </member>
+        <member name="M:nsoftware.InEBank.Proxy.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>The proxy the component will connect to.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Proxy.AuthScheme">
+            <summary>This property is used to tell the component which  type of authorization to perform when connecting to the proxy.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Proxy.AutoDetect">
+            <summary>This property tells the component whether or not to automatically detect and use proxy system settings, if available.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Proxy.Password">
+            <summary>This property contains a password if authentication is to be used for the proxy.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Proxy.Port">
+            <summary>This property contains the TCP port for the proxy Server (default 80).</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Proxy.Server">
+            <summary>If a proxy Server is given, then the HTTP request is sent to the proxy instead of the server otherwise specified.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Proxy.SSL">
+            <summary>This property determines when to use SSL for the connection to the proxy.</summary>
+        </member>
+        <member name="P:nsoftware.InEBank.Proxy.User">
+            <summary>This property contains a user name, if authentication is to be used for the proxy.</summary>
+        </member>
+    </members>
+</doc>

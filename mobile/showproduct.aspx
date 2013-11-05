@@ -1,0 +1,1 @@
+<%@ Page CodeFile="showproduct.aspx.cs" Inherits="InterpriseSuiteEcommerce.mobile.showproduct" Language="c#" %>                     

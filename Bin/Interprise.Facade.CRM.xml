@@ -1,0 +1,870 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Facade.CRM
+</name>
+</assembly>
+<members>
+<member name="P:Interprise.Facade.CRM.SystemManager.OpportunityStageFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the facade.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public Overridable</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.OpportunityStageFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.OpportunityStageFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.SystemManager.OpportunityStageFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.SystemManager.OpportunityStageDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="opportunityStageDataset">The OpportunityStage dataset to use.</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.CRM.SystemManager.OpportunityStageFacade">
+	<summary>
+ The business facade class used for opportunity stage.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.ActivityCategoryFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the facade.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public Overridable</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.ActivityCategoryFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.ActivityCategoryFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.SystemManager.ActivityCategoryFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.SystemManager.ActivityCategoryDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="p_activityCategoryDataset">The activityCategory dataset to use</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.CRM.SystemManager.ActivityCategoryFacade">
+	<summary>
+ The business facade class used for activity category
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.OutboundCallFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.OutboundCallFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.OutboundCallFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.OutboundCallFacade.#ctor(Interprise.Framework.Base.DatasetGateway.CRM.CampaignWaveDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="p_campaignWaveDataset">Instance of CurrentDataset Property</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.CRM.OutboundCallFacade">
+	<summary>
+ The business facade class used for outbound calls
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.FollowUpFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.FollowUpFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.CRM.PredefinedNotesFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.SystemManager.PredefinedNotesDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="predefinedNotesDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.PredefinedNotesFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemPredefinedNotes.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.CRM.PredefinedNotesFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="p_transactionType">The transaction type of the row.</param>
+	<remarks>Override this is a generated document code is needed, as this is automatically
+ invoked in the UpdateDataset procedure.</remarks>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesTransactionListFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesTransactionListFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesTransactionListFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesTransactionListFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function <em>LoadDaset.</em></summary>
+	<value><para><font color="black">The command set assigned in this property.</font></para></value>
+</member><member name="P:Interprise.Facade.CRM.PredefinedNotesTransactionListFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function <em>UpdateDataset().</em></summary>
+	<value>The command set that is assigned in this property.</value>
+</member><member name="M:Interprise.Facade.CRM.PredefinedNotesTransactionListFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.SystemManager.PredefinedNotesDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="predefinedNotesDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.ActivityResourceFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the facade.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public Overridable</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.ActivityResourceFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.ActivityResourceFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.SystemManager.ActivityResourceFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.SystemManager.ActivityResourceDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="activityResourceDataset">The ActivityResource dataset gateway to use.</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.CRM.SystemManager.ActivityResourceFacade">
+	<summary>
+ The business facade class used for activity resource
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.TerritoryFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the facade.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public Overridable</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.TerritoryFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.TerritoryFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.SystemManager.TerritoryFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.SystemManager.TerritoryDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="territoryDataset">The Territory dataset to use.</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.CRM.SystemManager.TerritoryFacade">
+	<summary>
+ The business facade class used for territory
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.CampaignFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.CampaignFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.CampaignFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the facade.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public Overridable</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="M:Interprise.Facade.CRM.CampaignFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.CampaignDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="campaignDataset">The Campaign dataset gateway to use</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.CampaignFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="transactionType">The transaction type of the row.</param>
+	<remarks>Override this is a generated document code is needed, as this is automatically
+ invoked in the UpdateDataset procedure.</remarks>
+</member><member name="M:Interprise.Facade.CRM.CampaignFacade.AddCampaign">
+	<summary>
+ Adds a row to the campaign table with default values
+ </summary>
+	<returns>Returns the newly created campaign data row</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.CampaignFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns>True if the current row has no validation errors.</returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.CRM.CampaignFacade.OnColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+ Performs special operation when certain values of row changed.
+ </summary>
+	<param name="sender">The campaign dataset</param>
+	<param name="e">The System.Data.DataColumnChangeEventArgs</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.CampaignFacade.SetActualCost(System.Data.DataColumnChangeEventArgs)">
+	<summary>
+ Set the actual cost based on home currency and actual cost rate
+ </summary>
+	<param name="e">The System.Data.DataColumnChangeEventArgs</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.CampaignFacade.SetBudgetCost(System.Data.DataColumnChangeEventArgs)">
+	<summary>
+ Set the budget cost based on home currency and budget cost rate
+ </summary>
+	<param name="e">The System.Data.DataColumnChangeEventArgs</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.CampaignFacade.SetEstRevenue(System.Data.DataColumnChangeEventArgs)">
+	<summary>
+ Set the estimated revenue based on home currency and estimated revenue rate
+ </summary>
+	<param name="e">The System.Data.DataColumnChangeEventArgs</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.CampaignFacade.CheckDefaultCampaign">
+	<summary>
+ Determines if the Default Campaign record is already existing
+ </summary>
+	<returns>True if default campaign is existing or is created successfully.
+ False otherwise.</returns>
+	<remarks>If the Default Campaign is not existing it will try to create one</remarks>
+</member><member name="T:Interprise.Facade.CRM.CampaignFacade">
+	<summary>
+ The business facade class used for campaign
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Facade.CRM.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Facade.CRM.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Interprise.Facade.CRM.SystemManager.OpportunityCertaintyFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.SystemManager.OpportunityCertaintyGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="opportunityCertaintyDataset">The OpportunityCertainty dataset to use.</param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.ServiceContractTypeFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the facade.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public Overridable</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.ServiceContractTypeFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.ServiceContractTypeFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.SystemManager.ServiceContractTypeFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.SystemManager.ServiceContractTypeDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="serviceContractTypeDataset">The ServiceContractType dataset to use.</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.CRM.SystemManager.ServiceContractTypeFacade">
+	<summary>
+ The business facade class used for service contract type.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:Interprise.Facade.CRM.LeadFacade.ErrorRaised">
+	<summary>
+ Event triggered when an error occurs in column changed event of Lead
+ table.
+ </summary>
+	<example>
+		<code lang="CS">
+ private void m_leadFacade_ErrorRaised(System.Exception ex) 
+ {
+    MessageWindow.Show(ex);
+ }
+    </code>
+		<code lang="VB">
+ Protected Overridable Sub m_leadFacade_ErrorRaised(ByVal ex As System.Exception) Handles m_leadFacade.ErrorRaised
+    MessageWindow.Show(ex)
+ End Sub
+    </code>
+	</example>
+</member><member name="E:Interprise.Facade.CRM.LeadFacade.AssignedToChanged">
+	<summary>Event triggered when the AssignedTo is changed.</summary>
+	<example>
+		<code inline="False">
+		</code>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.LeadFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.LeadFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.LeadFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.LeadFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.LeadDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="leadDataset">The Lead Dataset Gateaway to use.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.LeadFacade.CRMLead_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+ Performs the necessary changes for each value changed.
+ Temporarily remove handler to prevent infinite call
+ </summary>
+	<param name="sender">The Lead dataset</param>
+	<param name="e">The System.Data.DataColumnChangeEventArgs</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.LeadFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="transactionType">The transaction type of the row.</param>
+	<remarks>Override this is a generated document code is needed, as this is automatically
+ invoked in the UpdateDataset procedure.</remarks>
+</member><member name="M:Interprise.Facade.CRM.LeadFacade.AddLead(System.String,System.String)">
+	<summary>
+ Adds a new Lead row to the table.
+ </summary>
+	<param name="waveCode">The wave linked to the new lead</param>
+	<param name="leadName">Default lead name.</param>
+</member><member name="M:Interprise.Facade.CRM.LeadFacade.LeadToOpportunity(Interprise.Framework.Base.DatasetGateway.Customer.NewCustomerDetailDatasetGateway,System.String,System.String)">
+	<summary>
+ Generates an opportunity for the converted lead.
+ </summary>
+	<param name="customerCode">CustomerCode for this opportunity.</param>
+	<param name="contactCode">Default Contact for this opportunity.</param>
+	<returns>Returns the opportunitycode if convertion is successful.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.LeadFacade.LeadToNote(Interprise.Framework.Base.DatasetGateway.Customer.NewCustomerDetailDatasetGateway,System.String,System.String)">
+	<summary>
+ Generates a note record based on the Lead Details.
+ </summary>
+	<param name="entityCode">CustomerCode for the new note.</param>
+	<param name="contactCode">Contact for the new note.</param>
+	<returns>Returns the note id of the generated note record.</returns>
+</member><member name="M:Interprise.Facade.CRM.LeadFacade.QualifyLead">
+	<summary>Activates the lead.</summary>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub QualifyThisLead()
+    'Check if there's a lead to qualify
+    If Me.LeadDataset.CRMLead.Rows.Count = 1
+        'Call the QualifyLead method to mak a lead active.
+        Me.m_leadFacade.QualifyLead()
+        
+        'Save the lead afterwards.
+        Me.UpdateDataset()
+        
+        'Supply additional codes here.
+        
+    End If    
+ End Sub
+    </code>
+		<code lang="CS">
+ private void QualifyThisLead() {
+        // Check if there's a lead to qualify
+        if ((this.LeadDataset.CRMLead.Rows.Count == 1)) {
+            // Call the QualifyLead method to mak a lead active.
+            this.m_leadFacade.QualifyLead();
+            // Save the lead afterwards.
+            this.UpdateDataset();
+            // Supply additional codes here.
+        }
+    }
+    </code>
+	</example>
+</member><member name="M:Interprise.Facade.CRM.LeadFacade.DisqualifyLead">
+	<summary>Disqualifies the lead.</summary>
+</member><member name="M:Interprise.Facade.CRM.LeadFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<remarks>If set to true, there were no errors found.</remarks>
+	<example>
+		<code inline="False">
+		</code>
+	</example>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns>True if current row has no validation errors.</returns>
+</member><member name="T:Interprise.Facade.CRM.LeadFacade">
+	<summary>
+ The business facade class used for lead
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.OpportunityCompetitorFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the facade.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public Overridable</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.OpportunityCompetitorFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.OpportunityCompetitorFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.SystemManager.OpportunityCompetitorFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.SystemManager.OpportunityCompetitorDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="competitorDataset">The OpportunityCompetitor dataset gateway to use.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.SystemManager.OpportunityCompetitorFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="transactionType">The transaction type of the row.</param>
+	<remarks>Override this is a generated document code is needed, as this is automatically
+ invoked in the UpdateDataset procedure.</remarks>
+</member><member name="T:Interprise.Facade.CRM.SystemManager.OpportunityCompetitorFacade">
+	<summary>
+ The business facade class used for opportunity competitor.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.OpportunityReasonFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the facade.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public Overridable</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.OpportunityReasonFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.CRM.SystemManager.OpportunityReasonFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.CRM.SystemManager.OpportunityReasonFacade.#ctor(Interprise.Framework.CRM.DatasetGateway.SystemManager.OpportunityReasonDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="opportunityReasonDataset">The OpportunityReason dataset to use.</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.CRM.SystemManager.OpportunityReasonFacade">
+	<summary>
+ The business facade class used for opportunity reason
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

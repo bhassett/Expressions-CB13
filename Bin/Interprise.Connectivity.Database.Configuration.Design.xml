@@ -1,0 +1,468 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Connectivity.Database.Configuration.Design
+</name>
+</assembly>
+<members>
+<member name="M:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityManager.AddCompanySetting(System.String)">
+	<summary>
+	</summary>
+	<param name="newCompanyName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityManager.AddCompanySetting(Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityData)">
+	<summary>
+	</summary>
+	<param name="newCompanySetting"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityManager.AddConnectionSetting(System.String)">
+	<summary>
+	</summary>
+	<param name="connectionSettingName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityManager.AddConnectionSetting(System.Configuration.ConnectionStringSettings)">
+	<summary>
+	</summary>
+	<param name="connectivityStringSetting"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.CurrentException">
+	<summary>
+ Exception to be logged.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.XMLSavePath">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.#ctor(System.Collections.Specialized.NameValueCollection)">
+	<summary>
+	</summary>
+	<param name="ignore"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.ExceptionToDatabaseLog(System.String)">
+	<summary>
+ Log the exception to the database.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.ConfigureFlatFileConfiguration">
+	<summary>
+ Configures the configuration file for exception handling purposes.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.ExceptionToXMLFile(System.String)">
+	<summary>
+ Create a xml file for the specified exception.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.ExceptionToEventLog">
+	<summary>
+ Log the exception to the database.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.FailedToWriteLogException">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.GetExceptionMessage">
+	<summary>
+ Gets the exception message coming from the database.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.GetFormattedException(System.Exception)">
+	<summary>
+ Gets the formatted exception.
+ </summary>
+	<param name="ex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.HandleException(System.Exception,System.Guid)">
+	<summary>
+ Calls the method Show of the class MessageWindow.
+ </summary>
+	<param name="exception"></param>
+	<param name="handlingInstanceId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.IsEventLogFull">
+	<summary>
+ Gets the size of application log in Event Log.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.IsLogLimitReached(System.String)">
+	<summary>
+ Checks if destination of a log is not full.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.LogTo(System.String)">
+	<summary>
+ Determined on how the exception to be handle.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.MessageExceptionHandler.SendExceptionToIS">
+	<summary>
+ Send the current exception.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityData.DefaultData">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityData.OnlineCompanyDatabase">
+	<summary>
+ Name of the database instance to use for storage. Instance must be defined in Data configuration.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityData.OnlinePluginDatabase">
+	<summary>
+ Name of the database instance to use for storage. Instance must be defined in Data configuration.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityData.OnlineEmailDatabase">
+	<summary>
+ Name of the database instance to use for storage. Instance must be defined in Data configuration.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityData.OfflineCompanyDatabase">
+	<summary>
+ Name of the database instance to use for storage. Instance must be defined in Data configuration.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityData.OfflinePluginDatabase">
+	<summary>
+ Name of the database instance to use for storage. Instance must be defined in Data configuration.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.Configuration.ConnectivityData.OfflineEmailDatabase">
+	<summary>
+ Name of the database instance to use for storage. Instance must be defined in Data configuration.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.AutoSendEmail">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.CurrentExceptionLogSize">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.GetDatabaseLog">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.GetDatabaseLogScript">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.MaximumLimitInMB">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.MessageParameter">
+	<summary>
+ Gets or sets all assigned parameters in the method show in the class MessageWindow.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.NumberOfTries">
+	<summary>
+ Gets the number of tries to save or read the data from database.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.TemporaryDirectory">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.TemporaryFile">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.WhereToLog">
+	<summary>
+ Gets where the exception will be logged.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.XMLFileLocation">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.GetLaymansTermDesription(System.Exception)">
+	<summary>
+	</summary>
+	<param name="exception"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.AddAttachment(Interprise.Licensing.Base.Connect.EMailMessage@,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="emailMessage"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.AddBodyContent(Interprise.Licensing.Base.Connect.EMailMessage@)">
+	<summary>
+	</summary>
+	<param name="emailMessage"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.AttachISBugFile">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.AssignExceptionDetail(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="ExceptionMessage"></param>
+	<param name="ErrorDetail"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.ClearAllLogs">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.ClearEventLog">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.ClearDatabaseLog">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.ClearXMLLog">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.ClearTemporaryFiles">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.DatabaseLogToFile">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.EventLogToFile">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.ExceptionToTextFile">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.GetExtendedFileName">
+	<summary>
+ Gets the extended file name to be attached to default file name.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.GetErrorDetail">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.GetExceptionLogDetail(System.Int32)">
+	<summary>
+ Retrieves the error details and how to reproduce part of the the log
+ </summary>
+	<returns>
+ The first value is the error detail while the second is the how to reproduce part.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.GetRow(System.String,System.String[],System.String,System.String)">
+	<summary>
+ Get Data Row from the database that contains the fields specified.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="fieldNames"></param>
+	<param name="tableName"></param>
+	<param name="condition"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.GetRows(System.String,System.String[],System.String,System.String)">
+	<summary>
+ Get Data Rows from the database that contains the fields specified.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="fieldNames"></param>
+	<param name="tableName"></param>
+	<param name="condition"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.GetMessageInfo(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="FindInfo"></param>
+	<param name="ErrorMessage"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.ProcessDatabaseLog(System.String)">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.ProcessEventLog(System.String,System.Boolean)">
+	<summary>
+ Retrieves all event logs and write it to a file.
+ </summary>
+	<returns>The maximum required log.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.ProcessXMLLog(System.String,System.String)">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.SendExceptionNotUsingConnect">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.WriteErrorToFile(System.String,System.Diagnostics.EventLogEntry)">
+	<summary>
+ Write into a file.
+ </summary>
+	<param name="objLog"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.XMLToDataset(System.String)">
+	<summary>
+	</summary>
+	<param name="FileLocation"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.Utility.XMLLogToFile">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.TextExceptionFormatter.UseErrorDetails">
+	<summary>
+ Checks if formatter will write exception or write the generate details.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.TextExceptionFormatter.WriteAdditionalInfo(System.Collections.Specialized.NameValueCollection)">
+	<summary>
+ Write the additional info in a correct way.
+ </summary>
+	<param name="additionalInformation"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.TextExceptionFormatter.WriteDescription">
+	<summary>
+ Do not need to write the description
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.TextExceptionFormatter.WriteException(System.Exception,System.Exception)">
+	<summary>
+ Write the exception.
+ </summary>
+	<param name="exceptionToFormat"></param>
+	<param name="outerException"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.XMLExceptionFormatter.#ctor(System.Xml.XmlWriter,System.Exception)">
+	<summary>
+	</summary>
+	<param name="writer"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.XMLExceptionFormatter.Format">
+	<summary>
+  Formats the exception and all nested inner exceptions.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Connectivity.Database.Configuration.Design.ExceptionHandling.XMLExceptionFormatter">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.AppConfig.SystemInformation.FindCurrency(System.String)">
+	<summary>
+	</summary>
+	<param name="currencyCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.AppConfig.SystemInformation.FindPhoneFormat(System.String)">
+	<summary>
+	</summary>
+	<param name="countryCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.AppConfig.SystemInformation.AddCurrency(System.String,System.String[])">
+	<summary>
+	</summary>
+	<param name="fields"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.AppConfig.LicenseInformation.PowerUser">
+	<summary>
+	</summary>
+	<value>User Code</value>
+	<returns>Assigned Power User value</returns>
+	<remarks>Get Assigne Power User</remarks>
+</member><member name="M:Interprise.Connectivity.Database.Configuration.Design.InterpriseConfigurationManager.IsOfflineConnectionStringSetting(System.String)">
+	<summary>
+	</summary>
+	<param name="connectionSettingName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.AppConfig.InterpriseConfiguration.InventoryPreference">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Connectivity.Database.Configuration.Design.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Connectivity.Database.Configuration.Design.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,499 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Interprise.Presentation.Shipping</name>
+    </assembly>
+    <members>
+        <member name="P:Interprise.Presentation.Shipping.Base.CarrierGateway.CarrierAccountControlAttribute.CarrierAccountControl">
+            <summary>
+            Gets the class name of carrier account control tied up to a gateway
+            plugin
+            </summary>
+            <value>The class name of carrier account control tied up to a gateway plug-in.</value>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Base.CarrierGateway.CarrierAccountSection.UndoChanges">
+            <summary>
+            To undo the changes in the dataset.
+            </summary>
+        </member>
+        <member name="P:Interprise.Presentation.Shipping.Base.CarrierGateway.CarrierCertificationToolAttribute.CarrierCertificationToolControl">
+            <summary>
+            Gets the class name of carrier account control tied up to a gateway
+            plugin
+            </summary>
+            <value>The class name of carrier account control tied up to a gateway plug-in.</value>
+        </member>
+        <member name="P:Interprise.Presentation.Shipping.Base.CarrierGateway.CarrierSpecificControlAttribute.CarrierSpecificControl">
+            <summary>
+            Gets the class name of carrier specific control tied up to a gateway
+            plugin
+            </summary>
+            <value>The class name of carrier specific control tied up to a gateway plug-in.</value>
+        </member>
+        <member name="P:Interprise.Presentation.Shipping.Base.CarrierGateway.CarrierSpecificSection.IsReadOnly">
+            <summary>
+            To disable or enable the selected controls
+            </summary>
+        </member>
+        <member name="F:Interprise.Presentation.Shipping.BatchShipment.BatchShipmentForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.BatchShipment.BatchShipmentForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.BatchShipment.BatchShipmentForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.BatchShipment.BatchShipmentMainControl.AssignDetailTrackingNumber">
+            <summary>
+            Sets tracking number in the ShipmentDetail Table
+            </summary>
+        </member>
+        <member name="F:Interprise.Presentation.Shipping.BatchShipment.BatchShipmentMainControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.BatchShipment.BatchShipmentMainControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.BatchShipment.BatchShipmentMainControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.BatchShipment.SalesOrderControl.ClearDropDownSelectedItem">
+            <summary>
+            Uncheck the selected column in the drop down repobrowser.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.BatchShipment.SalesOrderControl.ColumnChanging(System.Object,System.Data.DataColumnChangeEventArgs)">
+            <summary>
+            Fires when changing a column value.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.NoticeTemplate.NoticeTemplateSection.GenerateBody(System.String,System.Int32)">
+            <summary>
+            Sets or Gets the filtering of DataViewHeader and DataViewDetail.  
+            </summary>
+            <param name="packageCode"></param>
+            <param name="x"></param>
+        </member>
+        <member name="F:Interprise.Presentation.Shipping.NoticeTemplate.NoticeTemplateSection.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.NoticeTemplate.NoticeTemplateSection.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.NoticeTemplate.NoticeTemplateSection.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.NoticeTemplate.ShipmentNotice.ShipNotice.CreateHtml(System.Int32)">
+            <summary>
+            Sets and gets the body of Email, exported to HTML.
+            </summary>
+            <param name="p_index"></param>
+        </member>
+        <member name="P:Interprise.Presentation.Shipping.ReportControlSection.CurrentReportCommand">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShipOption.MainShipOptionSectionContainer.IsCarrierValid">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Interprise.Presentation.Shipping.SystemManager.CertificationTool.CertificationToolControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.CertificationTool.CertificationToolControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.CertificationTool.CertificationToolControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShippingMethodCarrierDetails.ShippingMethodCarrierDetailsSection.LoadDefaultCarrierDetails">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShippingMethodCarrierDetails.ShippingMethodCarrierDetailsSection.LoadDetails(System.String)">
+            <summary>
+            To Load the datas from Shipping Method 
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShippingMethodCarrierDetails.ShippingMethodCarrierDetailsSection.ClearObject">
+            <summary>
+            To clear the text for all the controls
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShippingMethodCarrierDetails.ShippingMethodCarrierDetailsSection.SetSearchComboBillingTypeItems(System.String)">
+            <summary>
+            To set the BillingType for specific Carrier Code
+            </summary>
+            <param name="p_carrierCode"></param>CarrierCode using for specific Shipping Method
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShippingMethodCarrierDetails.ShippingMethodCarrierDetailsSection.SearchComboFilter(System.String)">
+            <summary>
+            To set the additional filter of all Search Combo Control
+            </summary>
+            <param name="carrierCode"></param> CarrierCode using for specific Shipping Method
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShippingMethodCarrierDetails.ShippingMethodCarrierDetailsSection.CreateChanges">
+            <summary>
+            this method will change a specified column in the main dataset when changes has been made in the custom plugin dataset
+            DateModified column will be used as a trigger for the changes.
+            </summary> Note: No bidding in ShipmentShippingMethodDefault
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShippingMethodCarrierDetails.ShippingMethodCarrierDetailsSection.ShippingMethodCarrierDetailsSection_PluginTabPageChanged(System.Object,Interprise.Presentation.Base.ExtendedXtraTabContol.SelectedPageChangedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Interprise.Presentation.Shipping.Shipping.MainScreen.PrintDialogForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Shipping.MainScreen.PrintDialogForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Shipping.MainScreen.PrintDialogForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Sections.ContentSection.CheckEmptyRow">
+            <summary>
+            Set disable or read only when empty row is created.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Sections.ContentSection.FilterWarehouse(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="warehouseCode"></param>Selected Warehouse on WarehouseCode Combo.
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Sections.ContentSection.SetVisibleUMVolumeAndWeight">
+            <summary>
+            Method use to set visible unit measure for dimensions and weight.
+            Note: All the columns below is set visible false in the designer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Sections.ContentSection.SetOverSizedShippingMethod">
+            <summary>
+            This method will override the package shipping method, dimension and weight, if the remaining items on the grid is oversized item.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Sections.PackageSection.EnableDisableReturnPreviewLabel">
+            <summary>
+            To sets Enable or Disable the Return Preview Label button 
+            To sets the colReturnFreightRate and repReturnTrackingNumber button whether visible
+            </summary>
+        </member>
+        <member name="T:Interprise.Presentation.Shipping.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Interprise.Presentation.Shipping.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Interprise.Presentation.Shipping.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.CreateShippingNoticeTemplate(System.String)">
+            <summary>
+            This process allows you to create your own email, by using the shipping templates and attached the
+            created report to your email HTML or PDF. 
+            </summary>
+            <param name="p_trackingNumber"></param>
+            <param name="p_emailAdd"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.EnableDisableAddPackage">
+            <summary>
+            Indicates whether the AddPackage control is enable
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.EnableDisableControls(System.Boolean)">
+            <summary>
+            enable or disable editing controls
+            </summary>
+            <param name="p_isEnable"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.GetWarehouseList">
+            <summary>
+            To create a warehouse list on warehouseCode Combo.
+            This warehouse list is from CustomerInvoiceDetail or CustomerSalesOrderDetail.
+            </summary> 
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.GetLabel">
+            <summary>
+            To get the label
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.GenerateReturnOnGetLabel(System.Boolean)">
+            <summary>
+            Triggers the GetReturnLabel method if config Returns.EnableBeforeComplet set to true.
+            NOTE: If True to include generation of Return Label during GetLabel action. If False to manually generate Return label.
+            </summary>
+            <param name="p_isGenerate"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.LoadDefaultsFromShipMethod(System.Data.DataRow)">
+            <summary>
+            This method is to populate the shipping method details.
+            </summary>
+            <param name="shipMethodRow"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.OnDisableMenuItems">
+            <summary>
+            Set disable menu items
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.ProcessShortCutKey(System.String)">
+            <summary>
+            Triggers when pressing any shorcut key
+            </summary>
+            <param name="keyPress"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.PreviewLabel(System.Boolean,System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="isPreview"></param>
+            <param name="isPrint"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.PrintLabel">
+            <summary>
+            This method will print the single label or multi-package labels.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.SetEnableSectionValidation(System.String)">
+            <summary>
+            Check if void,has tracking number and complete shipment
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.WriteEmail">
+            <summary>
+            Set an email body based on the information of origin and destination.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.buttonAddPackage_Click(System.Object,System.EventArgs)">
+            <summary>
+            This event will add new package.
+            Note: this button will enable if isMultipackage is true in shipping Conguration.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.buttonRemovePackage_Click(System.Object,System.EventArgs)">
+            <summary>
+            This event will delete the current package.
+            NOTE: You can delete shipment package if the tracking number is "To be generated".
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.comboWarehouseCode_EditValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            This event fires when changing the Warehouse Filter.
+            Note: ComboWarehouseCode will enable if SO or SI using multiple warehouse.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.control_GetLabelDone">
+            <summary>
+            This events fires after getting the Shipping Label.
+            This will calculate the freight rate, enable or disable selected control.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.control_GetVoidLabelDone">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.m_ShipPackageControl_RefreshRate">
+            <summary>
+            To get the shipment rate if Rate is Equal to Zero.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.control_OnShippingMethodChanged(System.String)">
+            <summary>
+            This event is to get the creditial in shipping method configuration. 
+            </summary>
+            <param name="ShipMethodCode"></param>The Shipping Method from the Sales Order or Invoice.
+            Note : If the remaining item is Prepacked, the shipment will use the dimensions of the item.
+                 : If the remaining item is OverSized, the shipment will use the shipping method and dimesions of the item.       
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.m_ShipPackageControl_SavePackage">
+            <summary>
+            To save every package.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.m_ShipPackageControl_SelectedPackageChanged(System.String,System.String)">
+            <summary>
+            This event fires when changing the package.
+            To display all the details inside the package.
+            </summary>
+            <param name="CarrierCode"></param>
+            <param name="TrackingNumber"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.m_CarrierControl_OnCarrierChanged(System.Data.DataRow)">
+            <summary>
+            This event fires when changing the Carrier.
+            This will load every control of the Carrier.
+            </summary>
+            <param name="selectedRow"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.control_OnMultiPackageChecked(System.Boolean)">
+            <summary>
+            This method will disable or enable the content control
+            when MultiPackage options is checked       
+            </summary>
+            <param name="isCheck"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.MainShip.MainShipControl.Print">
+            <summary>
+            This method will print all the labels on Shipment Form
+            </summary>
+        </member>
+        <member name="F:Interprise.Presentation.Shipping.Shipping.MainScreen.Sections.ShippingLabel.ShippingLabelReport.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Shipping.MainScreen.Sections.ShippingLabel.ShippingLabelReport.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Shipping.MainScreen.Sections.ShippingLabel.ShippingLabelReport.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Rate.RateControl.SearchComboFilter(System.String)">
+            <summary>
+            To set the additional filter of all Search Combo Control
+            </summary>
+            <param name="carrierCode"></param> CarrierCode using for specific Shipping Method
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Rate.RateControl.SetCarrierRateColumn(System.String)">
+            <summary>
+            Method use to set visible the column of carrier rate
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Rate.RateControl.RequestCarrierRate">
+            <summary>
+            To request rates qoutes for multi carrier.
+            This method doesn't show any messagewindow when getting an error upon requesting the rate.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Rate.RateControl.searchFromZip_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Forcing the control's validating event to be raised when pressing the enter key by setting the focus to the next control.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.Rate.RateControl.searchToZip_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Forcing the control's validating event to be raised when pressing the enter key by setting the focus to the next control.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShipConfig.ShipConfigDetailControl.UndoChanges">
+            <summary>
+            Method use to undo changes made to the dataset.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShipConfig.ShipConfigMainControl.UndoChanges">
+            <summary>
+            To undo the changes in the dataset.
+            </summary>
+        </member>
+        <member name="F:Interprise.Presentation.Shipping.SystemManager.ShipmentCarrierPackaging.ShipmentCarrierPackagingForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShipmentCarrierPackaging.ShipmentCarrierPackagingForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShipmentCarrierPackaging.ShipmentCarrierPackagingForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Interprise.Presentation.Shipping.SystemManager.ShipmentCarrierPackaging.ShipmentCarrierPackagingSection.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShipmentCarrierPackaging.ShipmentCarrierPackagingSection.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Interprise.Presentation.Shipping.SystemManager.ShipmentCarrierPackaging.ShipmentCarrierPackagingSection.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

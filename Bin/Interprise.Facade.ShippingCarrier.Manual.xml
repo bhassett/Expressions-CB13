@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Interprise.Facade.ShippingCarrier.Manual</name>
+    </assembly>
+    <members>
+        <member name="P:Interprise.Facade.ShippingCarrier.Manual.ManualSpecificFacade.IsReturn">
+            <summary>
+            This property will check if its generate a return label
+            </summary>
+        </member>
+    </members>
+</doc>

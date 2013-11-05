@@ -1,0 +1,16 @@
+﻿#tblOrderHistory { width: 100%; padding: 5; border-spacing: 0; border: solid 1px #cccccc; }
+#tblOrderHistory thead {  background: url(images/header_background.jpg); text-align:center; } 
+#tblOrderHistory thead tr th { border-right:solid 1px #D1D1D1; border-bottom:solid 1px #D1D1D1; padding: 5px; } 
+#tblOrderHistory th.order-row { width:2%; }
+#tblOrderHistory th.order-number { width:12%; }
+#tblOrderHistory th.order-payment-status { width:22%; }
+#tblOrderHistory th.order-shipping-status { width:13%; }
+#tblOrderHistory th.order-total { width:10%; }
+#tblOrderHistory th.order-notes { width:15%; }
+#tblOrderHistory th.order-date { width:10%; }
+#tblOrderHistory tbody tr td { border-bottom:solid 1px #D1D1D1; border-right:solid 1px #D1D1D1; text-align: center; vertical-align: top; padding: 6px; }
+#tblOrderHistory td.rownumber { background-color:#eeeeee; border-right:solid 1px #D1D1D1; border-bottom:solid 1px #D1D1D1; vertical-align: middle; font-weight: bold; }
+#content div { margin-top: 3px; }
+.order-history-pager input[type=text] { width: 50px; }
+.order-history-pagination { float: right; margin: 0; }
+.order-history-page-number { display: inline; }

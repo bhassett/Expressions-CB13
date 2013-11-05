@@ -1,0 +1,3481 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Facade.SystemManager
+</name>
+</assembly>
+<members>
+<member name="P:Interprise.Facade.SystemManager.DashboardManagerFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.DashboardManagerFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.DashboardManagerFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="P:Interprise.Facade.SystemManager.BusinessIntelligenceFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BusinessIntelligenceFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="M:Interprise.Facade.SystemManager.BusinessIntelligenceFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.BusinessIntelligenceDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="datasetBusinessIntelligence"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermGroupFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermGroupFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermGroupFacade.CurrentReportType">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermGroupFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermGroupFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermGroupFacade.LoadGroupDetailUnSelectedCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermGroupFacade.PaymentTermGroup">
+	<summary>Gets the selected payment term group.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermGroupFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermGroupFacade.AssignNewPaymentTermGroup(System.String)">
+	<summary>Adds new payment term group row in SystemPaymentTermGroup Table.</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.PaymentTermGroupFacade~AssignNewPaymentTermGroup(ByVal%20String,%20ByVal%20Boolean,%20ByVal%20String,%20ByVal%20Date,%20ByVal%20String,%20ByVal%20Date).html">
+ AssignNewPaymentTermGroup(String, Boolean, String, Date, String, Date)</a>
+	</overloads>
+	<param name="paymentTermGroup">The Payment Term Group to be added.</param>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermGroupFacade.AssignNewPaymentTermGroup(System.String,System.Boolean,System.String,System.DateTime,System.String,System.DateTime)">
+	<summary>Adds new payment term group row in SystemPaymentTermGroup Table.</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.PaymentTermGroupFacade~AssignNewPaymentTermGroup(ByVal%20String).html">
+ AssignNewPaymentTermGroup(String)</a>
+	</overloads>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermGroupFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.PaymentTermGroupDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="paytemTermGroupDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermGroupFacade.AddAllPaymentTermToGroupDetail">
+	<summary><para>Adds all payment term row in SystemPaymentTermGroupDetail tables.</para></summary>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermGroupFacade.AddPaymentTermGroupDetail(System.Data.DataRow,System.Boolean)">
+	<summary><para>Adds selected payment term row in SystemPaymentTermGroupDetail Table</para></summary>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermGroupFacade.DeleteAllPaymentTermGroupDetail">
+	<summary><para>Delete all payment term row in SystemPaymentTermGroupDetail tables.</para></summary>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermGroupFacade.DeletePaymentTermGroupDetail(System.Data.DataRow)">
+	<summary>
+		<para>Deletes selected payment term row in SystemPaymentTermGroupDetail
+    Table</para>
+	</summary>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermGroupFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemPaymentTerm.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.JobRoleFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.JobRoleFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.JobRoleFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.JobRoleFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.JobRoleFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.JobRoleFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.JobRoleFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.JobRoleDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="JobRoleDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.JobRoleFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.JobRoleFacade.SystemJobRole_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.CurrencyCode">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.CurrencyDecimalDigits">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.CurrencyDecimalSeparator">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.CurrencyGroupSeparator">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.CurrencyGroupSizes">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.CurrencyNegativePattern">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.CurrencyPositivePattern">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.CurrencyFormatInfo">
+	<summary>
+ Gets the format info of the current currency.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.ExchangeRate">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.IsDefaultActiveCurrency">
+	<summary>Gets if the selected currency is equals to EURO,US and UK</summary>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.IsHomeCurrency">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.LoadCommandSet(System.String)">
+	<summary>
+	</summary>
+	<param name="DocumentCode"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.Symbol">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CurrencyFacade.UpdateCommandSet">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.AssignNewCurrency(System.String)">
+	<summary>Adds new currency row in the SystemCurrency Table</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.CurrencyFacade~AssignNewCurrency(ByVal%20String,%20ByVal%20Decimal,%20ByVal%20String,%20ByVal%20Boolean,%20ByVal%20String,%20ByVal%20Integer,%20ByVal%20Integer,%20ByVal%20String,%20ByVal%20Integer,%20ByVal%20String,%20ByVal%20Integer,%20ByVal%20Boolean,%20ByVal%20Date,%20ByVal%20String,%20ByVal%20Date,%20ByVal%20String).html">
+ AssignNewCurrency(String, Decimal, String, Boolean, String, Integer, Integer, String,
+ Integer, String, Integer, Boolean, Date, String, Date, String)</a>
+	</overloads>
+	<param name="documentCode">Name of the currency to be added.</param>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.AssignNewCurrency(System.String,System.Decimal,System.String,System.Boolean,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Boolean,System.DateTime,System.String,System.DateTime,System.String)">
+	<summary>Adds new currency row in the SystemCurrency Table</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.CurrencyFacade~AssignNewCurrency(ByVal%20String).html">
+ AssignNewCurrency(String)</a>
+	</overloads>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.CurrencyDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="currencyDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.DoLoadDataset(System.String[][],Interprise.Framework.Base.Shared.Enum.ClearType,Interprise.Framework.Base.Shared.Enum.ConnectionStringType)">
+	<summary>
+	</summary>
+	<param name="commandSet"></param>
+	<param name="clearTableType"></param>
+	<param name="connStringType"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.NegativePattern">
+	<summary> Returns a certain format in the value of negative pattern combo box. </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.PositivePattern">
+	<summary> Returns a certain format in the value of positive pattern combo box. </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.InsertCurrencyHistory">
+	<summary>Adds new currency exchange rate history in SystemCurrencyDetail Table.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.SellingCurrencySetup(System.String,System.Boolean)">
+	<summary>
+ Reflects all changes from SystemCurrency Table to
+ InventorySellingCurrency Table.
+ </summary>
+	<param name="currencyCode">The currency code that have changes.</param>
+	<param name="isDelete">Check if to be deleted or not.</param>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemCurrency.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CurrencyFacade.SystemCurrency_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BusinessTitleFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BusinessTitleFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.BusinessTitleFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BusinessTitleFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BusinessTitleFacade.LoadCommandSet(System.String)">
+	<value>The command set assigned in this property.</value>
+	<summary>Gets the command set to be used in the function <em>LoadDaset</em>.</summary>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.BusinessTitleFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function <em>UpdateDataset()</em>.</summary>
+	<value>The command set that is assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.BusinessTitleFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.BusinessTitleDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="businesstitleDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.BusinessTitleFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemPaymentTerm.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.HelpManagerFacade.LoadCommandSet(System.String)">
+	<summary>
+	</summary>
+	<param name="DocumentCode"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.HelpManagerFacade.UpdateCommandSet">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.FromTaxComponent">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.IsCompoundedTotal">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.IsPostalRateNone">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.LoadTaxComponentCommandSet(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="DocumentCode"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.CreateTaxCodeDetailReference">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.LoadTaxSchemeCommandSet(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="DocumentCode"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.TaxBaseOn">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.TaxBaseOnDescription">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.TaxCode">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.UpdateTaxComponentCommandSet">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TaxSchemeFacade.UpdateTaxSchemeCommandSet">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignAccountCode(System.String)">
+	<summary>Assign the account code in SystemTaxDetail Table</summary>
+	<param name="accountCode">Specify the account code to be assigned.</param>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignNewTaxComponent(System.String)">
+	<summary>Adds new tax component in SystemTaxDetail Table.</summary>
+	<param name="taxDetailCode">Specify the tax detail code to be assigned.</param>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignNewTempTaxComponent(System.Data.DataRow,System.Data.DataRow[])">
+	<summary>Assign sets of tempory tax to be used in SystemTaxScheme Table.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignNewTaxScheme(System.String)">
+	<summary>Adds new tax Scheme.</summary>
+	<param name="taxCode">Specify the tax code to be assigned.</param>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignNewTaxSchemeDetail(System.Data.DataRow,System.Data.DataRow[])">
+	<summary>Assign new tax scheme detail.</summary>
+	<param name="taxSchemeDetailRow">The datarow that have the values to be assigned.</param>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignDefaultTaxComponent">
+	<summary>
+ Assigns the default tax component
+ 
+ </summary>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignTaxBaseOn(System.Int32)">
+	<summary>Assign the tax base on in the SystemTaxDetail Table.</summary>
+	<param name="taxBaseOn">Specify the taxbaseon to be assigned.</param>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignCompoundedTax(System.Data.DataRow)">
+	<summary>Assign compounded tax in Tax Scheme Detail.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignFromTaxComponent(System.String)">
+	<summary>Assign from Tax Component code in the SystemTaxDetail table.</summary>
+	<param name="fromTaxComponent">The fromTaxComponent to be assigned.</param>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignPostalRateToNone">
+	<summary>Assign the postal rate to none.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignTaxRateToZero">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.AssignTaxTypeDescription(System.String)">
+	<summary>
+ Assign the tax type description with respect to the tax type selected.
+ </summary>
+	<param name="taxTypeDescription">To be assigned as the tax type description</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.TaxSchemeDatasetGateway,Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="taxDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.DeleteTaxSchemeDetail(System.Data.DataRow)">
+	<summary>Deletes desired tax scheme detail.</summary>
+	<param name="taxSchemeDetailRow">The taxSchemeDetailRow to be deleted.</param>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.DeleteTempTaxComponent(System.Data.DataRow)">
+	<summary>
+ Delete sets of temporary tax component in SystemTaxDetail use in Tax
+ Scheme.
+ </summary>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.HasTaxComponent">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.SetFromTaxComponentList(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="fromTaxComponent"></param>
+	<param name="intCtr"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="commandSet"></param>
+	<param name="transactionType"></param>
+	<param name="transactionDescription"></param>
+	<param name="isUseCache"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+	</summary>
+	<param name="row"></param>
+	<param name="columnName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.HasSameLocationTaxScheme(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Checks if a TaxScheme has the same values (countryCode, stateCode, county, postalCode) in the database.
+ </summary>
+	<param name="taxCode">The taxCode to check.</param>
+	<param name="countryCode">The countryCode to check.</param>
+	<param name="stateCode">The stateCode to check.</param>
+	<param name="county">The county to check.</param>
+	<param name="postalCode">The postalCode to check.</param>
+	<returns>TRUE if has the same location</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.SystemTaxScheme_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TaxSchemeFacade.SystemTaxDetail_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SuffixFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SuffixFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.SuffixFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SuffixFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SuffixFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset().</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.SuffixFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.SuffixFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.SuffixDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="suffixDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SuffixFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SuffixFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SuffixFacade.SystemSuffix_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.AutoNumberingFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.AutoNumberingFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.AutoNumberingFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.AutoNumberingFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.AutoNumberingFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function <em>LoadDaset.</em></summary>
+	<value><para><font color="black">The command set assigned in this property.</font></para></value>
+	<example>
+		<code lang="VB" title="Command set " description="Command set">
+ New String()() { New String() {SYSTEMSTARTINGNUMBER_TABLE, Interprise.Framework.Base.Shared.StoredProcedures.READSYSTEMSTARTINGNUMBER, "@ParentEntity", DocumentCode}}
+    </code>
+		<code lang="CS" title="Command Set" description="Command Set">
+ string[][] Commandset= new string[][] { new string[] {SYSTEMSTARTINGNUMBER_TABLE,Interprise.Framework.Base.Shared.StoredProcedures.READSYSTEMSTARTINGNUMBER,"@ParentEntity",DocumentCode}};
+    </code>
+	</example>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.AutoNumberingFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function <em>UpdateDataset().</em></summary>
+	<value>The command set that is assigned in this property.</value>
+	<example>
+		<code lang="VB" title="Command Set" description="Command Set">
+ New String()() {New String() {Interprise.Framework.Base.Shared.Const.SYSTEMSTARTINGNUMBER_TABLE, _ 
+                              Interprise.Framework.Base.Shared.StoredProcedures.CREATESYSTEMSTARTINGNUMBER, _ 
+                              Interprise.Framework.Base.Shared.StoredProcedures.UPDATESYSTEMSTARTINGNUMBER, _ 
+                              Interprise.Framework.Base.Shared.StoredProcedures.DELETESYSTEMSTARTINGNUMBER}}
+    </code>
+		<code lang="CS" title="Command Set" description="Command Set">
+ new string[][] { new string[] {Interprise.Framework.Base.Shared.Const.SYSTEMSTARTINGNUMBER_TABLE, _ 
+                                                      Interprise.Framework.Base.Shared.StoredProcedures.CREATESYSTEMSTARTINGNUMBER, _ 
+                                                      Interprise.Framework.Base.Shared.StoredProcedures.UPDATESYSTEMSTARTINGNUMBER, _
+                                                      Interprise.Framework.Base.Shared.StoredProcedures.DELETESYSTEMSTARTINGNUMBER}};
+ 
+ </code>
+	</example>
+</member><member name="M:Interprise.Facade.SystemManager.AutoNumberingFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.AutoNumberingDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="autonumberingDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.AutoNumberingFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemStartingNumber.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.AutoNumberingFacade.SystemStartingNumber_ColumnChanging(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TeamFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TeamFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.TeamFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TeamFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TeamFacade.LoadCommandSet(System.String,System.Data.DataRow)">
+	<summary>
+	</summary>
+	<param name="DocumentCode"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.TeamFacade.UpdateCommandSet">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TeamFacade.AddTeam(System.String)">
+	<summary>
+ Method use to add new team in the datatable.
+ </summary>
+	<param name="teamCode">The teamCode is assign in the data column TeamCode in the newly added row.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TeamFacade.AddAllTeamMember">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TeamFacade.AddTeamMember(System.Data.DataRow)">
+	<summary>
+ Method use to add team member in the team.
+ </summary>
+	<param name="userRow">The userRow is the row use to in assigning value to specific colums.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TeamFacade.AssignUserCode(System.Data.DataRow,System.Data.DataRowView)">
+	<summary>
+ Method use to assign new user code.
+ </summary>
+	<param name="accountRow"></param>
+	<param name="lineItemRow"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TeamFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.TeamDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="teamDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TeamFacade.DeleteAllTeamMember">
+	<summary>
+		<para>Deletes all shipping method row in SystemShippingMethodGroupDetail
+    tables.</para>
+	</summary>
+</member><member name="M:Interprise.Facade.SystemManager.TeamFacade.DeleteTeamMember(System.Data.DataRow)">
+	<summary>
+		<para>Deletes selected shipping method row in SystemShippingMethodGroupDetail
+    Table</para>
+	</summary>
+</member><member name="M:Interprise.Facade.SystemManager.TeamFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="p_transactionType">The transaction type of the row.</param>
+	<remarks>Override this is a generated document code is needed, as this is automatically
+ invoked in the UpdateDataset procedure.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.TeamFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset().</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.LoadGroupDetailUnSelectedCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset().</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.ShippingMethodGroup">
+	<summary>Gets the ShippingMethodGroup in the selected shipping method group.</summary>
+	<value>ShippingMethodGroup</value>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.AssignNewShippingMethodGroup(System.String)">
+	<summary>Adds new shipping method group row in SystemShippingMethodGroup Table</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.ShippingMethodGroupFacade~AssignNewShippingMethodGroup(ByVal%20String,%20ByVal%20Boolean,%20ByVal%20String,%20ByVal%20Date,%20ByVal%20String,%20ByVal%20Date).html">
+ AssignNewShippingMethodGroup(String, Boolean, String, Date, String, Date)</a>
+	</overloads>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.AssignNewShippingMethodGroup(System.String,System.Boolean,System.String,System.DateTime,System.String,System.DateTime,System.Int32)">
+	<summary>Adds new shipping method group row in SystemShippingMethodGroup Table</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.ShippingMethodGroupFacade~AssignNewShippingMethodGroup(ByVal%20String).html">
+ AssignNewShippingMethodGroup(String)</a>
+	</overloads>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.ShippingMethodGroupDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="gatewayShippingMethodGroupDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.AddAllShippingMethodToGroupDetail">
+	<summary>
+		<para>Adds all shipping method row in SystemShippingMethodGroupDetail
+    tables.</para>
+	</summary>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.AddShippingMethodGroupDetail(System.Data.DataRow,System.Boolean)">
+	<summary>
+		<para>Adds selected shipping method row in SystemShippingMethodGroupDetail
+    Table</para>
+	</summary>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.DeleteAllShippingMethodGroupDetail">
+	<summary>
+		<para>Deletes all shipping method row in SystemShippingMethodGroupDetail
+    tables.</para>
+	</summary>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.DeleteShippingMethodGroupDetail(System.Data.DataRow)">
+	<summary>
+		<para>Deletes selected shipping method row in SystemShippingMethodGroupDetail
+    Table</para>
+	</summary>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodGroupFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemPaymentTerm.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DashBoardFacade.CurrentBusinessRule">
+	<summary>
+ Gets the business rule for this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DashBoardFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DashBoardFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.DashBoardFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DashBoardFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.DashBoardFacade.#ctor">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermFacade.DueType">
+	<summary>Gest the due type of the selected payment term.</summary>
+	<value>Due Type</value>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTermFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermFacade.AssignNewPaymentTerm(System.String)">
+	<summary>Adds new payment term row in SystemPaymentTerm Table</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.PaymentTermFacade~AssignNewPaymentTerm(ByVal%20String,%20ByVal%20Short,%20ByVal%20Decimal,%20ByVal%20Short,%20ByVal%20Decimal,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20Date,%20ByVal%20Boolean,%20ByVal%20String,%20ByVal%20String,%20ByVal%20Date,%20ByVal%20String,%20ByVal%20Date,%20ByVal%20String).html">
+ AssignNewPaymentTerm(String, Short, Decimal, Short, Decimal, Boolean, Boolean, String,
+ String, String, Date, Boolean, String, String, Date, String, Date, String)</a>
+	</overloads>
+	<param name="documentCode">The Payment Term to be added.</param>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermFacade.AssignNewPaymentTerm(System.String,System.String,System.String,System.Int16,System.Decimal,System.Int16,System.Decimal,System.Boolean,System.Boolean,System.String,System.String,System.String,System.DateTime,System.Boolean,System.String,System.String,System.DateTime,System.String,System.DateTime,System.String)">
+	<summary>
+ AssignNewPaymentTerm(String, Short, Decimal, Short, Decimal, Boolean, Boolean,
+ String, String, String, Date, Boolean, String, String, Date, String, Date,
+ String)
+ </summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.PaymentTermFacade~AssignNewPaymentTerm(ByVal%20String).html">
+ AssignNewPaymentTerm(String)</a>
+	</overloads>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermFacade.AssignPaymentTermDueType(System.String)">
+	<summary>
+ Assign the due type of the payment term whether it is Net Days - From Invoice
+ Date, End of Month, Calendar Monthly, and Seasonal.
+ </summary>
+	<param name="dueType">
+ Specify the due type to be assigned (Net Days - From Invoice Date, End of Month,
+ Calendar Monthly, Seasonal)
+ </param>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermFacade.InitializePaymentTerm">
+	<summary>Reset the payment term to defaults.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.PaymentTermDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="paymenttermDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemPaymentTerm.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTermFacade.SystemPaymentTerm_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.City">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.CountryCode">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.HasLayout">
+	<summary>Gets if the seleted postal code has layout or not.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.LoadCommandSet(System.String,System.String,System.String,System.String,System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+	<param name="CountryCode">The country of the postal code</param>
+	<param name="City">The city of the postal code</param>
+	<param name="State">The state of the postal code</param>
+	<param name="County">The county of the postal code</param>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.PostalCode">
+	<summary>Gets the selected postal code.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.TaxLayout">
+	<summary>Gets the Tax Layout of the selected postal code.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.PostalCodeFacade.UpdateCommandSet(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PostalCodeFacade.AssignNewPostal(System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="documentCode"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PostalCodeFacade.AddPostal(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Method use to add new postal.
+ </summary>
+	<param name="CityName">The city name.(i.e San Franscisco )</param>
+	<param name="StateName">The state name.(i.e California)</param>
+	<param name="PostalCode">The postal code of the city.</param>
+	<param name="CountryName">The country name of the new postal. </param>
+	<param name="CountyName">The county name of the new postal.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PostalCodeFacade.AssignTaxLayout(System.Byte[])">
+	<summary>
+ Method use to assing tax layout in the table.
+ </summary>
+	<param name="taxLayout">The taxLayout save from UI.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PostalCodeFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.PostalCodeDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="postalcodeDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PostalCodeFacade.DefaultClassTemplate(System.String,System.Boolean,System.Boolean,System.String)">
+	<summary>
+ Method use to assign class code for default the country.
+ </summary>
+	<param name="classCode">Class Code to be assigned as default class code.</param>
+	<param name="isRetail">IsRetail to determine if retail or wholesale class template to assign.</param>
+	<param name="isClassTemplate">IsClasstemplate to determine if customer class template or ship to class template.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PostalCodeFacade.DoLoadDataset(System.String[][],Interprise.Framework.Base.Shared.Enum.ClearType,Interprise.Framework.Base.Shared.Enum.ConnectionStringType)">
+	<summary>
+	</summary>
+	<param name="commandSet"></param>
+	<param name="clearTableType"></param>
+	<param name="connStringType"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PostalCodeFacade.SetClassTemplate(System.Boolean)">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PostalCodeFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PostalCodeFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemPaymentTerm.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PostalCodeFacade.SystemPostalCode_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.RelationshipFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.RelationshipFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.RelationshipFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.RelationshipFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.RelationshipFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.RelationshipFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.RelationshipFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.RelationshipDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="relationshipDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.RelationshipFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.RelationshipFacade.SystemRelationship_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.BackupDeviceFile">
+	<summary>
+ Return back up device file.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.CompanyLanguage">
+	<summary><para>Gets the assigned company language.</para></summary>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.CompanyName">
+	<summary>Gets the assigned company name.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.CountryCode">
+	<summary>Gets the assigned countrycode.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.CurrentBusinessRule">
+	<summary>
+ Gets the business rule for this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.CurrencyCode">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.DatabaseName">
+	<summary>Gets the assigned database name.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.ErrorAppearsInCreatingDatabase">
+	<summary>Gets if there are erros appears while creating database.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.HomeCurrency">
+	<summary>Gets the assigned home currency.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.IsBackUpCompleted">
+	<summary>Gets if the back up completes or not.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.IsDatabaseCompleted">
+	<summary>Gets if the database is completes or not.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.LanguageCode">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset().</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.NewDatabaseName">
+	<summary>
+ Gets or Sets the new datasename sets in the UI.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.NewCompanyFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.AddNewCompanyConfig(System.Windows.Forms.Form,System.String,System.String,System.String)">
+	<summary>
+ Adds new configuration in the app.config file.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.AddNewCompanyConfig(System.Windows.Forms.Form,System.String,System.String)">
+	<summary>
+ Create company configuration that uses main database as cache database.
+ </summary>
+	<param name="AnyForm"></param>
+	<param name="CompanyName"></param>
+	<param name="DatabaseName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.AssignCacheDatabaseName(System.String)">
+	<summary>
+ Assign cache database name in SystemCompanyInformation Table.
+ </summary>
+	<example>
+		<code lang="VB" title="Assign the cache database name to the dataset.">
+ AssignCacheDatabaseName(System.Guid.NewGuid.ToString)
+    </code>
+		<code lang="CS" title="Assign the cache database name to the dataset.">
+ void[] AssignCacheDatabaseName = new void[System.Guid.NewGuid.ToString + 1];
+    </code>
+	</example>
+	<param name="CacheDatabaseName">This name should be guid.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.AssignCurrencyCodeAndExchangeRate(System.Data.DataRow)">
+	<summary>Assign the currency code and its exchange rate in SystemCompanyInformation Table.</summary>
+	<param name="companyRow">The datarow that have currency code and its exchange rate to be assigned.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.AttachCompanyLogo(System.String,System.Byte[])">
+	<summary>Assign the company logo in SystemCompanyInformation.</summary>
+	<param name="path">Specify the location of the picture</param>
+	<param name="companyLogo">
+		<para>This parameter is optional. You can set this parameter to nothing or you can
+    set the first parameter (path) to nothing and assign the company logo in terms of
+    byte().</para>
+	</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.AssignCurrencyAndLanguageCode(System.Data.DataRow)">
+	<summary>Assign the currency and language that came from selecting the country.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.AssignLanguageCode(System.Data.DataRow)">
+	<summary>
+ Assign the language code to CompanyLanguage Column in SystemCompanyInformation Table.
+ </summary>
+	<param name="languageRow">The datarow that have the language code to be assigned.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.AssignNewCompanyInformation(System.String)">
+	<summary>
+ Adds new company information in SystemCompanyInformation Table.
+ </summary>
+	<param name="documentCode">Specify the documentcode to be used as DatabaseName and CompanyName.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.AssignPostalCode(System.Data.DataRow)">
+	<summary><para>Assign the corresponding city and state of the postal code.</para></summary>
+	<param name="companyRow">The datarow that have the city and state to be assigned.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.CreateDatabase(System.String)">
+	<summary>Create new database in the server database asynchronously.</summary>
+	<param name="newDatabaseName">The name of the new databasee to be created.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.CreateDatabase(System.String,System.Boolean)">
+	<summary>
+ Creates new database in the server database whether it is asynchronously or if not then it will just create backup file of ISSIMODEL and you must call the method Restore to create the database.
+ </summary>
+	<param name="newDatabaseName">The name of the new databasee to be created.</param>
+	<param name="IsAsync">If true then it will be created asynchronously</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.CreateDatabase(System.String,System.String,System.String)">
+	<summary>
+ Creates new company database.
+ </summary>
+	<param name="CompanyName">The name of the company.</param>
+	<param name="DatabaseName">The name of the database.</param>
+	<param name="CountryCode">For checking if UK or US Version.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.CreateCacheDatabase(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="cacheDatabaseName"></param>
+	<param name="countryCode"></param>
+	<param name="languageCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.NewCompanyDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="newcompanyDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.CopyUserAccount(System.String)">
+	<summary>
+ Copies the currently sigined user to the newly created database.
+ <!--DXMETADATA end -->
+	</summary>
+	<example>
+		<code lang="VB" title="Copies user account from currently connected database to newly created database.">
+ Dim NewCompanyFacade As Interprise.Facade.SystemManager.NewCompanyFacade
+ Dim NewCompanyDataset As Interprise.Framework.Base.DatasetComponent.BaseDataset
+ 'creates new instance of the facade and dataset
+ NewCompanyDataset = New Interprise.Framework.Base.DatasetComponent.BaseDataset
+ NewCompanyFacade = New Inteprise.Facade.SystemManager.NewCompanyFacade(NewCompanyDataset)
+ 'Call the CopyUserAccount method to copies the existing user account to the newly created database.
+ 'ISSIDEMO'
+ NewCompanyFacade.CopyUserAccount("ISSIDEMO")
+ 
+ 
+ 
+ </code>
+		<code lang="CS" title="Copies user account from currently connected database to newly created database.">
+ Interprise.Facade.SystemManager.NewCompanyFacade NewCompanyFacade;
+ Interprise.Framework.Base.DatasetComponent.BaseDataset NewCompanyDataset;
+ //creates New instance of the facade And dataset
+ NewCompanyDataset = New Interprise.Framework.Base.DatasetComponent.BaseDataset();
+ NewCompanyFacade = New Inteprise.Facade.SystemManager.NewCompanyFacade(NewCompanyDataset);
+ //Call the CopyUserAccount method To copies the existing user account To the newly created database.
+ //ISSIDEMO'
+ NewCompanyFacade.CopyUserAccount("ISSIDEMO");
+ </code>
+	</example>
+	<returns><para>Copies successful or not</para></returns>
+	<param name="targetDatabaseName"><para>Specify where the user account would be copied.</para></param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.CopyUserRole(System.String)">
+	<summary>
+ Copies the user role of the currently signined user to the newly created
+ database.
+ </summary>
+	<example>
+		<code lang="VB" title="Copies the existing user role of the user role to the newly created database.">
+ Dim NewCompanyFacade As Interprise.Facade.SystemManager.NewCompanyFacade
+ Dim NewCompanyDataset As Interprise.Framework.Base.DatasetComponent.BaseDataset
+ 'creates new instance of the facade and dataset
+ NewCompanyDataset = New Interprise.Framework.Base.DatasetComponent.BaseDataset
+ NewCompanyFacade = New Inteprise.Facade.SystemManager.NewCompanyFacade(NewCompanyDataset)
+ 'Call the CopyUserAccount method to copies the existing user account to the newly created database.
+ 'ISSIDEMO'
+ NewCompanyFacade.CopyUserRole("ISSIDEMO")
+ 
+ 
+ </code>
+		<code lang="CS" title="Copies the existing user role of the user role to the newly created database.">
+ Interprise.Facade.SystemManager.NewCompanyFacade NewCompanyFacade;
+ Interprise.Framework.Base.DatasetComponent.BaseDataset NewCompanyDataset;
+ //creates New instance of the facade And dataset
+ NewCompanyDataset = New Interprise.Framework.Base.DatasetComponent.BaseDataset();
+ NewCompanyFacade = New Inteprise.Facade.SystemManager.NewCompanyFacade(NewCompanyDataset);
+ //Call the CopyUserAccount method To copies the existing user account To the newly created database.
+ //ISSIDEMO'
+ NewCompanyFacade.CopyUserRole("ISSIDEMO");
+    </code>
+	</example>
+	<param name="targetDatabaseName"><para>Specify where user role of the user account would be copied.</para></param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.CopyUserRoleDescription(System.String)">
+	<summary>
+ Copies the user role description of the currently signined user to the newly
+ created database.
+ </summary>
+	<param name="targetDatabaseName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.OnCreateDatabaseProgress(System.String[])">
+	<summary>Raise the event CreateDatabaseProgress when creating the database.</summary>
+	<param name="percent">The is represent how many percent left in creating the database.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.OnCreateDataseCompletion">
+	<summary>Raise the event CreateDatabaseCompleted when database is completed.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.OnErrroMessageAppear(System.String)">
+	<summary>
+ Raise the event OnErrorMessageAppear when error occurs on creating
+ database.
+ </summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.DeleteUnnecessaryDescriptions(System.String)">
+	<summary>Delete the user role template from the newly created database.</summary>
+	<param name="LanguageCode">To be used in filtering out what language to be deleted.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.DeleteUnnecessaryDescription">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.DropCacheDatabase">
+	<summary>
+ Drops the cache database with respect to the cache database name in SystemCompanyInformation table.
+ </summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.DumpCreatedBackupFile(System.Boolean)">
+	<summary>Delete the back up file that is created by the newcompany.</summary>
+	<param name="isToDropAlsoDatabase">The isToDropAlsoDatabase is to check if the created backup file for the database is also to be drop.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.GenerateAccountingFinancialReport(System.String,System.String,System.DateTime,System.DateTime,System.DateTime,System.DateTime,System.Boolean)">
+	<summary>Generate the accounting financial reports.</summary>
+	<param name="LayoutCode">The layout sets by the user to for financial statement layout</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.GenerateAccountingFiscalYear">
+	<summary>
+ Generates new set of accounting fiscal year with respect to the current year. It will be started in January and ends in December.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.GenerateDataDictionaryColumnDescription(System.String)">
+	<summary>Generate new sets of column description.</summary>
+	<param name="LanguageCode">
+ Specify the LanguageCode to be assigned in generating new sets of description.
+ </param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.GenerateLanguageDescription(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="LanguageCode"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.GenerateItemDescription(System.String)">
+	<summary>Generate new sets of item description.</summary>
+	<param name="LanguageCode">
+ Specify the LanguageCode to be assigned in generating new sets of description.
+ </param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.GenerateInformationMessageDescription(System.String)">
+	<summary>Generate new sets of information message.</summary>
+	<param name="LanguageCode">
+ Specify the LanguageCode to be assigned in generating new sets of description.
+ </param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.GenerateUserRoleDescriptionDefaultLanguage">
+	<summary>
+ Generate new sets of user role description assign by default language (English -
+ United Kingdom, English - United States)
+ </summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.GenerateUserRoleMenuDescription(System.String)">
+	<summary>Generate new sets of user role description.</summary>
+	<param name="LanguageCode">
+ Specify the LanguageCode to be assigned in generating new sets of description.
+ </param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.GetMenuReportDeleteCommandText(System.String)">
+	<summary>
+	</summary>
+	<param name="countryCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.IsHasWhiteSpace(System.String)">
+	<summary>Checks if has white space.</summary>
+	<param name="value">To be checked if it has white space.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.ResetToPreviousConfiguration(System.String)">
+	<summary>
+	</summary>
+	<param name="PreviousDatabase"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.RestoreDatase(System.String)">
+	<summary>
+ Restores the backup file to new database.
+ </summary>
+	<param name="DatabaseName">The name of the database to be created.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.SetHomeCurrency(System.String)">
+	<summary>Set the home currency for the created database.</summary>
+	<param name="homeCurrencyCode">The homeCurrencyCode to be assigned as Home Currency.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.SetDefaultAccountCode">
+	<summary>
+		<para>Sets the GL Class Template of Customer, Supplier and Inventory posting
+    account codes coming from AccountingDefaultAccount table.</para>
+		<para>Also sets the account code of all tax codes.</para>
+	</summary>
+	<returns>Sets successful or not.</returns>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.SetDefaultBankAccount(System.String)">
+	<summary>
+ Set the default bank account code of the tables like SystemPaymentTerm,
+ CustomerPreference, SupplierPreference.
+ </summary>
+	<returns>Sets successful or not.</returns>
+	<param name="BankAccountCode">Specify the bank account code to be assign.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.SetDefaultErrorSetting(System.Windows.Forms.Form,System.Boolean,System.Boolean)">
+	<summary>
+ Set default setting when errors appears in creation of database.
+ </summary>
+	<param name="AnyForm"></param>
+	<param name="IsDatabaseCompleted"></param>
+	<param name="IsCacheDatabaseCreated"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.SetupUserRoleBasedOnProductEdition">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.TruncateTemplateTables">
+	<summary>
+ Clears out the template tables like (SystemCompanyInformation,
+ SystemExceptionLog, PostStatus, AuditTrail)
+ <returns>Clears successful or not.</returns>
+	</summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.UpdateNewCompanyDatabase(System.String,System.String,System.String)">
+	<summary>Sets the database whether UK or US version.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.UpdateSystemCheckListStatus">
+	<summary>Sets the status after creating database whether it is finish or not.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.UpdateSystemCheckListStatus(System.String,System.Data.DataRow)">
+	<summary>Sets the status whether it is finish or not.</summary>
+	<param name="rowFilter">Specify the rowfilter to be set as finish.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.UseAllDefaults(System.String,System.String)">
+	<summary>Sets all defaults on all required modules.</summary>
+	<param name="CountryCode">Specify the CountryCode of the newly created database to be used in checking if it is US or UK version.</param>
+	<param name="CurrencyCode">Specify the CurrencyCode to be assigned in all default tables.</param>
+	<returns>Sets successful or not.</returns>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemCompanyInformation.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.BeginBackUp(System.String,System.AsyncCallback,System.Object)">
+	<summary>Calls the processs of creating database in asynchronously.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.BeginRestore(System.String,System.AsyncCallback,System.Object)">
+	<summary>Calls the processs of creating database in asynchronously.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.BackUp(System.String)">
+	<summary>
+ Back-up the ISSIMODEL.
+ </summary>
+	<param name="NewDatabaseName">The name of the backup file to be created.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.BackUpCompleted(System.IAsyncResult)">
+	<summary>
+ Call back of the asynchronous.
+ </summary>
+	<param name="result">The result the threading.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.Restore(System.String)">
+	<summary>
+ Restore the back-up file to the specified database.
+ </summary>
+	<param name="NewDatabaseName">The name of the database to be restored.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.RestoreCompleted(System.IAsyncResult)">
+	<summary>
+ Call back of the asynchronous.
+ </summary>
+	<param name="result">The result the threading.</param>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.GetCurrentConnectionSetting">
+	<summary>Retrieves the online connection string over the web service.</summary>
+	<returns>Online connection string</returns>
+</member><member name="M:Interprise.Facade.SystemManager.NewCompanyFacade.SetCurrentConnectionForWebService(System.String,System.String,System.String,System.String)">
+	<summary>
+		<para>Set current connection over the web service.</para>
+		<para>If OldCurrentSettingName is nothing then it will set back the current
+    settings but if this is nothing then it will creates new config.</para>
+	</summary>
+	<param name="OldCurrentSettingName">Specify this will set the current setting of the web config.</param>
+	<param name="NewCompanyName">The name to be used as config name of the newly added config.</param>
+	<param name="NewDatabaseName">The name to be assigned as the datasource of newly added config.</param>
+	<param name="CacheDatabaseName">The cache datasouce of the newly added config.</param>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTypeFacade.CurrentDataset">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTypeFacade.LoadCommandSet(System.String)">
+	<summary>
+	</summary>
+	<param name="DocumentCode"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.PaymentTypeFacade.UpdateCommandSet">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTypeFacade.AddNewPaymentType(System.String)">
+	<summary>
+	</summary>
+	<param name="paymentTypeCode"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTypeFacade.AssignPaymentMethod(System.Data.DataRow,System.String)">
+	<summary>
+	</summary>
+	<param name="paymentTypeRow"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTypeFacade.AssignDefaultCreditCardGateway(System.Data.DataRow,System.Data.DataRow)">
+	<summary>
+	</summary>
+	<param name="paymentTypeRow"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTypeFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.PaymentTypeDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="paymentTypeDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTypeFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemPaymentTerm.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.PaymentTypeFacade.SystemPaymentTypeView_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.AddedDecimalValue(System.Decimal)">
+	<summary>Gets added decimal value with respect to proposed decimal place settings.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.DecimalPlace">
+	<summary>Gets the quantity decimal place in the InventoryPreference Table.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.FreightCharge">
+	<summary>Gets the freight charge of the selected shipping method.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.HomeCurrency">
+	<summary>Gets the home currency in the SystemCompanyInformation Table.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.LoadCommandSet(System.String,System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset().</summary>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+	<param name="FreightChargeType">The command set assigned in this property.</param>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.ShippingMethodCode">
+	<summary>Gets the shipping method code of the selected shipping method.</summary>
+</member><member name="P:Interprise.Facade.SystemManager.ShippingMethodFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.AddShippingMethod(System.String,System.String,System.String)">
+	<summary>
+ Adds new shipping method row in SystemShippingMethod and adds the new shipping
+ method in desired group.
+ </summary>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.AssignFreightCharge(System.Object,System.Data.DataRow)">
+	<summary>
+	</summary>
+	<param name="shippingMethodDetailRow"></param>
+	<param name="proposedValue"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.AssignNewShippingMethod(System.String)">
+	<summary>Adds new shipping method row in SystemShippingMethod</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.ShippingMethodFacade~AssignNewShippingMethod(ByVal%20String,%20ByVal%20String,%20ByVal%20Boolean,%20ByVal%20String,%20ByVal%20Decimal,%20ByVal%20Boolean,%20ByVal%20Date,%20ByVal%20String,%20ByVal%20Date,%20ByVal%20String,%20ByVal%20Boolean).html">
+ AssignNewShippingMethod(String, String, Boolean, String, Decimal, Boolean, Date,
+ String, Date, String, Boolean)</a>
+	</overloads>
+	<param name="documentCode">The ShippingMethodCode to be added.</param>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.AssignNewShippingMethod(System.String,System.String,System.Boolean,System.String,System.Decimal,System.Boolean,System.DateTime,System.String,System.DateTime,System.String,System.Boolean,System.Int32)">
+	<summary>Adds new shipping method row in SystemShippingMethod</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.ShippingMethodFacade~AssignNewShippingMethod(ByVal%20String).html">
+ AssignNewShippingMethod(String)</a>
+	</overloads>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.InitNewRow(System.Data.DataRowView)">
+	<summary><para>Initialize new row and sets defaults</para></summary>
+	<param name="shippingMethodDetailRow">The newly created row.</param>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.AssignFreightCharge(System.String)">
+	<summary>Assign the freight charge in SystemShippingMethod Table.</summary>
+	<param name="freightChargeType">Specify the freighChargeType to be assigned.</param>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.ShippingMethodDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="shippingmethodDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.DeleteFreightCharges">
+	<summary>Delete all freight charge setup.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.FinalizeCalculationWeight">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="commandSet"></param>
+	<param name="transactionType"></param>
+	<param name="transactionDescription"></param>
+	<param name="isUseCache"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemPaymentTerm.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.ValidateFreightCharge(System.Data.DataRow)">
+	<summary>Validate the freight charges.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.SystemShippingMethod_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ShippingMethodFacade.SystemShippingMethodDetail_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.CompanyInformation">
+	<summary>Gets the values from System Company Information Table.</summary>
+	<value><para>Company Information of the current database connected.</para></value>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.CurrentBusinessRule">
+	<summary>
+ Gets the business rule for this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.InterpriseConfiguration">
+	<summary>Gets the setup information in the configuration file.</summary>
+	<value>Current config file information.</value>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.IsEuro(System.String)">
+	<summary>
+ Gets whether its parameter <em>CountryCode</em> is a European Country or
+ not.
+ </summary>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.LoadCommandSet(System.String)">
+	<summary>
+		<para>Gets the current facade command set that is assigned for the use of the
+    function <em>LoadDataset</em>();</para>
+	</summary>
+	<value><para>The command set assigned in the current facade.</para></value>
+	<example>
+		<code lang="VB" title="Command Set" description="Command Set">
+ New String()() {New String() {SYSTEMCOUNTRY_TABLE, READSYSTEMCOUNTRY, AT_COUNTRY_CODE, DocumentCode}}
+    </code>
+	</example>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.UnitMeasureSystemPerUser">
+	<summary>
+ Gets the system unit measure whether(English or Metric) that is selected by
+ current user signin.
+ </summary>
+	<value>System unit measure of the current user sign in.</value>
+</member><member name="P:Interprise.Facade.SystemManager.BaseFacade.UpdateCommandSet">
+	<summary>
+		<para>Gets the current facade command set that is assigned for the use of the
+    function <em>UpdateDataset</em>();</para>
+	</summary>
+	<value><para>The command set assigned in the current facade.</para></value>
+	<example>
+		<code lang="VB" title="Command Set" description="Command Set">
+ New String()() {New String() {SYSTEMCOUNTRY_TABLE, CREATESYSTEMCOUNTRY, UPDATESYSTEMCOUNTRY, DELETESYSTEMCOUNTRY}}
+    </code>
+	</example>
+</member><member name="M:Interprise.Facade.SystemManager.BaseFacade.GetUserCurrency">
+	<summary>
+ Returns currency code of the country.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.BaseFacade.UpdateDataSet">
+	<summary>
+Saves the current changes.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.BaseFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="commandSet"></param>
+	<param name="transactionType"></param>
+	<param name="transactionDescription"></param>
+	<param name="isUseCache"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SearchManagerFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.SearchManagerFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.SearchManagerFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemPaymentTerm.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DocumentTypeFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DocumentTypeFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.DocumentTypeFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DocumentTypeFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DocumentTypeFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.DocumentTypeFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.DocumentTypeFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.DocumentTypeDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="documenttypeDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.DocumentTypeFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.DocumentTypeFacade.SystemDocumentType_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.CurrentBusinessRule">
+	<summary>
+ Gets the business rule for this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+</member><member name="P:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.DatabasePath">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.AssignDatabasePath(System.String)">
+	<summary>
+	</summary>
+	<param name="databasePath"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.BackUpDatabase(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<param name="fileName"></param>
+	<param name="connectionString"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.BackUpAndRestoreDatasetGateway)">
+	<summary>
+	</summary>
+	<param name="backUpLogDatasetGateway"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.OnBackUpDatabaseProgress(System.String[])">
+	<summary>
+ Method use raise the event CreateDatabaseProgress to UI when creating the database.
+ </summary>
+	<param name="percent">The is represent on how many percent left in creating the database.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.OnRestoreDatabaseProgress(System.String[])">
+	<summary>
+ Method use raise the event CreateDatabaseProgress to UI when creating the database.
+ </summary>
+	<param name="percent">The is represent on how many percent left in creating the database.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.BackUpAndRestoreFacade.RestoreDatabase(System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<param name="filePath"></param>
+	<param name="fileName"></param>
+	<param name="connectionString"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.ImportDatasetGateway)">
+	<summary>
+ Create an Instance of this class
+ </summary>
+	<param name="importDataset">The dataset to be used for this class</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.SystemManager.ImportFacade.DatasetToUpdate">
+	<summary>
+ Contains the possible table to be updated in the import processing
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.CurrentBusinessRule">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.CurrentReportType">
+	<summary>
+ Property that gets the current report type.
+ </summary>
+	<value></value>
+	<returns>Returns the type of the report. Form or Standard</returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.GetTransactionType(System.String)">
+	<summary>
+ The type of transaction the current form is creating
+ </summary>
+	<param name="tableName">A <strong>String</strong> that represents the name of the table from which to get the transaction type</param>
+	<value>TransactionType</value>
+	<returns>Returns and sets the transactionType of the current transaction</returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.GetTransactionDescription">
+	<summary>
+ Returns the TransactionDescription depending on the current table being processed in the import wizard
+ </summary>
+	<value>String</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.TransactionType(System.String)">
+	<summary>
+ The type of transaction the current form is creating
+ </summary>
+	<param name="tableName">A <strong>String</strong> that represents the name of the table from which to get the transaction type</param>
+	<value>TransactionType</value>
+	<returns>Returns and sets the transactionType of the current transaction</returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.FindLastSalutationFunction">
+	<summary>
+ Assign a function that will search the last salutation in the given name.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.FindFirstSuffixFunction">
+	<summary>
+ Assign a function that will search the first suffix in the given name.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.TargetSalutationCode">
+	<summary>
+ Property to read or write Salutation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.TargetSuffixCode">
+	<summary>
+ Property to read or write Suffix
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.DocumentPrefix">
+	<summary>
+ Returns the prefix code being used by the current transaction
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.PriceListTemplateColumns">
+	<summary>
+ Inventory Price List Template Columns
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GetPricingCostRate(System.String,System.String)">
+	<summary>
+ Get Item Pricing Cost.
+ </summary>
+	<param name="itemCode"></param>
+	<param name="currencyCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.AssignTemplateDefaults(System.String,System.Data.DataRow,System.Data.DataRow,System.Int32)">
+	<summary>
+ Assigns the values of the class template (predefined and custom) to the rows of the import file being processed.
+ </summary>
+	<param name="workSheetName"></param>
+	<param name="rowCustomerClassTemplate"></param>
+	<param name="rowDefaultClassTemplate"></param>
+	<param name="rowCtr"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ProcessCountry(System.String,System.String,System.Int32)">
+	<summary>
+ Assigns the country of the company if the template has no value, also looks up on ISOCode, and ThreeISOCode fields in the country table.
+ </summary>
+	<param name="workSheetName"></param>
+	<param name="colName"></param>
+	<param name="rowCtr"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.AssignSystemDefaults(System.String,System.Data.DataRow,System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<param name="row"></param>
+	<param name="columnName"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.InsertAdditionalColumns(System.String)">
+	<summary>
+ Inserts additional columns assigns default values to the template table
+ </summary>
+	<param name="workSheetName">A <strong>String</strong> that represents the name of the worksheet to be processed</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ProcessInventoryOpeningBalance(System.String)">
+	<summary>
+ Creates additional columns and assigns default values to the InventoryOpeningBalance table
+ </summary>
+	<param name="workSheetName">A <strong>String</strong> value that represents the name of the import table to be processed</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ProcessCustomerOpeningBalance(System.String)">
+	<summary>
+ Inserts additional columns assigns default values to the template table
+ </summary>
+	<param name="workSheetName">A <strong>String</strong> that represents the name of the worksheet to be processed</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ProcessSupplierOpeningBalance(System.String)">
+	<summary>
+ Inserts additional columns assigns default values to the template table
+ </summary>
+	<param name="workSheetName">A <strong>String</strong> that represents the name of the worksheet to be processed</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.RecreateImportTable(System.String)">
+	<summary>
+ Inserts all the columns in the template table so that all fields match those of the destination table
+ </summary>
+	<param name="workSheetName">A <strong>String</strong> value that represents the name of the template table to be processed</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.CreateExcelTemplate(System.String)">
+	<summary>
+ Creates the default Excel template for the specified import process
+ </summary>
+	<param name="tableName">A <strong>Table Name</strong> that contains the name of the table in which to create a template for</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.CreateCommaSeparatedTemplate(System.String)">
+	<summary>
+ Creates the default Excel template for the specified import process
+ </summary>
+	<param name="tableName">A <strong>Table Name</strong> that contains the name of the table in which to create a template for</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.CreateXMLTemplate(System.String)">
+	<summary>
+ Creates the default Excel template for the specified import process
+ </summary>
+	<param name="tableName">A <strong>Table Name</strong> that contains the name of the table in which to create a template for</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GenerateClassTemplateColumnDefaults(System.String,System.String,System.Boolean@)">
+	<summary>
+ Retrieves the Class template for the import tables
+ </summary>
+	<param name="tableName">A <strong>String</strong> that represents the table to be processed</param>
+	<returns>A <strong>Datarow</strong> that contains the default values for the table</returns>
+	<remarks>If no template is available or found, this method creates a default row for the table instead</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GenerateTemplateColumnDefaults(System.String)">
+	<summary>
+ Assigns default values for tables that does not have any class template
+ </summary>
+	<param name="tableName"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.CheckLinks(System.String,System.String,System.String,System.String)">
+	<summary>
+ A validation method that checks for invalid entries in the template being imported
+ </summary>
+	<param name="tablename">A <strong>String</strong> value that represents the name of the table to be checked</param>
+	<param name="columnName">A <strong>String</strong> that represents the column of the table being checked</param>
+	<param name="codeToCheck">A <strong>String</strong> value that represents the value of the column field to be checked against the database</param>
+	<returns>True if an error is found, otherwise False</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.DoAdditionalRoutineAccounting(System.Data.DataRow)">
+	<summary>
+ Procedure that checks if the row supplied can be imported
+ </summary>
+	<param name="drow">A <strong>DataRow</strong> that contains the row information to be validated</param>
+	<returns>True if the row supplied can't be imported</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.DoAdditionalRoutineContact(System.Data.DataRow)">
+	<summary>
+ Procedure that checks if the row supplied can be imported
+ </summary>
+	<param name="drow">A <strong>DataRow</strong> that contains the row information to be validated</param>
+	<returns>True if the row supplied can't be imported</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.DoAdditionalRoutineInventory(System.Data.DataRow,System.Data.DataRow,System.Int32)">
+	<summary>
+ Do addtional methods for the inventory import
+ </summary>
+	<param name="drow">A <strong>DataRow</strong> that contains the item row to be processed</param>
+	<returns>True if the row supplied can't be imported</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GetFileHeaders(Interprise.Framework.SystemManager.Shared.Enum.ImportFileFormat,System.String)">
+	<summary>
+ grabs the column headers of the selected file 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GetExcelHeaders(System.String)">
+	<summary>
+ grabs the column headers of an excel compatible file
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GetCSVHeaders(System.Data.DataTable,System.String)">
+	<summary>
+ grabs the column headers of a comma separated file
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GetXMLHeaders(System.String)">
+	<summary>
+ grabs the column headers of an XML file
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GetHTMLHeaders(System.String)">
+	<summary>
+ grabs the column headers of an HTML file
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GetEntityTable(System.String)">
+	<summary>
+ Retrieves all importable tables/views from the database depending on the parameter supplied
+ </summary>
+	<param name="entityName">A <strong>String</strong> value that is used to filter the tables to be imported</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GetTableToCreate(System.String)">
+	<summary>
+ Returns the actual table representing the template in the database
+ </summary>
+	<param name="sourceTable">A <strong>String</strong> value that represents the template name</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GenerateTablesForImport(System.String,System.Int32)">
+	<summary>
+ Displays the table wherein data shall be stored or imported.
+ populates the Importable files gridview
+ </summary>
+	<param name="tableName">A <strong>String</strong> value that represents the name of destination table of the import process</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ProcessXMLImportConnection(System.Int32)">
+	<summary>
+ If the schema for your DataSet contains elements of the same name, but different type, in the same namespace, 
+ an exception is thrown when you attempt to read the schema into the DataSet with ReadXml by specifying XmlReadMode.ReadSchema. 
+ This exception does not occur if you are using .NET Framework version 1.0.
+ </summary>m
+ <param name="tableIndex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.IsRequired(System.String)">
+	<summary>
+ Procedure that checks required columns
+ </summary>
+	<param name="colName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.IsLookUp(System.String,System.Int32@)">
+	<summary>
+ Procedures that determines look up fields
+ </summary>
+	<param name="colName"></param>
+	<param name="index"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.IsValueValidLength(System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Checks if the value coming from the template is valid
+ </summary>
+	<param name="sourceTable"></param>
+	<param name="colName"></param>
+	<param name="rowIndex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.IsValueValidDataType(System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Procedure that checks if the data in the template supports the data type associated in the DB
+ </summary>
+	<param name="sourceTable"></param>
+	<param name="colName"></param>
+	<param name="tableIndex"></param>
+	<param name="rowIndex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ParseCSV(System.String)">
+	<summary>
+ function that parses any CSV input string into a DataTable
+ </summary>
+	<param name="inputString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ParseCSVFile(System.String)">
+	<summary>
+ function that will read the content from a CSV file and pass it to our ParseCSV function
+ </summary>
+	<param name="path"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ProcessAdditionalImportProcess(System.Data.DataRow,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="drow"></param>
+	<param name="sourceTable"></param>
+	<param name="rowIndex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ProcessTemplateColumns(System.String)">
+	<summary>
+ Check that the template/file to be imported has the required column/s necessary before processing import
+ </summary>
+	<param name="sourceTable"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.CheckTemplateColumns(System.String)">
+	<summary>
+ This function returns a False if the template being imported has columns that does not include in the actual template file.
+ </summary>
+	<param name="sourceTable"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.StartImportProcess">
+	<summary>
+ Start the processing of the import.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.StartImportProcessExcel(System.String)">
+	<summary>
+ Process the import procedure by using the Excel COM object
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.StartImportProcessCommaSeparated(System.String)">
+	<summary>
+ Process the import procedure by using the Comma Separated File
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.StartImportProcessXML(System.String)">
+	<summary>
+ Process the import procedure by using XML file template
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.PopulateEntityList">
+	<summary>
+ populates the combobox for Destination Table, whenever there are tables/views set as IsImportable
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ProcessImportUpdate(System.Int32)">
+	<summary>
+ Procedure that saves the template values to the database
+ </summary>
+	<param name="tableIndex">An <strong>Integer</strong> that represents the index of the table being processed</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.AddPriceLevel(System.String)">
+	<summary>Adds new DataRow to the InventoryPriceLevel DataTable.</summary>
+	<param name="priceLevelCode">
+		<para>The document code of the new row that will be created.</para>
+		<para>This value cannot be null.</para>
+	</param>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.createTempDBTableSessionId(System.Data.DataSet,System.String)">
+	<summary>
+ This will create a temporay table to the DB that is a duplicate of the current table to be imported.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>added by pete.a @05/14/2010
+
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.blnGenerateCmdSPUpdateScript(System.Data.DataSet,System.String)">
+	<summary>
+ This will create a cmd sql script that will update and insert record to the distanation table.
+ </summary>
+	<param name="dtColumnTable"></param>
+	<param name="sessionID"></param>
+	<returns></returns>
+	<remarks></remarks>Added by pete.a @5/17/2010
+
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.RetrivePullDownColumns(System.String)">
+	<summary>
+ Gets all pull-down columns defined in the datadictionarycolumn table
+ </summary>
+	<param name="tableName">A <strong>String</strong> that represents the name of the table from which to get the pull-down list.</param>
+	<returns>A two-dimensional <strong>Array String</strong> containing the pulldown list.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.RollBackConsumedCodes">
+	<summary>
+ Returns the starting number field of the SystemStartingNumber table to its original value when import failed
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="transactionType">The <strong>Framework.Base.Shared.Enum.TransactionType</strong> that represents the current transaction type of the row.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.SelectAll(System.Boolean)">
+	<summary>
+ Procedure to select/deselect values of the table
+ </summary>
+	<param name="IsSelected">A <strong>Boolean</strong> flag that represents whether to select or deselect the items on the transaction</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The <strong>System.Data.DataRow</strong> that represents the row to validate</param>
+	<param name="columnName">The <stong>String</stong> that represents the column to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ValidImportPrimaryKeys(System.String,System.Int32,System.Int32)">
+	<summary>
+ Checks the template file for duplicate PK values. Method prevents such event to happen and will throw an error in the instance of such event.
+ </summary>
+	<param name="sourceTable"></param>
+	<param name="tableIndex"></param>
+	<param name="rowIndex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.SaveImportLogs(System.String)">
+	<summary>
+	</summary>
+	<param name="TextLogs"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.GetImportTablesAndColumns">
+	<summary>
+ Checks the database of all IsImportable Tables
+ </summary>
+	<returns></returns>
+	<remarks>for dynamic menu</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.ImportFacade.Config">
+	<summary>
+ Gets settings such as user language, company name, and other important information for the application.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.OnProgressChanged(System.ComponentModel.ProgressChangedEventArgs)">
+	<summary>
+	</summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.ImportFacade.ExportInventoryPriceList(System.String,System.String,System.Boolean,System.String)">
+	<summary>
+		<para>Export Price List to Excel</para>
+		<para>The InventoryPricingLevel DataTable must have record(s) in order to use this
+    method.</para>
+	</summary>
+</member><member name="P:Interprise.Facade.SystemManager.SalutationFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SalutationFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.SalutationFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SalutationFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SalutationFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset().</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.SalutationFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.SalutationFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.SalutationDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="salutationDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SalutationFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SalutationFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SalutationFacade.SystemSalutation_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SourceFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SourceFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.SourceFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SourceFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SourceFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset().</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.SourceFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.SourceFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.SourceDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="sourceDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SourceFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a Specific DataColumn in row in table SystemPaymentTerm.
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The DataColumn to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DepartmentFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DepartmentFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.DepartmentFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DepartmentFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.DepartmentFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.DepartmentFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.DepartmentFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.DepartmentDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="departmentDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.DepartmentFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.DepartmentFacade.SystemDepartment_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CountryFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CountryFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.CountryFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CountryFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CountryFacade.IsDefaultCountryRequired">
+	<summary>Gets if the currently sigin user country is equal to the selected country.</summary>
+	<value>User country is equal to the selected country or not</value>
+</member><member name="P:Interprise.Facade.SystemManager.CountryFacade.IsDefaultWholeSalesPostal">
+	<summary>
+ Gets whether the selected class template for the country is wholesale or
+ retail.
+ </summary>
+	<value>Wholesale or not</value>
+</member><member name="P:Interprise.Facade.SystemManager.CountryFacade.IsDefaultRetailPostal">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CountryFacade.IsSearchablePostal">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.CountryFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset.</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.CountryFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="M:Interprise.Facade.SystemManager.CountryFacade.AssignNewCountry(System.String)">
+	<summary>Adds new country in the SystemCountry Table.</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.CountryFacade~AssignNewCountry(ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20Byte(),%20ByVal%20String,%20ByVal%20Decimal,%20ByVal%20String,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20String,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20Boolean,%20ByVal%20Boolean,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20Date,%20ByVal%20String,%20ByVal%20Date).html">
+ AssignNewCountry(String, String, String, String, String, Byte(), String, Decimal,
+ String, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, Boolean, String,
+ String, String, String, String, String, String, Boolean, Boolean, Boolean, String,
+ Boolean, Boolean, String, String, String, String, Boolean, Boolean, String, String,
+ String, String, String, Date, String, Date)</a>
+	</overloads>
+	<param name="documentCode">Name of the country to be added.</param>
+</member><member name="M:Interprise.Facade.SystemManager.CountryFacade.AssignNewCountry(System.String,System.String,System.String,System.String,System.String,System.Byte[],System.String,System.Decimal,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.Boolean,System.Boolean,System.Boolean,System.String,System.String,System.Boolean,System.Boolean,System.String,System.String,System.String,System.DateTime,System.String,System.DateTime,System.Boolean,System.String,System.String,System.String,System.String,System.String)">
+	<summary>Adds new country in the SystemCountry Table.</summary>
+	<overloads>
+		<a href="Interprise.Facade.SystemManager~Interprise.Facade.SystemManager.CountryFacade~AssignNewCountry(ByVal%20String).html">
+ AssignNewCountry(String)</a>
+	</overloads>
+</member><member name="M:Interprise.Facade.SystemManager.CountryFacade.AssignIsDefaultFromPostal(System.Boolean,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="value"></param>
+	<param name="isRetail"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CountryFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.CountryDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="countryDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CountryFacade.DefaultClassTemplate(System.String,System.Boolean,System.Boolean)">
+	<summary>Assign the class template in SystemCountry Table.</summary>
+	<param name="classCode">Class Code to be assigned as default class code.</param>
+	<param name="isRetail">IsRetail to determine if retail or wholesale class template to be assigned.</param>
+	<param name="isClassTemplate">IsClasstemplate to determine if customer class template or ship to class template to be assigned.</param>
+</member><member name="M:Interprise.Facade.SystemManager.CountryFacade.DoLoadDataset(System.String[][],Interprise.Framework.Base.Shared.Enum.ClearType,Interprise.Framework.Base.Shared.Enum.ConnectionStringType)">
+	<summary>
+	</summary>
+	<param name="commandSet"></param>
+	<param name="clearTableType"></param>
+	<param name="connStringType"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CountryFacade.FinalizeDefaults">
+	<summary>Sets the default class templates with respect to selected class template.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.CountryFacade.SetFlag(System.Byte[])">
+	<summary>Assign the picture flag.</summary>
+	<param name="Flag">Specify the flag in terms of bytes.</param>
+</member><member name="M:Interprise.Facade.SystemManager.CountryFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.SystemManager.CountryFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.CurrentBusinessRuleType">
+	<summary>
+ Gets what business rule to use. (used by the web service)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>Override this only if there is a specific business rule designed for this facade.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Win.UI.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.LoadCommandSet(System.String)">
+	<summary>Gets the command set to be used in the function LoadDaset().</summary>
+	<value>The command set assigned in this property.</value>
+	<param name="DocumentCode">Primary key of the table to be query.</param>
+</member><member name="P:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.UpdateCommandSet">
+	<summary>Gets the command set to be used in the function UpdateDataset().</summary>
+	<value>The command set assigned in this property.</value>
+</member><member name="P:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.XMLLogFileLocation">
+	<summary>
+ Gets the path where the xml is created.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.#ctor(Interprise.Framework.SystemManager.DatasetGateway.SystemManagerPreferenceDatasetGateway)">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<param name="systemmanagerpreferenceDataset"> Shared dataset between user interface and business facade.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.AssignFaxUserAccount(System.String,System.String,System.String)">
+	<summary>Assigs the fax user password.</summary>
+</member><member name="M:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.AssignXMLFileLocation(System.String)">
+	<summary>
+ assign path where the xml file log will be created.
+ </summary>
+	<param name="path"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.DoLoadDataset(System.String[][],Interprise.Framework.Base.Shared.Enum.ClearType,Interprise.Framework.Base.Shared.Enum.ConnectionStringType)">
+	<summary>
+	</summary>
+	<param name="commandSet"></param>
+	<param name="clearTableType"></param>
+	<param name="connStringType"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.SystemManager.SystemManagerPreferenceFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member>
+</members>
+</doc>

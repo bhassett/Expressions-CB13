@@ -1,0 +1,3004 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Facade.Utility.FinalScript
+</name>
+</assembly>
+<members>
+<member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_10081">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_10288">
+	<summary>
+  Looks up a localized string similar to IF OBJECT_ID('tempdb..#tableConstraints_CB_10288', 'U') IS NOT NULL
+   DROP TABLE #tableConstraints_CB_10288
+GO
+
+Create table #tableConstraints_CB_10288
+(
+Tablename nvarchar(100)
+,ColumnName nvarchar(100)
+,ConstraintName nvarchar (300)
+,Isprocessed bit
+)
+
+INSERT INTO #tableConstraints_CB_10288(Tablename, ColumnName, ConstraintName, Isprocessed) VALUES ('CustomerInvoiceDetail', 'WeightInPounds',(select name from sys.default_constraints where parent_object_id = object_id('CustomerInvoiceDetail') a [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_1060">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_1716">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_2283">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_3631">
+	<summary>
+  Looks up a localized string similar to /******************************************************************************  
+**  File: CB-3631.sql  
+**  Name: 
+**  Desc:   This script is to update SystemPostalCodeTaxData with the default value of Plus4Low and Plus4High to Plus4Low = 0 and Plus4High = 9999
+**  
+**  This template can be customized:  
+**                
+
+**  Input       Output  
+**  ----------      -----------  
+**  
+**  Auth: Enrico Domingo 
+**  Date: 03.05.2013  
+********************************************************** [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_3869">
+	<summary>
+  Looks up a localized string similar to 
+SELECT *, 0 AS IsProcessed INTO #TempItemSupplier FROM  InventorySupplier WHERE (ShipFromCode IS NULL  OR ShipFromCode = '')
+
+IF (SELECT COUNT(*) FROM #TempItemSupplier) &gt; 0
+
+BEGIN
+
+WHILE EXISTS (SELECT * FROM #TempItemSupplier WHERE IsProcessed = 0)
+BEGIN
+
+DECLARE @ItemCode NVARCHAR(30)
+DECLARE @SupplierCode NVARCHAR(30)
+DECLARE @ShipFromCode NVARCHAR(30)
+DECLARE @ShipFromname NVARCHAR(100)
+
+ SET @ItemCode = (SELECT TOP 1 ItemCode FROM #TempItemSupplier WHERE IsProcessed = 0)
+ SET @Supplie [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_3922">
+	<summary>
+  Looks up a localized string similar to DELETE EcommerceAppConfig
+WHERE Name = 'Subscription.ExpiredMessageWhenViewingTopic'
+
+DELETE EcommerceAppConfigModel
+WHERE Name = 'Subscription.ExpiredMessageWhenViewingTopic'.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_4084">
+	<summary>
+  Looks up a localized string similar to BEGIN TRANSACTION
+
+
+DECLARE @InventoryStockTable AS TABLE  
+(  
+ [Counter] int,ItemCode nvarchar(30),WarehouseCode nvarchar(30),LocationCode nvarchar(30),DocumentCode nvarchar(30),[Date] datetime,ReferenceCode nvarchar(30),Quantity numeric(18, 6),     
+ QuantityCost numeric(18, 6),BatchSerialNum nvarchar(30),ExpiryDate datetime,CurrencyCode nvarchar(30),ExchangeRate numeric(18,6),SalesPrice numeric(18,6),SalesPriceRate numeric(18,6),     
+ Cost numeric(18, 6),CostRate numeric(18, 6),Margin numeric(18 [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_4107">
+	<summary>
+  Looks up a localized string similar to --*****************************************************************************************
+--Fix for data discrepancy in Payment Method
+--*****************************************************************************************
+
+UPDATE PaymentMethod SET
+AmountPaid = CP.AmountPaid,
+AmountPaidRate = CP.AmountPaidRate 
+FROM CustomerPayment CP
+INNER JOIN PaymentMethod PM ON CP.ReceivableCode = PM.DocumentCode
+INNER JOIN AccountingJournal AJ ON CP.ReceivableCode = AJ.JournalReference
+WHERE CP.AmountPa [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_4109">
+	<summary>
+  Looks up a localized string similar to /**** FINAL SCRIPT FOR STARGAZER ****/
+
+
+/******* FIXER FOR JOURNAL DETAIL *******/
+
+UPDATE ACCOUNTINGJOURNALDETAIL 
+SET 
+DEBIT = 
+	CASE 
+		WHEN ISNULL(DEBIT,0) = 0 THEN DEBIT
+		ELSE AJ.JOURNALAMOUNT
+	END
+	, 
+CREDIT =
+	CASE 
+		WHEN ISNULL(CREDIT,0) = 0 THEN CREDIT
+		ELSE AJ.JOURNALAMOUNT
+	END
+	,
+DEBITRATE = 
+	CASE 
+		WHEN ISNULL(DEBITRATE,0) = 0 THEN DEBITRATE
+		ELSE AJ.JOURNALAMOUNT
+	END
+	, 
+CREDITRATE =
+	CASE 
+		WHEN ISNULL(CREDITRATE,0) = 0 THEN CREDITRATE
+		ELSE AJ.JOURNALAMO [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_4203">
+	<summary>
+  Looks up a localized string similar to 
+/*SET Default MobileXMLPackage per ItemType*/
+--Assembly
+--Electronic Download
+--Kit
+--Matrix Group
+--Matrix Item
+--Non-Stock
+--Service
+--Stock
+
+UPDATE IW 
+SET IW.MobileXmlPackage = 
+CASE I.ItemType
+	WHEN 'Matrix Group'			THEN 'product.matrixproduct.xml.config'
+	WHEN 'Stock'				THEN 'product.simpleproduct.xml.config'
+	WHEN 'Matrix Item'			THEN 'product.simpleproduct.xml.config'
+	WHEN 'Kit'					THEN 'product.kitproduct.xml.config'
+	WHEN 'Assembly'				THEN 'product.simpleproduct.xml.config' [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_4456">
+	<summary>
+  Looks up a localized string similar to UPDATE Supplier SET AllowBackOrder = 1 WHERE AllowBackOrder IS NULL.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_4677">
+	<summary>
+  Looks up a localized string similar to BEGIN TRANSACTION
+
+DECLARE @GRNToUpdate TABLE
+(
+PurchaseReceiptCode NVARCHAR(30),
+LineNum INT,
+ItemCode NVARCHAR(30),
+CostingMethod NVARCHAR(30),
+WarehouseCode NVARCHAR(30),
+OriginalLineNum INT
+)
+
+INSERT INTO @GRNToUpdate (PurchaseReceiptCode,LineNum,ItemCode,WarehouseCode,OriginalLineNum)
+SELECT a.PurchaseReceiptCode,a.LineNum,a.ItemCode,a.WarehouseCode,b.OriginalLineNum
+FROM SupplierPurchaseReceiptDetail AS a INNER JOIN dbo.SupplierPurchaseReceipt AS aa
+ON a.PurchaseReceiptCode = aa.Purchas [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_4731">
+	<summary>
+  Looks up a localized string similar to IF EXISTS(SELECT 1 FROM sys.stats where name ='_dta_stat_1952778064_73_2')
+BEGIN
+	PRINT 'DROP _dta_stat_1952778064_73_2'
+	DROP STATISTICS [dbo].[CRMContact]._dta_stat_1952778064_73_2
+END
+
+IF EXISTS(SELECT 1 FROM sys.stats where name ='_dta_stat_1952778064_61_74')
+BEGIN
+	PRINT 'DROP _dta_stat_1952778064_61_74'
+	DROP STATISTICS [dbo].[CRMContact]._dta_stat_1952778064_61_74
+END
+
+IF EXISTS(SELECT 1 FROM sys.stats where name ='_dta_stat_1952778064_74_3')
+BEGIN
+	PRINT 'DROP _dta_stat_1952778064_74_3 [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_4913">
+	<summary>
+  Looks up a localized string similar to 
+/*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_5080">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_5303">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+/*Get available language*/
+INSERT INTO @TempLoc [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_5616">
+	<summary>
+  Looks up a localized string similar to GO
+
+UPDATE InventoryWarehouse 
+SET DateModified = GETDATE()
+
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_5723">
+	<summary>
+  Looks up a localized string similar to ------ Update System Menu Description 
+
+Update SystemUserRoleMenugroupDescription 
+	Set [Description] =  'System',IsCustomizable = 0  
+	Where [Description] = 'System Manager' and IsCustomizable  = 1
+
+Update SystemUserRoleMenugroup 
+	Set  IsCustomizable = 0   
+	Where MenuGroupCode = 'SystemManager' and IsCustomizable  = 1
+
+------ Update Shipping Menu Description 
+
+Update SystemUserRoleMenugroupDescription 
+	Set [Description] =  'Shipping',IsCustomizable = 0  
+	Where [Description] = 'Shipping (B [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_5893">
+	<summary>
+  Looks up a localized string similar to update inventorysupplier set inventorysupplier.currencycode = supplier.currencycode from inventorysupplier inner join supplier on inventorysupplier.suppliercode = supplier.suppliercode where inventorysupplier.currencycode is null .
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_6285">
+	<summary>
+  Looks up a localized string similar to GO
+
+--- Reason why wholesaleprice and wholesalepricerate are equal because of INTSIX-7404. 
+
+UPDATE InventoryItemPricingDetail
+SET WholesalePrice = WholesalePriceRate 
+FROM InventoryItemPricingDetail
+WHERE WholesalePriceRate &lt;&gt; WholesalePrice 
+
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_6433">
+	<summary>
+  Looks up a localized string similar to IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE name = 'NumToWords1')
+BEGIN
+DECLARE @Statement NVARCHAR(MAX)
+SET @Statement = '
+CREATE FUNCTION dbo.NumToWords1 
+(  
+ @Number Numeric (38, 6) 
+) RETURNS VARCHAR(8000)   
+
+AS BEGIN  
+  
+DECLARE @inputNumber VARCHAR(38)  
+DECLARE @NumbersTable TABLE (number CHAR(2), word VARCHAR(10))  
+DECLARE @outputString VARCHAR(8000)  
+DECLARE @length INT  
+DECLARE @counter INT  
+DECLARE @loops INT  
+DECLARE @position INT  
+DECLARE @chunk CHAR(3) 
+DECLARE @ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_6596">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_7106">
+	<summary>
+  Looks up a localized string similar to DECLARE @AnonCustShipToCode NVARCHAR(30)
+DECLARE @AnonCustClassCode NVARCHAR(30)
+DECLARE @TaxCode NVARCHAR(30)
+DECLARE @FreightTax NVARCHAR(30)
+DECLARE @OtherTax NVARCHAR(30)
+DECLARE @UpdateColumn NVARCHAR(MAX) = ''
+DECLARE @Query NVARCHAR(MAX) = ''
+DECLARE @UpdateScript NVARCHAR(MAX) = ''
+
+DECLARE @TempAnonCustomerCodes TABLE (CustomerCode NVARCHAR(30))
+DECLARE @CustomerCode NVARCHAR(30)
+INSERT INTO @TempAnonCustomerCodes(CustomerCode)
+SELECT DISTINCT CustomerCode FROM EcommerceSite
+
+WHILE EX [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_7106_1">
+	<summary>
+  Looks up a localized string similar to DECLARE @AnonCustShipToCode NVARCHAR(30)
+DECLARE @TaxCode NVARCHAR(30)
+DECLARE @FreightTax NVARCHAR(30)
+DECLARE @OtherTax NVARCHAR(30)
+DECLARE @IsPrioritizePostalCode BIT
+DECLARE @ShipToClassTemplate NVARCHAR(MAX)
+DECLARE @CustomerPricing NVARCHAR(60)
+DECLARE @CountryCode NVARCHAR(200)
+DECLARE @PostalCode NVARCHAR(30)
+DECLARE @City NVARCHAR(60) 
+DECLARE @UpdateColumn NVARCHAR(MAX) = ''
+DECLARE @Query NVARCHAR(MAX) = ''
+DECLARE @UpdateScript NVARCHAR(MAX) = ''
+
+DECLARE @TempAnonCustomerCodes TA [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_7173">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_7173_1">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_7547">
+	<summary>
+  Looks up a localized string similar to IF NOT EXISTS(SELECT 1 FROM EcommerceAppConfig WHERE [Name] ='FreeShippingThreshold' AND [Description] LIKE '%You can also set free shipping on Shipping Module%')
+BEGIN
+	UPDATE EcommerceAppConfig
+	SET [Description] = [Description] + '. You can also set free shipping on Shipping Module.'
+	WHERE Name ='FreeShippingThreshold'
+END
+
+IF NOT EXISTS(SELECT 1 FROM EcommerceAppConfigModel WHERE Name ='FreeShippingThreshold' AND [Description] LIKE '%You can also set free shipping on Shipping Module%')
+BEGIN
+	 [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_7547_1">
+	<summary>
+  Looks up a localized string similar to IF NOT EXISTS(SELECT 1 FROM EcommerceAppConfig WHERE [Name] ='FreeShippingThreshold' AND [Description] LIKE '%Only normal and prepacked items will be included in computation while oversized items will be computed separately. Taxes will also be excluded in the computation.%')
+BEGIN
+	UPDATE EcommerceAppConfig
+	SET [Description] = 'If set to a dollar amount, without leading $ sign, e.g. 100.00, then orders equal to or greater than this amount will have free shipping. A value of 0.00 also disables this featu [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_8036">
+	<summary>
+  Looks up a localized string similar to 
+/* Note : Its Used To 	Add woohaa preference on database */
+
+	If Exists(Select 1 from SystemUserAccount where UserCode  = 'woohaa') 
+	Begin
+		--print 'Exist'
+			If Not Exists(Select 1 From SystemUserPreference Where UserCode  = 'woohaa') 
+			Begin
+				--print 'add'
+				Insert Into SystemUserPreference 
+				(UserCode,WarehouseCode,UnitMeasure,UnitMeasureSystem,Skin,UserCreated,DateCreated,UserModified,DateModified,SearchOption,CanOverrideMaxDiscount,MaxDiscount)
+				Values
+				('woohaa',NULL,NUL [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_8360">
+	<summary>
+  Looks up a localized string similar to 
+
+/*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM Ecommerce [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_8397">
+	<summary>
+  Looks up a localized string similar to UPDATE SupplierShipFrom SET ShipFromLegacyCode = 'NotApplicable' WHERE ShipFromLegacyCode IS NULL.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_8545">
+	<summary>
+  Looks up a localized string similar to update DataDictionaryColumn
+set ColumnDefault = 0
+where TableName in ('CustomerInvoiceDetail','CustomerSalesOrderDetail', 'CustomerInvoiceDetailLegacy','CustomerSalesOrderDetailLegacy')
+	and ColumnName in ('WeightInPounds','NetWeightInPounds').
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_8820">
+	<summary>
+  Looks up a localized string similar to  
+
+DECLARE @RoleCode NVARCHAR(100)
+SELECT RoleCode, 0 IsProcess INTO #Roles FROM SystemUserRole WHERE RoleCode &lt;&gt; 'Administrator'
+
+WHILE EXISTS(SELECT TOP 1 RoleCode FROM #Roles WHERE IsProcess = 0)
+BEGIN 
+SET @RoleCode = (SELECT TOP 1 RoleCode FROM #Roles WHERE IsProcess = 0)
+INSERT INTO SystemUserRoleMenuForm 
+(
+RoleCode,
+MenuGroupCode,
+FormMenuCode,
+TreeParentID,
+TreeChildID,
+FormAssemblyName,
+FormClassType,
+FormModuleClassType,
+IsEnabled,
+IsVisible,
+SortOrder,
+IsCustomFolder,
+IsFol [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_8833">
+	<summary>
+  Looks up a localized string similar to /* REMOVE TIMESTAMP ON JOURNALDATE Ref: TKY-227-99260 Date: 05/31/2013 */
+Update AccountingJournal set JournalDate =  DATEADD(mi,-DATEPART(mi, JournalDate),DATEADD(hh,-DATEPART(hh, JournalDate),JournalDate))
+
+
+
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_8903">
+	<summary>
+  Looks up a localized string similar to update supplierPurchaseOrder set supplierPurchaseOrder.AllowBackOrder = supplier.AllowBackOrder from supplierPurchaseOrder  inner join supplier  on supplierPurchaseOrder.SupplierCode = supplier.SupplierCode  where supplierPurchaseOrder.AllowBackOrder IS NULL.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_9305">
+	<summary>
+  Looks up a localized string similar to 
+
+/*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSi [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_9319">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_9680">
+	<summary>
+  Looks up a localized string similar to /*Variable Declaration*/
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+DECLARE @NewGUIDID uniqueidentifier
+
+/*Get Default Website*/
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite W [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_9720">
+	<summary>
+  Looks up a localized string similar to DELETE FROM dbo.SystemJobExecutionQueue 
+WHERE Counter IN (SELECT ExecutionQueueCode FROM dbo.SystemJobExecutionQueueDetail  WHERE RunDate &lt; GETDATE() AND JobOccurrenceCode = 'JOC-000001')
+
+DELETE FROM dbo.SystemJobExecutionQueueDetail 
+WHERE RunDate &lt; GETDATE() AND JobOccurrenceCode = 'JOC-000001'
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_9741">
+	<summary>
+  Looks up a localized string similar to DELETE EcommerceKitCart WHERE CartId NOT IN (SELECT ShoppingCartRecGuid FROM EcommerceShoppingcart).
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CB_9895">
+	<summary>
+  Looks up a localized string similar to UPDATE dbo.DataDictionaryColumn SET IsRequired = 0 WHERE TableName = 'BankingWriteCheck' AND ColumnName = 'CheckNumber'
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CleanUpLerrynUpgrade">
+	<summary>
+  Looks up a localized string similar to 
+
+DECLARE @IsEuro BIT, @CountryCode NVARCHAR(160);
+SELECT @IsEuro = IsEuro, @CountryCode = CountryCode FROM SystemCountry WHERE CountryCode = (SELECT Country FROM SystemCompanyInformation)
+
+IF NOT (@IsEuro = 1 OR @CountryCode='English - United Kingdom' OR @CountryCode='United Kingdom') 
+BEGIN
+		--Remove Lerryn
+		DELETE FROM SystemUserRoleMenuGroup WHERE DeveloperID = 'DEV000221' AND MenuGroupCode Like '%US%' 
+		DELETE FROM SystemUserRoleMenuGroup WHERE DeveloperID = 'DEV000221' AND MenuGroupCode Li [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CleanUpReportDescription">
+	<summary>
+  Looks up a localized string similar to IF EXISTS (SELECT 1 FROM sys.tables WHERE name = 'ReportDescriptionLanguage')
+BEGIN
+	IF EXISTS (SELECT 1 FROM sys.tables WHERE name = 'ReportFolder')
+	BEGIN
+		DELETE FROM ReportDescriptionLanguage
+		WHERE NOT EXISTS (SELECT RF.FolderCode FROM ReportFolder RF WHERE RF.FolderCode = ReportDescriptionLanguage.FolderCode)
+
+		/*Remove Bad Data*/
+		DELETE FROM ReportDescriptionLanguage
+		WHERE FolderCode = 611 AND DescriptionCode = 611 AND ReportName = 'Sale Payment Report(Full)'
+	END
+END.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.CustomScriptSetting">
+	<summary>
+  Looks up a localized string similar to &lt;?xml version="1.0" standalone="yes"?&gt;
+&lt;DocumentElement&gt;
+    &lt;CustomScript&gt;
+    &lt;ScriptID&gt;ISE-143&lt;/ScriptID&gt;
+    &lt;SortOrder&gt;2&lt;/SortOrder&gt;
+  &lt;/CustomScript&gt;
+  &lt;CustomScript&gt;
+    &lt;ScriptID&gt;ISE-175&lt;/ScriptID&gt;
+    &lt;SortOrder&gt;3&lt;/SortOrder&gt;
+  &lt;/CustomScript&gt; 
+  &lt;CustomScript&gt;
+    &lt;ScriptID&gt;ISE-191&lt;/ScriptID&gt;
+    &lt;SortOrder&gt;4&lt;/SortOrder&gt;
+  &lt;/CustomScript&gt;
+  &lt;CustomScript&gt;
+    &lt;ScriptID&gt;ISE-233&lt;/ScriptID&gt;
+    &lt;SortOrder&gt;5&lt;/SortOrder&gt;
+  &lt;/CustomScript&gt;
+  &lt;CustomScript&gt;
+	&lt;ScriptID&gt;INTSIX-4074&lt;/Scri [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.DuplicateMenuFormSection">
+	<summary>
+  Looks up a localized string similar to 
+print 'remove systemmenuformsection part'
+Delete From SystemUserroleMenuformSection where SectionLayout Is Null And GridLayout Is null And Isnull(IsCustomizable, 0) = 0
+print '---------'
+
+print 'Update Customer old Control to CBN control'
+	Update SystemUserroleMenuformSEction  set Sectionclasstype = 'Interprise.Presentation.Customer.CustomerDetailCBNControl.CustomerDetailCBNControlSection'
+		where  Sectionclasstype = 'Interprise.Presentation.Customer.CustomerDetail.CustomerDetailControl' --Update Cu [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTMOBA_717">
+	<summary>
+  Looks up a localized string similar to UPDATE CustomerAccount                   
+SET AccountCode = B.AccountCode
+, AccountDescription = C.AccountDescription
+, AccountGroup = C.AccountGroup
+, AccountType = SUBSTRING(B.AccountType  , 1, 29)
+, DateModified = GetDate()                    
+FROM CustomerAccount A                  
+INNER JOIN AccountingDefaultAccount B               
+	ON A.PostingCode = B.PostingCode                  
+INNER JOIN AccountingCoa C                  
+	ON C.AccountCode = B.AccountCode            
+WHERE A.CustomerC [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTQA_5895">
+	<summary>
+  Looks up a localized string similar to 
+/*
+	Customer Sales Order 
+*/
+
+UPDATE SystemUserRoleMenuFormSection
+SET DocumentCode = 'CustomerSalesOrderView.SalesOrderCode'
+ ,DateModified = GETDATE()
+ ,UserModified = 'Admin'
+ ,UserCreated = 'Admin'
+WHERE  RoleCode = 'Administrator' 
+and MenuGroupCode = 'Customer' 
+and SectionClassType = 'Interprise.Presentation.Customer.SalesOrder.SalesOrderControl'
+and FormClassType = 'Interprise.Presentation.Customer.SalesOrder.SalesOrderForm' 
+and SectionAssemblyName = 'Interprise.Presentation.Customer [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_1273">
+	<summary>
+  Looks up a localized string similar to -- get language that will be useD                          
+DECLARE @CompanyLanguage nvarchar(50)
+DECLARE @UserCode nvarchar(30)
+DECLARE @CurrentDate NVARCHAR(30)                   
+
+SELECT @UserCode = 'admin'
+PRINT @UserCode  
+SET @CurrentDate = GETDATE()
+
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE La [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_1273_1">
+	<summary>
+  Looks up a localized string similar to -- get language that will be useD                          
+DECLARE @CompanyLanguage nvarchar(50)
+DECLARE @UserCode nvarchar(30)
+DECLARE @CurrentDate NVARCHAR(30)                   
+
+SELECT @UserCode = 'admin'
+PRINT @UserCode  
+SET @CurrentDate = GETDATE()
+
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE La [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_4074">
+	<summary>
+  Looks up a localized string similar to --Remove all entries to prevent multiple location message prompt.
+DELETE FROM SystemUserAccountLog
+
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_6128">
+	<summary>
+  Looks up a localized string similar to GO
+
+EXEC DeletePlugin 'Interprise.Presentation.CcCleanupUtility',1,NULL
+
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_7002">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()                   
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+	
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP 1 [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_7373">
+	<summary>
+  Looks up a localized string similar to --Default values for new reports
+UPDATE EcommerceSite
+SET PromotionalPriceNotificationReport = NULL,
+RegularPriceNotificationReport = NULL,
+ProductAvailabilityNotificationReport = NULL
+
+--New AppConfigs for Version 6.0.x
+
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @v [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_7375">
+	<summary>
+  Looks up a localized string similar to BEGIN TRANSACTION
+
+BEGIN TRY
+
+DELETE dbo.InventoryStock FROM dbo.InventoryStock AS a WHERE EXISTS (SELECT * FROM dbo.CustomerInvoice AS b WHERE a.DocumentCode = b.InvoiceCode AND b.[Type] = 'Credit Memo') 
+
+; WITH LargeUpdateOnChanges
+	AS (
+	    SELECT ISNULL(c.[itemKitDetailCode], a.[itemCode]) AS ItemCode, a.warehouseCode, 
+        (SELECT locationCode FROM dbo.InventoryLocation WHERE StockType = 'Normal' AND a.WarehouseCode = dbo.InventoryLocation.WarehouseCode) AS LocationCode,  
+        b.Inv [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_76">
+	<summary>
+  Looks up a localized string similar to UPDATE DataDictionaryColumn Set IsSearchField=1, DateModified = GETDATE() Where  TableName Like '%EcommerceFailedTransaction%' AND ColumnName IN (
+Select Distinct(ColumnName) from DataDictionaryColumn where TableName Like '%EcommerceFailedTransaction%' and ShowOnList=1)
+
+GO
+Update DataDictionaryColumn set IsCustomField=1, DateModified = GETDATE()  where tableName LIKE 'CRMContact%' and columnName IN ('ProductFilteringTemplateNamePricingImport','TemplateCodePricingImport')
+
+GO
+Update DataDictionaryCol [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_7883">
+	<summary>
+  Looks up a localized string similar to INSERT INTO CacheTablesDeleteLog
+(
+LogCode,
+TableName,
+DeleteWhereClause,
+UserCreated,
+DateCreated,
+UserModified,
+DateModified
+)
+SELECT 
+NEWID() AS LogCode,
+'SystemCompanyInformation' AS TableName,
+'CompanyName = ''Interprise Solutions'' AND DatabaseName = ''ISSIMODEL(1.0)''' AS DeleteWhereClause,
+'admin' AS UserCreated,
+GETDATE() AS DateCreated,
+'admin' AS UserModified,
+GETDATE() AS DateModified
+WHERE NOT EXISTS(
+SELECT 1 FROM CacheTablesDeleteLog WHERE TableName = 'SystemCompanyInformat [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_8384_1">
+	<summary>
+  Looks up a localized string similar to DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)  
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)  
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+
+set @name = 'checkoutshipping.aspx.13'
+IF NOT EXISTS(SELECT 1 FROM [dbo].[EcommerceStringResource] WHERE Name = @name) AND ISNULL(@WebSiteCode,'')&lt;&gt;''
+begin
+	INSERT [dbo] [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_8589">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()                   
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+S [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_8896">
+	<summary>
+  Looks up a localized string similar to 
+
+GO
+
+SELECT CategoryCode INTO #TempNotExistingCategory FROM SystemCategory WHERE CategoryCode NOT IN (SELECT CategoryCode FROM SystemCategoryAccount)
+SELECT WarehouseCode, 0 AS IsProcessed INTO #TempWarehouse FROM InventoryWarehouse 
+
+SELECT *, 0 AS IsProcessed INTO #TempDefaultAccount FROM InventoryGLClassTemplateDetail WHERE ClassCode = 'DEFAULT-CATEGORY'
+
+--- Update the AccountCode
+UPDATE #TempDefaultAccount                   
+SET AccountCode = B.AccountCode,                  
+AccountDescrip [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_9139">
+	<summary>
+  Looks up a localized string similar to -- INTSIX-9139
+--- Create Paypal Express Checkout postback handler
+
+DECLARE @UserCode nvarchar(30) 
+DECLARE @CurrentDate DateTime                  
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+SELECT @WebSiteCode = WebSiteCode FROM Ecommer [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_9162">
+	<summary>
+  Looks up a localized string similar to GO
+
+-- This script will perform the following:
+-- 1) Correct the quantity received on supplier purchase orders
+-- 2) Correct the status of the PO
+
+SET NOCOUNT ON
+DECLARE @tbl_POToProcess TABLE(
+	PurchaseOrderCode nvarchar(30),
+	ItemCode nvarchar(30),
+	LineNum int,
+	QuantityReceived numeric(18,6))
+
+-- compute for the quantity received from posted and not voided (superseded) GRNs
+;WITH CTE_GRN AS (
+SELECT OriginalDocumentCode PurchaseOrderCode, ItemCode, OriginalLineNum LineNum, SUM(COALESCE(Qu [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_9320">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()                   
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+	
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+	
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP  [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_9327">
+	<summary>
+  Looks up a localized string similar to --------------------------------------------------------------------------------------
+--This is a generic fixer to fix the discrepancies in Invoice transactions.
+--This fixes the problem of having a payment fully allocated to a certain invoice
+--and the payment doesn't reflect on the amount paid and balance value of  the invoice
+--------------------------------------------------------------------------------------
+UPDATE CustomerInvoice SET 
+Balance = Invoice.Total - Invoice.WriteOff - Invoice.Discou [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTSIX_9362">
+	<summary>
+  Looks up a localized string similar to UPDATE CustomerInvoice
+SET IsPaid = 0
+WHERE BalanceRate &gt; 0
+AND IsPosted = 1
+AND IsVoided = 0
+AND [Type] = 'Invoice'
+AND IsPaid = 1
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTV_112">
+	<summary>
+  Looks up a localized string similar to --- NOTE : Back up first the database before running the scripts below.    
+
+
+--- Create function that set the currency in words to its proper case
+IF EXISTS (SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID(N'properCase') AND [Type] = 'FN')
+DROP FUNCTION  [dbo].[properCase]  
+GO
+create function properCase(@string varchar(8000)) returns varchar(8000) as
+begin
+		
+	set @string = lower(@string)
+	
+	declare @i int
+	set @i = ascii('a')
+	
+	while @i &lt;= ascii('z')
+	begin
+	
+		set @string = replace( @st [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTV_120">
+	<summary>
+  Looks up a localized string similar to --- NOTE : Back up first the database before running the scripts below.    
+
+UPDATE SystemUserRoleMenuFormSection
+SET SectionClassType = 'Interprise.Presentation.Inventory.SharedControl.WarehouseInformationControl'
+WHERE  MenuGroupCode = 'Inventory'
+AND SectionClassType = 'Interprise.Presentation.Inventory.SharedControl.WarehouseInfoControl'
+
+
+UPDATE SystemMenuFormSectionTemplate
+SET SectionClassType = 'Interprise.Presentation.Inventory.SharedControl.WarehouseInformationControl'
+WHERE  MenuGroupCo [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1010">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()                   
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+	
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP 1 1 FROM @TempLocale)
+BEGIN
+	SELECT TOP 1 @Locale = LocaleSetting FROM @Tem [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1085">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP 1 1 FR [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1085_1">
+	<summary>
+  Looks up a localized string similar to IF NOT EXISTS(SELECT TOP 1 CustomerTypeCode FROM dbo.CustomerType WHERE CustomerTypeCode = 'Dealer')
+BEGIN
+	INSERT INTO dbo.CustomerType (CustomerTypeCode, CustomerTypeDescription, IsActive, UserCreated, DateCreated)
+	VALUES ('Dealer','Dealer', 1, 'System', getdate())
+END
+
+GO
+
+IF NOT EXISTS(SELECT * FROM sys.columns WHERE Name = N'ShowOnStoreLocator' and Object_ID = Object_ID(N'Customer'))
+BEGIN
+	ALTER TABLE dbo.Customer
+	ADD ShowOnStoreLocator bit default(0)
+END
+
+GO
+
+UPDATE dbo.Customer SET [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1147">
+	<summary>
+  Looks up a localized string similar to IF OBJECT_ID('tempdb..#EcommerceNewsDetailTemp') IS NOT NULL
+BEGIN
+INSERT INTO EcommerceNews (
+NewsID,
+WebSiteCode,
+NewsGUID,
+ExpiresOn,
+Published,
+Wholesale,
+ExtensionData,
+CreatedOn,
+UserCreated,
+DateCreated,
+UserModified,
+DateModified,
+MLID
+)
+SELECT 
+NewsID,
+WebSiteCode,
+NewsGUID,
+ExpiresOn,
+Published,
+Wholesale,
+ExtensionData,
+CreatedOn,
+UserCreated,
+DateCreated,
+UserModified,
+DateModified,
+MLID
+ FROM #EcommerceNewsDetailTemp
+END
+
+IF OBJECT_ID('tempdb..#EcommerceNewsDet [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1199">
+	<summary>
+  Looks up a localized string similar to ---INTVIPTI-1199
+---Country dropdown on createaccount and other pages should have a default select value
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()                   
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+	
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSet [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1237">
+	<summary>
+  Looks up a localized string similar to -- get language that will be useD                          
+DECLARE @CompanyLanguage nvarchar(50)
+DECLARE @UserCode nvarchar(30)                   
+
+SELECT @UserCode = 'admin'
+PRINT @UserCode  
+
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE LanguageCode = @CompanyLanguage)                       
+  THEN (SE [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1237_1">
+	<summary>
+  Looks up a localized string similar to -- get language that will be useD                          
+DECLARE @CompanyLanguage nvarchar(50)
+DECLARE @UserCode nvarchar(30)                   
+
+SELECT @UserCode = 'admin'
+PRINT @UserCode  
+
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE LanguageCode = @CompanyLanguage)                       
+  THEN (SE [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1299">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+
+set @name = N'template.showproduct'
+set @description = N'Template to be used for the product page.'
+set @value = N''
+set @group [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1366">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+ 
+set @name = N'GiftRegistry.Enabled'
+set @description = N'If  [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1366_1">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+ 
+set @name = N'GiftRegistry.DeletionJobInterval'
+set @descrip [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1366_2">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+ 
+-- String Resources
+
+DECLARE @TempLocale TABLE (LocaleSetti [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1366_3">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+ 
+-- String Resources
+
+DECLARE @TempLocale TABLE (LocaleSetti [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1366_4">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+
+-- string resources
+
+set @name = 'shoppingcart.cs.50'
+IF NO [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1366_6">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+SET @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+SET @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+ 
+-- String Resources
+
+DECLARE @TempLocale TABLE (LocaleSetti [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1366_7">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+SET @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+SET @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+ 
+-- String Resources
+
+DECLARE @TempLocale TABLE (LocaleSetti [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1366_8">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+ 
+set @name = N'GiftRegistry.ExtraDayBeforeExpiredRegistryDelet [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1366_9">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+ 
+set @name = N'GiftRegistry.ExtraDayBeforeExpiredRegistryDelet [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1471">
+	<summary>
+  Looks up a localized string similar to DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)  
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)  
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+
+-- Topic Registration
+
+DECLARE @CompanyLanguage nvarchar(50)
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @Comp [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1481">
+	<summary>
+  Looks up a localized string similar to -- INTVIPTI-1481 (Credit Card Tokenization)
+
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @TempWebSiteCode TABLE (WebSiteCode NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCod [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1481_1">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP 1 1 FR [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1509">
+	<summary>
+  Looks up a localized string similar to GO
+SET NOCOUNT ON
+
+
+DECLARE @ModelDatabaseName NVARCHAR(50)
+SET @ModelDatabaseName = (SELECT ModelDatabaseName  FROM SystemCompanyInformation)
+
+IF DB_name() =@ModelDatabaseName
+   UPDATE SystemJobPlan SET StartDate = GETDATE() WHERE PlanCode = 'PLN-000001'
+
+UPDATE SystemJobExecutionQueueDetail 
+SET Status = 'Completed'
+FROM SystemJobExecutionQueue A
+INNER JOIN SystemJobExecutionQueueDetail B
+ON A.Counter = B.ExecutionQueueCode 
+WHERE DATEADD(dd, 0, DATEDIFF(dd, 0, B.RunDate)) &lt; DATEADD(dd, 0, [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_1648">
+	<summary>
+  Looks up a localized string similar to -- INTVIPTI-1648 (CB Catalog Page)
+
+
+DECLARE @CompanyLanguage nvarchar(50)
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE LanguageCode = @CompanyLanguage)                       
+  THEN (SELECT TOP 1 CompanyLanguage FROM SystemCompanyInformation)                        
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDic [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_2239">
+	<summary>
+  Looks up a localized string similar to 
+IF (SELECT IsApplySameSupplierAcrossAllWarehouses  FROM SupplierPreference) = 0
+BEGIN
+	--IF IsApplySameSupplierAcrossAllWarehouses = False
+	INSERT InventorySupplier
+	(ItemCode, SupplierCode, WarehouseCode, PartCode, UnitMeasureCode, ManufacturerID, ShortDescription, ExtendedDescription, LeadTime, DefaultCost, CurrencyCost,CurrencyCode, PricingMethod,
+	 DiscountPercent, DiscountBefore, DiscountAfter, [Priority], DefaultSupplier, LastCost, MinLevel, MaxLevel, PurchaseTaxCode, PurchaseReorderLevel, User [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_2341">
+	<summary>
+  Looks up a localized string similar to --Remove the section layout inserted by eShopConnect because the Web Option is selected by default when Item form loads
+UPDATE SystemUserRoleMenuFormSection 
+SET SectionLayout = NULL
+WHERE SectionLayout IS NOT NULL 
+AND DeveloperID = 'DEV000221' 
+AND AssemblyID = 'Lerryn.Presentation.eShopCONNECT'
+AND SectionClassType = 'Interprise.Presentation.Inventory.Item.MainControl' 
+AND FormClassType = 'Interprise.Presentation.Inventory.Item.ItemDetailForm'.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_2615">
+	<summary>
+  Looks up a localized string similar to CREATE TABLE #TEMP_DATADICTIONARYCOLUMN
+(
+[TABLENAME]					NVARCHAR	(128),
+[COLUMNNAME]				NVARCHAR	(128), 
+[PULLDOWNLISTTABLE]			NVARCHAR	(128),
+[PULLDOWNLISTTABLECOLUMN]	NVARCHAR	(128)
+)
+
+INSERT INTO  #TEMP_DATADICTIONARYCOLUMN
+(
+[TABLENAME]					,
+[COLUMNNAME]				, 
+[PULLDOWNLISTTABLE]			,
+[PULLDOWNLISTTABLECOLUMN]	
+)
+SELECT [TABLENAME]
+,[COLUMNNAME]
+,[PULLDOWNLISTTABLE]
+,[PULLDOWNLISTTABLECOLUMN] 
+FROM (
+	SELECT TABLENAME
+	,COLUMNNAME
+	,PULLDOWNLISTTABLE
+	,PULLDOWNLISTTABLECOLUMN  
+ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_2617">
+	<summary>
+  Looks up a localized string similar to -- INTVIPTI-2617 (Featured Items)
+
+-- AppConfig 
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+
+
+set @name = N'FeaturedI [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_308">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELEC [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_308_1">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP 1 1 FR [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_308_2">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP 1 1 FROM @TempLocale) [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_308_3">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+
+DECLARE @CompanyLanguage nvarchar(50)
+SELECT @CompanyLanguage [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_308_4">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+
+-- mobile resources
+
+set @name = 'mobile.shoppingcart.error. [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_308_5">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+
+set @name = N'MobileImageStyle'
+set @description = N'Default  [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_3278">
+	<summary>
+  Looks up a localized string similar to 
+DECLARE @mailServer NVARCHAR(1000)
+DECLARE @mailUser NVARCHAR(1000)
+DECLARE @mailFromAddress NVARCHAR(1000)
+DECLARE @mailFromName NVARCHAR(1000)
+DECLARE @mailPort NVARCHAR(1000)
+DECLARE @mailUseSSL  NVARCHAR(1000)
+DECLARE @mailPortINT INT
+DECLARE @mailUseSSLBIT BIT
+
+DECLARE @websiteEmailAccountCode NVARCHAR(36)
+DECLARE @webSiteCode NVARCHAR(30)
+
+DECLARE @varEcommerceSite table(
+    EmailAccountCode  NVARCHAR(36),
+    WebSiteCode NVARCHAR(30));
+
+INSERT INTO @varEcommerceSite(WebSiteCode, Em [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_3351">
+	<summary>
+  Looks up a localized string similar to 		DECLARE @WarehouseCode NVARCHAR(100)
+		DECLARE @PostingCode NVARCHAR(30)
+		DECLARE @LanguageCode NVARCHAR(100)
+		SELECT @LanguageCode = CompanyLanguage FROM SystemCompanyInformation
+      SELECT WarehouseCode INTO #TempWarehouse FROM InventoryWarehouse WHERE WarehouseCode NOT IN (
+      SELECT WarehouseCode FROM SystemLocationAccount)
+	IF EXISTS (SELECT 1 FROM SystemCategoryAccount WHERE WarehouseCode ='MAIN' AND CategoryCode='DEFAULT' )
+		BEGIN          
+			  --SELECT * FROM #TempWarehouse
+			   [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_3577">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @TempWebSiteCode TABLE (WebSiteCode NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded =  [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_3590">
+	<summary>
+  Looks up a localized string similar to UPDATE InventoryUnitMeasure 
+SET IsBase = CASE WHEN UnitMeasureQty = 1 THEN 1 ELSE  0 END
+WHERE IsBase IS NULL.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_3614">
+	<summary>
+  Looks up a localized string similar to 
+IF EXISTS(SELECT * FROM SYS.COLUMNS WHERE NAME = N'Status' AND OBJECT_ID = OBJECT_ID(N'SystemCheckList'))
+BEGIN
+UPDATE SystemCheckList SET Status = 'Completed'
+END.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_3651">
+	<summary>
+  Looks up a localized string similar to DECLARE @WebSiteCode NVARCHAR(30)
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+UPDATE CRMLead SET WebSiteCode = @WebSiteCode WHERE WebSiteCode is NULL
+
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_3678">
+	<summary>
+  Looks up a localized string similar to 
+--set addressformat of euro countries to format 2 &lt;old address format&gt;
+update SystemCountry set AddressFormat = 'Format 2' where (IsEuro = 1 or CountryCode = 'united kingdom') and AddressFormat is null
+go
+--set addressformat of not euro countries to format 1 &lt;new address format&gt;
+update SystemCountry set AddressFormat = 'Format 1' where (isnull(IsEuro,0) = 0 and CountryCode &lt;&gt; 'united kingdom') and AddressFormat is null
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_3955">
+	<summary>
+  Looks up a localized string similar to -- get language that will be useD                          
+DECLARE @CompanyLanguage nvarchar(50)
+DECLARE @UserCode nvarchar(30)
+DECLARE @CurrentDate NVARCHAR(30)                   
+
+SELECT @UserCode = 'admin'
+PRINT @UserCode  
+SET @CurrentDate = GETDATE()
+
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE La [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_411">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()                   
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+S [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_411_1">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()                   
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+	
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP 1 1 FRO [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_411_2">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()                   
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+S [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_4138">
+	<summary>
+  Looks up a localized string similar to 
+IF EXISTS(SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME= 'SystemManagerPreference' AND COLUMN_NAME  ='MaxOfRecordToSearch')
+BEGIN
+	-- To update the record
+Update SystemManagerPreference Set MaxOfRecordToSearch=1000
+
+-- To update the display name
+Update DataDictionaryColumnLanguage set DisplayName='Record Count Per Page'
+WHERE TableName='SystemManagerPreference'
+and ColumnName='NumberOfRecordSearch'
+
+Update DataDictionaryColumnLanguage set DisplayName='Max Record Count Per Page'
+WHER [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_4144">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()                   
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+	
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+	
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP  [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_4169">
+	<summary>
+  Looks up a localized string similar to UPDATE SupplierFactor
+SET PostalCode = SUBSTRING(PostalCode, 0, CHARINDEX('-', PostalCode)),
+Plus4 = CAST((SELECT SUBSTRING(PostalCode, CHARINDEX('-', PostalCode) + 1, 4)) AS INT)
+WHERE PostalCode LIKE '%-%' AND Country = 'United States of America'
+AND LEN(PostalCode) - LEN(REPLACE(PostalCode, '-','')) = 1
+AND PATINDEX('%[^0-9]%', (SELECT SUBSTRING(PostalCode, CHARINDEX('-', PostalCode) + 1, 4))) = 0
+
+UPDATE SupplierShipFrom
+SET PostalCode = SUBSTRING(PostalCode, 0, CHARINDEX('-', PostalCode)),
+Plu [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_4171">
+	<summary>
+  Looks up a localized string similar to UPDATE CRMContact SET
+	PostalCode = SUBSTRING(PostalCode, 0, CHARINDEX('-', PostalCode)),
+	Plus4 = CAST((SELECT SUBSTRING(PostalCode, CHARINDEX('-', PostalCode) + 1, 4)) AS INT)
+WHERE PostalCode LIKE '%-%' AND PostalCode NOT LIKE '%-%-%' AND Country = 'United States of America'
+AND PATINDEX('%[^0-9]%', (SELECT SUBSTRING(PostalCode, CHARINDEX('-', PostalCode) + 1, 4))) = 0
+
+UPDATE CRMLead SET
+	PostalCode = SUBSTRING(PostalCode, 0, CHARINDEX('-', PostalCode)),
+	Plus4 = CAST((SELECT SUBSTRING(PostalCod [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_4178">
+	<summary>
+  Looks up a localized string similar to UPDATE CustomerSalesRep SET
+PostalCode = SUBSTRING(PostalCode, 0, CHARINDEX('-', PostalCode)),
+Plus4 = CAST((SELECT SUBSTRING(PostalCode, CHARINDEX('-', PostalCode) + 1, 4)) AS INT)
+WHERE PostalCode LIKE '%-%' AND Country = 'United States of America'
+AND LEN(PostalCode) - LEN(REPLACE(PostalCode, '-','')) = 1
+AND PATINDEX('%[^0-9]%', (SELECT SUBSTRING(PostalCode, CHARINDEX('-', PostalCode) + 1, 4))) = 0
+
+UPDATE Customer SET
+PostalCode = SUBSTRING(PostalCode, 0, CHARINDEX('-', PostalCode)),
+Plus4 = C [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_4189">
+	<summary>
+  Looks up a localized string similar to -- get language that will be useD                          
+DECLARE @CompanyLanguage nvarchar(50)
+DECLARE @UserCode nvarchar(30)
+DECLARE @CurrentDate NVARCHAR(30)                   
+
+SELECT @UserCode = 'admin'
+PRINT @UserCode  
+SET @CurrentDate = GETDATE()
+
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE La [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_420">
+	<summary>
+  Looks up a localized string similar to -- get language that will be useD                          
+DECLARE @CompanyLanguage nvarchar(50)
+DECLARE @UserCode nvarchar(30)                   
+
+SELECT @UserCode = 'admin'
+PRINT @UserCode  
+
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE LanguageCode = @CompanyLanguage)                       
+  THEN (SE [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_4201">
+	<summary>
+  Looks up a localized string similar to 
+GO
+
+DELETE TransactionItemTaxDetail WHERE DocumentCode = '[To Be Generated]' 
+
+GO
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_423">
+	<summary>
+  Looks up a localized string similar to ---INTVIPTI-423
+---NEW UP-SELL/CROSS-SELL SECTIONS
+
+---APPLICATION CONFIGURATION
+DECLARE @UserCode nvarchar(30) 
+DECLARE @CurrentDate DateTime                  
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+SELECT @WebSiteCode = WebSiteCod [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_4246">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP 1 1 FR [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_447">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @UserCode nvarchar(30) 
+DECLARE @CurrentDate DateTime                  
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(Lo [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_450">
+	<summary>
+  Looks up a localized string similar to ---INTVIPTI-450
+---Provide Enhanced Minicart with cart preview
+
+---APPLICATION CONFIGURATION
+DECLARE @UserCode nvarchar(30) 
+DECLARE @CurrentDate DateTime                  
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+SELECT @WebSiteCode  [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_455">
+	<summary>
+  Looks up a localized string similar to -- INTVIPTI-455 (Social Media Links)
+
+-- StringResource
+DECLARE @CompanyLanguage nvarchar(50)
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE LanguageCode = @CompanyLanguage)                       
+  THEN (SELECT TOP 1 CompanyLanguage FROM SystemCompanyInformation)                        
+ WHEN EXISTS(SELECT T [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_4572">
+	<summary>
+  Looks up a localized string similar to /**** Set initial/default value for IsShowVariancePercentage
+   Ref: INTVIPTI-4572 - Enhance Financial Center ****/
+
+IF EXISTS (SELECT 1 FROM sys.objects O	INNER JOIN	sys.columns C ON O.object_id = C.object_id
+			WHERE O.type = 'U'
+				AND (o.name = N'AccountingPreference')
+				AND (c.name = 'IsShowVariancePercentage'))
+BEGIN
+DECLARE @SQLExec Nvarchar(200)
+SET @SQLExec = 'UPDATE AccountingPreference set IsShowVariancePercentage = 1'
+EXEC(@SQLExec)
+END
+
+/**** Set initial/default value for IsPrin [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_4576">
+	<summary>
+  Looks up a localized string similar to -- INTVIPTI-4576 (Contact Subscription Expiration)
+
+-- AppConfig 
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+
+set @nam [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5003">
+	<summary>
+  Looks up a localized string similar to -- replaced CRMBodyControl (TXTextControl) with DocumentEditor (DevExpress RichEdit)
+DELETE FROM SystemUserRoleMenuFormSection 
+WHERE SectionClassType IN ('Interprise.Presentation.WordProcessor.WordProcessorControl', 'Interprise.Presentation.Base.WordProcessor.CRMBodyControl').
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_517">
+	<summary>
+  Looks up a localized string similar to if not exists (select column_name from INFORMATION_SCHEMA.columns where table_name = 'InventoryKit' and column_name = 'IsGetItemPrice')
+BEGIN
+	UPDATE InventoryKit SET IsGetItemPrice = COALESCE(IsGetItemPrice, 0)
+	EXEC RefreshDependentViews 'InventoryKit', 'admin'
+END.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5358">
+	<summary>
+  Looks up a localized string similar to -- INTVIPTI-5358 (Admin Dashboard)
+
+-- AppConfig 
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+
+set @name = N'GoogleAnal [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5358_1">
+	<summary>
+  Looks up a localized string similar to -- INTVIPTI-5358-1 (Admin Dashboard)
+
+-- AppConfig 
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+
+set @name = N'GoogleAn [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5358_2">
+	<summary>
+  Looks up a localized string similar to -- INTVIPTI-5358-2 (Admin Dashboard)
+
+-- Update GoogleAnalytics.APIKey	
+UPDATE EcommerceAppConfig 
+SET [Description] = 'API Key is used in order to access data from you google analytics account. To retrieve your key, kindly follow instructions in https://code.google.com/p/google-api-javascript-client/wiki/Authentication#Get_your_API_Key'
+WHERE Name = 'GoogleAnalytics.APIKey'
+
+UPDATE EcommerceAppConfigModel
+SET [Description] = 'API Key is used in order to access data from you google analytics account [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5372">
+	<summary>
+  Looks up a localized string similar to ---INTVIPTI-5372
+---REVERT CHANGES in ISE-233-1
+
+---APPLICATION CONFIGURATION
+DECLARE @UserCode nvarchar(30) 
+DECLARE @CurrentDate DateTime                  
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+SET @Name = N'Dispatch_MAX_SMS_MSG_LENGTH'
+SET [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5516">
+	<summary>
+  Looks up a localized string similar to -- App Config
+DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP 1 1 FR [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5566">
+	<summary>
+  Looks up a localized string similar to -- get language that will be useD                          
+DECLARE @CompanyLanguage nvarchar(50)
+DECLARE @UserCode nvarchar(30)
+DECLARE @CurrentDate NVARCHAR(30)                   
+
+SELECT @UserCode = 'admin'
+PRINT @UserCode  
+SET @CurrentDate = GETDATE()
+
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE La [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5571">
+	<summary>
+  Looks up a localized string similar to ---INTVIPTI-450-1
+---Provide Enhanced Minicart with cart preview
+
+DECLARE @Name NVARCHAR(MAX)
+
+SET @Name = 'shoppingcart.cs.45'
+IF EXISTS (SELECT 1 FROM [dbo].[EcommerceStringResource] WHERE Name = 'shoppingcart.cs.45')
+BEGIN
+	UPDATE EcommerceStringResource
+	SET ConfigValue = 'View Cart'
+	WHERE Name = 'shoppingcart.cs.45'
+END
+
+SET @Name = 'shoppingcart.cs.46'
+IF EXISTS (SELECT 1 FROM [dbo].[EcommerceStringResource] WHERE Name = 'shoppingcart.cs.46')
+BEGIN
+	UPDATE EcommerceStringResource
+	SE [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5638">
+	<summary>
+  Looks up a localized string similar to -- supplier
+IF EXISTS(SELECT 1 FROM syscolumns WHERE [name] = 'SupplierLegacyCode')
+	UPDATE Supplier SET SupplierLegacyCode = 'NotApplicable'
+	WHERE COALESCE(SupplierLegacyCode, '') = ''
+
+-- supplier ship from
+IF EXISTS(SELECT 1 FROM syscolumns WHERE [name] = 'ShipFromLegacyCode')
+	UPDATE SupplierShipFrom SET ShipFromLegacyCode = 'NotApplicable'
+	WHERE COALESCE(ShipFromLegacyCode, '') = ''.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5747">
+	<summary>
+  Looks up a localized string similar to IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[InventoryWarehouseStoreData]') AND type in (N'U'))
+BEGIN
+
+IF EXISTS (SELECT 1 FROM SysObjects INNER JOIN SysColumns ON SysObjects.ID = SysColumns.ID WHERE ( SysObjects.[Name] = 'InventoryWarehouseStoreData' AND SysObjects.xtype='U' AND SysColumns.[Name] = 'IsStore'))
+BEGIN
+
+DECLARE @Statement NVARCHAR(MAX) 
+
+SET @Statement = '
+UPDATE InventoryWarehouse
+SET Store = ''Store''
+FROM InventoryWarehouse INNER JOIN InventoryWareh [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5753">
+	<summary>
+  Looks up a localized string similar to ------;With ToCheckDuplicateSection
+------As
+------(
+------		Select Count(*) as Counter ,Rolecode,MenugroupCode,FormMenuCode,SectionClassType,FormClassType,
+------		SectionAssemblyName,FormAssemblyName,ParentSectionClassType,DerivedInterface,IsCustomizable,FormSectionType,UserModified
+------		from SystemUserRoleMenuformSection 
+------		where IsCustomizable  =  1 
+------		group by Rolecode,MenugroupCode,FormMenuCode,SectionClassType,FormClassType,
+------		SectionAssemblyName,FormAssemblyName,ParentSe [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_589">
+	<summary>
+  Looks up a localized string similar to -- INTVIPTI-589 
+--- Shipping calculator on shoppingcart.aspx
+
+DECLARE @UserCode nvarchar(30) 
+DECLARE @CurrentDate DateTime                  
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSit [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5948">
+	<summary>
+  Looks up a localized string similar to IF EXISTS (SELECT 1 FROM SystemJobItem WHERE [Description] = 'Download Items' AND AssemblyName = 'Interprise.Facade.SolidCommerce')
+BEGIN
+	DELETE SystemJobItem WHERE [Description] = 'Download Items' AND AssemblyName = 'Interprise.Facade.SolidCommerce'
+END 
+
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_5954">
+	<summary>
+  Looks up a localized string similar to IF EXISTS(SELECT * FROM SYS.OBJECTS WHERE NAME = 'TempWarehouseCriteria' AND TYPE = 'U')
+BEGIN
+
+DECLARE @INSERT_INTO_SOLIDCOMMERCEWAREHOUSECRITERIA NVARCHAR(MAX)
+
+SET @INSERT_INTO_SOLIDCOMMERCEWAREHOUSECRITERIA = '
+ INSERT INTO SolidCommerceWarehouseCriteria_DEV000972 
+ (
+ CriteriaCode_DEV000972,
+ SCWarehouseCode_DEV000972,
+ UserCreated,
+ DateCreated,
+ UserModified,
+ DateModified
+ )
+ SELECT
+ A.CriteriaCode_DEV000972,
+ A.SCWarehouseCode_DEV000972,
+ ''admin'',
+ GETDATE(),
+ ''admin'',
+ GET [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6225">
+	<summary>
+  Looks up a localized string similar to IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[InventoryItemZoomOption]') AND type in (N'U'))
+DROP TABLE [dbo].[InventoryItemZoomOption]
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6246">
+	<summary>
+  Looks up a localized string similar to DECLARE @CompanyLanguage nvarchar(50)
+DECLARE @UserCode nvarchar(30)
+DECLARE @CurrentDate NVARCHAR(30)                   
+
+SELECT @UserCode = 'admin'
+PRINT @UserCode  
+SET @CurrentDate = GETDATE()
+
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE LanguageCode = @CompanyLanguage)                       
+  THEN [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6267">
+	<summary>
+  Looks up a localized string similar to DECLARE	@countrycode VARCHAR(100)
+DECLARE @LayoutcodeUK VARCHAR(500)
+DECLARE @LayoutcodeUS VARCHAR(500)
+
+SET @LayoutcodeUK = N'FRLAY-c07ffcfd-7b38-4bd2-a84c-5395307c871c'
+SET @LayoutcodeUS = N'FRLAY-c4d22024-63d0-4543-93a0-64eed1dc95fc'
+
+select @countrycode = Country from SystemCompanyinformation
+
+IF @countrycode IN (SELECT CountryCode FROM SystemCountry where IsEuro = 1 OR CountryCode='United Kingdom')
+	BEGIN 
+		IF @LayoutcodeUK NOT IN (SELECT Layoutcode FROM AccountingFRLayout)
+			INSERT [dbo] [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6397">
+	<summary>
+  Looks up a localized string similar to GO
+
+sp_refreshview CustomerOutstandingView
+
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6401">
+	<summary>
+  Looks up a localized string similar to DECLARE @WebsiteCode NVARCHAR(MAX)
+DECLARE @WebsiteCodes TABLE(WebSiteCode NVARCHAR(30))
+
+INSERT INTO @WebsiteCodes (WebSiteCode)
+SELECT WebsiteCode FROM EcommerceSite
+
+WHILE EXISTS(SELECT 1 FROM @WebsiteCodes) 
+BEGIN
+
+SELECT TOP 1 @WebsiteCode = WebsiteCode FROM @WebsiteCodes
+
+INSERT INTO eCommerceUserAccounts 
+(
+UserCode,
+WebSiteCode,
+IsWebAccess,
+UserCreated,
+DateCreated,
+UserModified,
+DateModified 
+)
+SELECT  UserCode,@WebsiteCode,0,'admin',GETDATE(),'admin',GETDATE()
+FROM    System [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6498">
+	<summary>
+  Looks up a localized string similar to 
+IF EXISTS(SELECT * FROM dbo.ConnectEmailAccount WHERE OwnerCode = 'admin')
+	BEGIN
+		UPDATE dbo.SystemJobPlan
+		SET OperatorEmailAddress = (SELECT TOP 1 EmailAddress FROM dbo.ConnectEmailAccount WHERE OwnerCode = 'admin' ORDER BY Counter) 
+		WHERE PlanCode = 'PLN-000001'
+	END.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6598">
+	<summary>
+  Looks up a localized string similar to ---NEW APPCONFIG: Default_AttributeColWidth
+DECLARE @WebSiteCode NVARCHAR(30)
+SELECT @WebSiteCode= WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+IF NOT EXISTS(SELECT 1 FROM [dbo].[EcommerceAppConfig] WHERE Name = 'Default_AttributeColWidth') AND ISNULL(@WebSiteCode,'')&lt;&gt;''
+BEGIN
+	INSERT [dbo].[EcommerceAppConfig] ([AppConfigGUID], [WebSiteCode], [Name], [Description], [ConfigValue], [GroupName], [SuperOnly], [CreatedOn], [DateModified], [UserModified], [DateCreated], [UserCreated], [Published], [M [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_668">
+	<summary>
+  Looks up a localized string similar to -- INTVIPTI-668 (Large Popup Image Enhancement)
+
+-- AppConfig 
+DECLARE @currentDate datetime
+set @currentDate = getdate()
+
+DECLARE @languageCode nvarchar(30)
+set @languageCode = N'en-us'
+
+DECLARE @UserCode nvarchar(30)
+SELECT @UserCode = N'admin'
+
+DECLARE @websiteCode nvarchar(max)
+SELECT @webSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+
+DECLARE @name nvarchar(max)
+DECLARE @groupName nvarchar(max)
+DECLARE @description nvarchar(max)
+DECLARE @value nvarchar(max)
+
+set @name = [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6810">
+	<summary>
+  Looks up a localized string similar to -- get language that will be useD                          
+DECLARE @CompanyLanguage nvarchar(50)
+DECLARE @UserCode nvarchar(30)
+DECLARE @CurrentDate NVARCHAR(30)                   
+
+SELECT @UserCode = 'admin'
+PRINT @UserCode  
+SET @CurrentDate = GETDATE()
+
+SELECT @CompanyLanguage = CompanyLanguage FROM SystemCompanyInformation                      
+SELECT   @CompanyLanguage =                      
+CASE                       
+ WHEN EXISTS(SELECT TOP 1 1 FROM DataDictionaryColumnLanguage WHERE La [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6923">
+	<summary>
+  Looks up a localized string similar to -- Insert missing Inventory Unit Measure entries (the one in the Setup tab in the Inventory Item) but exists in the inventory special costing tab
+INSERT InventoryUnitMeasure([ItemCode]
+           ,[UnitMeasureCode]
+           ,[UnitMeasureQty]
+           ,[WeightInKilograms]
+           ,[VolumeInCubicMeters]
+           ,[WeightInPounds]
+           ,[VolumeInCubicFeet]
+           ,[IsBase]
+           ,[NetWeightInKilograms]
+           ,[NetWeightInPounds]
+           ,[UPCCode]
+           ,[UserCr [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6958">
+	<summary>
+  Looks up a localized string similar to --Delete specific menu entries pertaining to the olde import manager plugin
+DELETE FROM SystemUserRoleMenuFormDescription
+WHERE FormMenuCode = '5a6a0d0f-a626-497f-8b4a-400e0ea42c04'
+
+DELETE FROM SystemUserRoleMenuForm
+WHERE FormMenuCode = '5a6a0d0f-a626-497f-8b4a-400e0ea42c04'
+
+
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_6970">
+	<summary>
+  Looks up a localized string similar to /* Delete obsolete shipping appconfig */
+DELETE ShippingAppConfig WHERE NAME IN ('Default.EnableOptionWindow'
+,'Default.EmailNotificationType'
+,'Default.OptionSelection'
+,'Freight.MarkupAmount'
+,'Freight.MarkupPercent')
+
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_7024">
+	<summary>
+  Looks up a localized string similar to Update Shipment 
+SET Shipment.CarrierDescription = ShipmentCarrier.CarrierDescription
+FROM Shipment,ShipmentCarrier
+WHERE Shipment.CarrierCode = ShipmentCarrier.CarrierCode.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_7043">
+	<summary>
+  Looks up a localized string similar to 
+-- Shipping --
+Update SystemUserRoleMenuform   set TreeParentID = '259027d7-5641-49d1-9507-ee4697ae2121'  where  FormMenuCode = 'e8351ddb-6e58-496f-a899-4f505a45bd4c' and rolecode = 'Administrator' and MenuGroupCode = 'Shipping' and DeveloperID ='DEV001034'
+--------------
+Delete from SystemUserRoleMenuDashboardPage where Rolecode = 'Administrator' and MenugroupCode = 'Shipping' and pagenumber =  3 
+--------------.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_7108">
+	<summary>
+  Looks up a localized string similar to -- To fix the wrong shipping app configs
+if exists (SELECT 1 FROM ShippingAppConfig WHERE [Name] = 'Default.EnforcePackageContent' and GroupName ='Settings') DELETE ShippingAppConfig WHERE [Name] = 'Default.EnforcePackageContent' and GroupName ='Settings'
+
+--FedEx
+if not exists (SELECT 1 FROM ShippingAppConfig WHERE [Name] = 'FedEx.DefaultSmartPostOption') INSERT INTO [dbo].[ShippingAppConfig] ([AppConfigGUID], [AppConfigID], [ConfigValue], [DateCreated], [DateModified], [Description], [GroupName], [Nam [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_7158">
+	<summary>
+  Looks up a localized string similar to 
+Update InventoryUnitMeasure set IsOverSized = 0
+WHERE IsOverSized is null
+
+
+Update InventoryUnitMeasure set IsPrepacked = 0
+WHERE IsPrepacked is null.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_7173">
+	<summary>
+  Looks up a localized string similar to 
+;WITH CTE
+		AS
+		(
+			SELECT
+				ROW_NUMBER() OVER(PARTITION BY SystemPostalCode.PostalCode,StateCode,City,TimeZone,PostalCodeType ORDER BY 
+									  Counter ASC) AS RowNbr,*
+			FROM
+				SystemPostalCode
+		)
+UPDATE dbo.CRMContact 
+SET PostalCode = b.PostalCode,
+	City = b.city,
+	Country = b.CountryCode,
+	TimeZone = b.TimeZone 
+FROM CTE as b
+WHERE CRMContact.PostalCode = b.PostalCode AND
+		CRMContact.City = b.city AND
+		CRMContact.Country = b.CountryCode 
+		AND b.RowNbr = 1
+
+;WITH CTE2 [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_7338">
+	<summary>
+  Looks up a localized string similar to DELETE FROM SystemUserRoleMenuDashboardPage WHERE DashBoardType = 'Report'
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_741">
+	<summary>
+  Looks up a localized string similar to --INTVIPTI-741 (Product Sorting on Entity Pages)
+
+-- StringResource 
+DECLARE @UserCode nvarchar(30) 
+DECLARE @CurrentDate DateTime                  
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault = 1
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM Syste [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_7433">
+	<summary>
+  Looks up a localized string similar to /*For report adaptive width resizing based on country*/
+IF  EXISTS (SELECT 1 FROM SystemCompanyInformation WHERE Country in ('Australia', 'United Kingdom'))
+BEGIN
+	UPDATE Report
+	SET AdaptStandardSize = 1
+	WHERE IsCustom = 0
+END.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_7500">
+	<summary>
+  Looks up a localized string similar to 
+update SystemDashboardManagerFieldFormat
+set CurrencySymbol = (select top 1 Symbol from SystemCurrency where IsHomeCurrency = 1)
+where FormatType = 'Currency' and GetCurrencyFrom = 'Home Currency'
+.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_7756">
+	<summary>
+  Looks up a localized string similar to UPDATE SupplierBill SET
+PaymentTermCode = B.PaymentTermCode
+FROM SupplierBill A INNER JOIN 
+Supplier B ON A.SupplierCode = B.SupplierCode.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI_794">
+	<summary>
+  Looks up a localized string similar to -- get language that will be useD                          
+DECLARE @UserCode nvarchar(30) 
+DECLARE @CurrentDate DateTime                  
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+DECLARE @GroupName NVARCHAR(MAX)
+DECLARE @Description NVARCHAR(MAX)
+DECLARE @Value NVARCHAR(MAX)
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHE [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.INTVIPTI4503">
+	<summary>
+  Looks up a localized string similar to IF EXISTS 
+(
+SELECT * FROM sys.objects 
+WHERE object_id = OBJECT_ID(N'dbo.SystemPostalCode_DataImport') 
+AND [type] = N'U'
+)
+BEGIN
+INSERT INTO [dbo].[SystemPostalCodeTaxData]
+           ([PostalCode]
+           ,[StateSalesTax]
+           ,[StateUseTax]
+           ,[CountySalesTax]
+           ,[CountyUseTax]
+           ,[CitySalesTax]
+           ,[CityUseTax]
+           ,[MTASalesTax]
+           ,[MTAUseTax]
+           ,[SPDSalesTax]
+           ,[SPDUseTax]
+           ,[Other1SalesTax]
+  [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.ISE_143">
+	<summary>
+  Looks up a localized string similar to /*==========================================================================================
+** Created By: Eric Conde
+** Description: Script is used to update target database to have default values for the newly 
+**             added table InventoryImageWebOptionDescription which is used by the Ecommerce
+**             site to tab images with a Title and AltText property
+** Date: 01-05-2011
+**
+==========================================================================================*/
+
+IF EXISTS ( [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.ISE_175">
+	<summary>
+  Looks up a localized string similar to INSERT INTO EcommerceCustomerActiveSites
+(ContactCode
+,WebSiteCode
+,IsEnabled
+,SubscriptionExpDate
+,UserCreated
+,DateCreated
+,UserModified
+,DateModified)
+SELECT 
+ContactCode, 
+WebSiteCode,
+1 AS IsEnabled,
+DATEADD(YEAR, 1, GETDATE()) AS SubscriptionExpDate,
+'Admin' AS UserCreated,
+GETDATE() AS DateCreated,
+'Admin' AS UserModified,
+GETDATE() AS DateModified
+FROM CRMContact
+WHERE ContactCode NOT IN (SELECT ContactCode FROM EcommerceCustomerActiveSites)
+AND WebSiteCode IS NOT NULL
+
+GO
+
+I [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.ISE_191">
+	<summary>
+  Looks up a localized string similar to DECLARE @DocumentCode NVARCHAR(30) = NULL
+
+IF NOT EXISTS(SELECT 1 FROM EcommerceTopicLanguage WHERE Name = 'EmptyAttributeText')
+	BEGIN
+		/* Generate Topic Code */
+		EXEC GenerateDocumentCode 'EcommerceTopic', '', @DocumentCode OUT, ''
+		
+		/* Insert new topic. */
+		INSERT [dbo].[EcommerceTopic] ([TopicID], [WebSiteCode], [TopicGUID], [Password], [PasswordIV], [PasswordSalt], [RequiresSubscription], [RequiresDisclaimer], [XmlPackage], [ExtensionData], [ShowInSiteMap], [SKinID], [ContentsBGColor], [P [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.ISE_233">
+	<summary>
+  Looks up a localized string similar to /* Delete obsolete appconfig */
+DELETE EcommerceAppConfigModel WHERE NAME IN ('CacheEntityHelperXml',
+'XmlPackage.OrderFinalization',
+'XmlPackage.LostPassword',
+'AllowBundleComponentShow',
+'Default_ProductPageSize',
+'OnSaleForTextColor',
+'ResizableLargeImagePopup',
+'ShowPreviousPurchase',
+'GreyCellColor',
+'PayPalCheckout.ApiPassword',
+'PayPalCheckout.ApiSignature',
+'PayPalCheckout.ApiUsername',
+'PayPalCheckout.AuthorizeOnly',
+'PayPalCheckout.PaymentTerm',
+'PayPalCheckout.SandboxApiPassword',
+ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.ISE_233_1">
+	<summary>
+  Looks up a localized string similar to GO
+
+DELETE EcommerceAppConfigModel
+WHERE Name IN ( 'GatewayRetries',
+				'GatewayTimeOut',
+				'MinOrderWeight',
+				'PaymentGateway',
+				'PayPal.OverrideAddress',
+				'Sagepay.Live.AbortURL',
+				'Sagepay.Live.CallbackURL',
+				'Sagepay.Live.PurchaseURL',
+				'Sagepay.Live.RefundURL',
+				'Sagepay.Live.ReleaseURL',
+				'Sagepay.Simulator.AbortURL',
+				'Sagepay.Simulator.CallbackURL',
+				'Sagepay.Simulator.PurchaseURL',
+				'Sagepay.Simulator.RefundURL',
+				'Sagepay.Simulator.ReleaseURL [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.ISE_81_1">
+	<summary>
+  Looks up a localized string similar to 
+IF EXISTS( SELECT * FROM INFORMATION_SCHEMA.COLUMNS 
+            WHERE TABLE_NAME = 'SystemAttributeValue' 
+           AND  COLUMN_NAME = 'LanguageCode')
+ 
+BEGIN
+
+	IF OBJECT_ID('tempdb..#DistinctSystemSellingLanguageISE81') IS NOT NULL 
+	BEGIN
+	DROP TABLE #DistinctSystemSellingLanguageISE81
+	END
+
+	CREATE TABLE #DistinctSystemSellingLanguageISE81 (
+	  RowNumber int IDENTITY (1, 1),
+	  LanguageCode nvarchar(30)  )
+	
+	INSERT #DistinctSystemSellingLanguageISE81 (LanguageCode)
+	SELECT LanguageC [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.ReportMigration">
+	<summary>
+  Looks up a localized string similar to /*For deleting old system reports*/
+DELETE FROM SystemMenuReportDescriptionTemplate
+FROM SystemMenuReportDescriptionTemplate RD
+INNER JOIN SystemMenuReportTemplate R
+	ON R.MenuGroupCode = RD.MenuGroupCode
+	AND R.ReportCode = RD.ReportCode
+	AND R.ChildReportCode = RD.ChildReportCode
+	AND R.LanguageCode = RD.LanguageCode
+WHERE R.ReportStructure IS NULL
+GO
+DELETE FROM SystemMenuReportTemplate
+FROM SystemMenuReportTemplate
+WHERE ReportStructure IS NULL
+GO
+/*For report adaptive width resizing based [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.SubjectToAvailability">
+	<summary>
+  Looks up a localized string similar to DECLARE @UserCode NVARCHAR(30)
+DECLARE @CurrentDate DateTime
+
+SET @UserCode = 'admin'
+SET @CurrentDate = GETDATE()                   
+
+DECLARE @TempLocale TABLE (LocaleSetting NVARCHAR(30))
+DECLARE @Locale NVARCHAR(30)
+
+DECLARE @WebSiteCode NVARCHAR(30)
+DECLARE @Name NVARCHAR(MAX)
+
+SELECT @WebSiteCode = WebSiteCode FROM EcommerceSite WHERE IsDefault =1 
+
+INSERT INTO @TempLocale(LocaleSetting)
+SELECT ShortString FROM SystemSellingLanguageView WHERE IsIncluded = 1
+
+WHILE EXISTS (SELECT TOP 1  [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.SUPP_1075">
+	<summary>
+  Looks up a localized string similar to --Insert New Record
+
+DECLARE @WebSiteCode NVARCHAR(30)
+
+SELECT @WebSiteCode= WebSiteCode FROM EcommerceSite WHERE IsDefault=1
+IF NOT EXISTS(SELECT 1 FROM [dbo].[EcommerceAppConfig] WHERE Name = 'ShowShippingMethodError') AND ISNULL(@WebSiteCode,'')&lt;&gt;''
+BEGIN
+
+	INSERT [dbo].[EcommerceAppConfig] ([AppConfigGUID], [WebSiteCode], [Name], [Description], [ConfigValue], [GroupName], [SuperOnly], [CreatedOn], [DateModified], [UserModified], [DateCreated], [UserCreated], [Published], [MLID], [Modified] ) 
+	 [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.SUPP_1912">
+	<summary>
+  Looks up a localized string similar to GO
+
+UPDATE InventoryUnitMeasure
+SET UnitMeasureQty = S.UnitMeasureQuantity
+FROM InventoryUnitMeasure U INNER JOIN SystemUnitMeasure S
+ON U.UnitMeasureCode = S.UnitMeasureCode 
+WHERE U.UnitMeasureQty IS NULL
+
+GO.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.WH_10342">
+	<summary>
+  Looks up a localized string similar to /**************************************************************************************************************/
+/******         Created       :   Script Insert Woohaa (BETA)                                                ******/
+/******         Added by      :   mark kee		                                                         ******/
+/******         Modified      :   06-27-2013	                                                         ******/
+/********************************************************** [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.WH_8415">
+	<summary>
+  Looks up a localized string similar to /*************************************************************************************************/
+/******         Created       :   Script For UPDATE System User Role Menu Form              ******/
+/******         Added by      :   mark kee		                                            ******/
+/******         Modified      :   06-04-2013	                                            ******/
+/*************************************************************************************************/
+GO
+/*UPDATE S [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.WH_8683">
+	<summary>
+  Looks up a localized string similar to /*****************************************************************************************************************/
+/******         Created          :   Script Delete CBNPORTAL Specific To NON CBNSupplier And  CBNRetailer    *****/
+/******         Modified by      :   mark kee		                                                         *****/
+/******         Modified         :   06-07-2013	                                                             *****/
+/************************************************ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.WH_8826">
+	<summary>
+  Looks up a localized string similar to /***************************************************************************************************************/
+/******         Created       :   Script For Transfer Enrollment Form from CBNPortal To SystemManager     ******/
+/******         Added by      :   mark kee		                                                          ******/
+/******         Modified      :   06-05-2013	                                                          ******/
+/********************************************************** [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.FinalScript.My.Resources.Resources.WH_8838">
+	<summary>
+  Looks up a localized string similar to /**************************************************************************************************************/
+/******         Created       :   Script Delete UK CBNPORTAL Specific To NON CBNSupplier And  CBNRetailer   ******/
+/******         Added by      :   mark kee		                                                         ******/
+/******         Modified      :   06-05-2013	                                                         ******/
+/*********************************************************** [rest of string was truncated]";.
+</summary>
+</member><member name="T:Interprise.Facade.Utility.FinalScript.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

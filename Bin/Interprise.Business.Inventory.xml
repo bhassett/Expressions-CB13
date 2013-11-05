@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Business.Inventory
+</name>
+</assembly>
+<members>
+<member name="M:Interprise.Business.Inventory.ItemDetailRule.CreateDefaultUnitMeasure(System.String,System.IO.MemoryStream@,System.Boolean)">
+	<summary>
+ Assign default unit measure from SetupUnitMeasure
+ </summary>
+	<param name="connectionString"></param>
+	<param name="strmData"></param>
+	<param name="isEnableDataCompression"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Inventory.ItemDetailRule.RenameItem(System.String,System.String,System.String,System.String)">
+	<summary>
+ Change item Codes.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="originalItemCode"></param>
+	<param name="newItemCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Inventory.BaseRule.#ctor">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Inventory.BaseRule.ComputePriceLevel(System.String,System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.Decimal@,System.Decimal@)">
+	<summary>
+ Computes TotalPrice and Unit Price for a specific price break.
+ </summary>
+	<param name="pricingMethod"></param>
+	<param name="pricingCostOrLastCost"></param>
+	<param name="amountOrPercent"></param>
+	<param name="discount"></param>
+	<param name="quantity"></param>
+	<param name="sellingPrice"></param>
+	<param name="unitPrice"></param>
+	<param name="TotalSalesPrice"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Inventory.BaseRule.GenerateInventoryLocationToTemp(System.String,System.String[])">
+	<summary>
+ GenerateInventoryLocationToTemp. 
+ </summary>
+	<param name="connectionString"></param>
+	<param name="param"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Inventory.BaseRule.GenerateInventoryStockTotal(System.String,System.String)">
+	<summary>
+  GenerateInventoryStockTotal 
+ </summary>
+	<param name="connectionString"></param>
+	<param name="user"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Inventory.BaseRule.GenerateAccount(System.String,System.String)">
+	<summary>
+ Generate new sets of account for item and category for new warehouses.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="warehouseCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Inventory.BaseRule.GenerateDescription(System.String,System.String,System.String)">
+	<summary>
+ Use when  a new selling language is added.
+ </summary>
+	<param name="connectionString"></param>
+	<param name="userCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Inventory.BaseRule.GetNewData(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32@)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="tablename"></param>
+	<param name="batchIndex"></param>
+	<param name="NoOfRecords"></param>
+	<param name="remaining"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Business.Inventory.BaseRule.GetRemainingRecords(System.String,System.String)">
+	<summary>
+ Get the remaining records in the database.
+ </summary>
+	<param name="commandText"></param>
+	<param name="connectionString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

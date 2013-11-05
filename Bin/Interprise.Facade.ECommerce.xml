@@ -1,0 +1,1573 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Facade.ECommerce
+</name>
+</assembly>
+<members>
+<member name="M:Interprise.Facade.ECommerce.TopicFacade.#ctor(Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway)">
+	<summary>
+ Create an intance of this class.
+ </summary>
+	<param name="p_topicDataSet">The gateway associated with the class.</param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.TopicFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This Overridable Property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<code lang="VB">
+ Dim m_CurrentDataset As Interprise.Framework.Base.DatasetComponent.BaseDatset
+ 
+ Public Readonly Overridable Property CurrentDataset() As Interprise.Framework.Base.DatasetComponent.BaseDatasetImplementsInterprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset
+ Get
+   Return m_CurrentDataset
+ End Get
+ EndProperty
+    </code>
+		<code lang="CS">
+ Interprise.Framework.Base.DatasetComponent.BaseDatset m_CurrentDataset = null;
+ 
+ public Interprise.Framework.Base.DatasetComponent.BaseDatasetImplementsInterprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset CurrentDataset() 
+ Get
+ {
+  return m_CurrentDataset;
+ }
+ End Get
+ </code>
+	</example>
+</member><member name="P:Interprise.Facade.ECommerce.TopicFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This Overridable Property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.TopicFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.TopicFacade.IsFinalizeNameTitle">
+	<summary>
+ Overridable Property to set if you want to apply the changes you made to the other Website.
+ </summary>
+	<value>True or False</value>
+	<returns>True if you want to apply the changes else false.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="transactionType">The transaction type of the row.</param>
+	<remarks>Override this is a generated document code is needed, as this is automatically
+ invoked in the UpdateDataset procedure.</remarks>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.AddWebSiteTopic(System.String,System.String)">
+	<summary>Add new topic row on the EcommerceSiteTopic Table.</summary>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub AddTopics(ByVal topicid As String, ByVal websitecode As String)
+      Dim topicGateway As New Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway
+      Dim topicFacade As New Interprise.Facade.ECommerce.TopicFacade(topicGateway)
+      'Make sure that the websitecode you entered is existing in the EcommerceSite Table.
+      topicFacade.AddEcommerceSiteTopic(nothing,"WEB-000001")
+ End Sub
+    </code>
+		<code lang="CS">
+ private void AddTopics(string topicid, string websitecode)
+ {
+   Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway topicGateway = new Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway();
+   Interprise.Facade.ECommerce.TopicFacade topicFacade = new Interprise.Facade.ECommerce.TopicFacade(topicGateway);
+   //Make sure that the websitecode you entered is existing in the EcommerceSite Table.
+   topicFacade.AddEcommerceSiteTopic(null,"WEB-000001");
+ }
+    </code>
+	</example>
+	<overloads>
+		<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.TopicFacade~AddEcommerceSiteTopic(ByVal%20String,%20ByVal%20String,%20ByVal%20String).html">
+ AddEcommerceSiteTopic(String,String,String)</a>
+	</overloads>
+	<param name="topicID">
+		<para><font color="green" size="2">The source transaction code to use when adding
+    data.</font></para>
+	</param>
+	<param name="websitecode">The Website where the topic will be saved.</param>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.AddEcommerceSiteTopic(System.String,System.String,System.String)">
+	<summary>Add new topic row on the EcommerceSiteTopic Table.</summary>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub AddEcommerceSiteTopics()
+       Dim topicGateway As New Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway
+       Dim topicFacade As New Interprise.Facade.ECommerce.TopicFacade(topicGateway)
+       topicFacade.AddEcommerceSiteTopic("WEB-000001", "Name", "Title")
+ End Sub
+    </code>
+		<code lang="CS">
+ private void AddEcommerceSiteTopics()
+ {
+   Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway topicGateway = new Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway();
+   Interprise.Facade.ECommerce.TopicFacade topicFacade = new Interprise.Facade.ECommerce.TopicFacade(topicGateway);
+   topicFacade.AddEcommerceSiteTopic("WEB-000001", "Name", "Title");
+ }
+    </code>
+	</example>
+	<overloads>
+		<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.TopicFacade~AddEcommerceSiteTopic(ByVal%20String,%20ByVal%20String).html">
+ AddEcommerceSiteTopic(String,String)</a>
+	</overloads>
+	<param name="webSiteCode">The Website where the topic will be saved.</param>
+	<param name="name">The name of the topic.</param>
+	<param name="title">The title of the topic.</param>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.AddTopic(System.String,System.String)">
+	<summary>Add new topic row in the EcommerceTopicModel Table and EcommerceSiteTopic Table.</summary>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub AddTopics(ByVal topicid As String, ByVal websitecode As String)
+    Dim topicGateway As New Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway
+    Dim topicFacade As New Interprise.Facade.ECommerce.TopicFacade(topicGateway)
+    'Make sure that the websitecode you entered is existing in the EcommerceSite Table.
+    topicFacade.AddTopic(nothing,"WEB-000001")
+ End Sub
+    </code>
+		<code lang="CS">
+ private void AddTopics(string topicid, string websitecode)
+ {
+    Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway topicGateway = new Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway();
+    Interprise.Facade.ECommerce.TopicFacade topicFacade = new Interprise.Facade.ECommerce.TopicFacade(topicGateway);
+    //Make sure that the websitecode you entered is existing in the EcommerceSite Table.
+    topicFacade.AddTopic(null, "WEB-000001");
+ }
+    </code>
+	</example>
+	<overloads>
+		<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.TopicFacade~AddTopic(ByVal%20String,%20ByVal%20String,%20ByVal%20String).html">
+ AddTopic(String,String,String)</a>
+	</overloads>
+	<param name="topicid">
+		<para><font color="green" size="2">The source transaction code to use when adding
+    data.</font></para>
+	</param>
+	<param name="websitecode">The selected Website where the new topic will be save.</param>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.AddTopic(System.String,System.String,System.String)">
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub AddTopics(ByVal topicid As String, ByVal websitecode As String)
+  Dim topicGateway As New Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway
+  Dim topicFacade As New Interprise.Facade.ECommerce.TopicFacade(topicGateway)
+  'Make sure that the websitecode you entered is existing in the EcommerceSite Table.
+  topicFacade.AddTopic("WEB-000001","Name","Title")
+ End Sub
+    </code>
+		<code lang="CS">
+ private void AddTopics(string topicid, string websitecode)
+ {
+   Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway topicGateway = new Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway();
+   Interprise.Facade.ECommerce.TopicFacade topicFacade = new Interprise.Facade.ECommerce.TopicFacade(topicGateway);
+   //Make sure that the websitecode you entered is existing in the EcommerceSite Table.
+   topicFacade.AddTopic("WEB-000001","Name","Title");
+ }
+    </code>
+	</example>
+	<summary>Add new topic row in the EcommerceTopicModel Table and EcommerceTopic Table.</summary>
+	<overloads>
+		<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.TopicFacade~AddTopic(ByVal%20String,%20ByVal%20String,%20ByVal%20String).html">
+ AddTopic(String,String)</a>
+	</overloads>
+	<param name="websiteCode">The selected EcommerceSite where the new topic will be saved.</param>
+	<param name="name">The name of the topic.</param>
+	<param name="title">The title of the topic.</param>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.AddEcommerceSiteTopicLanguage(System.String,System.Guid)">
+	<summary>
+	</summary>
+	<param name="websitecode"></param>
+	<param name="topicguid"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.AssignHtmlTopicContent(System.String,System.String,System.String,System.String)">
+	<summary>Assign the topic content in html format.</summary>
+	<example>
+		<code lang="VB">
+   Protected Overridable Sub AssignTopicContent()
+        Dim topicGateway As New Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway
+        Dim topicFacade As New Interprise.Facade.ECommerce.TopicFacade(topicGateway)
+        '' Make sure that the WebSiteCode is existing in the EcommerceSite DataTable.
+        topicFacade.AssignHtmlTopicContent("TopicContent", "TopicID", "WebSiteCode", "LanguageCode")
+ 
+    End Sub
+    </code>
+		<code lang="CS">
+ private void AssignTopicContent()
+ {
+    Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway topicGateway = new Interprise.Framework.ECommerce.DatasetGateway.TopicDatasetGateway();
+    Interprise.Facade.ECommerce.TopicFacade topicFacade = new Interprise.Facade.ECommerce.TopicFacade(topicGateway);
+    //' Make sure that the WebSiteCode is existing in the EcommerceSite DataTable.
+    topicFacade.AssignHtmlTopicContent("TopicContent", "TopicID", "WebSiteCode", "LanguageCode");
+ 
+ }
+    </code>
+	</example>
+	<param name="TopicContent">The content of the topic.</param>
+	<param name="topicid">
+		<para><font color="green" size="2">The source transaction code to use when adding
+    data.</font></para>
+	</param>
+	<param name="websitecode">The selected EcommerceSite where the new topic will be saved.</param>
+	<param name="languagecode">The language of the topic.</param>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.FinalizeNameAndTitle">
+	<summary>
+ Handles cascading of newly created topic record to other EcommerceSite.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="M:Interprise.Facade.ECommerce.TopicFacade.EcommerceSiteTopic_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+ Handles column and row changes made to the EcommerceSiteTopic DataTable.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.ECommerce.TopicFacade">
+	<summary>
+ The class use for topic transaction.
+ <para>It contains all subroutines / methods use for creating, modifying a topic.</para>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.LocaleSettingFacade.CurrentDataset">
+	<summary>Return the Current Dataset</summary>
+</member><member name="M:Interprise.Facade.ECommerce.LocaleSettingFacade.#ctor(Interprise.Framework.ECommerce.DatasetGateway.LocaleSettingDatasetGateway)">
+	<summary>Initialize the Dataset</summary>
+</member><member name="M:Interprise.Facade.ECommerce.LocaleSettingFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>Validate the Data in the Dataset</summary>
+</member><member name="P:Interprise.Facade.ECommerce.InventoryItemManufacturerTreeFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This Overridable Property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.ECommerce.InventoryItemManufacturerTreeFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This Overridable Property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.InventoryItemManufacturerTreeFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.InventoryItemManufacturerTreeFacade.#ctor(Interprise.Framework.ECommerce.DatasetComponent.InventoryItemManufacturerTreeDataset)">
+	<summary>
+ Create an intance of this class.
+ </summary>
+	<param name="p_inventoryItemManufacturerTree">The gateway associated with the class.</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.ECommerce.InventoryItemManufacturerTreeFacade">
+	<summary>
+ The class use in getting the number of times the manufacturer use in transaction.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.WebSiteFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This Overridable Property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<code lang="VB">
+ Dim m_CurrentDataset As Interprise.Framework.Base.DatasetComponent.BaseDatset
+ 
+ Public Readonly Overridable Property CurrentDataset() As Interprise.Framework.Base.DatasetComponent.BaseDatasetImplementsInterprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset
+ Get
+   Return m_CurrentDataset
+ End Get
+ EndProperty
+    </code>
+		<code lang="CS">
+ Interprise.Framework.Base.DatasetComponent.BaseDatset m_CurrentDataset = null;
+ 
+ public Interprise.Framework.Base.DatasetComponent.BaseDatasetImplementsInterprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset CurrentDataset() 
+ Get
+ {
+  return m_CurrentDataset;
+ }
+ End Get
+ </code>
+	</example>
+</member><member name="P:Interprise.Facade.ECommerce.WebSiteFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This Overridable Property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.WebSiteFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.WebSiteFacade.CustomerCode">
+	<summary> Returns CustomerCode. </summary>
+	<value>
+	</value>
+	<remarks>
+	</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.WebSiteFacade.ContactCode">
+	<summary> Returns ContactCode. </summary>
+	<value>
+	</value>
+	<remarks>
+	</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.WebSiteFacade.LanguageCode">
+	<summary> Returns LanguageCode. </summary>
+	<value>
+	</value>
+	<remarks>
+	</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.WebSiteFacade.WebSiteCode">
+	<summary>
+ Return the selected EcommerceSite.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.#ctor(Interprise.Framework.ECommerce.DatasetGateway.WebSiteDatasetGateway)">
+	<summary>
+ Create an intance of this class.
+ </summary>
+	<param name="p_webSiteDataSet">The gateway associated with the class.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.AddWebSite(System.String)">
+	<summary>Add new row in the EcommerceSite Table.</summary>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub NewWebSite()
+       Dim webSiteGateway As New Interprise.Framework.ECommerce.DatasetGateway.WebSiteDatasetGateway
+       Dim webSiteFacade As New Interprise.Facade.ECommerce.WebSiteFacade(webSiteGateway)
+       webSiteFacade.AddWebSite(Nothing)
+ End Sub
+    </code>
+		<code lang="CS">
+ private void NewWebSite()
+ {
+    Interprise.Framework.ECommerce.DatasetGateway.WebSiteDatasetGateway webSiteGateway = new Interprise.Framework.ECommerce.DatasetGateway.WebSiteDatasetGateway();
+    Interprise.Facade.ECommerce.WebSiteFacade webSiteFacade = new Interprise.Facade.ECommerce.WebSiteFacade(webSiteGateway);
+    webSiteFacade.AddWebSite(null);
+ }
+    </code>
+	</example>
+	<overloads>
+		<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.WebSiteFacade~AddWebSite(ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String).html">
+ AddWebSite(String,String,String)</a>
+	</overloads>
+	<returns>Instance of newly created datarow.</returns>
+	<param name="websitecode">
+		<para><font color="green" size="2"><font color="green" size="2">The source
+    transaction code to use when adding data.</font></font></para>
+	</param>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.AddWebSite(System.String,System.String,System.String,System.String)">
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub NewWebSite()
+        Dim webSiteGateway As New Interprise.Framework.ECommerce.DatasetGateway.WebSiteDatasetGateway
+        Dim webSiteFacade As New Interprise.Facade.ECommerce.WebSiteFacade(webSiteGateway)
+        webSiteFacade.AddWebSite("CustomerCode", "WebSiteURL", "WebServiceURL", "WebSiteDescription")
+ End Sub
+    </code>
+		<code lang="CS">
+ private void NewWebSite()
+ {
+    Interprise.Framework.ECommerce.DatasetGateway.WebSiteDatasetGateway webSiteGateway = new Interprise.Framework.ECommerce.DatasetGateway.WebSiteDatasetGateway();
+    Interprise.Facade.ECommerce.WebSiteFacade webSiteFacade = new Interprise.Facade.ECommerce.WebSiteFacade(webSiteGateway);
+    webSiteFacade.AddWebSite("CustomerCode", "WebSiteURL", "WebServiceURL", "WebSiteDescription");
+ }
+    </code>
+	</example>
+	<overloads>
+		<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.WebSiteFacade~AddWebSite(ByVal%20String,%20ByVal%20String,%20ByVal%20String,%20ByVal%20String).html">
+ AddWebSite(String)</a>
+	</overloads>
+	<summary>Add new row in the EcommerceSite Table.</summary>
+	<param name="customerCode">The existing customer in EcommerceSite.</param>
+	<param name="webSiteURL">The url of the EcommerceSite.</param>
+	<param name="webServiceURL">The web service url of the EcommerceSite.</param>
+	<param name="webSiteDescription">The description of the EcommerceSite.</param>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.AssignCustomer(System.Data.DataRow)">
+	<summary>
+ Assign the selected anonimous customer for the selected EcommerceSite. 
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.AssignReportCode(System.Data.DataRow)">
+	<summary>
+ Assign the reportcode of the selected report.
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.AssignAccountName(System.Data.DataRow)">
+	<summary>
+ Assign the account name of the selected email account.
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.AssignISOCode(System.Data.DataRow)">
+	<summary>
+ Assign the ISOCode for the selected country.
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.AssignCityState(System.Data.DataRow)">
+	<summary>
+ Assign the city and state for the selected postalcode.
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.AssignCreditCardGateway(System.Data.DataRow)">
+	<summary>
+ Assig the credit card gateway used by the anonimous customer. 
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.AssignWebSiteLogo(System.String)">
+	<summary>
+ Assign the logo of the EcommerceSite.
+ </summary>
+	<param name="path">The location of the image.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.GenerateEcommerceOptionDetail">
+	<summary>
+ Generate web option records for every web site found on the system.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.UpdateBusinessType(System.String)">
+	<summary>
+ Update the business type to Wholesale or Retail regardless of the country. 
+ </summary>
+	<param name="businessType">The business type of the anonymous customer.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.UpdateEcommerceSiteDetail">
+	<summary>
+ Set the isdefault column of all EcommerceSite found in the system.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.UpdateWebStoreAppConfigRecords">
+	<summary>
+ Update the EcommerceAppConfig records base on the selected time shipping information.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="transactionType">The transaction type of the row.</param>
+	<remarks>Override this is a generated document code is needed, as this is automatically
+ invoked in the UpdateDataset procedure.</remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks>If set to true, there were no errors found.</remarks>
+</member><member name="M:Interprise.Facade.ECommerce.WebSiteFacade.WebSite_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+ Handles column and row changes made to the EcommerceSite DataTable.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.ECommerce.WebSiteFacade">
+	<summary>
+ The class use for EcommerceSite transaction.
+ <para>It contains all subroutines / methods use for creating, modifying a WebSite.</para>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.Base.BaseFacade.CallFromUpdate">
+	<summary>
+ Check if the reseting of web cache is call from update or not.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.Base.BaseFacade.BeginResetCache(System.String)">
+	<summary>
+An asynchronous call when resetting web cache.
+ </summary>
+	<param name="webStoreServiceUrl"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.Base.BaseFacade.BeginResetCache(System.Int32,System.String,System.String,System.String)">
+	<summary>An asynchronous call when resetting web cache</summary>
+</member><member name="M:Interprise.Facade.ECommerce.Base.BaseFacade.BeginResetCache(System.Int32,System.String,System.String,System.String,System.String)">
+	<summary>An asynchronous call when resetting web cache</summary>
+</member><member name="M:Interprise.Facade.ECommerce.Base.BaseFacade.EndResetCache(System.IAsyncResult)">
+	<summary>
+ An asynchronous call when resetting of web cache is done.
+ </summary>
+	<param name="result"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.Base.BaseFacade.GetStoreFrontService(System.String)">
+	<summary>
+ Gets the instance of ASPDOTNET StoreFront web service
+ </summary>
+	<param name="webServiceURL"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.Base.BaseFacade.ResetCacheCompleted(System.Object,System.ComponentModel.AsyncCompletedEventArgs)">
+	<summary>
+ An asynchronous call reseting of web cache is successful.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.Base.BaseFacade.ResetWebCache(System.String)">
+	<summary>
+ Reset the settings when involve in caching data from the web site.
+ </summary>
+	<param name="webStoreServiceUrl"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.Base.BaseFacade.ResetWebCache(System.Int32,System.String,System.String,System.String)">
+	<summary>Reset the settings when involve in caching data from the web site.</summary>
+</member><member name="M:Interprise.Facade.ECommerce.Base.BaseFacade.InValidate(System.String,Interprise.Framework.Base.Shared.Enum.MessageWindowIcon)">
+	<summary>Forward any validation errors to UI.</summary>
+	<param name="message">Any messages to be forwarded to the UI.</param>
+	<param name="messageStyle">Type of message icon that will be displayed.</param>
+</member><member name="T:Interprise.Facade.ECommerce.Base.BaseFacade">
+	<summary>
+ The base class of all Ecommerce Facade Layer.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This Overridable Property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This Overridable Property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.IsFinalizeApplicationConfiguration">
+	<summary>
+ Overridable Property to set if you want to apply the changes you made to the other Website.
+ </summary>
+	<value>True or False</value>
+	<returns>True if you want to apply the changes else false.</returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.AppConfigGUID">
+	<summary>
+ Return the Configuration GUID of an application configuration.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.#ctor(Interprise.Framework.Base.DatasetComponent.BaseDataset)">
+	<summary>
+ Create an intance of this class.
+ </summary>
+	<param name="appconfigDataset">The gateway associated with the class.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.AssignAppConfigGUID(System.Data.DataRow)">
+	<summary>Add new row in the EcommerceAppConfigModel Table.</summary>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub NewWebAppConfig()
+        Dim appConfigGateway As New Interprise.Framework.ECommerce.DatasetGateway.ApplicationConfigurationDatasetGateway
+        Dim appConfigFacade As New Interprise.Facade.ECommerce.ApplicationConfigurationFacade(appConfigGateway)
+        ''The new row to be added.
+        Dim appConfigRow As DataRow
+        appConfigFacade.AssignAppConfigGUID(appConfigRow)
+ End Sub
+    </code>
+		<code lang="CS">
+ Private void NewWebAppConfig()
+ {
+    Interprise.Framework.ECommerce.DatasetGateway.ApplicationConfigurationDatasetGateway appConfigGateway = New Interprise.Framework.ECommerce.DatasetGateway.ApplicationConfigurationDatasetGateway();
+    Interprise.Facade.ECommerce.ApplicationConfigurationFacade appConfigFacade = New Interprise.Facade.ECommerce.ApplicationConfigurationFacade(appConfigGateway);
+    //'The new row to be added.
+    DataRow appConfigRow;
+    appConfigFacade.AssignAppConfigGUID(appConfigRow);
+ 
+ }
+    </code>
+	</example>
+	<param name="lineItemRow">
+		<para><font color="green" size="2">The information containted in the
+    datarow.</font></para>
+	</param>
+</member><member name="M:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.AddWebAppConfig(System.String,System.String,System.String)">
+	<summary>Add new row in the EcommerceAppConfigModel Table.</summary>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub NewWebAppConfig()
+      Dim appConfigGateway As New Interprise.Framework.ECommerce.DatasetGateway.ApplicationConfigurationDatasetGateway
+      Dim appConfigFacade As New Interprise.Facade.ECommerce.ApplicationConfigurationFacade(appConfigGateway)
+      appConfigFacade.AddWebAppConfig("ConfigValue", "Description", "Name")
+ End Sub
+    </code>
+		<code lang="CS">
+ private void NewWebAppConfig()
+ {
+  Interprise.Framework.ECommerce.DatasetGateway.ApplicationConfigurationDatasetGateway appConfigGateway = new Interprise.Framework.ECommerce.DatasetGateway.ApplicationConfigurationDatasetGateway();
+  Interprise.Facade.ECommerce.ApplicationConfigurationFacade appConfigFacade = new Interprise.Facade.ECommerce.ApplicationConfigurationFacade(appConfigGateway);
+  appConfigFacade.AddWebAppConfig("ConfigValue", "Description", "Name");
+ }
+    </code>
+	</example>
+	<param name="configValue">The configuration value.</param>
+	<param name="description">The description of the Application Configuration.</param>
+	<param name="name">The name of the Application Configuration.</param>
+</member><member name="M:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate.</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.WebAppConfig_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+ Occurs after a value has been changed for the specified System.Data.DataColumn in a System.Data.Datarow
+ </summary>
+	<param name="sender">Retrieves an object containing information about the forwarded value of the event.</param>
+	<param name="e">Retrieves an event of certain control.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.AddWebStoreAppConfig(System.Guid,System.String)">
+	<summary>
+ Add EcommerceStoreAppConfig row on the EcommerceStoreAppConfig Table.
+ </summary>
+	<param name="p_guid"></param>
+	<param name="p_websiteCode">The Website where the application configuration will be shown.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.GetContent(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="columnName"></param>
+	<param name="websiteCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.FinalizeAppConfig">
+	<summary>
+ Handles cascading of newly created application configuration record to other Website.
+ Used this method before saving changes in the application configuration.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="M:Interprise.Facade.ECommerce.ApplicationConfigurationFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="transactionType">The transaction type of the row.</param>
+	<remarks>Override this is a generated document code is needed, as this is automatically
+ invoked in the UpdateDataset procedure.</remarks>
+</member><member name="T:Interprise.Facade.ECommerce.ApplicationConfigurationFacade">
+	<summary>
+ The class use for application configuration related transaction.
+ <para>It contains all subroutines / methods use for creating, modifying an application configuration.</para>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.DataFeedTemplatesFacade.#ctor(Interprise.Framework.ECommerce.DatasetGateway.DataFeedTemplatesDatasetGateway)">
+	<summary>
+ Create an intance of this class.
+ </summary>
+	<param name="p_dataFeedTemplateDataSet">The gateway associated with the class.</param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.InventoryItemCategoryTreeFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This Overridable Property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.ECommerce.InventoryItemCategoryTreeFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This Overridable Property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.InventoryItemCategoryTreeFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.InventoryItemCategoryTreeFacade.#ctor(Interprise.Framework.ECommerce.DatasetComponent.InventoryItemCategoryTreeDataset)">
+	<summary>
+ Create an intance of this class.
+ </summary>
+	<param name="p_inventoryItemCategoryTree">The gateway associated with the class.</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.ECommerce.InventoryItemCategoryTreeFacade">
+	<summary>
+ The class use in getting the number of times the category use in transaction.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Facade.ECommerce.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Facade.ECommerce.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Interprise.Facade.ECommerce.InventoryItemDepartmentTreeFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This Overridable Property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<font size="2">Dim m_CurrentDataset as
+     Interprise.Framework.Base.DatasetComponent.BaseDatset</font>
+		<para>
+			<para><font color="blue" size="2">Public</font>
+				<font color="blue" size="2"> ReadOnly</font>
+				<font color="blue" size="2"> Property</font>
+				<font size="2"> CurrentDataset()</font><font color="blue" size="2"> As</font>
+				<font size="2"> Interprise.Framework.Base.DatasetComponent.BaseDataset</font>
+				<font color="blue" size="2"> Implements</font>
+				<font size="2"> Interprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset
+ </font></para>
+			<para><font color="blue" size="2">Get</font></para>
+			<para><font color="blue" size="2"><font color="black">Return
+         m_CurrentDataset</font></font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Get</font></para>
+			<para><font color="blue" size="2">End</font>
+				<font color="blue" size="2"> Property</font></para>
+		</para>
+	</example>
+</member><member name="P:Interprise.Facade.ECommerce.InventoryItemDepartmentTreeFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This Overridable Property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.InventoryItemDepartmentTreeFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.InventoryItemDepartmentTreeFacade.#ctor(Interprise.Framework.ECommerce.DatasetComponent.InventoryItemDepartmentTreeDataset)">
+	<summary>
+ Create an intance of this class.
+ </summary>
+	<param name="p_inventoryItemDepartmentTree">The gateway associated with the class.</param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.ECommerce.InventoryItemDepartmentTreeFacade">
+	<summary>
+ The class use in getting the number of times the department use in transaction.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.#ctor(Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway)">
+	<summary>
+ Create an intance of this class.
+ </summary>
+	<param name="p_newsDataSet">The gateway associated with the class.</param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.NewsFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This Overridable Property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<code lang="VB">
+ Dim m_CurrentDataset As Interprise.Framework.Base.DatasetComponent.BaseDatset
+ 
+ Public Readonly Overridable Property CurrentDataset() As Interprise.Framework.Base.DatasetComponent.BaseDatasetImplementsInterprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset
+ Get
+   Return m_CurrentDataset
+ End Get
+ EndProperty
+    </code>
+		<code lang="CS">
+ Interprise.Framework.Base.DatasetComponent.BaseDatset m_CurrentDataset = null;
+ 
+ public Interprise.Framework.Base.DatasetComponent.BaseDatasetImplementsInterprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset CurrentDataset() 
+ Get
+ {
+  return m_CurrentDataset;
+ }
+ End Get
+ </code>
+	</example>
+</member><member name="P:Interprise.Facade.ECommerce.NewsFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This Overridable Property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.NewsFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.NewsFacade.IsFinalizeHeadline">
+	<summary>
+ Overridable Property to set if you want to apply the changes you made to the other Website.
+ </summary>
+	<value>True or False</value>
+	<returns>True if you want to apply the changes else false.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="transactionType">The transaction type of the row.</param>
+	<remarks>Override this is a generated document code is needed, as this is automatically
+ invoked in the UpdateDataset procedure.</remarks>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.AddWebStoreNews(System.String,System.String)">
+	<summary>
+ Add news row on the EcommerceNews Table.
+ </summary>
+	<param name="newsID">The transaction code of the news.</param>
+	<param name="webSiteCode">The Website where the news will be shown.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.AddWebStoreNewsDetailLanguage(System.String)">
+	<summary>
+ Add news row to the table EcommerceStoreNewsDetailLanguage Table. 
+ </summary>
+	<param name="webSiteCode">The Website where the news will be shown.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.AddNews(System.String)">
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub News()
+      Dim newsGateway As New Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway
+      Dim newsFacade As New Interprise.Facade.ECommerce.NewsFacade(newsGateway)
+      newsFacade.AddNews(nothing)
+ End Sub
+    </code>
+		<code lang="CS">
+ private void News()
+ {
+   Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway newsGateway = new Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway();
+   Interprise.Facade.ECommerce.NewsFacade newsFacade = new Interprise.Facade.ECommerce.NewsFacade(newsGateway);
+   newsFacade.AddNews(null);
+ }
+    </code>
+	</example>
+	<summary>Add new news row on the EcommerceNews Table.</summary>
+	<overloads>
+		<para>
+			<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.NewsFacade~AddNews(ByVal%3Csee%20cref=">
+    20ByVal%20String).html"&gt;AddNews(String,String)</a></para>
+		<para>
+			<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.NewsFacade~AddNews(ByVal%20String,%20ByVal%20String,%20ByVal%20String).html">
+    AddNews(String,String,String)</a></para>
+	</overloads>
+	<param name="newsID">
+		<para><font color="green" size="2"><font color="green" size="2"><font color="green" size="2">The source transaction code to use when adding
+    data.</font></font></font></para>
+	</param>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.AddNews(System.String,System.String)">
+	<summary>Add new news row on the EcommerceNews Table.</summary>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub News()
+    Dim newsGateway As New Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway
+    Dim newsFacade As New Interprise.Facade.ECommerce.NewsFacade(newsGateway)
+    newsFacade.AddNews(Nothing,"Headline")
+ End Sub
+    </code>
+		<code lang="CS" inline="False">
+		</code>
+		<code lang="CS">
+ private void News()
+ {
+   Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway newsGateway = new Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway();
+   Interprise.Facade.ECommerce.NewsFacade newsFacade = new Interprise.Facade.ECommerce.NewsFacade(newsGateway);
+   newsFacade.AddNews(null,"Headline");
+ }
+    </code>
+	</example>
+	<overloads>
+		<para>
+			<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.NewsFacade~AddNews(ByVal%20String).html">
+    AddNews(String)</a></para>
+		<para>
+			<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.NewsFacade~AddNews(ByVal%20String,%20ByVal%20String,%20ByVal%20String).html">
+    AddNews(String,String,String)</a></para>
+	</overloads>
+	<param name="newsID">
+		<para><font color="green" size="2"><font color="green" size="2"><font color="green" size="2">The source transaction code to use when adding
+    data.</font></font></font></para>
+	</param>
+	<param name="headline">The headline of the news.</param>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.AddNews(System.String,System.String,System.String)">
+	<summary>Add new news row on the EcommerceNews Table.</summary>
+	<overloads>
+		<para>
+			<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.NewsFacade~AddNews(ByVal%20String).html">
+    AddNews(String)</a></para>
+		<para>
+			<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.NewsFacade~AddNews(ByVal%20String,%20ByVal%20String).html">
+    AddNews(String,String)</a></para>
+	</overloads>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub News()
+   Dim newsGateway As New Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway
+   Dim newsFacade As New Interprise.Facade.ECommerce.NewsFacade(newsGateway)
+   newsFacade.AddNews(Nothing,"Headline","TopicContent")
+ End Sub
+    </code>
+	</example>
+	<param name="newsID">
+		<para><font color="green" size="2"><font color="green" size="2"><font color="green" size="2">The source transaction code to use when adding
+    data.</font></font></font></para>
+	</param>
+	<param name="headline">The headline of the news.</param>
+	<param name="newsContent">The content of the news.</param>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.AssignPublishedValue(System.Byte)">
+	<summary>
+ This method is obsolete.
+ </summary>
+	<param name="published"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.AssignHtmlNewsContent(System.String,System.String)">
+	<example>
+		<code lang="VB">
+ Public Sub AssignNewsContent()
+        Dim newsGateway As New Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway
+        Dim newsFacade As New Interprise.Facade.ECommerce.NewsFacade(newsGateway)
+        newsFacade.AssignHtmlNewsContent("NewsContent", "LanguageCode")
+    End Sub
+    </code>
+		<code lang="CS">
+ public void AssignNewsContent()
+ {
+    Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway newsGateway = new Interprise.Framework.ECommerce.DatasetGateway.NewsDatasetGateway();
+    Interprise.Facade.ECommerce.NewsFacade newsFacade = new Interprise.Facade.ECommerce.NewsFacade(newsGateway);
+    newsFacade.AssignHtmlNewsContent("NewsContent", "LanguageCode");
+ }
+    </code>
+	</example>
+	<summary>Assign the news content in html format.</summary>
+	<param name="newsContent">The content of the news.</param>
+	<param name="languagecode">The language of the news.</param>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.AssignWebStoreNewsContent(System.String,System.String,System.String,System.String)">
+	<summary>
+ Assign the news content in html format.
+ </summary>
+	<param name="newsID">The transaction code of the news.</param>
+	<param name="newsContent">The content of the news.</param>
+	<param name="languagecode">he language of the news.</param>
+	<param name="webSiteCode">Teh Website where the news will be shown.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.WebNews_ColumnChanged(System.Object,System.Data.DataColumnChangeEventArgs)">
+	<summary>
+ Handles column and row changes made to the EcommerceNews DataTable.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.FinalizeHeadline">
+	<summary>
+ Handles cascading of newly created news record to other Website.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.GetContent(System.String,System.String,System.String)">
+	<summary>
+ Return the content of the news base on its language and Website. 
+ </summary>
+	<param name="columnName">The column to update.</param>
+	<param name="languageCode">The language of the news.</param>
+	<param name="websiteCode">The Website where the news will be shown.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.NewsFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="T:Interprise.Facade.ECommerce.NewsFacade">
+	<summary>
+ The class use for news transaction.
+ <para>It contains all subroutines / methods use for creating, modifying a news.</para>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.#ctor(Interprise.Framework.ECommerce.DatasetGateway.PollsDatasetGateway)">
+	<summary>
+ Create an intance of this class.
+ </summary>
+	<param name="webPollDataSet">The gateway associated with the class.</param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.PollFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This Overridable Property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<code lang="VB">
+ Dim m_CurrentDataset As Interprise.Framework.Base.DatasetComponent.BaseDatset
+ 
+ Public Readonly Overridable Property CurrentDataset() As Interprise.Framework.Base.DatasetComponent.BaseDatasetImplementsInterprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset
+ Get
+   Return m_CurrentDataset
+ End Get
+ EndProperty
+    </code>
+		<code lang="CS">
+ Interprise.Framework.Base.DatasetComponent.BaseDatset m_CurrentDataset = null;
+ 
+ public Interprise.Framework.Base.DatasetComponent.BaseDatasetImplementsInterprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset CurrentDataset() 
+ Get
+ {
+  return m_CurrentDataset;
+ }
+ End Get
+ </code>
+	</example>
+</member><member name="P:Interprise.Facade.ECommerce.PollFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This Overridable Property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.PollFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.PollFacade.IsFinalizeQuestion">
+	<summary>
+ Overridable Property to set if you want to apply the changes you made to the other Website.
+ </summary>
+	<value>True or False</value>
+	<returns>True if you want to apply the changes else false.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.NewEcommerceStorePoll(System.String,System.String)">
+	<summary>
+ Add row to the EcommerceStorePoll table.
+ </summary>
+	<param name="pollID">The transaction code of the poll.</param>
+	<param name="webSiteCode">The Website where the poll will be shown.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.AddEcommerceStorePollLanguage(System.String,System.String)">
+	<summary>
+ Add row to the EcommerceStorePollDetailLanguage table.
+ </summary>
+	<param name="pollID">The transaction code of the poll.</param>
+	<param name="websitecode">The Website where the poll will be shown.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.SetDocumentCode(Interprise.Framework.Base.Shared.Enum.TransactionType)">
+	<summary>
+ Assigns the generated document code to the field.
+ </summary>
+	<param name="transactionType">The transaction type of the row.</param>
+	<remarks>Override this is a generated document code is needed, as this is automatically
+ invoked in the UpdateDataset procedure.</remarks>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.AddPoll(System.String)">
+	<summary>Add new row in the EcommercePoll Table.</summary>
+	<overloads>
+		<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.PollFacade~AddPoll(ByVal%20String,%20ByVal%20String).html">
+ AddPoll(String,String)</a>
+	</overloads>
+	<param name="PollID">
+		<para><font color="green" size="2"><font color="green" size="2"><font color="green" size="2">The source transaction code to use when adding
+    data.</font></font></font></para>
+	</param>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.AddPoll(System.String,System.String)">
+	<summary>
+		<para><font color="green" size="2"><font color="green" size="2"><font color="green" size="2">Add new row in the EcommercePoll Table.</font></font></font></para>
+	</summary>
+	<overloads>
+		<a href="Interprise.Facade.ECommerce~Interprise.Facade.ECommerce.PollFacade~AddPoll(ByVal%20String).html">
+ AddPoll(String,String)</a>
+	</overloads>
+	<param name="PollID">
+		<para><font color="green" size="2"><font color="green" size="2"><font color="green" size="2">The source transaction code to use when adding
+    data.</font></font></font></para>
+	</param>
+	<param name="question">The question to be answered in poll voting.</param>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.InitializePollAnswerRow(System.String,System.Int32,System.String,System.String)">
+	<summary>
+ Add row to the table EcommercePollAnswer and EcommercePollAnswerLanguage table.
+ </summary>
+	<param name="pollid">The transaction code of the poll.</param>
+	<param name="answerid">The id of the answer.</param>
+	<param name="answer">The answer to the poll question.</param>
+	<param name="languagecode">The language of the poll.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.InitializePollAnswerRow(System.String,System.Int32,System.String,System.String,System.String)">
+	<summary>
+ Add row to the table EcommercePollAnswer and EcommercePollAnswerLanguage table.
+ </summary>
+	<param name="pollid">The transaction code of the poll.</param>
+	<param name="answerid">The id of the answer.</param>
+	<param name="answer">The answer to the poll question.</param>
+	<param name="languagecode">The language of the poll.</param>
+	<param name="webSiteCode">The Website where poll will be shown.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.AssignCategory(System.Data.DataRowView,System.Data.DataRow[],System.String)">
+	<summary>Assign the category selected from the list.</summary>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub GetCategory()
+       Dim dataSet1 As New DataSet
+       'Presuming the dataset contains the SystemCategory table
+       Dim categoryTable As DataTable = dataSet1.Tables("SystemCategory")
+       'Presuming the categoryTable contains item rows
+       Dim pollGateway As New Interprise.Framework.ECommerce.DatasetGateway.PollsDatasetGateway
+       Dim pollFacade As New Interprise.Facade.ECommerce.PollFacade(pollGateway)
+       pollFacade.AssignCategory(Nothing, categoryTable.Select, Nothing)
+ 
+   End Sub
+    </code>
+		<code lang="CS">
+ private void GetCategory()
+ {
+   DataSet dataSet1 = new DataSet();
+   //Presuming the dataset contains the SystemCategory table
+   DataTable categoryTable = dataSet1.Tables("SystemCategory");
+   //Presuming the categoryTable contains item rows
+   Interprise.Framework.ECommerce.DatasetGateway.PollsDatasetGateway pollGateway = new Interprise.Framework.ECommerce.DatasetGateway.PollsDatasetGateway();
+   Interprise.Facade.ECommerce.PollFacade pollFacade = new Interprise.Facade.ECommerce.PollFacade(pollGateway);
+   pollFacade.AssignCategory(null, categoryTable.Select, null);
+ 
+ }
+    </code>
+	</example>
+	<param name="categoryRowView">
+		<para><font color="#004080" size="2">The existing DataRowView of EcommercePollCategory
+    DataTable from where values of the first record of the &lt;rowsSelected&gt; will be
+    assigned.</font></para>
+	</param>
+	<param name="rowsSelected">
+		<div style="margin-left: 2em">
+			<para><font color="#004080" size="2">Arrays or collection of item rows that
+        will be included in the transaction.</font></para>
+		</div>
+	</param>
+	<param name="pollid">
+		<para><font color="green" size="2"><font color="green" size="2"><font color="green" size="2">The source transaction code to use when adding
+    data.</font></font></font></para>
+	</param>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.AssignDepartment(System.Data.DataRowView,System.Data.DataRow[],System.String)">
+	<summary>Assign the department selected from the list.</summary>
+	<param name="departmentRowView">
+		<para><font color="#004080" size="2">The existing DataRowView of EcommercePollDepartment
+    DataTable from where values of the first record of the &lt;rowsSelected&gt; will be
+    assigned.</font></para>
+	</param>
+	<param name="rowsSelected">
+		<para><font color="#004080" size="2">Arrays or collection of item rows that will be
+    included in the transaction.</font></para>
+	</param>
+	<param name="pollid">
+		<para><font color="green" size="2"><font color="green" size="2"><font color="green" size="2">The source transaction code to use when adding
+    data.</font></font></font></para>
+	</param>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.FinalizeQuestion">
+	<summary>
+ Handles cascading of newly created poll record to other Website.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.GetQuestion(System.String,System.String,System.String)">
+	<summary>
+ Return the question of the poll base on its language and Website. 
+ </summary>
+	<param name="columnName">The column to update.</param>
+	<param name="languageCode">The language of the news.</param>
+	<param name="websiteCode">The Website where the news will be shown.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.PollFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="T:Interprise.Facade.ECommerce.PollFacade">
+	<summary>
+ The class use for poll transaction.
+ <para>It contains all subroutines / methods use for creating, modifying a poll.</para>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.StringResourceListFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<returns>The dataset to be used for reading and saving.</returns>
+	<remarks>This Overridable Property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+	<example>
+		<code lang="VB">
+ Dim m_CurrentDataset As Interprise.Framework.Base.DatasetComponent.BaseDatset
+ 
+ Public Readonly Overridable Property CurrentDataset() As Interprise.Framework.Base.DatasetComponent.BaseDatasetImplementsInterprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset
+ Get
+   Return m_CurrentDataset
+ End Get
+ EndProperty
+    </code>
+		<code lang="CS">
+ Interprise.Framework.Base.DatasetComponent.BaseDatset m_CurrentDataset = null;
+ 
+ public Interprise.Framework.Base.DatasetComponent.BaseDatasetImplementsInterprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.CurrentDataset CurrentDataset() 
+ Get
+ {
+  return m_CurrentDataset;
+ }
+ End Get
+ </code>
+	</example>
+</member><member name="P:Interprise.Facade.ECommerce.StringResourceListFacade.CurrentReportType">
+	<summary>
+ Gets the report type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This Overridable Property is obsolete.</remarks>
+</member><member name="P:Interprise.Facade.ECommerce.StringResourceListFacade.CurrentTransactionType">
+	<summary>
+ Gets the transaction type of the UI that is using this facade.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.StringResourceListFacade.StringResourceGUID">
+	<summary>
+ Return the string GUID of an String Resource.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.ECommerce.StringResourceListFacade.IsFinalizeStringResource">
+	<summary>
+ Overridable Property to set if you want to apply the changes you made to the other Website.
+ </summary>
+	<value>True or False</value>
+	<returns>True if you want to apply the changes else false.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.StringResourceListFacade.#ctor(Interprise.Framework.ECommerce.DatasetGateway.StringResourceDatasetGateway)">
+	<summary>
+ Create an intance of this class.
+ </summary>
+	<param name="stringResourceDataset">The gateway associated with the class.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.StringResourceListFacade.AddStringResource(System.String,System.String,System.String)">
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub NewStringResource()
+        Dim stringResourceGateway As New Interprise.Framework.ECommerce.DatasetGateway.StringResourceDatasetGateway
+        Dim stringResourceFacade As New Interprise.Facade.ECommerce.StringResourceListFacade(stringResourceGateway)
+        stringResourceFacade.AddStringResource("Name", "LanguageCode", "ConfigValue")
+ End Sub
+    </code>
+		<code lang="CS">
+ private void NewStringResource()
+ {
+    Interprise.Framework.ECommerce.DatasetGateway.StringResourceDatasetGateway stringResourceGateway = new Interprise.Framework.ECommerce.DatasetGateway.StringResourceDatasetGateway();
+    Interprise.Facade.ECommerce.StringResourceListFacade stringResourceFacade = new Interprise.Facade.ECommerce.StringResourceListFacade(stringResourceGateway);
+    stringResourceFacade.AddStringResource("Name", "LanguageCode", "ConfigValue");
+ }
+    </code>
+	</example>
+	<summary>Add new row in the EcommerceStringResource Table.</summary>
+	<param name="name">The string resource name.</param>
+	<param name="languageCode">The language code of the string resource.</param>
+	<param name="value">The configuration vale of the string resource.</param>
+</member><member name="M:Interprise.Facade.ECommerce.StringResourceListFacade.InitStringResourceRow(System.Data.DataRowView,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="stringResourceRow"></param>
+	<param name="name"></param>
+	<param name="languageCode"></param>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.StringResourceListFacade.AssignStringResourceId(System.Data.DataRow)">
+	<summary>Add new row in the EcommerceStringResource Table.</summary>
+	<example>
+		<code lang="VB">
+ Protected Overridable Sub AddStringResource()
+        Dim stringResourceGateway As New Interprise.Framework.ECommerce.DatasetGateway.StringResourceDatasetGateway
+        Dim stringResourceFacade As New Interprise.Facade.ECommerce.StringResourceListFacade(stringResourceGateway)
+        ''The new row to be added.
+        Dim stringResourceRow As DataRow
+        stringResourceFacade.AssignStringResourceId(stringResourceRow)
+ End Sub
+    </code>
+		<code lang="CS">
+ private void AddStringResource()
+ {
+    Interprise.Framework.ECommerce.DatasetGateway.StringResourceDatasetGateway stringResourceGateway = new Interprise.Framework.ECommerce.DatasetGateway.StringResourceDatasetGateway();
+    Interprise.Facade.ECommerce.StringResourceListFacade stringResourceFacade = new Interprise.Facade.ECommerce.StringResourceListFacade(stringResourceGateway);
+    //The new row to be added.
+    DataRow stringResourceRow;
+    stringResourceFacade.AssignStringResourceId(stringResourceRow);
+ }
+    </code>
+	</example>
+	<param name="stringresourcerow">
+		<para><font color="green" size="2">The information containted in the</font>
+			<font color="green" size="2">datarow.</font></para>
+	</param>
+</member><member name="M:Interprise.Facade.ECommerce.StringResourceListFacade.AddWebStringResource(System.Guid,System.String)">
+	<summary>
+ Add string resource row on the EcommerceStoreStringResource Table.
+ </summary>
+	<param name="p_resourceGUID"></param>
+	<param name="p_websiteCode">The Website where the string resource will be shown.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.StringResourceListFacade.FinalizeStringResource">
+	<summary>
+ Handles cascading of newly created string resource record to other Website.
+ Used this method before saving changes in the string resource.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.StringResourceListFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Procedure to send the changes made to data source.
+ </summary>
+	<param name="commandSet">
+		<para>Format of the <strong>commandSet</strong> parameter:</para>
+		<para>New String()() {New String() {Table1Name, Table1CreateStoredProcedure,
+     Table1UpdateStoredProcedure, Table1DeleteStoredProcedure},</para>
+		<para>New String() {Table2Name, Table2ReadStoredProcedure, Table2UpdateStoredProcedure,
+     Table2DeleteStoredProcedure}}}</para>
+	</param>
+	<param name="isUseCache">Determines if the saving of the tables should be done in the cache database.</param>
+	<param name="transactionDescription">Describes what purpose of the update. (To be used by the Audit Trail)</param>
+	<param name="transactionType">The transaction type of the UI.</param>
+	<returns>
+ If true, the saving succeeds, if false, it fails.
+ </returns>
+	<remarks>
+	</remarks>
+</member><member name="M:Interprise.Facade.ECommerce.StringResourceListFacade.ImportStringResource(System.String,System.String)">
+	<summary>
+ Method use to import string from the excel file.
+ </summary>
+	<param name="localeSetting">The locale setting to be use when importing string resource.</param>
+	<param name="filepath">The location of the excel file to import.</param>
+	<returns>True or False</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.StringResourceListFacade.ShowMissingString(System.String,System.String)">
+	<summary>
+ Method use to show the record not existing in the database.
+ </summary>
+	<param name="localeSetting">The locale setting to be use when importing string resource.</param>
+	<param name="filepath">The location of the excel file.</param>
+	<returns>True or False</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.ECommerce.StringResourceListFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ Validates a DataColumn with a specified column name
+ </summary>
+	<param name="row">The row to validate.</param>
+	<param name="columnName">The column name to validate.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Interprise.Facade.ECommerce.StringResourceListFacade">
+	<summary>
+ The class use for string resource transaction.
+ <para>It contains all subroutines / methods use for creating, modifying a string resource.</para>
+	</summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

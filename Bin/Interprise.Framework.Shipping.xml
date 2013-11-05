@@ -1,0 +1,718 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Interprise.Framework.Shipping</name>
+    </assembly>
+    <members>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.MassPrintingDataset">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.MassPrintingDataset.ShipmentViewDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.MassPrintingDataset.ShipmentDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.MassPrintingDataset.ShipmentViewRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.MassPrintingDataset.ShipmentRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.MassPrintingDataset.ShipmentViewRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.MassPrintingDataset.ShipmentRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.TrackingDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.RateServiceDetailDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.ShipmentDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.ShipmentCarrierDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.InventoryWarehouseDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.ShipmentCarrierPackagingDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExExpressDomesticDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExGroundDomesticDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExHomeDeliveryDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExGroundIntraCanadaDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExGroundInternationalDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExExpressInternationalLBSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExExpressInternationalKGSDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.TrackingRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.RateServiceDetailRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.ShipmentRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.ShipmentCarrierRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.InventoryWarehouseRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.ShipmentCarrierPackagingRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExExpressDomesticRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExGroundDomesticRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExHomeDeliveryRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExGroundIntraCanadaRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExGroundInternationalRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExExpressInternationalLBSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExExpressInternationalKGSRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.TrackingRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.RateServiceDetailRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.ShipmentRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.ShipmentCarrierRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.InventoryWarehouseRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.ShipmentCarrierPackagingRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExExpressDomesticRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExGroundDomesticRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExHomeDeliveryRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExGroundIntraCanadaRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExGroundInternationalRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExExpressInternationalLBSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.CarrierDataset.FedExExpressInternationalKGSRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipAppConfigDataset">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipAppConfigDataset.ShippingAppConfigDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipAppConfigDataset.InventoryWarehouseDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipAppConfigDataset.ShippingAppConfigRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipAppConfigDataset.InventoryWarehouseRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipAppConfigDataset.ShippingAppConfigRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipAppConfigDataset.InventoryWarehouseRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempAvailableItemsDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempBatchShipmentAvailableItemsDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempShipmentDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempConfigurationDefaultDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.UPSCommoditiesDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerSalesOrderDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerSalesOrderDetailViewDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerInvoiceDetailViewDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerInvoiceDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.InventoryWarehouseViewDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentDetailDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentDetailViewDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentShippingMethodDefaultDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.UPSDocumentsDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentCarrierDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.GetBatchShipmentSalesOrderDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.GetBatchShipmentPackageDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.GetBatchShipmentSalesOrderDetailDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempOverSizedAndPrePackedItemsDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerSalesOrderRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerSalesOrderDetailViewRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerInvoiceDetailViewRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerInvoiceRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.InventoryWarehouseViewRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempAvailableItemsRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentDetailRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentDetailViewRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempShipmentRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentShippingMethodDefaultRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.UPSCommoditiesRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.UPSDocumentsRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempConfigurationDefaultRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentCarrierRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.GetBatchShipmentSalesOrderRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.GetBatchShipmentPackageRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.GetBatchShipmentSalesOrderDetailRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempBatchShipmentAvailableItemsRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempOverSizedAndPrePackedItemsRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerSalesOrderRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerSalesOrderDetailViewRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerInvoiceDetailViewRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.CustomerInvoiceRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.InventoryWarehouseViewRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempAvailableItemsRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentDetailRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentDetailViewRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempShipmentRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentShippingMethodDefaultRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.UPSCommoditiesRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.UPSDocumentsRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempConfigurationDefaultRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.ShipmentCarrierRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.GetBatchShipmentSalesOrderRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.GetBatchShipmentPackageRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.GetBatchShipmentSalesOrderDetailRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempBatchShipmentAvailableItemsRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShipmentDataset.TempOverSizedAndPrePackedItemsRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ForceVoidDataset">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ForceVoidDataset.ShipmentViewDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ForceVoidDataset.ShipmentDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ForceVoidDataset.ShipmentViewRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ForceVoidDataset.ShipmentRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ForceVoidDataset.ShipmentViewRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ForceVoidDataset.ShipmentRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.AddressVerificationDataset">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.AddressVerificationDataset.AddressMatchDetailDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.AddressVerificationDataset.ShipmentCarrierDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.AddressVerificationDataset.CurrentAddressDetailDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.AddressVerificationDataset.AddressMatchDetailRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.AddressVerificationDataset.ShipmentCarrierRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.AddressVerificationDataset.CurrentAddressDetailRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.AddressVerificationDataset.AddressMatchDetailRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.AddressVerificationDataset.ShipmentCarrierRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.AddressVerificationDataset.CurrentAddressDetailRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShippingMethodDataset">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShippingMethodDataset.ShipmentShippingMethodDefaultDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShippingMethodDataset.InventoryWarehouseDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShippingMethodDataset.ShippingMethodCarrierRateAdjustmentDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShippingMethodDataset.ShipmentShippingMethodDefaultRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShippingMethodDataset.InventoryWarehouseRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShippingMethodDataset.ShippingMethodCarrierRateAdjustmentRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShippingMethodDataset.ShipmentShippingMethodDefaultRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShippingMethodDataset.InventoryWarehouseRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Interprise.Framework.Shipping.DatasetComponent.ShippingMethodDataset.ShippingMethodCarrierRateAdjustmentRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+    </members>
+</doc>

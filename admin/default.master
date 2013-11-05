@@ -1,0 +1,85 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="default.master.cs" Inherits="_default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Connected Business eCommerce Admin Site</title>    
+    <link href="styles/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="skins/Skin_2/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+    <link href="skins/Skin_2/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.v1.7.2.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <asp:Literal runat="server" ID="litHeader"></asp:Literal>    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var tab = querystring("t");
+            if (tab.length > 0) {
+                $("#menuTab a[t='" + tab + "']").tab("show"); //select current tab
+            }
+            else {
+                $('#myTab a:first').tab('show'); //select first tab
+            }
+        });
+
+        function querystring(key) {
+            var re = new RegExp('(?:\\?|&)' + key + '=(.*?)(?=&|$)', 'gi');
+            var r = [], m;
+            while ((m = re.exec(document.location.search)) != null) r.push(m[1]);
+            return r;
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">  
+        <asp:ScriptManager ID="smMainScriptManager" runat="server">
+        </asp:ScriptManager>      
+        
+        <!-- header -->
+        <div class="header">
+            <div class="logo"></div>
+            <ul class="nav nav-tabs" id="menuTab">
+                <li class="active"><a href="#tabHome" data-toggle="tab" t="home">Home</a></li>
+                <li><a href="#tabSetup" data-toggle="tab" t="setup">Setup</a></li>
+                <%--<li><a href="#tabCustomers" data-toggle="tab" t="customers">Customers</a></li>--%>
+                <li><a href="#tabTools" data-toggle="tab" t="tools">Tools</a></li>
+                <li><a href="#tabItems" data-toggle="tab" t="items">Items</a></li>
+            </ul>
+            <asp:LinkButton ID="lnkLogout" runat="server" OnClick="LinkButton_Click" CausesValidation="false" CssClass="account">Log-Out</asp:LinkButton>
+        </div>
+        <div class="subheader">
+            <div class="tab-content">
+                <div class="tab-pane active" id="tabHome">
+                     <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/admin/default.aspx?t=home" CssClass="submenu-home"></asp:HyperLink>
+                </div>
+                <div class="tab-pane" id="tabSetup">
+                    <asp:HyperLink ID="lnkAppConfigs" runat="server" NavigateUrl="~/admin/AppConfigs.aspx?t=setup" CssClass="submenu-appconfig"></asp:HyperLink>
+                </div>
+                <div class="tab-pane" id="tabCustomers"></div>
+                <div class="tab-pane" id="tabTools">
+                    <asp:HyperLink ID="lnkUpload" runat="server" NavigateUrl="~/admin/upload.aspx?t=tools" CssClass="submenu-upload"></asp:HyperLink>
+                    <span class="separator"></span>
+                    <asp:HyperLink ID="lnkUploadFtp" runat="server" NavigateUrl="~/admin/uploadftp.aspx?t=tools" CssClass="submenu-files"></asp:HyperLink> 
+                    <span class="separator"></span>
+                    <asp:HyperLink ID="lnkMailingTest" runat="server" NavigateUrl="~/admin/mailingtest.aspx?t=tools" CssClass="submenu" Visible="false">Mailing Test</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/admin/SyncImages.aspx?t=tools" CssClass="submenu-mobile"></asp:HyperLink>
+                    <span class="separator"></span>
+                    <asp:HyperLink ID="lnkTools" runat="server" NavigateUrl="~/admin/Tools.aspx?t=tools" CssClass="submenu-social"></asp:HyperLink>
+                    <span class="separator"></span>
+                    <asp:HyperLink ID="lnkPageDesigner" runat="server" Target="_blank" NavigateUrl="~/Default.aspx?CMS_ENABLE_EDITMODE=true" CssClass="submenu-contenteditor"></asp:HyperLink>
+                </div>
+                <div class="tab-pane" id="tabItems">
+                    <asp:HyperLink ID="lnkItems" runat="server" NavigateUrl="~/admin/Items.aspx?t=items" CssClass="submenu-items"></asp:HyperLink>
+                    <asp:HyperLink ID="lnkItemImages" runat="server" NavigateUrl="~/admin/ItemImages.aspx?t=items" CssClass="submenu-itemimages"></asp:HyperLink>
+                </div>
+
+                <asp:LinkButton ID="lnkResetCache" runat="server" OnClick="LinkButton_Click"  CssClass="submenu-resetcache"></asp:LinkButton>
+            </div>
+            
+        </div>
+        <div class="maincontent">
+            <asp:ContentPlaceHolder ID="pnlMain" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

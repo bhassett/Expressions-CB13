@@ -1,0 +1,17 @@
+<SiteMap>
+		<item Text="(!menu.Home!)" NavigateUrl="default.aspx" LookId="VertTopItemLook"/>
+		<item Text="(!menu.Categories!)" LookId="VertTopItemLook" />
+		<item Text="(!menu.Sections!)" LookId="VertTopItemLook" />
+		<item Text="(!menu.Manufacturers!)" LookId="VertTopItemLook" />
+		<item Text="(!menu.CustomerService!)" NavigateUrl="t-service.aspx" LookId="VertTopItemLook">
+				<MenuItem Text="(!menu.YourAccount!)" NavigateUrl="account.aspx" />
+				<MenuItem Text="(!menu.OrderHistory!)" NavigateUrl="account.aspx" />
+				<MenuItem Text="(!menu.FAQs!)" NavigateUrl="t-faq.aspx" />
+				<MenuItem Text="(!menu.PolicyReturns!)" NavigateUrl="t-returns.aspx" />
+				<MenuItem Text="(!menu.Shipping!)" NavigateUrl="t-shipping.aspx" />
+				<MenuItem Text="(!menu.Contact!)" NavigateUrl="t-contact.aspx" />
+				<MenuItem Text="(!menu.PolicyPrivacy!)" NavigateUrl="t-privacy.aspx" />
+				<MenuItem Text="(!menu.PolicySecurity!)" NavigateUrl="t-security.aspx" />
+        <MenuItem Text="(!menu.LeadForm!)" NavigateUrl="t-Leadform.aspx" />
+		</item>
+</SiteMap>

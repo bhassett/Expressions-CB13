@@ -1,0 +1,729 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Extendable.Base
+</name>
+</assembly>
+<members>
+<member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.RTF">
+	<summary>
+ Get Or Set the content in RTF Format.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.PlainText">
+	<summary>
+ Get Or Set the content in PlainText Format.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.ByteArrayValue">
+	<summary>
+ Get Or Set the content in Byte Array.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.DocumentCodeToLoad">
+	<summary>
+ Document Code.
+ Please set this whenever the ControlType is set to TemplateEditor or MailMergeDocument and you want to Update the Document.
+ When not set or set to Nothing, the control will see this as a new Document or Template.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.PageViewType">
+	<summary>
+ Get or Set DocumentEditorControl's page view type.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.HTML">
+	<summary>
+ Get or Set HTML Value of the document editor.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.WordML">
+	<summary>
+  Get or Set WordML Value of the document editor. 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.MHT">
+	<summary>
+ Get or Set MHT Value of the document editor. 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.ContenData">
+	<summary>
+ Gets the HTML content of the document editor with
+ CSS inline and images not embedded.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.GetHTMLSimple">
+	<summary>
+ Get HTML Content of the Document Editor. (Image URLs)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.Button_DataSourceVisible">
+	<summary>
+ Hide/Show Data Source Button
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.Button_TemplatesVisible">
+	<summary>
+ Hide/Show Template List Button
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.Button_MergeFieldsVisible">
+	<summary>
+ Hide/Show Merge Field Button
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.RestrictTemplateListByDataSource">
+	<summary>
+ TRUE. Will only show templates with the same datasource of the current document.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.NumberOfRecordsToMerge">
+	<summary>
+ Number of Records to Merge. Set to -1 if ALL.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.CurrentModule">
+	<summary>
+ Get or Set the Current Module where the control is being used/called.
+ This will serve a reference in the Database where the Document belongs.
+ This is required when ShowMailMergeOptions is set to TRUE.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.ControlType">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.ToolMode">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorControlInterface.SelectedRibbonPage(System.Object)">
+	<summary> 
+ This is used to simply tell the control of what is the currently selected Ribbon Page from the parent form.
+ </summary>
+	<param name="eRibbonPage"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.IFieldPropertyEditorInterface.BindedTableName">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.IFieldPropertyEditorInterface.ParentTableName">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.IFieldPropertyEditorInterface.ColumnName">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.IFieldPropertyEditorInterface.IsPending">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.Customization.IFieldPropertyEditorInterface.SetTextDisplay">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.Customization.IFieldPropertyEditorInterface.FieldPropertyEditorForm_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Extendable.Base.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Extendable.Base.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionUpdateInterface.CancelProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionUpdateInterface.AcceptProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionUpdateInterface.RefreshProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionUpdateInterface.ProcessScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionUpdateInterface.IsFinalized">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionUpdateInterface.HasChanges">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorFormInterface.RTF">
+	<summary>
+ Get Or Set the content in RTF Format.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorFormInterface.PlainText">
+	<summary>
+ Get Or Set the content in PlainText Format.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorFormInterface.ByteArrayValue">
+	<summary>
+ Get Or Set the content in Byte Array.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorFormInterface.CurrentModule">
+	<summary>
+ Get or Set the Current Module where the control is being used/called.
+ This will serve a reference in the Database where the Document belongs.
+ This is required when ShowMailMergeOptions is set to TRUE.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.IDocumentEditorFormInterface.DocumentCodeToLoad">
+	<summary>
+ Please set this whenever the ControlType is set to TemplateEditor.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.OnAfterLoadDataset(System.Object,System.EventArgs)">
+	<summary>
+ Initially intended for custom plugins
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.IBaseFormSectionInterface.GetType">
+	<summary>
+ Gets the System.Type of the current interface.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.Utility.IScriptInterface.UpgradeScript">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.Utility.IScriptInterface.SystemTable">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionInterface.CancelProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionInterface.AcceptProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionInterface.RefreshProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionNewInterface.CancelProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionNewInterface.AcceptProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionNewInterface.RefreshProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionNewInterface.ProcessScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionNewInterface.IsFinalized">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionReportInterface.CancelProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionReportInterface.AcceptProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionReportInterface.RefreshProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionReportInterface.ProcessScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionReportInterface.IsFinalized">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.JobScheduler.JobPlan.IActionInterface.MoveUp">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.JobScheduler.JobPlan.IActionInterface.MoveDown">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.JobScheduler.JobPlan.IActionInterface.MoveLeft">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.JobScheduler.JobPlan.IActionInterface.MoveRight">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionReadInterface.CancelProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionReadInterface.AcceptProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionReadInterface.RefreshProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionReadInterface.ProcessScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionReadInterface.IsFinalized">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.Supplier.ISupplierInterface.AddNewCostingDetailRow(System.String,System.Int32,System.String,System.String,System.String,System.String)">
+	<summary>
+ Creates a new SupplierSpecialCostingView row.
+ </summary>
+	<param name="p_itemCode">The current item's Item Code value.</param>
+	<param name="p_maxQuantity">The current item's Maximum Quantity value.</param>
+	<param name="p_supplierCode">The current Supplier Code.</param>
+	<param name="p_unitMeasureCode">The current item's Unit Measure Code value.</param>
+	<param name="p_warehouseCode">The current supplier's Warehouse Code</param>
+	<remarks>Used to create a new detail row for the supplier costing details.</remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.Supplier.ISupplierInterface.AddNewCostingDetailRow(System.String,System.Decimal,System.String,System.String,System.String,System.String)">
+	<summary>
+ Creates a new SupplierSpecialCostingView row.
+ </summary>
+	<param name="p_itemCode">The current item's Item Code value.</param>
+	<param name="p_maxQuantity">The current item's Maximum Quantity value. Allows fractional value should it be enabled to.</param>
+	<param name="p_supplierCode">The current Supplier Code.</param>
+	<param name="p_unitMeasureCode">The current item's Unit Measure Code value.</param>
+	<param name="p_warehouseCode">The current supplier's Warehouse Code</param>
+	<remarks>Used to create a new detail row for the supplier costing details.</remarks>
+</member><member name="M:Interprise.Extendable.Base.Business.IBaseInterface.UpdatePluginAssembly(System.String,Interprise.Framework.Base.Shared.Structure.AssemblyInformation[])">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<param name="assemblyInformation"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Business.IBaseInterface.SetUserRoleBasedOnProductEdition(System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="activationCode"></param>
+	<param name="salt"></param>
+	<param name="vector"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.IBaseInterface.BusinessServiceURL">
+	<summary>
+ Connection url to be use to connect via web service
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.IBaseInterface.PluginAssemblyID(System.String)">
+	<summary>
+	</summary>
+	<param name="mainAssemblyName"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.IBaseInterface.PluginFileVersion(System.String)">
+	<summary>
+	</summary>
+	<param name="mainAssemblyName"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.IBaseInterface.CustomUpdateCommandSet">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.IBaseInterface.CustomLoadCommandSet">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.IBaseInterface.ParentChildRelations">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.CreateColumn(System.String,System.String,System.Int32,System.Boolean,System.Object,System.Boolean,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="columnName"></param>
+	<param name="sqlType"></param>
+	<param name="maxLength"></param>
+	<param name="allowDBNull"></param>
+	<param name="defaultValue"></param>
+	<param name="isIdentity"></param>
+	<param name="isPrimaryKey"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GenerateCheckNumber(System.String)">
+	<summary>
+ Generate a new check number for the current transaction.
+ </summary>
+	<param name="bankAccountCode">Reference of the bankaccount.</param>
+	<returns>Returns the generated check number.</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.RegisterPlugin(System.String,Interprise.Framework.Base.Shared.Structure.Plugin[])">
+	<summary>
+ Register a plugin to the database.
+ </summary>
+	<param name="parentSectionName">The container of the plugin control.</param>
+	<param name="plugin">A collection of plugin that will be registered.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GetClassType(System.String,System.String)">
+	<summary>
+ Get the class type of a control.
+ </summary>
+	<param name="assemblyName">The assembly from which classtype will be retrived.</param>
+	<param name="classType">The fully qualified name of the class.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GetPluginSection(System.String,System.String,System.String,Interprise.Framework.Base.Shared.Enum.ConnectionStringType)">
+	<summary>
+ Gets the information of a plugin section.
+ </summary>
+	<param name="roleCode">The role where the plugin will be retrieved.</param>
+	<param name="parentSectionName">The parent class type of a plugin section.</param>
+	<param name="formClassType">The fully qualified name of the form where the plugin section will be found.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GetPluginForm(System.String,System.String,System.String,System.String,Interprise.Framework.Base.Shared.Enum.ConnectionStringType)">
+	<summary>
+ Gets the information of a plugin section.
+ </summary>
+	<param name="roleCode">The role where the plugin will be retrieved.</param>
+	<param name="formClassType">The fully qualified name of the form where the plugin section will be found.</param>
+	<param name="formAssemblyName">The fully qualified assembly name of the form.</param>
+	<param name="connectionType">Type of connection where the info will be retrived.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.InitializeTable(System.Data.DataTable)">
+	<summary>
+ Added custom field on the table passed.
+ </summary>
+	<param name="table"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GetPluginDirectory(System.String)">
+	<summary>
+ Returns directory of where the plugin created.
+ </summary>
+	<param name="mainAssemblyName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.SetUserRoleBasedOnProductEdition(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="activationCode"></param>
+	<param name="salt"></param>
+	<param name="vector"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GetDataDictionaryCustomFields(System.String)">
+	<summary>
+	</summary>
+	<param name="tablename"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.CompareDataRow(System.Data.DataRow,System.Data.DataRow)">
+	<summary>
+	</summary>
+	<param name="leftRow"></param>
+	<param name="rightRow"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GetZone(System.String,Interprise.Framework.Base.Shared.Enum.ZoneType)">
+	<summary>
+	</summary>
+	<param name="warehouseCode"></param>
+	<param name="zone"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.RefreshDataDictionary(System.String[])">
+	<summary>
+	</summary>
+	<param name="tableNames"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.RefreshDataDictionaryObjects(System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GetColumnType(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="parentTableName"></param>
+	<param name="columnName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GetParentTableName(System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GetFormSectionDocumentCode(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="roleCode"></param>
+	<param name="menuGroupCode"></param>
+	<param name="formMenuCode"></param>
+	<param name="sectionCode"></param>
+	<param name="pluginContainerName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.GetJobItemClassType(System.Type)">
+	<summary>
+ Get the Job Item Class Types from parameter Assembly.
+ </summary>
+</member><member name="M:Interprise.Extendable.Base.Facade.IBaseInterface.LoadFormSection(System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="formMenuCode"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Facade.SystemManager.User.IUserAccountInterface.ForceSignOut(System.String)">
+	<summary>
+ Signed out the user's specified IP address
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.INewFieldInterface.DeveloperID">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.INewFieldInterface.AssemblyID">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.INewFieldInterface.TableName">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.INewFieldInterface.ParentTableName">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.INewFieldInterface.IsBindingDisabled">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.INewFieldInterface.CurrentCustomizationType">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.Customization.INewFieldInterface.IsPending">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormInterface.ProcessScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormInterface.CancelProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormInterface.AcceptProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormInterface.RefreshProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.DocumentEditor.PopUpForm.IMergeFieldDataSourceControlInterface.SelectRecord">
+	<summary>
+ Triggers PopUpSelectClosed Event
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionWriteInterface.CancelProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionWriteInterface.AcceptProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionWriteInterface.RefreshProcess(System.Object)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionWriteInterface.ProcessScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Presentation.Generic.PluginManager.UserRole.IGenerateXMLFormSectionWriteInterface.IsFinalized">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Extendable.Base.Presentation.SystemManager.UserRole.IMainFormInterface.GenerateXML">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.Utility.IDefaultScriptInterface.UpgradeAddConstraints">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.Utility.IDefaultScriptInterface.UpgradeBulkInsert">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.Utility.IDefaultScriptInterface.UpgradeDropConstraints">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.Utility.IDefaultScriptInterface.UpgradePatchBackup">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.Utility.IDefaultScriptInterface.UpgradePatchRestore">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.Utility.IDefaultScriptInterface.UpgradePatchTruncate">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Extendable.Base.Facade.Utility.IDefaultScriptInterface.UpgradeSQLSchema">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

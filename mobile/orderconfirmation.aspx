@@ -1,0 +1,1 @@
+<%@ Page Language="c#" Inherits="InterpriseSuiteEcommerce.orderconfirmation" CodeFile="orderconfirmation.aspx.cs" %>

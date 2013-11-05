@@ -1,0 +1,3060 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Framework.Inventory
+</name>
+</assembly>
+<members>
+<member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPricingLevelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceListViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceLevelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryUnitMeasureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceListCategoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceListViewCopyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPricingLevelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceListViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceLevelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryUnitMeasureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceListCategoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceListViewCopyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPricingLevelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceListViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceLevelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryUnitMeasureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceListCategoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet.InventoryPriceListViewCopyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.PricingDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemLedgerDataset.InventoryStockViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemLedgerDataset.InventoryStockDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemLedgerDataset.InventoryStockViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemLedgerDataset.InventoryStockDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemLedgerDataset.InventoryStockViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemLedgerDataset.InventoryStockDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemLedgerDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.AttributeDataset.SystemAttributeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.AttributeDataset.SystemAttributeValueDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.AttributeDataset.SystemAttributeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.AttributeDataset.SystemAttributeValueRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.AttributeDataset.SystemAttributeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.AttributeDataset.SystemAttributeValueRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.AttributeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.SystemManager.OpeningBalanceDatasetGateway.#ctor">
+	<summary>
+ Method use to create new instance.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.DatasetGateway.SystemManager.OpeningBalanceDatasetGatewaySerializer.DerivedType">
+	<summary>
+ Returns derived type.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryAdjustmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryAdjustmentDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryReallocatableQuantityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryReallocatableQuantityCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryAdjustmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryAdjustmentDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryReallocatableQuantityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryReallocatableQuantityCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryAdjustmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryAdjustmentDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryReallocatableQuantityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet.InventoryReallocatableQuantityCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AdjustmentDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryBuildAssemblyDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryBuildAssemblyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyComponentsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryReallocatableQuantityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryReallocatableQuantityCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryStockTotalViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyStockInformationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryBuildAssemblyDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryBuildAssemblyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyComponentsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryReallocatableQuantityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryReallocatableQuantityCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryStockTotalViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyStockInformationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryBuildAssemblyDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryBuildAssemblyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyComponentsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryReallocatableQuantityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryReallocatableQuantityCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryStockTotalViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset.InventoryAssemblyStockInformationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.AssemblyDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Interprise.Framework.Inventory.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Framework.Inventory.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryUpdateLastStockTakeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeLocationItemViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryLocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryReallocatableQuantityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryReallocatableQuantityCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeLocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryUpdateLastStockTakeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeLocationItemViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryLocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryReallocatableQuantityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryReallocatableQuantityCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeLocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryUpdateLastStockTakeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeLocationItemViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryLocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryReallocatableQuantityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryReallocatableQuantityCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset.InventoryStockTakeLocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTakeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.CategoryDateset.InventoryCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.CategoryDateset.InventoryCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.CategoryDateset.InventoryCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.CategoryDateset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryBestSellingItemsAnalysisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryReturnedItemsAnalysisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventorySlowMovingItemsAnalysisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessOverdueInvoicesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventorySlowMovingItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryReturnedItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryStockValuationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryItemsThatNeedOrderingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryReturnedItemsRMAViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryBestSellingItemsOrderedViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryReturnedItemsCreditedViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryBestSellingItemsInvoiceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryItemsThatNeedOrderingViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryBusinessSlowMovingItemsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryBestSellingItemsAnalysisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryReturnedItemsAnalysisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventorySlowMovingItemsAnalysisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessOverdueInvoicesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventorySlowMovingItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryReturnedItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryStockValuationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryItemsThatNeedOrderingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryReturnedItemsRMAViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryBestSellingItemsOrderedViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryReturnedItemsCreditedViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryBestSellingItemsInvoiceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryItemsThatNeedOrderingViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryBusinessSlowMovingItemsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryBestSellingItemsAnalysisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryReturnedItemsAnalysisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventorySlowMovingItemsAnalysisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessOverdueInvoicesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventorySlowMovingItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryReturnedItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryStockValuationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.GetBusinessInventoryItemsThatNeedOrderingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryReturnedItemsRMAViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryBestSellingItemsOrderedViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryReturnedItemsCreditedViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryBestSellingItemsInvoiceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryItemsThatNeedOrderingViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset.InventoryBusinessSlowMovingItemsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InventoryBusinessIntelligenceDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterCodeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterCodeDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterCodeViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueWebOptionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueWebOptionDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterCodeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterCodeDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterCodeViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueWebOptionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueWebOptionDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterCodeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterCodeDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterCodeViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueWebOptionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset.SystemItemAttributeSourceFilterValueWebOptionDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeSourceFilterDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.PromotionDataset.InventoryPromotionManagerViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.PromotionDataset.InventoryPromotionManagerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.PromotionDataset.InventoryPromotionManagerViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.PromotionDataset.InventoryPromotionManagerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.PromotionDataset.InventoryPromotionManagerViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.PromotionDataset.InventoryPromotionManagerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.PromotionDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.UnitMeasureDataset.InventoryUnitMeasureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.UnitMeasureDataset.InventoryUnitMeasureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.UnitMeasureDataset.InventoryUnitMeasureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.UnitMeasureDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemHistoryDataSet.GetInventoryItemTransactionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemHistoryDataSet.InventoryStockTransferHistoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemHistoryDataSet.InventoryLedgerViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemHistoryDataSet.GetInventoryItemTransactionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemHistoryDataSet.InventoryStockTransferHistoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemHistoryDataSet.InventoryLedgerViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemHistoryDataSet.GetInventoryItemTransactionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemHistoryDataSet.InventoryStockTransferHistoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemHistoryDataSet.InventoryLedgerViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemHistoryDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryDefaultAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryDiscountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryWebOptionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryWebOptionDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.InventoryCategoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.InventoryItemAttributeCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.InventoryItemAttributeCategoryDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryDefaultAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryDiscountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryWebOptionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryWebOptionDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.InventoryCategoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.InventoryItemAttributeCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.InventoryItemAttributeCategoryDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryDefaultAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryDiscountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryWebOptionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryWebOptionDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.InventoryCategoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.SystemCategoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.InventoryItemAttributeCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset.InventoryItemAttributeCategoryDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.CategoryDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.UnitMeasureDataSet.SystemUnitMeasureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.UnitMeasureDataSet.SystemUnitMeasureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.UnitMeasureDataSet.SystemUnitMeasureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.UnitMeasureDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.SystemManager.BandDatasetGateway.#ctor">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.SystemManager.BandDatasetGateway.SetTableDefault">
+	<summary>
+ Set the default of values of datatable columns
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetGateway.SystemManager.BandDatasetGateway">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.DatasetGateway.SystemManager.BandDatasetGatewaySerializer.DerivedType">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetGateway.SystemManager.BandDatasetGatewaySerializer">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAccessoryItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySubstituteItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySpecialPricingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySpecialCostingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeValueDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryKitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemDepartmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryUpdateStockTakeDaysDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryUpdateItemStatusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryUnitMeasureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemPricingDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryStandardCostHistoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryCostDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryPricingLevelViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierPriceListUnitMeasureDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierPricingLevelViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAssemblyDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAssemblyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryGLClassTemplateDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryMatrixGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemWebOptionDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemWebOptionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryFirstSupplierPricingLevelViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryMatrixItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.WebRatingViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.WebRatingCommentHelpfulnessDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemSalesTaxDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryMatrixItemNameCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryOverrideImageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryWarehouseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryLocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemBinLocationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBinLocationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryImageWebOptionDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryCopyItemListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundleDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundlePricingDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundleDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundlePricingDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.TemporaryInventoryBundlePricingDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemAttributeCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeCategoryGroupViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemAttributeDepartmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeDepartmentGroupViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.SystemItemAttributeSourceFilterValueDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemBinLocationCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryStockTotalDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.SupplierShipFromViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierShipFromViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryProductIdentifierDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAccessoryItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySubstituteItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySpecialPricingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySpecialCostingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeValueRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryKitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemDepartmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryUpdateStockTakeDaysRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryUpdateItemStatusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryUnitMeasureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemPricingDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryStandardCostHistoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryCostDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryPricingLevelViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierPriceListUnitMeasureRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierPricingLevelViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAssemblyDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAssemblyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryGLClassTemplateDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryMatrixGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemWebOptionDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemWebOptionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryFirstSupplierPricingLevelViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryMatrixItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.WebRatingViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.WebRatingCommentHelpfulnessRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemSalesTaxRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryMatrixItemNameCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryOverrideImageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryWarehouseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryLocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemBinLocationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBinLocationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryImageWebOptionDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryCopyItemListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundleDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundlePricingDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundleDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundlePricingDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.TemporaryInventoryBundlePricingDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemAttributeCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeCategoryGroupViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemAttributeDepartmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeDepartmentGroupViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.SystemItemAttributeSourceFilterValueDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemBinLocationCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryStockTotalDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.SupplierShipFromViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierShipFromViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryProductIdentifierRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAccessoryItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySubstituteItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySpecialPricingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySpecialCostingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeValueRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryKitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemDepartmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryUpdateStockTakeDaysRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryUpdateItemStatusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryUnitMeasureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemPricingDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryStandardCostHistoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryCostDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryPricingLevelViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierPriceListUnitMeasureRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierPricingLevelViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAssemblyDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAssemblyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryGLClassTemplateDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryMatrixGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemWebOptionDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemWebOptionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryFirstSupplierPricingLevelViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryMatrixItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.WebRatingViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.WebRatingCommentHelpfulnessRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemSalesTaxRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryMatrixItemNameCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryOverrideImageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryWarehouseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryLocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemBinLocationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBinLocationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryImageWebOptionDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryCopyItemListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundleDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundlePricingDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundleDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryBundlePricingDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.TemporaryInventoryBundlePricingDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemAttributeCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeCategoryGroupViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemAttributeDepartmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryAttributeDepartmentGroupViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.SystemItemAttributeSourceFilterValueDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryItemBinLocationCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryStockTotalDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.SupplierShipFromViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventorySupplierShipFromViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset.InventoryProductIdentifierRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemDetailDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ClassTemplateDataset.InventoryItemClassTemplateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ClassTemplateDataset.InventoryItemClassTemplateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ClassTemplateDataset.InventoryItemClassTemplateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ClassTemplateDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.SystemManager.GLClassTemplateDatasetGateway.#ctor">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetGateway.SystemManager.GLClassTemplateDatasetGatewaySerializer">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.SystemManager.UnitMeasureDatasetGateway.SetTableDefaults">
+	<summary>
+ Set the default of values of datatable columns
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.GLClassTemplateDataset.InventoryGLClassTemplateDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.GLClassTemplateDataset.InventoryGLClassTemplateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.GLClassTemplateDataset.InventoryGLClassTemplateDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.GLClassTemplateDataset.InventoryGLClassTemplateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.GLClassTemplateDataset.InventoryGLClassTemplateDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.GLClassTemplateDataset.InventoryGLClassTemplateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.GLClassTemplateDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassCodeTemplateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassDescriptionTemplateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassValueTemplateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassGroupViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeSourceFilterValueDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassCodeTemplateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassDescriptionTemplateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassValueTemplateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassGroupViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeSourceFilterValueDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassCodeTemplateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassDescriptionTemplateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassValueTemplateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeClassGroupViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset.SystemItemAttributeSourceFilterValueDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ItemAttributeClassTemplateDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingLanguageDataSet.SystemSellingLanguageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingLanguageDataSet.SystemSellingLanguageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingLanguageDataSet.SystemSellingLanguageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingLanguageDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryLocationItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryLocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryWarehouseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryStockTotalDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.SystemLocationAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.SystemLocationDefaultAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryLocationItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryLocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryWarehouseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryStockTotalDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.SystemLocationAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.SystemLocationDefaultAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryLocationItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryLocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryWarehouseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.InventoryStockTotalDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.SystemLocationAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset.SystemLocationDefaultAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.WarehouseDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.SystemManager.CategoryDatasetGateway.#ctor">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.SystemManager.CategoryDatasetGateway.SetTableDefault">
+	<summary>
+ Set the default of values of datatable columns
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetGateway.SystemManager.CategoryDatasetGateway">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetGateway.SystemManager.CategoryDatasetGatewaySerializer">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.Common.GetContentType(System.String)">
+	<summary>
+		<para>Returns the web content type of an image.</para>
+		<para>&gt;Use in store front implementation</para>
+	</summary>
+	<param name="filePath">Location of the image file.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.Common.NewLine">
+	<summary>
+ Creates cariage line return.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.Common.HasNoChanges(System.Data.DataTable)">
+	<summary>
+ Determines if a dataTable has no changes.
+ </summary>
+	<param name="table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.Common.HasChanges(System.Data.DataTable)">
+	<summary>
+ Determines if a dataTable has changes.
+ </summary>
+	<param name="table"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InternalStockTransferDataset.GetInventoryLocationStockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InternalStockTransferDataset.InventoryInternalStockTransferDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InternalStockTransferDataset.InventoryInternalStockTransferDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InternalStockTransferDataset.GetInventoryLocationStockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InternalStockTransferDataset.InventoryInternalStockTransferRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InternalStockTransferDataset.InventoryInternalStockTransferDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InternalStockTransferDataset.GetInventoryLocationStockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InternalStockTransferDataset.InventoryInternalStockTransferRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InternalStockTransferDataset.InventoryInternalStockTransferDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.InternalStockTransferDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.OpeningBalanceDataset.InventoryOpeningBalanceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.OpeningBalanceDataset.InventoryOpeningBalanceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.OpeningBalanceDataset.InventoryOpeningBalanceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.OpeningBalanceDataset.InventoryOpeningBalanceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.OpeningBalanceDataset.InventoryOpeningBalanceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.OpeningBalanceDataset.InventoryOpeningBalanceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.OpeningBalanceDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationDataset.InventoryLocationItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationDataset.InventoryLocationStockCountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationDataset.InventoryLocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationDataset.InventoryLocationItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationDataset.InventoryLocationStockCountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationDataset.InventoryLocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationDataset.InventoryLocationItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationDataset.InventoryLocationStockCountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationDataset.InventoryLocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.InventoryCopyItemListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.GetInventoryMonthlyAnalysisByAmountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.GetInventoryMonthlyAnalysisByQuatityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.InventoryItemTransactionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.InventoryCopyItemListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.GetInventoryMonthlyAnalysisByAmountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.GetInventoryMonthlyAnalysisByQuatityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.InventoryItemTransactionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.InventoryCopyItemListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.GetInventoryMonthlyAnalysisByAmountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.GetInventoryMonthlyAnalysisByQuatityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset.InventoryItemTransactionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.TransactionDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Interprise.Framework.Inventory.DatasetGateway.ItemDetailDatasetGateway.DeletedMatrixRecordDataset">
+	<summary>
+ Returns deleted records of a matrix group.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.DatasetGateway.ItemDetailDatasetGateway.DeletedMatrixTableNames">
+	<summary>
+ Returns tablenames of deleted matrix records.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.ItemDetailDatasetGateway.AcceptMatrixChanges">
+	<summary>
+ Commit all changes made to the matrix tables.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.ItemDetailDatasetGateway.#ctor">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.ItemDetailDatasetGateway.CreateConstraints">
+	<summary>
+ Create constraints and relations for different tables.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.ItemDetailDatasetGateway.CreateTemporaryTables">
+	<summary>
+ Create all temporary tables that is use by the matrix group.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryBinLocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryItemViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryItemBinLocationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryBinLocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryItemViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryItemBinLocationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryBinLocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryItemViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset.InventoryItemBinLocationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.BinLocationDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitOptionGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitOptionGroupDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitDetailDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitPricingDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitOptionGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitOptionGroupDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitDetailDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitPricingDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitOptionGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitOptionGroupDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitDetailDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset.InventoryKitPricingDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemKitDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.BandDataset.SystemCategoryBandDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.BandDataset.SystemCategoryDiscountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.BandDataset.SystemCategoryBandRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.BandDataset.SystemCategoryDiscountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.BandDataset.SystemCategoryBandRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.BandDataset.SystemCategoryDiscountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.BandDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ImportEventArgs.Cancel">
+	<summary>
+ Indicates if import will be cancelled.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ImportEventArgs.ImportType">
+	<summary>
+ Gets/ sets import type.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ImportEventArgs.RecordCount">
+	<summary>
+ Gets the total no of rows in the excel spreadsheet.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ImportEventArgs.SelectedWorkSheet">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ImportEventArgs.SelectedCurrencyCode">
+	<summary>
+ The currency of the price list imported.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ImportEventArgs.SellingCurrency">
+	<summary>
+ The currencies of the company.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ImportEventArgs.WorkSheets">
+	<summary>
+ Collection of work sheets contained in the excell file.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ImportSaveEventArgs.Cancel">
+	<summary>
+ Indicates if import will be cancelled.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ImportSaveEventArgs.ImportType">
+	<summary>
+ Gets/ sets import type.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ImportSaveEventArgs.FileName">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.PostingEventArgs.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.PostingEventArgs.PostingCode">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.PostingEventArgs.IsPosted">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.WebSiteChangedEventArgs.Cancel">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.WebSiteChangedEventArgs.OldWebSiteCode">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.WebSiteChangedEventArgs.OldWebSiteRow">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.WebSiteChangedEventArgs.WebSiteCode">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.WebSiteChangedEventArgs.WebSiteRow">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.WebSiteChangedEventArgs.URL">
+	<summary>
+ Return the url associated with the web site.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.WebSiteChangedEventArgs.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.WebSiteChangedEventArgs.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="webSiteCode"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.WebSiteChangedEventArgs.#ctor(System.String,System.Data.DataRow)">
+	<summary>
+	</summary>
+	<param name="webSiteCode"></param>
+	<param name="webSiteRow"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.XMLPackagePopupEventArgs.XMLPackages">
+	<summary>
+ Return the collection of the xmlpackages.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.XMLPackagePopupEventArgs.IsAvailable">
+	<summary>
+ Indicates if there are available xml packages.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.XMLPackagePopupEventArgs.IsMobile">
+	<summary>
+ Indicates if there are available xml packages.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.XMLPackagePopupEventArgs.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.ValueChangedEventArgs.#ctor(System.Object)">
+	<summary>
+ Create an instance of ValueChangedEventArgs class.
+ </summary>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ValueChangedEventArgs.Value">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.ItemTypeChangedEventArgs.#ctor(Interprise.Framework.Base.Shared.Enum.ItemType)">
+	<summary>
+	</summary>
+	<param name="itemType"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ItemTypeChangedEventArgs.ItemType">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ItemTypeChangedEventArgs.OldItemType">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.ItemTypeChangedEventArgs.Cancel">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.SizeModeChangedEventArgs.#ctor(Interprise.Framework.Inventory.Shared.Enum.SizeMode)">
+	<summary>
+ Create an instance of SizeModeChangedEventArgs class.
+ </summary>
+	<param name="sizeMode"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.SizeModeChangedEventArgs.Value">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.AfterSetupTreeListEventArgs.TreeControl">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.AfterSetupTreeListEventArgs.#ctor">
+	<summary>
+ Create instance of AfterSetupTreeListEventArgs
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.AfterSetupTreeListEventArgs.#ctor(System.Object)">
+	<summary>
+ Create instance of AfterSetupTreeListEventArgs
+ </summary>
+	<param name="treeControl"></param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.Shared.EventArguments.AfterSetupTreeListEventArgs">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.BeforeSetupTreeListEventArgs.Columns">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.EventArguments.BeforeSetupTreeListEventArgs.TreeControl">
+	<summary>
+	</summary>
+	<value></value>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.BeforeSetupTreeListEventArgs.#ctor">
+	<summary>
+ Create instance of AfterSetupTreeListEventArgs
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.EventArguments.BeforeSetupTreeListEventArgs.#ctor(System.Object,System.Boolean)">
+	<summary>
+ Create instance of AfterSetupTreeListEventArgs
+ </summary>
+	<param name="treeControl"></param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.Shared.EventArguments.BeforeSetupTreeListEventArgs">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.Shared.EventArguments.Events">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.Shared.Structure.SelectedPage.#ctor(System.String)">
+	<summary>
+ Create an instance of this struct.
+ </summary>
+	<param name="pageName"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.Structure.SelectedPage.Empty">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.Shared.Structure.SelectedPage.PageName">
+	<summary>
+ Returns the selected page name.
+ </summary>
+	<value></value>
+</member><member name="T:Interprise.Framework.Inventory.Shared.Structure.SelectedPage">
+	<summary>
+ Contains the selected page name.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.InventoryStockValuationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.InventoryStockValuationDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.InventoryGetStockValuationBalanceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.GetSystemLocationAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.InventoryStockValuationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.InventoryStockValuationDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.InventoryGetStockValuationBalanceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.GetSystemLocationAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.InventoryStockValuationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.InventoryStockValuationDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.InventoryGetStockValuationBalanceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset.GetSystemLocationAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockValuationDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.InventoryItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerWebOptionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerWebOptionDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.InventoryItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerWebOptionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerWebOptionDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.InventoryItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerWebOptionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet.SystemManufacturerWebOptionDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ManufacturerDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationStockCountDataset.InventoryLocationStockCountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationStockCountDataset.InventoryLocationStockCountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationStockCountDataset.InventoryLocationStockCountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.LocationStockCountDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventoryItemDepartmentViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentWebOptionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentWebOptionDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventoryItemAttributeDepartmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventoryItemAttributeDepartmentDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.SystemItemAttributeClassValueTemplateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventoryItemDepartmentViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentWebOptionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentWebOptionDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventoryItemAttributeDepartmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventoryItemAttributeDepartmentDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.SystemItemAttributeClassValueTemplateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventoryItemDepartmentViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentWebOptionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentWebOptionDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventorySellingDepartmentViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventoryItemAttributeDepartmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.InventoryItemAttributeDepartmentDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet.SystemItemAttributeClassValueTemplateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingDepartmentDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.ItemKitDatasetGateway.#ctor">
+	<summary>
+ Create instance of this class.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.ItemKitDatasetGateway.SetTableDefaults">
+	<summary>
+ Set default values.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProfitAnalysisDataset.InventoryProfitAnalysisViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProfitAnalysisDataset.InventoryProfitAnalysisViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProfitAnalysisDataset.InventoryProfitAnalysisViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProfitAnalysisDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ReasonDataSet.InventoryReasonViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ReasonDataSet.InventoryReasonViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ReasonDataSet.InventoryReasonViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.ReasonDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryAttributeValueDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryAttributeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryMatrixItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryItemDescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryMatrixGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryAttributeValueRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryAttributeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryMatrixItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryItemDescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryMatrixGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryAttributeValueRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryAttributeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryMatrixItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryItemDescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset.InventoryMatrixGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ItemMatrixDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryStockTransferDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryStockTransferDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryReallocatableQuantityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryReallocatableQuantityCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryStockTransferItemInStockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryStockTransferRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryStockTransferDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryReallocatableQuantityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryReallocatableQuantityCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryStockTransferItemInStockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryStockTransferRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryStockTransferDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryReallocatableQuantityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryReallocatableQuantityCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset.InventoryStockTransferItemInStockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.StockTransferDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.PricingDatasetGateway.#ctor">
+	<summary>
+ Create instance of this class.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.PricingDatasetGateway.SetTableDefault">
+	<summary>
+ Set default values.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Inventory.DatasetGateway.PricingDatasetGatewaySerializer.DerivedType">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryProductFilterTemplateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryProductFilterTemplateCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryProductFilterTemplateItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.SystemCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryProductFilterTemplateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryProductFilterTemplateCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryProductFilterTemplateItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.SystemCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryProductFilterTemplateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryProductFilterTemplateCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryProductFilterTemplateItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.InventoryItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet.SystemCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.ProductFilterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingCurrencyDataset.InventorySellingCurrencyViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingCurrencyDataset.InventorySellingCurrencyViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingCurrencyDataset.InventorySellingCurrencyViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Inventory.DatasetComponent.SystemManager.SellingCurrencyDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Interprise.Framework.Inventory.DatasetGateway.SystemManager.ClassTemplateDatasetGateway.#ctor">
+	<summary>
+ Create an Instance of this class.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

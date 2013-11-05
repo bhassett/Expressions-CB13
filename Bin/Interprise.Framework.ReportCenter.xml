@@ -1,0 +1,292 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Framework.ReportCenter
+</name>
+</assembly>
+<members>
+<member name="P:Interprise.Framework.ReportCenter.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Framework.ReportCenter.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportLayoutDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDataSourceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportFavoriteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportFolderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDescriptionLanguageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDatasourceOptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportLabelProductDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportLabelDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportPaperKindDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDataSourceFilterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportPrintSettingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToFormDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToTransactionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindTransactionColumnsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportSubreportDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportPreviewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.SystemUserRoleReportDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToFormDatasourceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportUserRoleMenuDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportEmailSettingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToRequirementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportLayoutRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDataSourceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportFavoriteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportFolderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDescriptionLanguageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDatasourceOptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportLabelProductRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportLabelDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportPaperKindRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDataSourceFilterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportPrintSettingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToFormRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToTransactionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindTransactionColumnsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportSubreportRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportPreviewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.SystemUserRoleReportRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToFormDatasourceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportUserRoleMenuRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportEmailSettingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToRequirementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportLayoutRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDataSourceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportFavoriteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportFolderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDescriptionLanguageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDatasourceOptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportLabelProductRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportLabelDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportPaperKindRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportDataSourceFilterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportPrintSettingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToFormRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToTransactionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindTransactionColumnsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportSubreportRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportPreviewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.SystemUserRoleReportRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToFormDatasourceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportUserRoleMenuRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportEmailSettingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset.ReportBindToRequirementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ReportCenter.DatasetComponent.ReportDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

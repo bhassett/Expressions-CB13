@@ -1,0 +1,283 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Facade.Report
+</name>
+</assembly>
+<members>
+<member name="P:Interprise.Facade.Report.ReportFacade.CurrentDataset">
+	<summary>
+ Returns the dataset to be handled by ReportFacade.
+ </summary>
+	<value>The dataset handled by ReportFacade</value>
+	<returns>The dataset handled by ReportFacade</returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Report.ReportFacade.CurrentReportType">
+	<summary>
+ Returns the report type handled by ReportFacade.
+ </summary>
+</member><member name="P:Interprise.Facade.Report.ReportFacade.CurrentTransactionType">
+	<summary>
+ Returns the transaction type handled by ReportFacade.
+ </summary>
+	<value>The transaction type handled by ReportFacade</value>
+	<returns>The transaction type handled by ReportFacade</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.#ctor(Interprise.Framework.Base.DatasetComponent.BaseDataset,Interprise.Framework.Base.Shared.Enum.ReportAction)">
+	<summary>
+ Constructs a new ReportFacade object.
+ </summary>
+	<param name="reportDataset">The dataset to be set as the current dataset</param>
+	<param name="reportToPrint">The report type to be set as the current report type</param>
+	<remarks>The current dataset and the current report type are set.
+ The constraint rules are not enforced on the current dataset.</remarks>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.DoLoadDataset(System.String[][],Interprise.Framework.Base.Shared.Enum.ClearType,Interprise.Framework.Base.Shared.Enum.ConnectionStringType)">
+	<summary>
+ Procedure that will be called when the asynchronous read is done.
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.UpdateDataSet(System.String[][],Interprise.Framework.Base.Shared.Enum.TransactionType,System.String,System.Boolean)">
+	<summary>
+ Performs a update operation to the database.
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.AssignCriteria(System.Data.DataRowView,System.Data.DataRow,System.String,System.String,System.String,System.String)">
+	<summary>
+ Assigns the criteria
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.AssignCriteria(System.Data.DataRowView,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Assigns the criteria
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.AssignListValues(System.Data.DataRowView,System.Data.DataRow[],System.String)">
+	<summary>
+ Assigns the values in the specific table
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.AssignDefaultValue(System.Data.DataRowView,System.String,System.String)">
+	<summary>
+ Assigns the initial value
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.ClearListValues(System.Data.DataRowView)">
+	<summary>
+ Clears the value in Criteria
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.ComputeFiscalYear(System.Data.DataRowView)">
+	<summary>
+ Gets the value for Fiscal year
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.FixValue(System.String)">
+	<summary>
+ Places the value of criteria inside the delimiter
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.GetCommaSeparatedListValues(System.Data.DataRow,System.Boolean)">
+	<summary>
+ Adds delimiter from the values of criteria
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.SetDefaultCriteriaValue(System.String[][],System.String[])">
+	<summary>
+ Assigns the criteria 
+ </summary>
+	<param name="fieldValue">These are the field to be added in the criteria</param>
+	<param name="tableNames">These are the tableName to be added in the criteria </param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.SetLastCriteriaLogicalOperator">
+	<summary>
+ Sets the Logical Operator to None when no more criteria is added
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.ShowSavedCriteria(System.Byte[],System.Byte[])">
+	<summary>
+ Saves the byte and schema of the criteria
+ </summary>
+	<param name="criteriaData">This is the byte created during the creation of the criteria</param>
+	<param name="criteriaSchema">This is the schema created during the creation of the criteria</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.Validate">
+	<summary>
+ This method allows you to specify whether the value is valid and whether the editor is allowed to lost focus. 
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.Validate(System.Data.DataRow)">
+	<summary>
+ This method allows you to specify whether the value is valid and whether the editor is allowed to lost focus. 
+ </summary>
+</member><member name="M:Interprise.Facade.Report.ReportFacade.Validate(System.Data.DataRow,System.String)">
+	<summary>
+ This method allows you to specify whether the value is valid and whether the editor is allowed to lost focus. 
+ </summary>
+</member><member name="P:Interprise.Facade.Report.PrintDialogFacade.CurrentDataset">
+	<summary>
+ Gets the dataset that is currently being used by the control.
+ </summary>
+	<value>The dataset to be used for reading and saving</value>
+	<returns>The dataset to be used for reading and saving</returns>
+	<remarks>This property must be overriden or implemented as it will be the dataset used 
+ for the LoadDataSet and UpdateDataSet functions.</remarks>
+</member><member name="P:Interprise.Facade.Report.PrintDialogFacade.CurrentBusinessRuleType">
+	<summary>
+ Returns the business rule type handled by PrintDialogFacade.
+ </summary>
+	<value></value>
+	<returns>currently returns nothing</returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Report.PrintDialogFacade.CurrentReportType">
+	<summary>
+ Returns the report type handled by PrintDialogFacade.
+ </summary>
+	<value></value>
+	<returns>currently returns nothing</returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Report.PrintDialogFacade.CurrentTransactionType">
+	<summary>
+ Returns the transaction type handled by PrintDialogFacade.
+ </summary>
+	<value></value>
+	<returns>currently returns nothing</returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Report.PrintDialogFacade.ClearDefaultCriteria">
+	<summary>
+ Clears the criteria grid before loading it in the Report Writer.
+ </summary>
+	<example>
+		<code lang="VB" title="ClearDefaultCriteria" description="Clears the criteria grid before loading it in the Report Writer.">
+ Dim m_facadePrintDialog As New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway)
+ m_facadePrintDialog.ClearDefaultCriteria
+    </code>
+		<code lang="CS" title="ClearDefaultCriteria" description="Clears the criteria grid before loading it in the Report Writer.">
+ Facade.Report.PrintDialogFacade m_facadePrintDialog = New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway());
+ m_facadePrintDialog.ClearDefaultCriteria();
+    </code>
+	</example>
+</member><member name="M:Interprise.Facade.Report.PrintDialogFacade.GetContactInfo(System.String)">
+	<summary>
+ The Report Writer has the capacity to send the e-mail with the report attached in it. This process retrieves
+ the contact information needed to send the e-mail.
+ </summary>
+	<returns>The e-mail, business fax and business fax extension of the contact</returns>
+	<example>
+		<code lang="CS" inline="False">
+		</code>
+		<code lang="VB" title="GetContactInfo" description="Gets the current contact's information needed in the print dialog">
+ Dim m_facadePrintDialog As New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway)
+ m_facadePrintDialog.GetContactInfo("CCTC-000001")
+    </code>
+		<code lang="CS" title="GetContactInfo" description="Gets the current contact's information needed in the print dialog">
+ Facade.Report.PrintDialogFacade m_facadePrintDialog = new Facade.Report.PrintDialogFacade(new Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway());
+ m_facadePrintDialog.GetContactInfo("CCTC-000001");
+    </code>
+	</example>
+	<param name="contactCode">The contact code used as a criteria to get contact info</param>
+</member><member name="M:Interprise.Facade.Report.PrintDialogFacade.GetTableNameFromQueryString(System.Data.DataRow)">
+	<summary>
+ This process fetches the table name from the query that will be used by the report writer.
+ </summary>
+	<returns>The table names retrieved from the query; returns an empty string if rowReportDetail is null</returns>
+	<example>
+		<code lang="VB" title="GetTableNameFromQueryString" description="Assign the table name/s to Report Criteria's grid">
+ Dim m_facadePrintDialog As New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway)
+ Dim m_reportListControl As Interprise.Extendable.Report.Presentation.PrintDialog.IReportListInterface
+ m_reportListControl = New PrintDialog.ReportListControl(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway, New Facade.Report.PrintDialogFacade)
+ m_facadePrintDialog.GetTableNameFromQueryString(m_reportListControl.ReportListDataSource(m_reportListControl.ReportListDataSourceRowIndex).Row)
+    </code>
+		<code lang="CS" title="GetTableNameFromQueryString" description="Assign the table name/s to Report Criteria's grid">
+ Facade.Report.PrintDialogFacade m_facadePrintDialog = new Facade.Report.PrintDialogFacade(new Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway());
+ Interprise.Extendable.Report.Presentation.PrintDialog.IReportListInterface m_reportListControl;
+ m_reportListControl = new PrintDialog.ReportListControl(new Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway(), new Facade.Report.PrintDialogFacade());
+ m_facadePrintDialog.GetTableNameFromQueryString(m_reportListControl.ReportListDataSource(m_reportListControl.ReportListDataSourceRowIndex).Row);
+    </code>
+	</example>
+	<param name="rowReportDetail">The data row which contains the query</param>
+</member><member name="M:Interprise.Facade.Report.PrintDialogFacade.InitializeReportList(System.String,System.String[],System.Guid)">
+	<summary>
+ This process loads the Report List Control in the Print Dialog, which contains the collections of reports.
+ </summary>
+	<example>
+		<code lang="VB" title="InitializeReportList" description="Shows the list/s of reports in the print dialog">
+ Dim m_facadePrintDialog As New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway)
+ m_facadePrintDialog.InitializeReportList("Interprise.Presentation.Customer.SalesRep.SalesRepDetailForm", New String() {"1179"}, DirectCast(CObj("5AFF8B70-B254-4776-9D28-01955972AC4B"), Guid))
+    </code>
+		<code lang="CS" title="InitializeReportList" description="Shows the list/s of reports in the print dialog">
+ Facade.Report.PrintDialogFacade m_facadePrintDialog = New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway());
+ m_facadePrintDialog.InitializeReportList("Interprise.Presentation.Customer.SalesRep.SalesRepDetailForm", New String[] {"1179"}, (Guid)(Object)"5AFF8B70-B254-4776-9D28-01955972AC4B");
+    </code>
+	</example>
+	<param name="formClassType">The form class type of the report</param>
+	<param name="reportTypeCodes">The type codes of the report</param>
+	<param name="reportCode">The report code</param>
+</member><member name="M:Interprise.Facade.Report.PrintDialogFacade.#ctor(Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway)">
+	<summary>
+ Initializes the dataset
+ </summary>
+	<param name="gatewayPrintDialogDataset"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Report.PrintDialogFacade.SelectAll(System.Boolean)">
+	<summary>Either tick or untick the reports in the print dialog</summary>
+	<example>
+		<code lang="VB" title="SelectAll" description="Tick or untick the reports in the criteria's grid">
+ Dim m_facadePrintDialog As New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway)
+ m_facadePrintDialog.SelectAll(True)
+    </code>
+		<code lang="CS" title="SelectAll" description="Tick or untick the reports in the criteria's grid">
+ Facade.Report.PrintDialogFacade m_facadePrintDialog = New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway());
+ m_facadePrintDialog.SelectAll(True);
+    </code>
+	</example>
+</member><member name="M:Interprise.Facade.Report.PrintDialogFacade.StoreCriteria(System.Data.DataRowView,System.String,System.Byte[],System.Byte[])">
+	<summary>
+ Holds the String Criteria.
+ </summary>
+	<param name="reportDetail"></param>
+	<param name="stringCriteria">The criteria seen in the print dialog.</param>
+	<param name="criteriaData">The values that holds the dataset.</param>
+	<param name="criteriaSchema">The value that holds the data of that dataset.</param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Report.PrintDialogFacade.Validate">
+	<summary>
+ This method allows you to specify whether the value is valid and whether the editor is allowed to lost focus. 
+ </summary>
+</member><member name="M:Interprise.Facade.Report.PrintDialogFacade.RequireEmailAccount">
+	<example>
+		<code lang="VB" title="RequireEmailAccount" description="Check if Email was ticked in the print dialog.">
+ Dim m_facadePrintDialog As New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway)
+ m_facadePrintDialog.RequireEmailAccount()
+    </code>
+		<code lang="CS" title="RequireEmailAccount" description="Check if Email was ticked in the print dialog.">
+ Facade.Report.PrintDialogFacade m_facadePrintDialog = new Facade.Report.PrintDialogFacade(new Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway());
+ m_facadePrintDialog.RequireEmailAccount();
+    </code>
+	</example>
+	<summary>
+		<para class="MsoNormal" style="MARGIN: 0in 0in 0pt">
+			<span style="FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana">Check if Email was
+    ticked in the print dialog.</span></para>
+	</summary>
+</member><member name="M:Interprise.Facade.Report.PrintDialogFacade.RequireFaxProvider">
+	<summary>
+		<para class="MsoNormal" style="MARGIN: 0in 0in 0pt">
+			<span style="FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana">Check if Faxwas
+    ticked in the print dialog.</span></para>
+	</summary>
+	<example>
+		<code lang="VB" title="RequireFaxProvider" description="Check if Fax was ticked in the print dialog.">
+ Dim m_facadePrintDialog As New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway)
+ m_facadePrintDialog.RequireFaxProvider()
+    </code>
+		<code lang="CS" title="RequireFaxProvider" description="Check if Fax was ticked in the print dialog.">
+ Facade.Report.PrintDialogFacade m_facadePrintDialog = New Facade.Report.PrintDialogFacade(New Interprise.Framework.Report.DatasetGateway.PrintDialogDatasetGateway());
+ m_facadePrintDialog.RequireFaxProvider();
+    </code>
+	</example>
+</member><member name="P:Interprise.Facade.Report.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Facade.Report.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Facade.Report.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

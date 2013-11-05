@@ -1,0 +1,42 @@
+﻿/*This line stops Safari from adjusting the text size when you rotate the screen. By default it assumes that holding the iPhone on it’s side requires 
+larger text size – which is true in most cases as the sites become more zoomed out – but in this case we are fitting the website to the screen so it’s not necessary.*/
+html, body, form, fieldset, p, div
+{
+    -webkit-text-size-adjust: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+    /*color: #999;*/
+}
+
+/*----------------------------- 
+ORIENTATION CLEVERNESS 
+-----------------------------*/  
+#content_left, #content_right, #content_normal, #content_flipped
+{  
+    display:none;  
+}  
+
+.show_normal, .show_flipped
+{  
+    width:320px;  
+}  
+
+.show_left, .show_right
+{  
+    width:480px;  
+}
+
+/*The width of the containers is specified. If you’re building a site that fits the screen exactly you might want to put some heights in here.*/ 
+.show_left #content_left, .show_right #content_right, .show_normal #content_normal, .show_flipped #content_flipped
+{  
+    display:block;  
+} 

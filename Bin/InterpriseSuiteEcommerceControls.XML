@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InterpriseSuiteEcommerceControls</name>
+    </assembly>
+    <members>
+        <member name="M:InterpriseSuiteEcommerceControls.Validators.InputValidator.#ctor(System.String,InterpriseSuiteEcommerceControls.Validators.InputValidator)">
+            <summary>
+            InputValidator contructor.
+            To ensure that we have a chaining validator behavior
+            Let's make the succedding validator use decorator
+            so that we can have successions of validators.
+            Instead of creating another class that's solely reponsible
+            for chaining...
+            </summary>
+            <param name="errorMessage">The error message to be displayed</param>
+            <param name="next">The succeding validator...</param>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceControls.NavigationControl.CreateChildControls">
+            <summary>
+            Create the child controls
+            </summary>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceControls.NavigationControl.AddLink(System.Web.UI.Control,System.String)">
+            <summary>
+            Adds a link to the site
+            </summary>
+            <param name="container">The container</param>
+            <param name="caption">The text</param>
+            <returns></returns>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceControls.NavigationControl.OnLoad(System.EventArgs)">
+            <summary>
+            Override on load
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceControls.NavigationControl.OnLinkClicked(InterpriseSuiteEcommerceControls.LinkClickedEventArgs)">
+            <summary>
+            OnLinkClicked
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceControls.NavigationControl.SaveViewState">
+            <summary>
+            Save view state info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceControls.NavigationControl.LoadViewState(System.Object)">
+            <summary>
+            Load the viewstate info
+            </summary>
+            <param name="savedState"></param>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceControls.NavigationControl.Link_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Link Click event handler
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:InterpriseSuiteEcommerceControls.NavigationControl.Groups">
+            <summary>
+            Groups
+            </summary>
+        </member>
+        <member name="P:InterpriseSuiteEcommerceControls.NavigationControl.NavigationLayout">
+            <summary>
+            Navigation position
+            </summary>
+        </member>
+        <member name="P:InterpriseSuiteEcommerceControls.NavigationControl.NavigationRender">
+            <summary>
+            Gets or sets what control will render as navigation links
+            </summary>
+        </member>
+        <member name="P:InterpriseSuiteEcommerceControls.NavigationControl.ShowAll">
+            <summary>
+            Gets or sets whethere to display the All text link besides the letters
+            </summary>
+        </member>
+        <member name="P:InterpriseSuiteEcommerceControls.NavigationControl.ShowAllText">
+            <summary>
+            Gets or sets the text to display when the show "all" is enabled
+            </summary>
+        </member>
+        <member name="P:InterpriseSuiteEcommerceControls.NavigationControl.ShowNumber">
+            <summary>
+            Gets or sets whether to display the number in the links besides the letters
+            </summary>
+        </member>
+        <member name="P:InterpriseSuiteEcommerceControls.NavigationControl.ShowNumberText">
+            <summary>
+            Gets or sets the text to display for the number link
+            </summary>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceControls.LinkClickedEventArgs.#ctor(System.String)">
+            <summary>
+            LinkClickedEventArgs
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceControls.LinkClickedEventArgs.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            LinkClickedEventArgs
+            </summary>
+            <param name="text"></param>
+            <param name="showAll"></param>
+            <param name="showNumber"></param>
+        </member>
+        <member name="P:InterpriseSuiteEcommerceControls.LinkClickedEventArgs.Text">
+            <summary>
+            Gets the text display filter
+            </summary>
+        </member>
+        <member name="P:InterpriseSuiteEcommerceControls.LinkClickedEventArgs.ShowAll">
+            <summary>
+            Gets whether to show the result set without filtering
+            </summary>
+        </member>
+        <member name="P:InterpriseSuiteEcommerceControls.LinkClickedEventArgs.ShowNumber">
+            <summary>
+            Gets whether the number filter was shown
+            </summary>
+        </member>
+    </members>
+</doc>

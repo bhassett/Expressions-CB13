@@ -1,0 +1,32 @@
+﻿/* This is the default CSS of the plugin 
+   If you want to oveeride the design supply this to the plugin during initialization inside cms-editor. 
+   The path to override is cmsEditorCssPath
+*/
+
+/* Product Image */
+.image-pager img { margin:2px; }
+
+.upload-image-wrapper { margin: auto; overflow:hidden; height: 281px; width: 602px; display: table-cell; vertical-align: middle; }
+.upload-image { margin-left:auto; margin-right:auto; display:block; max-height: 250px; max-width: 364px; }
+.upload-button-panel { width:100%; float:left; border-top: 1px solid #E5E5E5; background: #EDEDED !important; overflow:hidden; }
+.upload-button-wrapper, .upload-page-button-wrapper { margin:10px; height: 38px; }
+.upload-button-wrapper { float:right; } 
+.upload-page-button-wrapper { float:left; }
+#upload-page-ul { list-style-type:none;  float: left; margin:0; padding-left: 0; }
+#upload-page-ul li { float:left; padding:3px; }
+.cms-plugin-progress-bar { display:none; background-color:#fff !important; height: 8%; margin: auto; text-align:center; }
+.cms-plugin-progress-bar span { line-height:80px; }
+#ise-cms-image-editor { height:442px !important; *height:443px !important; background:#fff; }
+#ise-cms-image-editor .ui-tabs-panel { border-left: solid 1px #ccc; border-right: solid 1px #ccc; border-bottom: solid 1px #ccc; border-radius: 0 !important; -webkit-border-radius: 0px; -moz-border-radius:  0px; }
+
+.upload-button-wrapper .label-changeupload-wrapper { width: 73px; *width: 89px; height: 31px; *height: 34px; display: block; overflow: hidden; cursor: pointer;  position: absolute; left: 136px; *left:155px; top:0px; }
+.upload-button-wrapper .label-changeupload-wrapper:hover, .upload-button-wrapper .label-changeupload-wrapper:active,.upload-button-wrapper .label-changeupload-wrapper:visited { background-color:blue !important; opacity: 20 !important; filter: alpha(opacity=20) !important; }
+.upload-button-wrapper .label-changeupload-wrapper .image-file-upload { position: absolute; height: 100%; width: auto; opacity: 0 !important; filter: alpha(opacity=0) !important; top:0px; left:-176px; }
+
+.upload-button-wrapper .label-addupload-wrapper { width: 51px; *width: 57px; height: 30px; *height: 34px; display: block; overflow: hidden; cursor: pointer;  position: absolute; left: 213px; *left: 246px; top:0px; }
+.upload-button-wrapper .label-addupload-wrapper:hover, .upload-button-wrapper .label-addupload-wrapper:active, .upload-button-wrapper .label-addupload-wrapper:visited { background-color:blue; opacity: 20 !important; filter: alpha(opacity=20) !important; }
+.upload-button-wrapper .label-addupload-wrapper .image-file-upload { position: absolute; height: 100%; width: auto; opacity: 0; filter:alpha(opacity=0); top:0px; left:-200px; }
+
+#ise-cms-image-editor { width:100%; }
+#ise-cms-image-editor .upload-image-size-default-button-container { width:250px; height:30px; }
+#ise-cms-image-editor .upload-image-size-dimension-container { width:180px; margin:10px auto auto; font-style:italic; font-weight:bold; text-align:center; font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif; font-size: 1em; color:#333 }

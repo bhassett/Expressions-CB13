@@ -1,0 +1,3571 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Framework.Customer
+</name>
+</assembly>
+<members>
+<member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerGLClassTemplateDataSet.CustomerGLClassTemplateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerGLClassTemplateDataSet.CustomerGLClassTemplateDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerGLClassTemplateDataSet.CustomerGLClassTemplateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerGLClassTemplateDataSet.CustomerGLClassTemplateDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerGLClassTemplateDataSet.CustomerGLClassTemplateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerGLClassTemplateDataSet.CustomerGLClassTemplateDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerGLClassTemplateDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemShippedDataset.CustomerItemShippedViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemShippedDataset.CustomerItemShippedViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemShippedDataset.CustomerItemShippedViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemShippedDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionReceiptDataset.CustomerTransactionReceiptViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionReceiptDataset.PaymentToReleaseFromSODataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionReceiptDataset.CustomerTransactionReceiptViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionReceiptDataset.PaymentToReleaseFromSORow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionReceiptDataset.CustomerTransactionReceiptViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionReceiptDataset.PaymentToReleaseFromSORowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionReceiptDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditHistoryCreditsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditHistoryInvoicesViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditReceivableAgingViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditReceivableAgingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditHistoryCreditsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditHistoryInvoicesViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditReceivableAgingViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditReceivableAgingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditHistoryCreditsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditHistoryInvoicesViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditReceivableAgingViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset.CustomerCreditReceivableAgingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditHistoryDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessOverdueInvoicesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerOrderIntakeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerAgingPivotDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerDailyReceivableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerDailySalesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerAccountsReceivableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerSalesComparisonDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.CustomerDeliveryPerformanceDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.CustomerDeliveryPerformanceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetSalesTotalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.CustomerOverdueSalesOrderItemViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerReceiptsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessOverdueInvoicesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerOrderIntakeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerAgingPivotRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerDailyReceivableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerDailySalesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerAccountsReceivableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerSalesComparisonRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.CustomerDeliveryPerformanceDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.CustomerDeliveryPerformanceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetSalesTotalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.CustomerOverdueSalesOrderItemViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerReceiptsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessOverdueInvoicesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerOrderIntakeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerAgingPivotRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerDailyReceivableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerDailySalesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerAccountsReceivableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerSalesComparisonRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.CustomerDeliveryPerformanceDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.CustomerDeliveryPerformanceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetSalesTotalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.CustomerOverdueSalesOrderItemViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset.GetBusinessCustomerReceiptsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerBusinessIntelligenceDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.TransactionTaxDataset.TransactionItemTaxDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.TransactionTaxDataset.TransactionTaxDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.TransactionTaxDataset.TransactionItemTaxDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.TransactionTaxDataset.TransactionTaxDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.TransactionTaxDataset.TransactionItemTaxDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.TransactionTaxDataset.TransactionTaxDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.TransactionTaxDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditCardDataset.CustomerCreditCardViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditCardDataset.CustomerCreditCardViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditCardDataset.CustomerCreditCardViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditCardDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDebtorLetterDataSet.CustomerDebtorLetterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDebtorLetterDataSet.CustomerDebtorLetterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDebtorLetterDataSet.CustomerDebtorLetterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDebtorLetterDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerSummaryInformationDataset.CustomerSummaryInformationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerSummaryInformationDataset.CustomerSummaryInformationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerSummaryInformationDataset.CustomerSummaryInformationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerSummaryInformationDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Report.ProfileReportDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DownloadableItemEmailDataset.CustomerWebOrderDownloadbleItemsEmailDataDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DownloadableItemEmailDataset.CustomerWebOrderDownloadbleItemsEmailDataRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DownloadableItemEmailDataset.CustomerWebOrderDownloadbleItemsEmailDataRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DownloadableItemEmailDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditDataset.CustomerCreditViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditDataset.CustomerCreditViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditDataset.CustomerCreditViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DeliveryRouteDataSet.SystemDeliveryRouteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DeliveryRouteDataSet.SystemDeliveryRouteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DeliveryRouteDataSet.SystemDeliveryRouteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DeliveryRouteDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Report.InvoiceReportDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.RMAHistoryDataset.CustomerRMAHistoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.RMAHistoryDataset.CustomerRMAHistoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.RMAHistoryDataset.CustomerRMAHistoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.RMAHistoryDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.LegacyTransactionsDataSet.CustomerLegacyTransactionListViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.LegacyTransactionsDataSet.CustomerLegacyTransactionDetailListViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.LegacyTransactionsDataSet.CustomerLegacyTransactionListViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.LegacyTransactionsDataSet.CustomerLegacyTransactionDetailListViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.LegacyTransactionsDataSet.CustomerLegacyTransactionListViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.LegacyTransactionsDataSet.CustomerLegacyTransactionDetailListViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.LegacyTransactionsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Report.PaymentReportDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ResponseLogViewerDataset.CustomerCCAuthResponseViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ResponseLogViewerDataset.CustomerCCAuthResponseViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ResponseLogViewerDataset.CustomerCCAuthResponseViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ResponseLogViewerDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate28DetailedReportViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate30DetailedReportViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate7DetailedReportViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.AgingDatasetDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CreditHistoryDatasetDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditReceivableAgingViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditNoteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerOutstandingBalanceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetCustomerUnpaidInvoiceAgingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetCustomerCreditAvailabilityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetOverallAgedDebtDetailGridAnalysisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditOptionsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditSummaryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerOutstandingBalanceAgingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetPredictedCashFlowDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerStatementRunDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerPromisedPaymentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerOverallAgedDebtViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate14DetailedReportViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate28DetailedReportViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate30DetailedReportViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate7DetailedReportViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate14DetailedReportViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDueDateReportViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAllocationDebitViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerInvoiceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate28DetailedReportViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate30DetailedReportViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate7DetailedReportViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.AgingDatasetRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CreditHistoryDatasetRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditReceivableAgingViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditNoteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerOutstandingBalanceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetCustomerUnpaidInvoiceAgingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetCustomerCreditAvailabilityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetOverallAgedDebtDetailGridAnalysisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditOptionsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditSummaryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerOutstandingBalanceAgingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetPredictedCashFlowDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerStatementRunRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerPromisedPaymentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerOverallAgedDebtViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate14DetailedReportViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate28DetailedReportViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate30DetailedReportViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate7DetailedReportViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate14DetailedReportViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDueDateReportViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAllocationDebitViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerInvoiceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate28DetailedReportViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate30DetailedReportViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate7DetailedReportViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.AgingDatasetRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CreditHistoryDatasetRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditReceivableAgingViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditNoteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerOutstandingBalanceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetCustomerUnpaidInvoiceAgingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetCustomerCreditAvailabilityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetOverallAgedDebtDetailGridAnalysisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditOptionsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerCreditSummaryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerOutstandingBalanceAgingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.GetPredictedCashFlowDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerStatementRunRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerPromisedPaymentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerOverallAgedDebtViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate14DetailedReportViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate28DetailedReportViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate30DetailedReportViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDate7DetailedReportViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDueDate14DetailedReportViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAgingDocumentDueDateReportViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerAllocationDebitViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset.CustomerInvoiceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDatasetTableAdapters.CustomerAgingDueDate28DetailedReportViewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDatasetTableAdapters.CustomerAgingDueDate30DetailedReportViewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditControlDatasetTableAdapters.CustomerAgingDueDate7DetailedReportViewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesSummaryDataset.CustomerSalesSummaryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesSummaryDataset.RecentSalesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesSummaryDataset.CustomerSalesSummaryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesSummaryDataset.RecentSalesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesSummaryDataset.CustomerSalesSummaryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesSummaryDataset.RecentSalesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesSummaryDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerSalesRepCommissionDataset.CustomerSalesRepCommissionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerSalesRepCommissionDataset.CustomerSalesRepCommissionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerSalesRepCommissionDataset.CustomerSalesRepCommissionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerSalesRepCommissionDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.RelationsDataset.BaseRelationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.RelationsDataset.BaseRelationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.RelationsDataset.BaseRelationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.RelationsDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemSupplierDataset.ItemSupplierDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemSupplierDataset.ItemSupplierRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemSupplierDataset.ItemSupplierRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemSupplierDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponCustomerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponDepartmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponProductDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponSellingLanguageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponManufacturerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerSalesCouponDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponCustomerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponDepartmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponProductRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponSellingLanguageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponManufacturerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerSalesCouponRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponCustomerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponDepartmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponProductRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponSellingLanguageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponManufacturerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerCouponCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset.CustomerSalesCouponRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CouponDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerAgingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerInvoiceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerReceiptDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.accountAgingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerRevenueDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerReceivablesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.dashboardLast10CustomerReceiptDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.dashboardTop10InvoiceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerAgingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerInvoiceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerReceiptRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.accountAgingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerRevenueRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerReceivablesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.dashboardLast10CustomerReceiptRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.dashboardTop10InvoiceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerAgingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerInvoiceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerReceiptRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.accountAgingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerRevenueRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.customerReceivablesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.dashboardLast10CustomerReceiptRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset.dashboardTop10InvoiceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.InsertedSalesOrderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerOpeningBalanceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerOpeningBalanceTempDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceDetailAvailabilityViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerCouponDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerCreditViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemTaxDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionTaxDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.DeallocateCustomerSalesOrderStockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerReturnDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CreditToAllocateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerCreditAllocationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerSalesRepCommissionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerItemKitDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionTaxSummaryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TaxTempTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceKitSerialLotNumbersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceSerialLotNumbersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerKitTransactionReservationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.SupplierPurchaseOrderReservationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerTransactionReservationConcurrencyItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionAllocationConcurrencyItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemFreeStockViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemAvailableViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.KitComponentsTempDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerKitTransactionReservationView1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.SupplierPurchaseOrderReservationView1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.ConcurrencyKitTempDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerKitItemsToReserveCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceReturnedDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerItemKitReturnedDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceReturnedSerialLotNumbersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceKitReturnedSerialLotNumbersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemTaxReturnedDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInsertedSalesOrderCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.InventoryWarehouseViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceStockAllocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.InsertedSalesOrderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerOpeningBalanceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerOpeningBalanceTempRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceDetailAvailabilityViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerCouponRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerCreditViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemTaxDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionTaxDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.DeallocateCustomerSalesOrderStockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerReturnRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CreditToAllocateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerCreditAllocationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerSalesRepCommissionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerItemKitDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionTaxSummaryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TaxTempTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceKitSerialLotNumbersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceSerialLotNumbersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerKitTransactionReservationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.SupplierPurchaseOrderReservationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerTransactionReservationConcurrencyItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionAllocationConcurrencyItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemFreeStockViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemAvailableViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.KitComponentsTempRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerKitTransactionReservationView1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.SupplierPurchaseOrderReservationView1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.ConcurrencyKitTempRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerKitItemsToReserveCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceReturnedDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerItemKitReturnedDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceReturnedSerialLotNumbersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceKitReturnedSerialLotNumbersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemTaxReturnedDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInsertedSalesOrderCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.InventoryWarehouseViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceStockAllocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.InsertedSalesOrderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerOpeningBalanceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerOpeningBalanceTempRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceDetailAvailabilityViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerCouponRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerCreditViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemTaxDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionTaxDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.DeallocateCustomerSalesOrderStockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerReturnRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CreditToAllocateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerCreditAllocationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerSalesRepCommissionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerItemKitDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionTaxSummaryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TaxTempTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceKitSerialLotNumbersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceSerialLotNumbersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerKitTransactionReservationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.SupplierPurchaseOrderReservationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerTransactionReservationConcurrencyItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionAllocationConcurrencyItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemFreeStockViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemAvailableViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.KitComponentsTempRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerKitTransactionReservationView1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.SupplierPurchaseOrderReservationView1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.ConcurrencyKitTempRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerKitItemsToReserveCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceReturnedDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerItemKitReturnedDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceReturnedSerialLotNumbersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceKitReturnedSerialLotNumbersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.TransactionItemTaxReturnedDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInsertedSalesOrderCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.InventoryWarehouseViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset.CustomerInvoiceStockAllocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.InvoiceDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditAvailabilityDataset.CustomerCreditAvailabilityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditAvailabilityDataset.CustomerCreditAvailabilityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditAvailabilityDataset.CustomerCreditAvailabilityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CreditAvailabilityDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerAgingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerInvoiceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerReceiptDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.accountAgingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerRevenueDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerReceivablesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerAgingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerInvoiceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerReceiptRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.accountAgingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerRevenueRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerReceivablesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerAgingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerInvoiceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerReceiptRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.accountAgingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerRevenueRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset.customerReceivablesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.DashboardCustomerDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.LastPriceDataset.CustomerLastPriceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.LastPriceDataset.CustomerLastPriceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.LastPriceDataset.CustomerLastPriceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.LastPriceDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AppliedCreditDataSet.AppliedDebitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AppliedCreditDataSet.AppliedCreditDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AppliedCreditDataSet.AppliedDebitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AppliedCreditDataSet.AppliedCreditRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AppliedCreditDataSet.AppliedDebitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AppliedCreditDataSet.AppliedCreditRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AppliedCreditDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerItemKitDetailDataset.CustomerItemKitDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerItemKitDetailDataset.CustomerItemKitDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerItemKitDetailDataset.CustomerItemKitDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerItemKitDetailDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReturnDataset.CustomerReturnDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReturnDataset.CustomerReturnRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReturnDataset.CustomerReturnRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReturnDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerCreditCardTypeDataSet.CustomerCreditCardTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerCreditCardTypeDataSet.CustomerCreditCardTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerCreditCardTypeDataSet.CustomerCreditCardTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerCreditCardTypeDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerMultiReceivableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerGroupReceiptDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerGroupReceiptDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerGroupReceiptDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.UpdateReservedAmountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerAllocationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerAllocationDebitViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerAllocationCreditViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.PaymentMethodViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCCAuthResponseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.PaymentTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCardPaymentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerInvoiceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerPaymentDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerPaymentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CreditToAllocateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCreditAllocationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCreditCardViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerMultiReceivableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerGroupReceiptRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerGroupReceiptDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerGroupReceiptDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.UpdateReservedAmountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerAllocationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerAllocationDebitViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerAllocationCreditViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.PaymentMethodViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCCAuthResponseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.PaymentTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCardPaymentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerInvoiceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerPaymentDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerPaymentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CreditToAllocateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCreditAllocationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCreditCardViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerMultiReceivableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerGroupReceiptRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerGroupReceiptDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerGroupReceiptDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.UpdateReservedAmountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerAllocationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerAllocationDebitViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerAllocationCreditViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.PaymentMethodViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCCAuthResponseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.PaymentTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCardPaymentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerInvoiceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerPaymentDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerPaymentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CreditToAllocateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCreditAllocationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset.CustomerCreditCardViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ReceiptDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditAllocationDataset.CreditToAllocateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditAllocationDataset.CustomerCreditAllocationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditAllocationDataset.CreditToAllocateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditAllocationDataset.CustomerCreditAllocationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditAllocationDataset.CreditToAllocateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditAllocationDataset.CustomerCreditAllocationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerCreditAllocationDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerInvoiceDataset.CustomerInvoiceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerInvoiceDataset.CustomerInvoiceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerInvoiceDataset.CustomerInvoiceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerInvoiceDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerMonthlyAnalysisViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerTurnoverViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.GetCustomerTurnoverChartDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerItemsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerBuyingHistoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerServiceContractDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerTradingInfoViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerServiceContractDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerRecentSalesViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerAlsoBoughtDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSpecialPriceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSpecialPriceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSpecialPriceUMViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerShipToViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSalesRepClassTemplateDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerShipToClassTemplateDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerClassTemplateDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerMonthlyAnalysisViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerTurnoverViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.GetCustomerTurnoverChartRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerItemsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerBuyingHistoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerServiceContractDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerTradingInfoViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerServiceContractRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerRecentSalesViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerAlsoBoughtRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSpecialPriceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSpecialPriceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSpecialPriceUMViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerShipToViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSalesRepClassTemplateDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerShipToClassTemplateDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerClassTemplateDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerMonthlyAnalysisViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerTurnoverViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.GetCustomerTurnoverChartRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerItemsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerBuyingHistoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerServiceContractDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerTradingInfoViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerServiceContractRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerRecentSalesViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerAlsoBoughtRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSpecialPriceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSpecialPriceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSpecialPriceUMViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerShipToViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerSalesRepClassTemplateDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerShipToClassTemplateDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset.CustomerClassTemplateDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDetailDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemHistoryDataset.CustomerItemHistoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemHistoryDataset.CustomerItemHistoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemHistoryDataset.CustomerItemHistoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ItemHistoryDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.Shared.CustomException.CustomerNameIsRequiredException">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Customer.Shared.CustomException.BusinessTypeIsRequiredException">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.FinanceChargeDataset.CustomerOverDueInvoiceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.FinanceChargeDataset.CustomerFinanceChargeSetupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.FinanceChargeDataset.CustomerOverDueInvoiceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.FinanceChargeDataset.CustomerFinanceChargeSetupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.FinanceChargeDataset.CustomerOverDueInvoiceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.FinanceChargeDataset.CustomerFinanceChargeSetupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.FinanceChargeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Report.SalesOrderReportDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerReturnDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.InsertedQuoteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderDetailAvailabilityViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderWorkflowViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerCouponDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemTaxDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionTaxDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.LinkedCRMOpportunityDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.DeallocateCustomerSalesOrderStockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerPaymentDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerPaymentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CreditToAllocateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerCreditAllocationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesRepCommissionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerItemKitDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.InventoryFutureStockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionTaxSummaryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TaxTempTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderSerialLotNumbersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderKitSerialLotNumbersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.EcommerceFailedTransactionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.SupplierPurchaseOrderReservationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerKitTransactionReservationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerTransactionReservationConcurrencyItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionAllocationConcurrencyItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemAvailableViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemFreeStockViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.KitComponentsTempDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerKitItemsToReserveCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.SupplierPurchaseOrderReservationView1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerKitTransactionReservationView1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.ConcurrencyKitTempDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.PopulateFillRateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderReturnedDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerItemKitReturnedDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderReturnedSerialLotNumbersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderKitReturnedSerialLotNumbersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemTaxReturnedDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.InventoryWarehouseViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderStockAllocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerReturnRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.InsertedQuoteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderDetailAvailabilityViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderWorkflowViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerCouponRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemTaxDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionTaxDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.LinkedCRMOpportunityRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.DeallocateCustomerSalesOrderStockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerPaymentDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerPaymentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CreditToAllocateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerCreditAllocationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesRepCommissionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerItemKitDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.InventoryFutureStockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionTaxSummaryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TaxTempTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderSerialLotNumbersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderKitSerialLotNumbersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.EcommerceFailedTransactionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.SupplierPurchaseOrderReservationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerKitTransactionReservationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerTransactionReservationConcurrencyItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionAllocationConcurrencyItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemAvailableViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemFreeStockViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.KitComponentsTempRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerKitItemsToReserveCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.SupplierPurchaseOrderReservationView1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerKitTransactionReservationView1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.ConcurrencyKitTempRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.PopulateFillRateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderReturnedDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerItemKitReturnedDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderReturnedSerialLotNumbersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderKitReturnedSerialLotNumbersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemTaxReturnedDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.InventoryWarehouseViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderStockAllocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerReturnRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.InsertedQuoteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderDetailAvailabilityViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderWorkflowViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerCouponRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemTaxDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionTaxDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.LinkedCRMOpportunityRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.DeallocateCustomerSalesOrderStockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerPaymentDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerPaymentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CreditToAllocateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerCreditAllocationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesRepCommissionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerItemKitDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.InventoryFutureStockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionTaxSummaryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TaxTempTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderSerialLotNumbersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderKitSerialLotNumbersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.EcommerceFailedTransactionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.SupplierPurchaseOrderReservationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerKitTransactionReservationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerTransactionReservationConcurrencyItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionAllocationConcurrencyItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemAvailableViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemFreeStockViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.KitComponentsTempRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerKitItemsToReserveCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.SupplierPurchaseOrderReservationView1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerKitTransactionReservationView1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.ConcurrencyKitTempRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.PopulateFillRateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderReturnedDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerItemKitReturnedDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderReturnedSerialLotNumbersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderKitReturnedSerialLotNumbersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.TransactionItemTaxReturnedDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.InventoryWarehouseViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset.CustomerSalesOrderStockAllocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesOrderDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Interprise.Framework.Customer.EventArguments.AmountPaidChangedEventArgs.AmountPaid">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.Customer.EventArguments.AmountPaidChangedEventArgs.ReceivableCode">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderKitToAllocateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostHistoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostAllocationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderToAllocateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderToAllocateCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostAllocationCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostHistoryCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryStockTotalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryStockTotalToAllocateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryStockTotalKitToAllocateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.AutoAllocateInventoryStockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.AutoAllocateInventoryKitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerFillRateToPrintDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.SupplierPurchaseOrderReservationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerKitTransactionReservationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.TransactionAllocationConcurrencyItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.TransactionItemFreeStockViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerTransactionReservationConcurrencyItemsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.TransactionItemAvailableViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.KitComponentsTempDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerKitItemsToReserveCriteriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerItemKitDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.ConcurrencyKitTempDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.PopulateFillRateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.SupplierPurchaseOrderReservationView1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerKitTransactionReservationView1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderStockAllocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderKitToAllocateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostHistoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostAllocationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderToAllocateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderToAllocateCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostAllocationCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostHistoryCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryStockTotalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryStockTotalToAllocateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryStockTotalKitToAllocateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.AutoAllocateInventoryStockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.AutoAllocateInventoryKitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerFillRateToPrintRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.SupplierPurchaseOrderReservationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerKitTransactionReservationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.TransactionAllocationConcurrencyItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.TransactionItemFreeStockViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerTransactionReservationConcurrencyItemsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.TransactionItemAvailableViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.KitComponentsTempRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerKitItemsToReserveCriteriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerItemKitDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.ConcurrencyKitTempRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.PopulateFillRateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.SupplierPurchaseOrderReservationView1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerKitTransactionReservationView1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderStockAllocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderKitToAllocateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostHistoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostAllocationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderToAllocateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderToAllocateCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostAllocationCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryCostHistoryCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryStockTotalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryStockTotalToAllocateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.InventoryStockTotalKitToAllocateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.AutoAllocateInventoryStockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.AutoAllocateInventoryKitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerFillRateToPrintRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.SupplierPurchaseOrderReservationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerKitTransactionReservationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.TransactionAllocationConcurrencyItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.TransactionItemFreeStockViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerTransactionReservationConcurrencyItemsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.TransactionItemAvailableViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.KitComponentsTempRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerKitItemsToReserveCriteriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerItemKitDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.ConcurrencyKitTempRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.PopulateFillRateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.SupplierPurchaseOrderReservationView1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerKitTransactionReservationView1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset.CustomerSalesOrderStockAllocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerStockAllocationDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.PromotionDataset.CustomerPromotionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.PromotionDataset.CustomerPromotionAppSolutionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.PromotionDataset.CustomerPromotionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.PromotionDataset.CustomerPromotionAppSolutionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.PromotionDataset.CustomerPromotionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.PromotionDataset.CustomerPromotionAppSolutionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.PromotionDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Report.ShipToReportDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AgingDataset.CustomerAgingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AgingDataset.CustomerAgingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AgingDataset.CustomerAgingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.AgingDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReceiptDataset.CustomerPaymentDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReceiptDataset.CustomerPaymentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReceiptDataset.CustomerPaymentDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReceiptDataset.CustomerPaymentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReceiptDataset.CustomerPaymentDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReceiptDataset.CustomerPaymentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.Common.CustomerReceiptDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.GetCustomerSalesOrderToConfirmDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.GetCustomerSalesOrderDetailToConfirmDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.GetCustomerSalesOrderDetailKitToConfirmDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.CustomerInvoiceSerialLotNumbersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.CustomerInvoiceKitSerialLotNumbersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.GetCustomerSalesOrderToConfirmRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.GetCustomerSalesOrderDetailToConfirmRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.GetCustomerSalesOrderDetailKitToConfirmRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.CustomerInvoiceSerialLotNumbersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.CustomerInvoiceKitSerialLotNumbersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.GetCustomerSalesOrderToConfirmRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.GetCustomerSalesOrderDetailToConfirmRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.GetCustomerSalesOrderDetailKitToConfirmRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.CustomerInvoiceSerialLotNumbersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset.CustomerInvoiceKitSerialLotNumbersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ConfirmPickedRoutineDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDefaultsDataset.CustomerDefaultsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDefaultsDataset.CustomerDefaultShipToViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDefaultsDataset.SystemPredefinedNotesViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDefaultsDataset.CustomerDefaultsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDefaultsDataset.CustomerDefaultShipToViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDefaultsDataset.SystemPredefinedNotesViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDefaultsDataset.CustomerDefaultsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDefaultsDataset.CustomerDefaultShipToViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDefaultsDataset.SystemPredefinedNotesViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerDefaultsDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerTypeDataSet.CustomerTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerTypeDataSet.CustomerTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerTypeDataSet.CustomerTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.CustomerTypeDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepClassTemplateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepLinkedCustomerEntitiesViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchDetailInvoicesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionByCategoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionDocumentsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.SalesRepCommissionInvoicesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.SalesRepCommissionInvoicesDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchDetailInvoicesDetailViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepClassTemplateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepLinkedCustomerEntitiesViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchDetailInvoicesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionByCategoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionDocumentsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.SalesRepCommissionInvoicesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.SalesRepCommissionInvoicesDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchDetailInvoicesDetailViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepClassTemplateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepLinkedCustomerEntitiesViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchDetailInvoicesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionByCategoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionDocumentsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.SalesRepCommissionInvoicesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.SalesRepCommissionInvoicesDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionBatchDetailInvoicesDetailViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset.CustomerSalesRepCommissionViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.SalesRepDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ShipToDetailDataset.CustomerAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ShipToDetailDataset.CustomerShipToViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ShipToDetailDataset.CustomerShipToCarrierAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ShipToDetailDataset.CustomerAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ShipToDetailDataset.CustomerShipToViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ShipToDetailDataset.CustomerShipToCarrierAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ShipToDetailDataset.CustomerAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ShipToDetailDataset.CustomerShipToViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ShipToDetailDataset.CustomerShipToCarrierAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.ShipToDetailDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.Shared.Enum.CreateCustomer">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.BundleConfiguratorDataSet.InventoryBundleConfiguratorViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.BundleConfiguratorDataSet.InventoryBundleConfiguratorViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.BundleConfiguratorDataSet.InventoryBundleConfiguratorViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.BundleConfiguratorDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionAuditTrailDataset.CustomerTransactionAuditTrailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionAuditTrailDataset.CustomerTransactionAuditTrailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionAuditTrailDataset.CustomerTransactionAuditTrailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.Customer.DatasetComponent.TransactionAuditTrailDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

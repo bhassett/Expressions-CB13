@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Interprise.Facade.Shipping</name>
+    </assembly>
+    <members>
+        <member name="M:Interprise.Facade.Shipping.ShippingAppConfigFacade.Validate(System.Data.DataRow,System.String)">
+            <summary>
+            Validates a DataColumn with a specified column name
+            </summary>
+            <param name="row">The row to validate</param>
+            <param name="columnName">The column name to validate.</param>
+            <returns>If false there where  errors found, otherwise none.</returns>
+            <returns>If set to true, there were no errors found.</returns>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.AccountManagementFacade.ChangePassPhrase(System.String,System.String,System.String)">
+            <summary>
+            Use this method to change the PassPhrase of the current account. Pass the value of the new password when calling this method. 
+            For Endicia Carrier Only
+            </summary>
+            <param name="p_accountNumber"></param>
+            <param name="p_passPharase"></param>
+            <param name="p_newPassPhrase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.AccountManagementFacade.GetAccountStatus(System.String,System.String)">
+            <summary>
+            This method retrieves account information from the Endicia server. This include balance information as well as additional account information.
+            For Endicia Carrier Only
+            </summary>
+            <param name="p_accountNumber"></param>
+            <param name="p_passPhrase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.AccountManagementFacade.GetCarrierAccountDetails(System.String)">
+            <summary>
+            For Endecia
+            </summary>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.AccountManagementFacade.Recredit(System.String,System.String,System.String)">
+            <summary>
+            This method allows you to add postage funds to the account
+            For Endicia Carrier Only
+            </summary>
+            <param name="p_accountNumber"></param>
+            <param name="p_passPhrase"></param>
+            <param name="p_amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.Base.CarrierSpecificFacade.GetSystemPreferenceFields">
+            <summary>
+            Get the selected field in the SystemPreference table.
+            </summary>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.AddNewShippingMethodDefault(Interprise.Framework.Base.DatasetComponent.Shipping.ShipmentDataset.ShipmentShippingMethodDefaultRow)">
+            <summary>
+            
+            </summary>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.AssignOverSizedAndPrePackedItem(System.Data.DataRow)">
+            <summary>
+            
+            </summary>
+            <param name="itemRow"></param>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.CalculateFreight(System.Int32,System.Int32,System.Decimal)">
+            <summary>
+            
+            </summary>
+            <param name="p_freightOpt"></param>
+            <param name="p_chargeType"></param> Obsolete parameter
+            <param name="p_misAmount"></param>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.ComputeKitWeight(System.String,System.Decimal)">
+            <summary>
+            This method will compute the total weight of the kit item based on the selected component
+            </summary>
+            <param name="p_itemCode"></param> 
+            <param name="p_quantity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.DeleteItemOnPackage(System.Data.DataRow)">
+            <summary>
+            Delete the selected items.
+            If check is true, delete suceeds.
+            </summary>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.GetSystemPreferenceFields">
+            <summary>
+            Get the selected field in the SystemPreference table.
+            </summary>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.LoadShippingConfigurationDefault(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p_warehouseCode"></param>Warehouse code using
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.SendEmailNofication(System.Int32)">
+            <summary>
+            Send Email to Ship To for Shipping Notification.
+            </summary>
+            <param name="p_emailAdd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.SeparateOverSizedAndPrePacked">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.UpdateItemLookup(System.Boolean,System.String,System.Decimal,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="isINV"></param>
+            <param name="itemCode"></param>
+            <param name="quantityShipped"></param>
+            <param name="lineNumber"></param>
+            <param name="trackingNumber"></param>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.ValidateConfig(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ConfigName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.Validate(System.Data.DataRow)">
+            <summary>
+            
+            </summary>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.ShipmentFacade.Validate(System.Data.DataRow,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="row"></param>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Interprise.Facade.Shipping.ShipmentFacade.CurrentUnitMeasure">
+            <summary>
+            To set the UnitMeasure 
+            </summary>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.BatchShipmentFacade.AddPackageBox(System.Int32,System.Int32,System.Data.DataRow)">
+            <summary>
+            Create a new package by
+            </summary> 
+            <param name="p_packageCount"></param>
+            <param name="p_packageListRow"></param>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.BatchShipmentFacade.AssignItemDetail(System.Boolean)">
+            <summary>
+            Add Order Detail
+            Add child transaction to shipmentdetail
+            </summary>
+            <param name="p_isINV"></param>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.BatchShipmentFacade.AssignSourceItems(System.Boolean,System.String,System.String,System.Int32)">
+            <summary>
+            Assign InventoryItems to Shipment Temporary Tables.
+            </summary>
+            <param name="isINV"></param>
+            <param name="isNew"></param>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.BatchShipmentFacade.DeletePackageBox(System.Int32,System.String)">
+            <summary>
+            Delete a package in the dataset of GetBatchShipmentPackage. 
+            </summary>
+            <param name="p_packageCount"></param>
+            <param name="p_sourceDocument"></param>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.BatchShipmentFacade.GetWarehouseInfo(System.String)">
+            <summary>
+            To load the warehouse information based on the warehouse code of the user account.
+            </summary>
+            <param name="p_warehouseCode"></param>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.BatchShipmentFacade.LoadShippingConfigurationDefault">
+            <summary>
+            This method will load all the value inputed in the Shipping Configuration Form.
+            </summary>
+            <param name="p_warehouseCode"></param>Warehouse code using
+        </member>
+        <member name="M:Interprise.Facade.Shipping.BatchShipmentFacade.UpdateItemLookup(System.Boolean,System.String,System.String,System.Decimal,System.Int32,System.Int32)">
+            <summary>       
+            Adjust the quantity specified per package.      
+            </summary>
+            <param name="isINV"></param>
+            <param name="itemCode"></param>
+            <param name="quantityShipped"></param>
+            <param name="lineNumber"></param>
+            <param name="trackingNumber"></param>
+        </member>
+        <member name="M:Interprise.Facade.Shipping.BatchShipmentFacade.UpdateItemLookup(System.Boolean,System.String,System.Decimal,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="isINV"></param>
+            <param name="itemCode"></param>
+            <param name="quantityShipped"></param>
+            <param name="lineNumber"></param>
+            <param name="trackingNumber"></param>
+        </member>
+    </members>
+</doc>

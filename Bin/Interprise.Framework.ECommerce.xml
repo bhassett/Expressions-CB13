@@ -1,0 +1,954 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Framework.ECommerce
+</name>
+</assembly>
+<members>
+<member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicLanguageModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceSiteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicLanguageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicLanguageModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceSiteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicLanguageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicLanguageModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceSiteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicLanguageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet.EcommerceTopicRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.TopicDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Interprise.Framework.ECommerce.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Framework.ECommerce.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.EcommerceNotificationDataset.EcommerceNotificationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.EcommerceNotificationDataset.EcommerceNotificationViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.EcommerceNotificationDataset.EcommerceNotificationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.EcommerceNotificationDataset.EcommerceNotificationViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.EcommerceNotificationDataset.EcommerceNotificationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.EcommerceNotificationDataset.EcommerceNotificationViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.EcommerceNotificationDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsLanguageModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceSiteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsLanguageModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceSiteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsLanguageModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceSiteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet.EcommerceNewsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.NewsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ActiveShoppersDataset.EcommerceActiveShoppersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ActiveShoppersDataset.EcommerceActiveShoppersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ActiveShoppersDataset.EcommerceActiveShoppersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ActiveShoppersDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.ECommerceDataFeedTemplatesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.DataDictionaryColumnDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.TemplateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.SystemSellingLanguageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.ECommerceDataFeedTemplatesDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.TemplateInUseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.InventoryItemPricingDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.InventoryOverrideImageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.MatrixItemViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.ECommerceDataFeedTemplatesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.DataDictionaryColumnRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.TemplateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.SystemSellingLanguageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.ECommerceDataFeedTemplatesDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.TemplateInUseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.InventoryItemPricingDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.InventoryOverrideImageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.MatrixItemViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.ECommerceDataFeedTemplatesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.DataDictionaryColumnRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.TemplateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.SystemSellingLanguageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.ECommerceDataFeedTemplatesDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.TemplateInUseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.InventoryItemPricingDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.InventoryOverrideImageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet.MatrixItemViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.DataFeedTemplatesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Interprise.Framework.ECommerce.Shared.EventArgs.WebSiteCodeEventArgs.Cancel">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Framework.ECommerce.Shared.EventArgs.WebSiteCodeEventArgs.OldWebSiteCode">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceAppConfigModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceAppConfigDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceStoreAppConfigViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceSiteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceAppConfigModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceAppConfigRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceStoreAppConfigViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceSiteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceAppConfigModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceAppConfigRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceStoreAppConfigViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset.EcommerceSiteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.ApplicationConfigurationDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemManufacturerTreeDataset.InventoryItemManufacturerTreeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemManufacturerTreeDataset.InventoryItemManufacturerTreeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemManufacturerTreeDataset.InventoryItemManufacturerTreeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemManufacturerTreeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.FailedTransactionDataset.EcommerceFailedTransactionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.FailedTransactionDataset.EcommerceFailedTransactionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.FailedTransactionDataset.EcommerceFailedTransactionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.FailedTransactionDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.LocaleSettingDataset.EcommerceLocaleSettingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.LocaleSettingDataset.EcommerceLocaleSettingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.LocaleSettingDataset.EcommerceLocaleSettingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.LocaleSettingDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStringResourceModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceSiteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStoreStringResourceTempDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStringResourceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStoreStringResourceViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStringResourceModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceSiteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStoreStringResourceTempRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStringResourceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStoreStringResourceViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStringResourceModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceSiteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStoreStringResourceTempRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStringResourceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet.EcommerceStoreStringResourceViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.StringResourceDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Interprise.Framework.ECommerce.DatasetGateway.FailedTransactionGatewaySerializer.DerivedType">
+	<summary>
+ Overrides the property Interprise.Framework.Base.DatasetGateway.BaseDatasetGatewaySerializer.DerivedType
+ </summary>
+	<value>The Type object of the gateway (FailedTransactionGateway)</value>
+	<returns>The Type object of the gateway (FailedTransactionGateway)</returns>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemDepartmentTreeDataset.InventoryItemDepartmentTreeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemDepartmentTreeDataset.InventoryItemDepartmentTreeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemDepartmentTreeDataset.InventoryItemDepartmentTreeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemDepartmentTreeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.SalesPromptDataset.EcommerceSalesPromptDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.SalesPromptDataset.EcommerceSalesPromptRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.SalesPromptDataset.EcommerceSalesPromptRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.SalesPromptDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollCategoryModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDepartmentModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollLanguageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.SystemCategoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.InventorySellingDepartmentViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.WebPollAnswerLanguageViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerLanguageModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDetailLanguageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerLanguageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommerceSiteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDepartmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollVotingRecordViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollVotingRecordDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.WebPollCustomerVotingRecordViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollCategoryModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDepartmentModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollLanguageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.SystemCategoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.InventorySellingDepartmentViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.WebPollAnswerLanguageViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerLanguageModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDetailLanguageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerLanguageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommerceSiteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDepartmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollVotingRecordViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollVotingRecordRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.WebPollCustomerVotingRecordViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollCategoryModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDepartmentModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollLanguageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.SystemCategoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.InventorySellingDepartmentViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.WebPollAnswerLanguageViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerLanguageModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDetailLanguageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerLanguageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollAnswerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommerceSiteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDepartmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollVotingRecordViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollVotingRecordRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.EcommercePollRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset.WebPollCustomerVotingRecordViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.PollDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.URLRedirectDataset.EcommerceStoreURLRedirectDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.URLRedirectDataset.EcommerceSiteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.URLRedirectDataset.EcommerceStoreURLRedirectRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.URLRedirectDataset.EcommerceSiteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.URLRedirectDataset.EcommerceStoreURLRedirectRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.URLRedirectDataset.EcommerceSiteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.URLRedirectDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemCategoryTreeDataset.InventoryItemCategoryTreeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemCategoryTreeDataset.InventoryItemCategoryTreeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemCategoryTreeDataset.InventoryItemCategoryTreeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.InventoryItemCategoryTreeDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WizardDataSet.EcommerceAppConfigModelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WizardDataSet.EcommerceAppConfigModelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WizardDataSet.EcommerceAppConfigModelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WizardDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.GalleryDataset.EcommerceGalleryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.GalleryDataset.WebGalleryLocaleSettingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.GalleryDataset.WebGalleryPathDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.GalleryDataset.EcommerceGalleryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.GalleryDataset.WebGalleryLocaleSettingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.GalleryDataset.WebGalleryPathRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.GalleryDataset.EcommerceGalleryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.GalleryDataset.WebGalleryLocaleSettingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.GalleryDataset.WebGalleryPathRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.GalleryDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.CustomerViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.CRMContactViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.EcommerceSiteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.EcommerceAppConfigDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.InventoryOverrideImageDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.EcommerceUserAccountsViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.CustomerViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.CRMContactViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.EcommerceSiteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.EcommerceAppConfigRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.InventoryOverrideImageRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.EcommerceUserAccountsViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.CustomerViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.CRMContactViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.EcommerceSiteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.EcommerceAppConfigRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.InventoryOverrideImageRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet.EcommerceUserAccountsViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.ECommerce.DatasetComponent.WebSiteDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Licensing.Base
+</name>
+</assembly>
+<members>
+<member name="M:Interprise.Licensing.Base.Services.CryptoServiceProvider.Encrypt(System.String,System.String@,System.String@)">
+	<summary>
+	</summary>
+	<param name="password"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Services.CryptoServiceProvider.Encrypt(System.String,System.Byte[]@,System.Byte[]@,System.String@)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="salt"></param>
+	<param name="vector"></param>
+	<param name="code"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Services.CryptoServiceProvider.Encrypt(System.String,System.Byte[]@,System.Byte[]@,System.String@,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="salt"></param>
+	<param name="vector"></param>
+	<param name="code"></param>
+	<param name="includePrivate"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Services.CryptoServiceProvider.Decrypt(System.String,System.String,System.String)">
+	<summary>
+ Returns decrypted password based on salt and iv
+ </summary>
+	<param name="password"></param>
+	<param name="passwordSalt"></param>
+	<param name="passwordIV"></param>
+	<returns></returns>
+	<remarks>Returns nothing if decryption fails</remarks>
+</member><member name="M:Interprise.Licensing.Base.Services.CryptoServiceProvider.Decrypt(System.String,System.Byte[],System.Byte[],System.String@)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<param name="encryptedSalt"></param>
+	<param name="vector"></param>
+	<param name="code"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Progress.ProgressForm.GetProgressControl">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Progress.ProgressForm.Maximum">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Progress.ProgressForm.Minimum">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Progress.ProgressForm.ProgressKind">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Progress.ProgressForm.Status">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Progress.ProgressForm.Value">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Progress.ProgressControl.Maximum">
+	<summary>
+ Gets or sets the progress maximum value. 
+ <para>Applies when progresskind is default</para>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Progress.ProgressControl.Minimum">
+	<summary>
+ Gets or sets the progress minimum value. 
+ <para>Applies when progresskind is default</para>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Progress.ProgressControl.Value">
+	<summary>
+ Gets or sets the current progress value. 
+ <para>Applies when progresskind is default</para>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Progress.ProgressControl.InitializeControl">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Progress.ProgressControl.GetValue">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Progress.ProgressControl.GetMinimum">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Progress.ProgressControl.GetMaximum">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Progress.ProgressControl.ProgressKind">
+	<summary>
+ Gets or sets the type of progress bar to display.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Progress.ProgressControl.SetValue(System.Int32)">
+	<summary>
+	</summary>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Progress.ProgressControl.SetMinimum(System.Int32)">
+	<summary>
+	</summary>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Progress.ProgressControl.SetMaximum(System.Int32)">
+	<summary>
+	</summary>
+	<param name="value"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Shared.Common.IsTrialLicense(System.String,System.String)">
+	<summary>
+ Checks if the license provided is licensed or trial.
+ </summary>
+	<param name="serialNumber"></param>
+	<param name="confirmationCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Shared.Common.IsTrialSerialNumber(System.String)">
+	<summary>
+ Checks if a trial serial number.
+ </summary>
+	<param name="serialNumber"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Shared.Common.IsTrialConfirmationCode(System.String)">
+	<summary>
+ Checks if a trial confirmation code.
+ </summary>
+	<param name="confirmationCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Shared.Common.GetDescryptedDeveloper(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="activationCode"></param>
+	<param name="salt"></param>
+	<param name="vector"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Shared.Common.IsValidLicensedCustomer(System.String)">
+	<summary>
+	</summary>
+	<param name="customerCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.AddressControl.Clear">
+	<summary>
+ Clears the text displayed in the control.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.AddressControl.ClearErrors">
+	<summary>
+ Clear all errors in the text boxes.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Licensing.Base.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Interprise.Licensing.Base.My.Resources.Resources.UserRole">
+	<summary>
+  Looks up a localized string similar to SystemUserRole
+SystemUserRoleMenuGroup
+SystemUserRoleRule
+SystemUserRoleFacade
+SystemUserRoleMenuGroupDescription
+SystemUserRoleMenuDashboardPage
+SystemUserRoleMenuDashboardPageDescription
+SystemUserRoleMenuDashboardPageContent
+SystemUserRoleMenuDashboardPageContentDescription
+SystemUserRoleMenuForm
+SystemUserRoleMenuFormDescription
+SystemUserRoleMenuFormSection
+SystemUserRoleMenuFormSectionDescription
+
+
+
+.
+</summary>
+</member><member name="T:Interprise.Licensing.Base.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Interprise.Licensing.Base.SharedControl.BasePhoneControl.Clear">
+	<summary>
+ Clears the text displayed in the control.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Licensing.LicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="context"></param>
+	<param name="type"></param>
+	<param name="instance"></param>
+	<param name="allowExceptions"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Licensing.LicenseProvider.LoadActivationForm">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.ExtendedXtraTabContol.WizardControl.SkipButtonVisible">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.ErrorMessage">
+	<summary>
+ Generated activation code.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.ActivationCode">
+	<summary>
+ Generated activation code.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.Cancelled">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.Crypto">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.DateLicensed">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.DBConnectionStrings">
+	<summary>
+ Property that holds the connection string passed from the Connected Business installation.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.IntepriseDatabases">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.IsRegistered">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.IsLicensed">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.RegisterFromInstallation">
+	<summary>
+ Checks if the registration is called from installation.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.SkipRegistration">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.LicenseActivationForm.SoapVersion">
+	<summary>
+ Gets the version of the soap protocol.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.ApplySkinBaseOnOperatingSystem">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.AssignCustomerInfo">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.AssignLead(System.String)">
+	<summary>
+ Create or modify a lead.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.AssignLead">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.BuildSQLConnectionString(System.String)">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.EnableDisableControl(System.Boolean)">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.ExecuteQuery(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="dbName"></param>
+	<param name="commandText"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.ExecuteScalar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="dbName"></param>
+	<param name="commandText"></param>
+	<returns></returns>
+	<remarks></remarks>
+ Unused Function
+
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.FinalizeRegistration(System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.GenerateActivationCode">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.BeginInitWebService">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.IsCacheDatabase(System.String)">
+	<summary>
+	</summary>
+	<param name="dbName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.GetEncryptedActivationXML(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="activationCode"></param>
+	<param name="salt"></param>
+	<param name="vector"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.RetrieveActivationCode">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:Interprise.Licensing.Base.LicenseActivationForm.RetrieveCustomerInfoFromActivationCodeDelegate">
+	<summary>
+	</summary>
+	<param name="xmlDoc"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.HandleException(System.Exception)">
+	<summary>
+	</summary>
+	<param name="ex"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.GetErrorMessage(System.Exception,System.String)">
+	<summary>
+	</summary>
+	<param name="ex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.ValidRegistrationInfo">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.UpdateServerDatabases">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.SetUserRoleBasedOnProductEdition(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.ValidateServerName">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.GetISSIMODELName(System.String)">
+	<summary>
+	</summary>
+	<param name="dbName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.btnRefreshServerList_Click(System.Object,System.EventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.cboAuthentication_SelectedValueChanged(System.Object,System.EventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.cboServerName_ButtonPressed(System.Object,DevExpress.XtraEditors.Controls.ButtonPressedEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:Interprise.Licensing.Base.LicenseActivationForm.GenerateMachineLicenseFileDelegate">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.LicenseActivationForm_Load(System.Object,System.EventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.WizardLicenseActivation_BeforePageDisplayed(System.Object,Interprise.Licensing.Base.ExtendedXtraTabContol.SelectedPageChangingEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicenseActivationForm.WizardLicenseActivation_SkipClicked(System.Object,System.ComponentModel.CancelEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.Execute(System.String,Interprise.Licensing.Base.Shared.Enum.ProductEdition)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GenerateScript(System.String,System.String[],Interprise.Licensing.Base.Shared.Enum.ProductEdition,System.Boolean,System.String,System.String,System.Boolean,System.Boolean,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)">
+	<summary>
+	</summary>
+	<param name="currentDatabase"></param>
+	<param name="userRoleTables"></param>
+	<param name="productEdition"></param>
+	<param name="usedUKSetting"></param>
+	<param name="companyCountry"></param>
+	<param name="companyLanguage"></param>
+	<param name="isISBExist"></param>
+	<param name="sqlConnection"></param>
+	<param name="sqlTransaction"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GenerateUserRoleScript(System.String,Interprise.Licensing.Base.Shared.Enum.ProductEdition,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GetColumns(System.Data.DataSet)">
+	<summary>
+	</summary>
+	<param name="schema"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GetCompanyInfo(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GetCompanySchema(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)">
+	<summary>
+	</summary>
+	<param name="sqlConnection"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GetPrimaryKeys(System.Data.DataSet)">
+	<summary>
+	</summary>
+	<param name="schema"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GetRow(System.Data.DataSet,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="schema"></param>
+	<param name="getColumn"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GetSchema(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)">
+	<summary>
+	</summary>
+	<param name="sqlConnection"></param>
+	<param name="sqlTransaction"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GetSystemTableList">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GetTableSchema(System.String,System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)">
+	<summary>
+	</summary>
+	<param name="userRoleTable"></param>
+	<param name="sqlConnection"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingScriptGenerator.GetErrorMessage(System.Exception,System.String)">
+	<summary>
+	</summary>
+	<param name="ex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Licensing.LicenseManager.GetLicenseInfo(System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="encryptedActivationCode"></param>
+	<param name="salt"></param>
+	<param name="vector"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Licensing.LicenseManager.ShowTrialLicense">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Licensing.LicenseManager.GetLicense">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.LicensingValidationAttribute.#ctor(System.Boolean)">
+	<summary>
+	</summary>
+	<param name="enableConcurrentUserValidation"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.ProductCode">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.ProductDescription">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.ProductEdition">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.LicenseType">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.CustomerCode">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.CustomerName">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.UserCount">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.SupportPlan">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.SupportUserCount">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.SupportExpirationDate">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.DateActivated">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.ExpirationDate">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.WebServiceEnabled">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.PowerUser">
+	<summary>
+	</summary>
+	<value>User Code</value>
+	<returns>Assigned power User value</returns>
+	<remarks>Get Assigne Power User</remarks>
+</member><member name="M:Interprise.Licensing.Base.Licensing.LicenseInformation.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="activationCode"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.SupportInformation.Enabled">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.SupportInformation.UserCount">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseInformation.SupportInformation.ExpirationDate">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="T:Interprise.Licensing.Base.Licensing.LicenseInformation.SupportInformation">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Licensing.TrialGenerator.Create">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Licensing.LicenseGenerator.GenerateLicense(System.String,System.String,System.String)">
+	<summary>
+ Generate license dll for the machine. 
+ </summary>
+	<param name="key"></param>
+	<param name="developerID"></param>
+	<param name="customerID"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Licensing.LicenseGenerator.GenerateLicense(System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="key"></param>
+	<param name="developerID"></param>
+	<param name="customerID"></param>
+	<param name="dateLicensed"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.Licensing.LicenseGenerator.GenerateLicenseFile(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Generate licensing dll for the user machine.
+ </summary>
+	<param name="publicKey"></param>
+	<param name="privateKey"></param>
+	<param name="machineKey"></param>
+	<param name="developerID"></param>
+	<param name="customerID"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Licensing.Base.Licensing.LicenseGenerator.LicenseFileName">
+	<summary>
+	</summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.TrialSplash.buttonContinue_Click(System.Object,System.EventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.TrialSplash.ApplySkinBaseOnOperatingSystem">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.#ctor">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.CheckSerialNumberCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateSerialNumberCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateConfirmationCodeCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateIPAddressCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.IsEmailUsedCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GenerateActivationCodeCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.RegisterInfoCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GetRegistrationInfoCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.SaveActivationCodeCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.UpdateCustomerProductVersionCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.AssignLeadCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.PingCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GetLeadInformationCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.UpdateCustomerInfoCompleted">
+	<remarks/>
+</member><member name="E:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.AddContactCompleted">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.CheckSerialNumber(System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginCheckSerialNumber(System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndCheckSerialNumber(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.CheckSerialNumberAsync(System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.CheckSerialNumberAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateSerialNumber(System.String,System.Boolean@)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginValidateSerialNumber(System.String,System.Boolean,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndValidateSerialNumber(System.IAsyncResult,System.Boolean@)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateSerialNumberAsync(System.String,System.Boolean)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateSerialNumberAsync(System.String,System.Boolean,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateConfirmationCode(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginValidateConfirmationCode(System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndValidateConfirmationCode(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateConfirmationCodeAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateConfirmationCodeAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateIPAddress(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginValidateIPAddress(System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndValidateIPAddress(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateIPAddressAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.ValidateIPAddressAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.IsEmailUsed(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginIsEmailUsed(System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndIsEmailUsed(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.IsEmailUsedAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.IsEmailUsedAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GenerateActivationCode(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginGenerateActivationCode(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndGenerateActivationCode(System.IAsyncResult,System.String@,System.String@,System.String@)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GenerateActivationCodeAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GenerateActivationCodeAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.RegisterInfo(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginRegisterInfo(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndRegisterInfo(System.IAsyncResult,System.String@,System.String@)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.RegisterInfoAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.RegisterInfoAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GetRegistrationInfo(System.String,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginGetRegistrationInfo(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndGetRegistrationInfo(System.IAsyncResult,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GetRegistrationInfoAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GetRegistrationInfoAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.UpdateCustomerProductVersion(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginUpdateCustomerProductVersion(System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndUpdateCustomerProductVersion(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.UpdateCustomerProductVersionAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.UpdateCustomerProductVersionAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.SaveActivationCode(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginSaveActivationCode(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndSaveActivationCode(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.SaveActivationCodeAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.SaveActivationCodeAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.AssignLead(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginAssignLead(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndAssignLead(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.AssignLeadAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.AssignLeadAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.Ping">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginPing(System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndPing(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.PingAsync">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.PingAsync(System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GetLeadInformation(System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginGetLeadInformation(System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndGetLeadInformation(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GetLeadInformationAsync(System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.GetLeadInformationAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.UpdateCustomerInfo(System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginUpdateCustomerInfo(System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndUpdateCustomerInfo(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.UpdateCustomerInfoAsync(System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.UpdateCustomerInfoAsync(System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.AddContact(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.BeginAddContact(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.EndAddContact(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.AddContactAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.AddContactAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.InterpriseSuiteLicensingServiceWse">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CredentialSoapHeader.BusinessRuleType">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CredentialSoapHeader.TransactionType">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CredentialSoapHeader.ReportAction">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CredentialSoapHeader.OnlineConnectionString">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CredentialSoapHeader.CryptoSalt">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CredentialSoapHeader.CryptoVector">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CredentialSoapHeader.LanguageCode">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CredentialSoapHeader.AnyAttr">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CredentialSoapHeader">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.CompanyName">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.CompanyCode">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.DeveloperCode">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.Country">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.Address">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.City">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.PostalCode">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.County">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.Telephone">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.TelephoneExtension">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.Fax">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.Email">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.Website">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.ConfirmationCode">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.IsValid">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense.ProductEdition">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CompanyLicense">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CheckSerialNumberCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CheckSerialNumberCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.CheckSerialNumberCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.ValidateSerialNumberCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.ValidateSerialNumberCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.ValidateSerialNumberCompletedEventArgs.isRequireRegistration">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.ValidateSerialNumberCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.ValidateConfirmationCodeCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.ValidateConfirmationCodeCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.ValidateConfirmationCodeCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.ValidateIPAddressCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.ValidateIPAddressCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.ValidateIPAddressCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.IsEmailUsedCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.IsEmailUsedCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.IsEmailUsedCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GenerateActivationCodeCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GenerateActivationCodeCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GenerateActivationCodeCompletedEventArgs.encryptedActivationCode">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GenerateActivationCodeCompletedEventArgs.cryptoSalt">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GenerateActivationCodeCompletedEventArgs.cryptoVector">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GenerateActivationCodeCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.RegisterInfoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.RegisterInfoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.RegisterInfoCompletedEventArgs.serialNumber">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.RegisterInfoCompletedEventArgs.errMsg">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.RegisterInfoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.companyName">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.country">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.address">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.city">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.state">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.postalCode">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.county">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.telephone">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.telephoneExt">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.fax">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.email">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs.webSite">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetRegistrationInfoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.UpdateCustomerProductVersionCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.UpdateCustomerProductVersionCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.UpdateCustomerProductVersionCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.SaveActivationCodeCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.SaveActivationCodeCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.SaveActivationCodeCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.AssignLeadCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.AssignLeadCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.AssignLeadCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.PingCompletedEventHandler">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetLeadInformationCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetLeadInformationCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.GetLeadInformationCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.UpdateCustomerInfoCompletedEventHandler">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.AddContactCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Interprise.Licensing.Base.InterpriseSuiteLicensingService.AddContactCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Interprise.Licensing.Base.InterpriseSuiteLicensingService.AddContactCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

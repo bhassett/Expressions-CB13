@@ -1,0 +1,995 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Facade.Utility
+</name>
+</assembly>
+<members>
+<member name="P:Interprise.Facade.Utility.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.CompareDropObjects">
+	<summary>
+  Looks up a localized string similar to /* Check for extra foreign keys to be dropped */
+SELECT [Target].ForeignKey AS [Name]
+, [Target].TableName AS [ParentName]
+, 'Foreign Key' AS [Type]
+, 'Drop' AS [ActionType]
+FROM (
+	SELECT T.[name] AS [TableName]
+		, FK.[name] AS  [ForeignKey]		
+		, C.[name] AS [ColumnName]
+		, RT.[name] AS [ReferencedTable]
+		, RC.[name] AS [ReferencedColumn]
+	FROM [SourceDatabase].sys.foreign_keys FK
+		INNER JOIN [SourceDatabase].sys.tables T
+			ON T.[object_id] = FK.[parent_object_id]
+		INNER JOIN [SourceDa [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.CompareObjects">
+	<summary>
+  Looks up a localized string similar to /* Compare columns */
+
+--Check for columns to be added
+SELECT [Source].*
+, 'Create' AS [ActionType]
+FROM (
+	SELECT T.[name] AS [TableName]
+		, C.[name] AS [ColumnName]
+		, TY.name  AS [DataType]
+		, C.max_length AS [MaxLength]
+		, C.[precision] AS [NumericPrecision]
+		, C.[scale] AS [NumericScale]		
+		--, REPLACE(REPLACE(DC.[definition], '((', '('), '))', ')') AS [Default]
+		, DC.[definition] AS [Default]
+		, C.is_identity AS [IsIdentity]
+		, IC.increment_value AS [IdentityIncrement]
+		, IC. [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.ConvertNTEXT">
+	<summary>
+  Looks up a localized string similar to /*
+Convert all NTEXT to NVARCHAR(MAX) and TEXT to VARCHAR(MAX)
+*/
+SELECT P.name AS TableName
+, C.name AS ColumnName
+, T.name AS Type
+, CAST(C.is_nullable AS BIT) AS Nullable
+INTO #NtextTable
+FROM sys.columns C
+INNER JOIN sys.types T
+	ON C.user_type_id = T.user_type_id
+INNER JOIN sys.tables P
+	ON P.object_id = C.object_id
+WHERE T.name IN ('TEXT', 'NTEXT')
+
+DECLARE @TableName NVARCHAR(128)
+DECLARE @ColumnName NVARCHAR(128)
+DECLARE @IsNullable BIT
+DECLARE @Type NVARCHAR(128)
+
+WHILE EXISTS ( [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.CreateDatabase">
+	<summary>
+  Looks up a localized string similar to IF  EXISTS (SELECT name FROM sys.databases WHERE name = N'{0}')
+BEGIN 
+	ALTER DATABASE [{0}] SET SINGLE_USER
+	DROP DATABASE [{0}]
+END
+GO
+CREATE DATABASE [{0}] ON  PRIMARY 
+( NAME = N'{0}', FILENAME = N'{1}' , SIZE = 695552KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+ LOG ON 
+( NAME = N'{0}_log', FILENAME = N'{2}' , SIZE = 353216KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+GO
+ALTER DATABASE [{0}] SET COMPATIBILITY_LEVEL = 100
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXE [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.GetDependencies">
+	<summary>
+  Looks up a localized string similar to SELECT O.[name] AS [Name]
+, (CASE O.type
+	WHEN 'U' THEN 'Table'
+	WHEN 'V' THEN 'View'
+	WHEN 'P' THEN 'StoredProcedure'
+	WHEN 'FN' THEN 'UserDefinedFunction'
+	WHEN 'FT' THEN 'UserDefinedFunction'
+	WHEN 'FS' THEN 'UserDefinedFunction'
+	WHEN 'TF' THEN 'UserDefinedFunction'
+	WHEN 'IF' THEN 'UserDefinedFunction'	
+	WHEN 'TR' THEN 'Trigger'
+	ELSE O.type
+	END) AS [Type]
+, D.[name] AS [DependsOn]
+, (CASE D.type
+	WHEN 'U' THEN 'Table'
+	WHEN 'V' THEN 'View'
+	WHEN 'P' THEN 'StoredProcedure'
+	WHEN 'FN' [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.GetObjectsWithoutDBO">
+	<summary>
+  Looks up a localized string similar to SELECT [Target].[Name]
+, [Target].[Type]
+, [Target].[Schema]
+FROM (
+	SELECT O.[name] AS [Name]	
+	, (CASE O.[type]
+		WHEN 'V' THEN 'View'
+		WHEN 'P' THEN 'StoredProcedure'
+		WHEN 'FN' THEN 'UserDefinedFunction'
+		WHEN 'TF' THEN 'UserDefinedFunction'
+		WHEN 'IF' THEN 'UserDefinedFunction'			
+		WHEN 'FS' THEN 'UserDefinedFunction'
+		WHEN 'FT' THEN 'UserDefinedFunction'
+		ELSE NULL
+		END) AS [Type]
+	, SCHEMA_NAME(O.[schema_id]) AS [Schema]
+	FROM [SourceDatabase].sys.sql_modules M
+	INNER JOIN [S [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.GetSchemaCompareDependencies">
+	<summary>
+  Looks up a localized string similar to /*Get dependencies of foreign key and primary key*/
+SELECT CASE WHEN [Source].IsFromSource = 1 THEN [Source].[Name] ELSE [Target].[Name] END AS [Name]
+, CASE WHEN [Source].IsFromSource = 1 THEN [Source].[Type] ELSE [Target].[Type] END AS [Type]
+, CASE WHEN [Source].IsFromSource = 1 THEN [Source].[ParentName] ELSE [Target].[ParentName] END AS [ParentName]
+, CASE WHEN [Source].IsFromSource = 1 THEN [Source].[ParentType] ELSE [Target].[ParentType] END AS [ParentType]
+, CASE WHEN [Source].IsFromSource = 1  [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.PatchScript">
+	<summary>
+  Looks up a localized string similar to GO
+--Add database patch info
+IF NOT EXISTS (SELECT 1 FROM DBO.SYSOBJECTS WHERE ID = OBJECT_ID(N'[dbo].[DBMCPatchInfo]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE [dbo].[DBMCPatchInfo] (
+	[Counter] [int] IDENTITY (1, 1) NOT NULL ,
+	[Version] [nvarchar] (50) NOT NULL ,
+	[DateCreated] [datetime] NULL ,
+	[DateModified] [datetime] NULL ,
+	[UserCreated] [nvarchar] (50) NULL ,
+	[UserModified] [nvarchar] (50) NULL 
+) ON [PRIMARY]
+ALTER TABLE [dbo].[DBMCPatchInfo] WITH NOCHECK ADD 
+ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.SystemDataCompareLog">
+	<summary>
+  Looks up a localized string similar to SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('SystemDataCompareLog') AND type in (N'U'))
+BEGIN
+	CREATE TABLE [dbo].[SystemDataCompareLog](
+		[LogID] [int] IDENTITY(1,1) NOT NULL,
+		[Name] [nvarchar](128) NULL,
+		[ParentName] [nvarchar](128) NULL,
+		[Type] [nvarchar](50) NULL,
+		[Action] [int] NULL,
+		[TargetVersion] [nvarchar](100) NULL,
+		[VersionApplied] [nvarchar](100) NULL,
+		[UserCreated] [nvarchar](30) NULL,
+		[Dat [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.SystemDataCompareScript">
+	<summary>
+  Looks up a localized string similar to SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('SystemDataCompareScript') AND type in (N'U'))
+BEGIN
+	CREATE TABLE [dbo].[SystemDataCompareScript](
+		[ScriptCode] [int] IDENTITY(1,1) NOT NULL,		
+		[ScriptID] [nvarchar](200) NOT NULL,
+		[Type] [int] NOT NULL,
+		[TargetVersion] [nvarchar](100) NULL,
+		[VersionApplied] [nvarchar](100) NULL,
+		[UserCreated] [nvarchar](30) NULL,
+		[DateCreated] [datetime] NULL,
+		[UserModified] [ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.UpdateDependentViews">
+	<summary>
+  Looks up a localized string similar to IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[UpdateDependentViews]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[UpdateDependentViews]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE dbo.UpdateDependentViews
+(                                                            
+ @TableName NVARCHAR(128),
+ @UserCode NVARCHAR(30),
+ @AllDependents bit = 1
+)                         
+AS                                                            
+SET  [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.Version">
+	<summary>
+  Looks up a localized string similar to &lt;?xml version="1.0" standalone="yes"?&gt;
+&lt;DocumentElement&gt;
+  &lt;DatabaseVersion&gt;
+    &lt;Version&gt;1.0.200.0&lt;/Version&gt;
+    &lt;Patch&gt;1.0.200.0&lt;/Patch&gt;
+    &lt;SortOrder&gt;0&lt;/SortOrder&gt;
+    &lt;Assembly&gt;
+    &lt;/Assembly&gt;
+    &lt;ModelDBName&gt;ISSIMODEL(1.0)&lt;/ModelDBName&gt;
+  &lt;/DatabaseVersion&gt;
+	&lt;DatabaseVersion&gt;
+		&lt;Version&gt;2007.1.0.0&lt;/Version&gt;
+		&lt;Patch&gt;2007.1.0.0&lt;/Patch&gt;
+		&lt;SortOrder&gt;1&lt;/SortOrder&gt;
+		&lt;Assembly&gt;Interprise.Facade.Utility.Ver2007100&lt;/Assembly&gt;
+    &lt;ModelDBName&gt;ISSIMODEL(2007.1)&lt;/ModelDBName&gt;
+	&lt;/DatabaseVers [rest of string was truncated]";.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.My.Resources.Resources.VersionScript">
+	<summary>
+  Looks up a localized string similar to GO
+--Upgrade the system version of the current database - VERSION_NUMBER
+UPDATE SystemVersion SET VersionNumber = 'ENCRYPTED_VERSION_NUMBER'
+
+GO.
+</summary>
+</member><member name="T:Interprise.Facade.Utility.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Interprise.Facade.Utility.Shared.EventArgument.BeforeUpdatingDatabaseEventArgs.ConnectionString">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Shared.EventArgument.BeforeUpdatingDatabaseEventArgs.#ctor">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Shared.Common.CompareVersions(System.String,Interprise.Facade.Utility.Shared.Enum.CompareOption,System.String)">
+	<summary>
+	</summary>
+	<param name="latestVersionString"></param>
+	<param name="compare"></param>
+	<param name="currentVersionString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Shared.Common.GetAllExceptionMessage(System.Exception)">
+	<summary>
+	</summary>
+	<param name="ex"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Helper.MaxVersionIndex">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Helper.CurrentVersion">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Helper.CurrentVersionIndex(System.String)">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Helper.LatestVersion">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Helper.LatestPatchVersion">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Helper.OldVersion">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Helper.NextVersion(System.String)">
+	<summary>
+	</summary>
+	<param name="currentVersion"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Helper.DatabaseVersion(System.String)">
+	<summary>
+	</summary>
+	<param name="database"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.BulkInsertWordChartPlugIn(System.String,System.String)">
+	<summary>
+ this will insert the latest plugin and reference of Interprise Word Processor and Charts
+ </summary>
+	<param name="databaseName"></param>
+	<remarks>target database</remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.BulkInsertPaymentGatewayPlugins(System.String,System.String)">
+	<summary>
+ this will insert the latest plugin and reference of Interprise Word Processor and Charts
+ </summary>
+	<param name="databaseName"></param>
+	<remarks>target database</remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.SchemaWithCreditCardGateway(System.String)">
+	<summary>
+	</summary>
+	<param name="schema"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.BeforeUpdatingDatabase(System.Object,Interprise.Facade.Utility.Shared.EventArgument.BeforeUpdatingDatabaseEventArgs)">
+	<summary>
+	</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.GetSystemTableList(System.String)">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.ExecuteUpgradeScript(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<param name="version"></param>
+	<param name="script"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.GetCountryCode(System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.RegisterLerrynPayrollPlugin(System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.InstallLatestWordAndChartPlugins(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<param name="version"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.InstallLatestShippingPlugins(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<param name="version"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.InstallLatestPricingImportPlugin(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<param name="version"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.InstallLatestStandardImportPlugin(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<param name="version"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Helper.InstallLatestLerrynPlugins(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="databaseName"></param>
+	<param name="version"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.BaseScripter.IsAppendGo(System.String)">
+	<summary>
+	</summary>
+	<param name="script"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.VersionHelper.CurrentVersionIndex(System.String)">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.VersionHelper.Instance">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.VersionHelper.LatestVersion">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.VersionHelper.LatestModelDBName">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+ added by pete.a 11-25-2010
+ <remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.VersionHelper.LatestPatchVersion">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.VersionHelper.MaxVersionIndex">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.VersionHelper.NextVersion(System.String)">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.VersionHelper.VersionXML">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.DeserializeVersionAssembly(System.String)">
+	<summary>
+	</summary>
+	<param name="assemblyName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GeneratePatchScript(System.String)">
+	<summary>
+	</summary>
+	<param name="currentVersion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GenerateVersionScript(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetCacheScript(Interprise.Facade.Utility.Shared.Enum.CacheCreation)">
+	<summary>
+	</summary>
+	<param name="cacheCreation"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetCurrentVersion(System.String)">
+	<summary>
+	</summary>
+	<param name="currentVersion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetDatabaseScript(Interprise.Facade.Utility.Shared.Enum.DatabaseCreation)">
+	<summary>
+	</summary>
+	<param name="databaseCreation"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetLerrynPayrollScript(Interprise.Facade.Utility.Shared.Enum.PluginScript,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="script"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetLerrynPayrollXML(Interprise.Facade.Utility.Shared.Enum.PluginXML,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="xmlType"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetCacheObject">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetDatabaseObject">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetLerrynPayrollObject">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetDecrytor(System.String)">
+	<summary>
+	</summary>
+	<param name="connectionString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetDefaultScript(System.String,Interprise.Facade.Utility.Shared.Enum.DefaultUpgrade)">
+	<summary>
+	</summary>
+	<param name="version"></param>
+	<param name="defaultUpgrade"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetDefaultScriptObject(System.String)">
+	<summary>
+	</summary>
+	<param name="version"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetNextVersion(System.String)">
+	<summary>
+	</summary>
+	<param name="currentVersion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetPatchScript(System.String)">
+	<summary>
+	</summary>
+	<param name="currentVersion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetPatchSystemTable(System.String)">
+	<summary>
+	</summary>
+	<param name="version"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetPatchVersion(System.String)">
+	<summary>
+	</summary>
+	<param name="currentVersion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetSystemTable(System.String)">
+	<summary>
+	</summary>
+	<param name="currentVersion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetScript(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="script"></param>
+	<param name="version"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetScriptObject(System.String)">
+	<summary>
+	</summary>
+	<param name="assembly"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetUpgradeScript(System.String)">
+	<summary>
+	</summary>
+	<param name="currentVersion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.GetVersionData(System.String)">
+	<summary>
+	</summary>
+	<param name="version"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.VersionHelper.Initialize">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Data.DatabaseServer">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Data.CacheTable">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Data.LanguageTable">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Data.IsCheckLanguage">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Data.IsAbortProcess">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.Abort">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GenerateDataChangeScript">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.InitializeDataCompareSetting">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GenerateForeignKeyConstraintScript(System.String@,System.String@)">
+	<summary>
+	</summary>
+	<param name="disableScript"></param>
+	<param name="enableScript"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetCheckLanguageScript(System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetCustomColumn(System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetDeveloperIDColumn(System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetEquationScript(System.String,Interprise.Facade.Utility.Patcher.Data.ConditionType,Interprise.Facade.Utility.Patcher.Data.EquationType)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetEquationScript(System.String,Interprise.Facade.Utility.Patcher.Data.ConditionType,Interprise.Facade.Utility.Patcher.Data.EquationType,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<param name="condition"></param>
+	<param name="equation"></param>
+	<param name="useISNULL"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetEquationScript(System.String,Interprise.Facade.Utility.Patcher.Data.ConditionType,Interprise.Facade.Utility.Patcher.Data.EquationType,System.Boolean,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<param name="condition"></param>
+	<param name="equation"></param>
+	<param name="useISNULL"></param>
+	<param name="languageColumn"></param>
+	<param name="languageCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetEquationScript(System.Data.DataRow[],Interprise.Facade.Utility.Patcher.Data.EquationType,System.Boolean,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="columnRows"></param>
+	<param name="equation"></param>
+	<param name="useISNULL"></param>
+	<param name="languageColumn"></param>
+	<param name="languageCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetForeignKeyConstraintList">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetLanguageColumn(System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetLanguagesScript">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetPrimaryKeyColumns(System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetPrimaryKeyColumnRows(System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetSelectScript(System.String,System.Boolean,System.Boolean,System.String[]@)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<param name="includeIdentityColumn"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetSelectScript(System.String,System.Boolean,System.Boolean,System.String[]@,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<param name="includeIdentityColumn"></param>
+	<param name="dateAsCurrentDate"></param>
+	<param name="columnArray"></param>
+	<param name="languageColumn"></param>
+	<param name="languageCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetTargetDatabaseLanguages">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.GetTableColumnListScript">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.HasPrimaryKey(System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.IsCacheTable(System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Data.IsPrimaryKey(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="tableName"></param>
+	<param name="columnName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Main.DatabaseServer">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Main.SourceDatabase">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Main.TargetDatabases">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Main.TargetDatabase">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Main.ConnectionString">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Main.DataCompare">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Main.SchemaCompare">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Main.IsAbortDatabaseUpgrade">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Main.IsCheckLanguage">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Main.MaximumProgress">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.BeginUpgradeDatabase">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.UpgradeDatabase">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.DatabaseUpgradeCallback(System.IAsyncResult)">
+	<summary>
+	</summary>
+	<param name="result"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.InitalizePreUpgradeProcess">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.InitializeDatabaseConnection">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.InitializeSettings">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.GenerateVersionChangeScript">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.GenerateUpdateCompanyInfoScript">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.AbortAllProcesses">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.AbortDatabaseUpgrade">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.DeleteFile(System.String)">
+	<summary>
+	</summary>
+	<param name="filePath"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.GetDatabaseVersion(System.String)">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.HandleCompletion(Interprise.Facade.Utility.Shared.Enum.ProcessResult,System.Exception)">
+	<summary>
+	</summary>
+	<param name="result"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.HandleException(System.String,System.Exception,System.Boolean,System.Boolean,Interprise.Facade.Utility.Shared.Enum.UpgradeProcess)">
+	<summary>
+	</summary>
+	<param name="ex"></param>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.HandleLogging(System.String)">
+	<summary>
+	</summary>
+	<param name="message"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.HandleProcessCompletion(Interprise.Facade.Utility.Shared.Enum.ProcessResult,System.Exception)">
+	<summary>
+	</summary>
+	<param name="result"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.ParseFormattedName(System.String,System.String@,System.String@,System.String@)">
+	<summary>
+	</summary>
+	<param name="formattedName"></param>
+	<param name="schema"></param>
+	<param name="parentName"></param>
+	<param name="objectName"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.SetFileReadOnly(System.String,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="filePath"></param>
+	<param name="isReadOnly"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Main.ToDatabaseObjectArray(System.Data.DataRow[]@,System.String[]@)">
+	<summary>
+	</summary>
+	<param name="sourceRows"></param>
+	<param name="targetArray"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.CacheBuilder.BuildCacheDatabaseCallback(System.IAsyncResult)">
+	<summary>
+	</summary>
+	<param name="result"></param>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.CacheBuilder.DeleteFile(System.String)">
+	<summary>
+	</summary>
+	<param name="filePath"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Schema.DatabaseServer">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Schema.IsAbortProcess">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Schema.ModifiedTables">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.Schema.ModifiedViews">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Schema.Abort">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.Schema.SetFileReadOnly(System.String,System.Boolean)">
+	<summary>
+	</summary>
+	<param name="filePath"></param>
+	<param name="isReadOnly"></param>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.UserRole.DatabaseServer">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Interprise.Facade.Utility.Patcher.UserRole.IsAbortProcess">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Interprise.Facade.Utility.Patcher.UserRole.Abort">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

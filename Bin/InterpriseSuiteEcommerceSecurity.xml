@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InterpriseSuiteEcommerceSecurity</name>
+    </assembly>
+    <members>
+        <member name="T:InterpriseSuiteEcommerceSecurity.Global">
+            <summary>
+            Summary description for Global.
+            </summary>
+        </member>
+        <member name="F:InterpriseSuiteEcommerceSecurity.Global.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceSecurity.Global.IsAsyncPostBackRequest">
+            <summary>
+            Returns whether or not the current post back is an AJAX request.
+            </summary>
+            <returns>True if an AJAX request, false if not.
+            </returns>
+        </member>
+        <member name="M:InterpriseSuiteEcommerceSecurity.Global.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

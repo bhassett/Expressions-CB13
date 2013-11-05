@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Extendable.Report
+</name>
+</assembly>
+<members>
+<member name="E:Interprise.Extendable.Report.Presentation.ReportWizard.IBaseReportDetailsInterface.IncludeColumn">
+	<summary>
+	</summary>
+	<param name="include"></param>
+	<remarks>Made a before and after event ..p.t</remarks>
+</member><member name="P:Interprise.Extendable.Report.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Extendable.Report.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Extendable.Report.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

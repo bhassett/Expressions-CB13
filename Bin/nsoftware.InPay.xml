@@ -1,0 +1,1067 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nsoftware.InPay</name>
+    </assembly>
+    <members>
+        <member name="T:nsoftware.InPay.AchconverterErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Achconverter.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Achconverter.ConvertACH">
+            <summary>Converts a file from ACH format into XML.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Achconverter.ConvertXML">
+            <summary>Converts an XML file into ACH format.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Achconverter.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Achconverter.SetInputStream(System.IO.Stream)">
+            <summary>The input stream to read from when calling ConvertXML or ConvertACH.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Achconverter.SetOutputStream(System.IO.Stream)">
+            <summary>The output stream to write to when calling ConvertXML or ConvertACH.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Achconverter.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.FileBatchCount">
+            <summary>Total number of batches contained in the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.FileBlockCount">
+            <summary>Total number of blocks in a file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.FileCreditTotal">
+            <summary>Total amount credited to the merchant's bank account.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.FileDebitTotal">
+            <summary>Total amount debited from the merchant's bank account.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.FileEntryCount">
+            <summary>Total number of entries in a file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.FileEntryHash">
+            <summary>Hash of the routing numbers from each detail record in the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.InputFile">
+            <summary>Specifies the file to read data from when calling ConvertXML or ConvertACH.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.InputString">
+            <summary>Data in memory to read from when calling ConvertXML or ConvertACH.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.OutputFile">
+            <summary>Specifies the file data is written to when calling ConvertXML or ConvertACH.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.OutputString">
+            <summary>Contains the results from ConvertXML or ConvertACH.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.Schema">
+            <summary>Returns the XSD Schema used to create XML from ACH files.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Achconverter.VerifyMode">
+            <summary>Determines how the totals in the Batch and File control records are validated.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.CardvalidatorErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Cardvalidator.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Cardvalidator.Reset">
+            <summary>Clears all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Cardvalidator.ValidateCard">
+            <summary>Checks the card number and expiration date for validity.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Cardvalidator.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Cardvalidator.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Cardvalidator.CardExpMonth">
+            <summary>Expiration month of the credit card specified in CardNumber.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Cardvalidator.CardExpYear">
+            <summary>Expiration month of the credit card specified in CardNumber.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Cardvalidator.CardNumber">
+            <summary>Credit card number to be validated.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Cardvalidator.CardType">
+            <summary>Indicates the results of the Luhn Digit Check algorithm.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Cardvalidator.CardTypeDescription">
+            <summary>Human-readable description of the CardType.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Cardvalidator.DateCheckPassed">
+            <summary>Indicates whether the card is expired or not.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Cardvalidator.DigitCheckPassed">
+            <summary>Indicates the results of the Luhn Digit Check algorithm.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Cardvalidator.TrackData">
+            <summary>Magnetic stripe data read off the credit card.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Cardvalidator.TrackType">
+            <summary>Indicates the type of the specified TrackData.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.Check21ErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.Check21SSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.Check21SSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.Check21StatusEventArgs">
+            <summary>Event arguments for the Status event.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Check21.BuildAndUploadFile">
+            <summary>Builds an X9.37 file and uploads it to an FTP server.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Check21.BuildFile">
+            <summary>Builds an X9.37 file.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Check21.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Check21.Interrupt">
+            <summary>Interrupt the current method.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Check21.Reset">
+            <summary>Reset the internal state of the component and all properties to their default values.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Check21.OnError">
+            <summary>Information about non-fatal errors encountered during file construction.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Check21.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Check21.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Check21.OnStatus">
+            <summary>Traces the commands sent to the server, and the respective replies.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.Checks">
+            <summary>Collection of checks to be written to the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.FTP">
+            <summary>Information about the FTP or FTPS server you're uploading to.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.Origin">
+            <summary>Contains information about the originator of this file and the checks contained within.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.BusinessDate">
+            <summary>The year, month, and day that designates the business date at the Bank of First Deposit.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.CashLetterId">
+            <summary>A code used to uniquely identify the cash letter inside the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.CollectionType">
+            <summary>A code that indicates the type of cash letter and bundle contained in the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.CycleNumber">
+            <summary>Denotes the cycle under which the file is created.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.DestinationName">
+            <summary>The short name that identifies the institution that receives the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.DestinationRoutingNumber">
+            <summary>This number identifies the institution that receives the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.DocumentationType">
+            <summary>A code that indicates the type of documentation that supports all Checks records in the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.FileDataB">
+            <summary>Contains the binary contents of the X9.37 file created by the BuildFile method.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.FileData">
+            <summary>Contains the binary contents of the X9.37 file created by the BuildFile method.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.Filename">
+            <summary>Path and name of the file to be written to disk by the BuildFile method.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.RecordType">
+            <summary>A code that indicates the type of records contained in this file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.ReturnRoutingNumber">
+            <summary>A routing number indicating the location to which returns and return notifications should be sent.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.SettlementDate">
+            <summary>The date that the institution that created the file expects settlement.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Check21.SSLStartMode">
+            <summary>Determines how the component starts the SSL negotiation.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.EcheckErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.EcheckSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.EcheckSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Echeck.AddSpecialField(System.String,System.String)">
+            <summary>Adds a special field name and the corresponding value.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Echeck.Authorize">
+            <summary>Initiates a check authorization transaction.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Echeck.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Echeck.Credit(System.String,System.String)">
+            <summary>Credits a previous ACH transaction.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Echeck.GetResponseVar(System.String)">
+            <summary>Parses additional information out of the response.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Echeck.Interrupt">
+            <summary>Interrupts the current action.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Echeck.Reset">
+            <summary>Clears all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Echeck.ResetSpecialFields">
+            <summary>Resets all special fields to the default settings.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Echeck.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Echeck.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Echeck.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.Bank">
+            <summary>Bank account and routing information for an electronic check transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.Customer">
+            <summary>Contains the customer's name, address, and other identifying information.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.Response">
+            <summary>Contains the response to the authorization.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.SpecialFields">
+            <summary>A list of additional fields to send in the request.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.CheckNumber">
+            <summary>Indicates the check number to use for a transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.Gateway">
+            <summary>Gateway to process transactions with.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.GatewayURL">
+            <summary>Default URL for a specific Gateway.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.InvoiceNumber">
+            <summary>Merchant-generated invoice number.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.LicenseDOB">
+            <summary>Customer's Date of Birth as indicated on his driver's license.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.LicenseNumber">
+            <summary>Customer's drivers license number.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.LicenseState">
+            <summary>State in which customer's drivers license was issued.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.MerchantLogin">
+            <summary>Merchant's Gateway login.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.MerchantPassword">
+            <summary>Merchant's Gateway password.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.SSN">
+            <summary>Customer's Social Security Number.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.TestMode">
+            <summary>Turns test mode on and off for transactions sent to the current Gateway.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.TransactionAmount">
+            <summary>Purchase amount for an authorization or retry transaction. Not used for reversals.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Echeck.TransactionDesc">
+            <summary>Description of goods purchased.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.IchargeErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.IchargeSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.IchargeSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.AddSpecialField(System.String,System.String)">
+            <summary>Adds a special field name and the corresponding value.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.AuthOnly">
+            <summary>Initiates an authorization-only request transaction.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.AVSOnly">
+            <summary>Used to check the validity of the card without authorizing funds.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.Capture(System.String,System.String)">
+            <summary>Captures a previously authorized transaction.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.Credit(System.String,System.String)">
+            <summary>Credits a previously captured transaction.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.Force(System.String)">
+            <summary>Used when authorization cannot be obtained online.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.GetResponseVar(System.String)">
+            <summary>Parses additional information out of the response.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.Interrupt">
+            <summary>Interrupts the current action.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.Reset">
+            <summary>Clears all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.ResetSpecialFields">
+            <summary>Resets all special fields to the default settings.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.Sale">
+            <summary>Initiates an Sale transaction (authorization and capture).</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Icharge.VoidTransaction(System.String)">
+            <summary>Voids a previously authorized transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Icharge.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Icharge.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Icharge.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.Card">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.Customer">
+            <summary>Contains the customer's name, address, and other identifying information.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.Response">
+            <summary>Contains the response to the authorization.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.SpecialFields">
+            <summary>A list of additional fields to send in the request.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.AuthCode">
+            <summary>Authorization code from a previous transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.Gateway">
+            <summary>Gateway to process transactions with.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.GatewayURL">
+            <summary>Default URL for a specific Gateway.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.InvoiceNumber">
+            <summary>Merchant-generated invoice number.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.MerchantLogin">
+            <summary>Merchant's Gateway login.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.MerchantPassword">
+            <summary>Merchant's Gateway password.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.TestMode">
+            <summary>Turns test mode on and off for transactions sent to the current Gateway.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.TransactionAmount">
+            <summary>Purchase amount for an authorization transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.TransactionDesc">
+            <summary>Description of goods purchased.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Icharge.TransactionId">
+            <summary>Merchant-generated transaction Id used for all transactions.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.ThreedsecureCardRangeEventArgs">
+            <summary>Event arguments for the CardRange event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.ThreedsecureDataPacketInEventArgs">
+            <summary>Event arguments for the DataPacketIn event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.ThreedsecureDataPacketOutEventArgs">
+            <summary>Event arguments for the DataPacketOut event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.ThreedsecureErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.ThreedsecureSSLServerAuthenticationEventArgs">
+            <summary>Event arguments for the SSLServerAuthentication event.</summary>
+        </member>
+        <member name="T:nsoftware.InPay.ThreedsecureSSLStatusEventArgs">
+            <summary>Event arguments for the SSLStatus event.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Threedsecure.SetRootCertificate(System.Byte[],System.Int32,System.Int32)">
+            <summary>Contains the certificate used to verify the signature of the PARes message returned by the ACS.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Threedsecure.CheckAuthenticationResponse(System.String)">
+            <summary>Checks the response returned from the Access Control Server.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Threedsecure.Config(System.String)">
+            <summary>Sets or retrieves a configuration setting.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Threedsecure.GetAuthenticationPacket">
+            <summary>Returns the Payer Authentication Request packet that is to be sent to the ACS.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Threedsecure.Interrupt">
+            <summary>Interrupts the current action.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Threedsecure.RequestCardRanges">
+            <summary>Sends a Card Range Request message to the Directory Server.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Threedsecure.Reset">
+            <summary>Clears all properties to their default values.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Threedsecure.VerifyEnrollment">
+            <summary>Verifies that the CardNumber is enrolled in the 3-D Secure program.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.RuntimeLicense">
+            <summary>Runtime license key (derived from the development license, if any).</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Threedsecure.OnCardRange">
+            <summary>Fired when the response to a card range request is received.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Threedsecure.OnDataPacketIn">
+            <summary>Fired when receiving a data packet from the server.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Threedsecure.OnDataPacketOut">
+            <summary>Fired when sending a data packet to the server.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Threedsecure.OnError">
+            <summary>Information about errors during data delivery.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Threedsecure.OnSSLServerAuthentication">
+            <summary>Fired after the server presents its certificate to the client.</summary>
+        </member>
+        <member name="E:nsoftware.InPay.Threedsecure.OnSSLStatus">
+            <summary>Shows the progress of the secure connection.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.CardRanges">
+            <summary>A collection of card ranges to be added to or removed from the cache.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.Proxy">
+            <summary>A set of properties related to proxy access.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.SSLAcceptServerCert">
+            <summary>Instructs the component to unconditionally accept the server certificate that matches the supplied certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.SSLCert">
+            <summary>The certificate to be used during SSL negotiation.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.SSLServerCert">
+            <summary>The server certificate for the last established connection.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.ACSURL">
+            <summary>Fully qualified URL of an Access Control Server.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.AuthenticationCAVV">
+            <summary>Cardholder Authentication Verification Value.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.AuthenticationCAVVAlgorithm">
+            <summary>Indicates the algorithm used to generate the AuthenticationCAVV value.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.AuthenticationCertificateB">
+            <summary>Contains the signing certificate for the PARes message returned by the ACS.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.AuthenticationCertificate">
+            <summary>Contains the signing certificate for the PARes message returned by the ACS.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.AuthenticationECI">
+            <summary>Value to be passed in the authorization message.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.AuthenticationErrorURL">
+            <summary>Location where authentication errors are posted to.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.AuthenticationStatus">
+            <summary>Indicates whether a transaction qualifies as an authenticated transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.AuthenticationTime">
+            <summary>Date and time Payer Authentication Response message was signed by the ACS.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.BrowserAcceptHeader">
+            <summary>HTTP accept header sent from the cardholder's browser.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.BrowserDeviceCategory">
+            <summary>Indicates the type of cardholder device.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.BrowserUserAgentHeader">
+            <summary>HTTP user-agent header sent from the customer's browser.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.CardEnrolled">
+            <summary>Indicates whether the CardNumber can be authenticated.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.CardExpMonth">
+            <summary>Expiration month of the credit card specified in CardNumber.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.CardExpYear">
+            <summary>Expiration year of the credit card specified in CardNumber.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.CardNumber">
+            <summary>Customer's credit card number to be authenticated.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.CurrencyCode">
+            <summary>Identifies the type of currency used by the merchant.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.CurrencyExponent">
+            <summary>Minor units of currency.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.DataPacketOut">
+            <summary>Contains the data packet sent to the server.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.DirectoryServerURL">
+            <summary>The address of the Directory Server.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.EnrollmentErrorURL">
+            <summary>Location where card range and enrollment verification errors are posted to.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.ErrorPacket">
+            <summary>Contains an XML-formatted error packet after receiving an invalid response from the Directory or Access Control Server.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.Extension">
+            <summary>Any data necessary to support additional features.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.MerchantBankId">
+            <summary>The number which identifies the merchant's bank or processor.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.MerchantCountryCode">
+            <summary>Identifies the country where the merchant is located.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.MerchantName">
+            <summary>Contains the name of the merchant.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.MerchantNumber">
+            <summary>A unique number used to identify the merchant within the VisaNet system.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.MerchantPassword">
+            <summary>Merchant's password.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.MerchantURL">
+            <summary>Merchant's URL.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.MessageId">
+            <summary>Unique identification number for each message.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.ProtocolVersion">
+            <summary>Indicates the 3-D Secure protocol version.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.RecurEndDate">
+            <summary>The date after which no further authorizations should be performed.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.RecurFrequency">
+            <summary>An integer indicating the minimum number of days between authorizations.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.RecurInstallments">
+            <summary>An integer indicating the maximum number of permitted authorizations for installment payments.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.ResponsePacket">
+            <summary>Contains the response returned by the Directory Server or ACS.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.RootCertificateB">
+            <summary>Contains the certificate used to verify the signature of the PARes message returned by the ACS.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.RootCertificate">
+            <summary>Contains the certificate used to verify the signature of the PARes message returned by the ACS.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.SerialNumber">
+            <summary>Serial number indicating the state of the current card range cache.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.Timeout">
+            <summary>A timeout for the component.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.TransactionAmount">
+            <summary>Purchase amount to be authorized.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.TransactionDate">
+            <summary>Optionally contains the date of the transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.TransactionDescription">
+            <summary>Brief description of goods to be purchased.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.TransactionDisplayAmount">
+            <summary>Purchase amount to be authorized.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.TransactionId">
+            <summary>Contains a unique transaction identifier.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Threedsecure.VendorCode">
+            <summary>Vendor-specific error code or explanatory text.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.CheckDetail.#ctor">
+            <summary>Contains information about a check to be written to file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.Amount">
+            <summary>The US dollar value of the check.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.BackImageCreationDate">
+            <summary>Date assigned by the image creator for the image contained in BackImageData .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.BackImageDataB">
+            <summary>This property contains the scanned image of the back of the physical check, in the format specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.BackImageData">
+            <summary>This property contains the scanned image of the back of the physical check, in the format specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.BackImageFilename">
+            <summary>This property contains location of a scanned image of the back of the physical check, in the format  specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.BackImageReferenceKey">
+            <summary>A designator assigned by the ECE institution that uniquely identifies the BackImageData .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.BOFDAccountNumber">
+            <summary>A number that identifies the depository account at the Bank of First Deposit.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.BOFDBranch">
+            <summary>A code that identifies the branch at the Bank of First Deposit.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.BOFDConversionIndicator">
+            <summary>A code that indicates the conversion within the processing institution between original paper check, image, and IRD.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.BOFDRoutingNumber">
+            <summary>A number that identifies the Bank of First Deposit.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.BOFDTruncator">
+            <summary>Identifies if this BOFD is the truncator of the original check.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.CanRecreateImages">
+            <summary>A code that indicates whether the sender has the ability to recreate the check images  (from the original source) for the duration of the agreed to rentention timeframe.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.FrontImageCreationDate">
+            <summary>Date assigned by the image creator for the image contained in FrontImageData .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.FrontImageDataB">
+            <summary>This property contains the scanned image of the front of the physical check, in the format specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.FrontImageData">
+            <summary>This property contains the scanned image of the front of the physical check, in the format specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.FrontImageFilename">
+            <summary>This property contains location of a scanned image of the front of the physical check, in the format  specified  by ImageFormat and compressed using the designated ImageCompression .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.FrontImageReferenceKey">
+            <summary>A designator assigned by the ECE institution that uniquely identifies the FrontImageData .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.ImageCompression">
+            <summary>A code that identifies the algorithm or method used to compress the images tored in the FrontImageData and BackImageData properties.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.ImageCreatorRoutingNumber">
+            <summary>A number that identifies the financial institution that created the image (if different from BOFDRoutingNumber ).</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.ImageFormat">
+            <summary>A code that identifies the type of image format used for the images contained in the FrontImageData and BackImageData properties.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.MICRAuxOnUs">
+            <summary>A code used on commercial checks at the discretion of the payor bank, read off of the MICR line on a check.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.MICROnUs">
+            <summary>Account number data specified by the payor bank and read from the MICR line on a check.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.MICRProcessingCode">
+            <summary>The external processing code from the MICR line of a check, if present.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.MICRRoutingNumber">
+            <summary>Payor bank routing number, read from the MICR line of a check.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.PayeeName">
+            <summary>The name of the payee from the check.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CheckDetail.SequenceNumber">
+            <summary>ECE Institution Item Sequence Number, asigned by the institution that creates the file.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.FTPConnection.#ctor">
+            <summary>Used to connect to an FTP or FTPS server for uploading X9.37 files.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.FTPConnection.Password">
+            <summary>The password to login with.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.FTPConnection.RemoteFile">
+            <summary>The name of the file as it will appear on the server after upload.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.FTPConnection.RemoteHost">
+            <summary>The domain name or IP address of the FTP server the file is to be uploaded to.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.FTPConnection.RemotePath">
+            <summary>The current path on the FTP server.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.FTPConnection.RemotePort">
+            <summary>The port for the FTP service (default is 21).</summary>
+        </member>
+        <member name="P:nsoftware.InPay.FTPConnection.Timeout">
+            <summary>A timeout to use when uploading via FTP.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.FTPConnection.User">
+            <summary>The user id to login as.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Origin.#ctor">
+            <summary>Specifies the originator of a file and the checks contained within.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Origin.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>Specifies the originator of a file and the checks contained within.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Origin.ContactName">
+            <summary>A contact at the institution that creates the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Origin.ContactPhone">
+            <summary>The phone number of the ContactName at the institution that created the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Origin.OriginName">
+            <summary>The short name of the ECE institution that created the file.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Origin.RoutingNumber">
+            <summary>A number that identifies the ECE institution that originates the file.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Certificate.#ctor">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Certificate.#ctor(System.String)">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Certificate.#ctor(System.Byte[])">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Certificate.#ctor(nsoftware.InPay.CertStoreTypes,System.String,System.String,System.String)">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Certificate.#ctor(nsoftware.InPay.CertStoreTypes,System.String,System.String,System.Byte[])">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Certificate.#ctor(nsoftware.InPay.CertStoreTypes,System.Byte[],System.String,System.String)">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Certificate.#ctor(nsoftware.InPay.CertStoreTypes,System.Byte[],System.String,System.Byte[])">
+            <summary>The digital certificate being used.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.EffectiveDate">
+            <summary>The date which this certificate becomes valid.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.EncodedB">
+            <summary>The certificate (PEM/base64 encoded).</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.Encoded">
+            <summary>The certificate (PEM/base64 encoded).</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.ExpirationDate">
+            <summary>The date the certificate expires.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.ExtendedKeyUsage">
+            <summary>A comma-delimited list of extended key usage identifiers.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.Issuer">
+            <summary>The issuer of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.PrivateKey">
+            <summary>The private key of the certificate (if available).</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.PrivateKeyAvailable">
+            <summary>Shows whether a PrivateKey is available for the  selected certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.PrivateKeyContainer">
+            <summary>The name of the PrivateKey container for the  certificate (if available).</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.PublicKey">
+            <summary>The public key of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.PublicKeyAlgorithm">
+            <summary>Textual description of the public key algorithm of the  certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.PublicKeyLength">
+            <summary>The length of the certificate public key (in bits).</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.SerialNumber">
+            <summary>The serial number of the certificate encoded as a  string.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.SignatureAlgorithm">
+            <summary>Textual description of the signature algorithm of the  certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.StoreB">
+            <summary>The name of the certificate store for the client certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.Store">
+            <summary>The name of the certificate store for the client certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.StorePassword">
+            <summary>If the certificate store is of a type that requires  a password, this property is used to specify that  password in order to open the certificate store.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.StoreType">
+            <summary>The type of certificate store for this certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.Subject">
+            <summary>The subject of the certificate used for client authentication.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.SubjectAltNames">
+            <summary>A comma-separted lists of alternative subject names of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.ThumbprintMD5">
+            <summary>MD5 hash of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.ThumbprintSHA1">
+            <summary>SHA1 hash of the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.Usage">
+            <summary>Textual description of UsageFlags .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.UsageFlags">
+            <summary>Flags that show intended use for the certificate.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Certificate.Version">
+            <summary>The certificate's version number.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.EPBank.#ctor">
+            <summary>Contains the customer's bank routing and account information.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.EPBank.#ctor(System.String,System.String,nsoftware.InPay.AccountTypes)">
+            <summary>Contains the customer's bank routing and account information.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.EPBank.#ctor(System.String,System.String,nsoftware.InPay.AccountTypes,System.String,System.String)">
+            <summary>Contains the customer's bank routing and account information.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPBank.AccountHolderName">
+            <summary>Account holder's name.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPBank.AccountNumber">
+            <summary>Bank account number for ACH transactions.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPBank.AccountType">
+            <summary>Indicates whether a checking or savings account is used for this transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPBank.Name">
+            <summary>Name of the account holder's bank.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPBank.RoutingNumber">
+            <summary>Routing number for ACH transactins.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.EPCustomer.#ctor">
+            <summary>Contains customer information.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.Address">
+            <summary>Customer's street address.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.Aggregate">
+            <summary>This property allows you to get or set an XML aggregate built from all of the Customer properties.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.City">
+            <summary>Customer's city.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.Country">
+            <summary>Customer's country.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.Email">
+            <summary>Customer's email address.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.Fax">
+            <summary>Customer's fax number.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.FirstName">
+            <summary>Customer's first name.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.FullName">
+            <summary>Customer's full name.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.Id">
+            <summary>Merchant-generated customer Id.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.LastName">
+            <summary>Customer's last name.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.Phone">
+            <summary>Customer's phone number.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.State">
+            <summary>Customer's state.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCustomer.Zip">
+            <summary>Customer's zip code (or postal code if outside of the USA).</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Proxy.#ctor">
+            <summary>The proxy the component will connect to.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Proxy.#ctor(System.String,System.Int32)">
+            <summary>The proxy the component will connect to.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.Proxy.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>The proxy the component will connect to.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Proxy.AuthScheme">
+            <summary>This property is used to tell the component which  type of authorization to perform when connecting to the proxy.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Proxy.AutoDetect">
+            <summary>This property tells the component whether or not to automatically detect and use proxy system settings, if available.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Proxy.Password">
+            <summary>This property contains a password if authentication is to be used for the proxy.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Proxy.Port">
+            <summary>This property contains the TCP port for the proxy Server (default 80).</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Proxy.Server">
+            <summary>If a proxy Server is given, then the HTTP request is sent to the proxy instead of the server otherwise specified.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Proxy.SSL">
+            <summary>This property determines when to use SSL for the connection to the proxy.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.Proxy.User">
+            <summary>This property contains a user name, if authentication is to be used for the proxy.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.EPResponse.#ctor">
+            <summary>Contains the response to the authorization.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.ApprovalCode">
+            <summary>Contains an authorization code when a transaction has been approved.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.Approved">
+            <summary>Indicates the status of the last transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.AVSResult">
+            <summary>Contains the Address Verification System result code.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.Code">
+            <summary>Indicates the status of the authorization request.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.CVVResult">
+            <summary>Contains the returned CVV2 result code if it was requested.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.Data">
+            <summary>The entire response returned from the gateway processor.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.ErrorCode">
+            <summary>Additional error code returned by some gateways.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.ErrorText">
+            <summary>Additional error description returned by some gateways.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.InvoiceNumber">
+            <summary>Invoice number submitted in authorization request (if applicable).</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.ProcessorCode">
+            <summary>Response code from the underlying processor.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.Text">
+            <summary>Text information that describes each response code.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPResponse.TransactionId">
+            <summary>Contains the Visa Transaction Identifier or MasterCard Reference Number.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.EPSpecialField.#ctor">
+            <summary>Additional name/value pairs which can be added to a transaction.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.EPSpecialField.#ctor(System.String,System.String)">
+            <summary>Additional name/value pairs which can be added to a transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPSpecialField.Name">
+            <summary>Name of special configuration field to submit in this transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPSpecialField.Value">
+            <summary>Value of special configuration field to submit in this transaction.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.EPCardType.#ctor">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.EPCardType.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.EPCardType.#ctor(System.String,System.Int32,System.Int32,System.String)">
+            <summary>Contains the customer's credit card information.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCardType.Aggregate">
+            <summary>This property allows you to get or set an XML aggregate built from all of the Card properties.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCardType.CardType">
+            <summary>Type of credit card being used in this transaction.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCardType.CVV2Data">
+            <summary>A three digit security code located on the back of many credit cards (optional).</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCardType.CVVIndicator">
+            <summary>If you do not send any data in the CVV2Data property, some gateways require a reason that the card verification value was not included in the authorization request.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCardType.ExpMonth">
+            <summary>Expiration month of the credit card specified in Number .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCardType.ExpYear">
+            <summary>Expiration year of the credit card specified in Number .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.EPCardType.Number">
+            <summary>Customer's credit card number for this transaction.</summary>
+        </member>
+        <member name="M:nsoftware.InPay.CardRange.#ctor">
+            <summary>Contains a range of card numbers to be added to or removed from the cache.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CardRange.Action">
+            <summary>The action to perform on the card range indicated by Begin and End .</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CardRange.Begin">
+            <summary>First number in a range of credit card numbers returned by the Directory Server.</summary>
+        </member>
+        <member name="P:nsoftware.InPay.CardRange.End">
+            <summary>Last number in a range of credit card numbers returned by the Directory Server.</summary>
+        </member>
+    </members>
+</doc>

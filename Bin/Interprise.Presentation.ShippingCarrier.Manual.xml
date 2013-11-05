@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Interprise.Presentation.ShippingCarrier.Manual</name>
+    </assembly>
+    <members>
+        <member name="F:Interprise.Presentation.ShippingCarrier.Manual.Account.ManualAccountSection.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.ShippingCarrier.Manual.Account.ManualAccountSection.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Interprise.Presentation.ShippingCarrier.Manual.Account.ManualAccountSection.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Interprise.Presentation.ShippingCarrier.Manual.ManualSpecificControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Interprise.Presentation.ShippingCarrier.Manual.ManualSpecificControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Interprise.Presentation.ShippingCarrier.Manual.ManualSpecificControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Interprise.Presentation.ShippingCarrier.Manual.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Interprise.Presentation.ShippingCarrier.Manual.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Interprise.Presentation.ShippingCarrier.Manual.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Interprise.Presentation.ShippingCarrier.Manual.Properties.Resources.DataDictionaryDataset">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt; 
+            .
+             </summary>
+        </member>
+        <member name="P:Interprise.Presentation.ShippingCarrier.Manual.Properties.Resources.DataDictionaryScript">
+            <summary>
+              Looks up a localized string similar to .
+            </summary>
+        </member>
+        <member name="P:Interprise.Presentation.ShippingCarrier.Manual.Properties.Resources.UserRoleScript">
+             <summary>
+               Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt; 
+            .
+             </summary>
+        </member>
+    </members>
+</doc>

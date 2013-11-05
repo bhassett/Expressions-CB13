@@ -1,0 +1,216 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Framework.CRM
+</name>
+</assembly>
+<members>
+<member name="T:Interprise.Framework.CRM.DatasetComponent.LeadDataset.CRMLeadViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.LeadDataset.CRMLeadViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.LeadDataset.CRMLeadViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.LeadDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.OpportunityCertaintyDataset.SystemOpportunityCertaintyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.OpportunityCertaintyDataset.SystemOpportunityCertaintyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.OpportunityCertaintyDataset.SystemOpportunityCertaintyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.OpportunityCertaintyDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Interprise.Framework.CRM.DatasetGateway.FollowUpDatasetGatewaySerializer.DerivedType">
+	<summary>
+ Overrides the property Interprise.Framework.Base.DatasetGateway.BaseDatasetGatewaySerializer.DerivedType
+ </summary>
+	<value>The Type object of the gateway (FollowUpDatasetGateway)</value>
+	<returns>The Type object of the gateway (FollowUpDatasetGateway)</returns>
+	<remarks></remarks>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.OpportunityCompetitorDataset.SystemOpportunityCompetitorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.OpportunityCompetitorDataset.SystemOpportunityCompetitorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.OpportunityCompetitorDataset.SystemOpportunityCompetitorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.OpportunityCompetitorDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.PredefinedNotesDataset.SystemPredefinedNotesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.PredefinedNotesDataset.SystemPredefinedNotesDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.PredefinedNotesDataset.SystemPredefinedNotesTransactionListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.PredefinedNotesDataset.SystemPredefinedNotesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.PredefinedNotesDataset.SystemPredefinedNotesDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.PredefinedNotesDataset.SystemPredefinedNotesTransactionListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.PredefinedNotesDataset.SystemPredefinedNotesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.PredefinedNotesDataset.SystemPredefinedNotesDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.PredefinedNotesDataset.SystemPredefinedNotesTransactionListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.SystemManager.PredefinedNotesDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="F:Interprise.Framework.CRM.Shared.CSSNConstants.CSSN_NONE">
+////////////////////////////////////////////////////////
+///////            Scanner types
+////////////////////////////////////////////////////////
+
+</member><member name="P:Interprise.Framework.CRM.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Interprise.Framework.CRM.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMNoteViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMDocumentViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMActivityViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMActivityHistoryViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMFollowUpViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMFollowUpFilterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMNoteViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMDocumentViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMActivityViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMActivityHistoryViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMFollowUpViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMFollowUpFilterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMNoteViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMDocumentViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMActivityViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMActivityHistoryViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMFollowUpViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset.CRMFollowUpFilterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.FollowUpDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.CampaignDataset.CRMCampaignViewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.CampaignDataset.CRMCampaignViewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.CampaignDataset.CRMCampaignViewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Interprise.Framework.CRM.DatasetComponent.CampaignDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

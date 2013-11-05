@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Interprise.Extendable.Customer
+</name>
+</assembly>
+<members>
+<member name="P:Interprise.Extendable.Customer.Presentation.CustomerDetail.ISetupInterface.CurrentCustomerViewTable">
+	<summary>Gets the current table of the plugin control.</summary>
+	<value>Customer.DatasetComponent.CustomerDetailDataset.CustomerViewDataTable</value>
+	<returns>CustomerGateway.CustomerView</returns>
+	<remarks>Rev AG 20080625 ICBPI.CEBU/ICBPIVista10 </remarks>
+</member><member name="P:Interprise.Extendable.Customer.Presentation.CustomerDetail.IHeaderInterface.CurrentCustomerViewTable">
+	<summary>Gets the current table of the plugin control.</summary>
+	<value>CustomerDetailDatasetGateway.CustomerViewDataTable</value>
+	<returns>CustomerGateway.CustomerView</returns>
+	<remarks>Rev AG 20080624 ICBPI.CEBU/ICBPIVista10 </remarks>
+</member>
+</members>
+</doc>

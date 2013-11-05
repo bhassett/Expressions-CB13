@@ -1,0 +1,107 @@
+body {
+	background: #DEDEDE }
+
+p {
+	text-align: justify }
+	
+h2 {
+	padding-left: .4em }
+	
+.maincontent {
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	background: white }
+
+[data-clearing] li {
+	float: left;
+    margin-right: 10px;
+	margin-bottom: 10px }
+	
+.logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em }
+	
+.logopanel {
+	background-color: #4A3317;
+	border: none;
+	margin-bottom: .25em }
+	
+.logopanelsub {
+	background-color: #705534;
+	border: none }
+	
+.logopanelsub p {
+	padding: 1.5em;
+	font-size: .75em;
+	color: #C5AC8E }
+	
+.vcard {
+	margin: 0 0 1.25em 1.25em;
+	background: none;
+	border: none }
+
+.vcard li {
+	color: #C5AC8E }
+	
+.phone {
+	font-size: 1.75em }
+	
+/*
+.email a {
+	color: white }
+	
+.email a:hover {
+	color: #C5AC8E }
+*/
+
+.listing {
+	list-style-type:none }
+	
+.listing div {
+	border-bottom:1px dotted #999 }
+
+.breadcrumbs {
+	margin-top:1.5em }
+
+/* Pricing Tables */
+.pricing-table {
+  border: solid 1px #2ba6cb }
+
+.pricing-table .title {
+    background-color: #2ba6cb;
+    padding: 2em 1.25em;
+    color: white;
+    font-size: 1em;
+	letter-spacing: -0.025em }
+
+.pricing-table .price {
+    background-color: rgb(174, 231, 248);
+    padding: 0.5em 1.25em;
+    color: #2ba6cb;
+	letter-spacing: -0.075em }
+	
+.pricing-table .priceinfo {
+    background-color: rgb(174, 231, 248);
+    padding: 0.8em 1.25em;
+    color: #2ba6cb;
+	letter-spacing: -0.075em;
+	font-size: 1em;
+	text-align: center }
+	
+.pricing-table .description {
+	background-color: #E3E3E3 }
+	
+.sublist {
+	color:#666 }
+	
+.sublist li {
+	padding-top: 1em; }
+	
+.footer {
+	background: #666;
+	padding: 1.5em;
+	color: #CCC;
+	font-size: 0.5em; }
