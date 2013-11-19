@@ -49,7 +49,7 @@
 <script type="text/javascript" src="jscripts/jquery/jquery.format.1.05.js"></script>
 <script type="text/javascript" src="jscripts/jquery/jquery.cbe.address.dialog.js"></script>
 <script type="text/javascript" src="jscripts/jquery/jquery.cbe.bubble.message.js"></script>
-<!-- <script type="text/javascript" src="jscripts/jquery/jquery.loader.js"></script> -->
+<script type="text/javascript" src="jscripts/jquery/jquery.loader.js"></script>
 <script src="javascripts/modernizr.foundation.js"></script>
 <script src="javascripts/jquery.easing.js"></script>
 <script src="javascripts/app.js"></script>
@@ -81,16 +81,16 @@ _gaq.push(['_trackPageview']); // request page tracking
 
 <!-- Global Loader -->
 <script type="text/javascript">
-$(document).ready(function () {
-$("body").globalLoader({
-autoHide: false,
-image: 'images/ajax-loader.gif',
-opacity: 0.3,
-text: 'loading...'
-});
-//sample implementation to display the loader
-//$("body").data("globalLoader").show();
-});
+// $(document).ready(function () {
+// $("body").globalLoader({
+// autoHide: false,
+// image: 'images/ajax-loader.gif',
+// opacity: 0.3,
+// text: 'loading...'
+// });
+// //sample implementation to display the loader
+// //$("body").data("globalLoader").show();
+// });
 </script>
 
 <!-- IE Fix for HTML5 Tags -->
