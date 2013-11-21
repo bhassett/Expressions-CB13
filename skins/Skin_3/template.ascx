@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <%@ Control Language="c#" AutoEventWireup="false" Inherits="InterpriseSuiteEcommerce.TemplateBase" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
 <%@ Register TagPrefix="ComponentArt" Namespace="ComponentArt.Web.UI" Assembly="ComponentArt.Web.UI" %>
-<script runat="server">
 
+<script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -42,17 +42,21 @@
 
 
 
-<script type="text/javascript" src="jscripts/core.js"></script>
-<script type="text/javascript" src="jscripts/jquery/jquery-ui-1.8.16.custom.min.js"></script>
-<script type="text/javascript" src="jscripts/jquery/jquery.min.v1.7.2.js"></script>
-<script type="text/javascript" src="jscripts/attribute.selectors.js"></script>
-<script type="text/javascript" src="jscripts/jquery/jquery.format.1.05.js"></script>
-<script type="text/javascript" src="jscripts/jquery/jquery.cbe.address.dialog.js"></script>
-<script type="text/javascript" src="jscripts/jquery/jquery.cbe.bubble.message.js"></script>
-<script type="text/javascript" src="jscripts/jquery/jquery.loader.js"></script>
+    <script type="text/javascript" src="jscripts/core.js"></script>
+    <script type="text/javascript" src="jscripts/jquery/jquery.min.v1.7.2.js"></script>
+    <script type="text/javascript" src="jscripts/jquery/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="jscripts/jquery/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="jscripts/jquery/menu.js"></script>
+    <script type="text/javascript" src="jscripts/attribute.selectors.js"></script>
+    <script type="text/javascript" src="jscripts/jquery/jquery.format.1.05.js"></script>
+    <script type="text/javascript" src="jscripts/jquery/jquery.cbe.address.dialog.js"></script>
+    <script type="text/javascript" src="jscripts/jquery/jquery.cbe.bubble.message.js"></script>
+
+
 <script src="javascripts/modernizr.foundation.js"></script>
 <script src="javascripts/jquery.easing.js"></script>
-<script src="javascripts/app.js"></script>
+
+
 <!-- Google Analytics -->
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -77,20 +81,6 @@ _gaq.push(['_setAccount', gaAccount]); // set google analytics account (see app 
 _gaq.push(['_trackPageview']); // request page tracking
 }
 });
-</script>
-
-<!-- Global Loader -->
-<script type="text/javascript">
-// $(document).ready(function () {
-// $("body").globalLoader({
-// autoHide: false,
-// image: 'images/ajax-loader.gif',
-// opacity: 0.3,
-// text: 'loading...'
-// });
-// //sample implementation to display the loader
-// //$("body").data("globalLoader").show();
-// });
 </script>
 
 <!-- IE Fix for HTML5 Tags -->
@@ -176,7 +166,7 @@ $(document).ready(function(){
   <div class="row">
   <div class="twelve columns">
     <ul id="mainmenu">
-    <li><a href="/">HOME</a></li>
+    <li><a href="default.aspx">HOME</a></li>
     <li><a href="c-2-accessories.aspx">ACCESSORIES</a></li>
     <li><a href="c-4-wall-decor.aspx">WALL DECOR</a></li>
     <li><a href="c-5-lighting.aspx">LIGHTING</a></li>
@@ -247,14 +237,14 @@ $(document).ready(function(){
 <!-- footer [begin] -->
 <div id="footer">
 
-<!-- <div class="row socialBox hide-on-phones">
+<div class="row socialBox hide-on-phones">
 	<div class="seven columns">
 		<div class="news"></div>
 	</div>
 	<div class="five columns">
 		<a href="http://www.house2home.us" target="_blank"><div class="expservices"></div></a>
 	</div>
-</div> -->
+</div>
 
 <div class="footerhr"></div>
 
@@ -397,8 +387,10 @@ $(document).ready(function(){
 
 <!-- Included JS Files -->
 <!--<script src="javascripts/jquery.min.js"></script>-->
+
 <script src="javascripts/foundation.js"></script>
 <script src="javascripts/app.js"></script>
+
 
 <script type="text/javascript"> 
    $(window).load(function() {
@@ -444,17 +436,7 @@ $(document).ready(function(){
 </script>
 <script src="javascripts/slide.js" type="text/javascript"></script>
 
-<!--<a href="http://www.freesitemapgenerator.com/"><img
- border="0" alt="Free Sitemap Generator"
- style="border:0; margin:3px 3px 3px 3px; padding:0"
- src="http://live.freesitemapgenerator.com/img/fsgbig51.gif"></a>-->
- <script language="javascript">
-/* FSG 0.96 script */ 
-var fsg_Live_date_package_version='0.96';
-var fsg_image = 'big5';
-var fsg_serial = '9862d03858ed5afd9c1957972acce9e6';
-</script>
-<script language="javascript" src="http://live.freesitemapgenerator.com/scripts/fsg096.js"></script>
+
 
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -476,10 +458,33 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </script>
 
 
-
 (!ADDRESS_VERIFICATION_DIALOG_LISTING!)
+
+<!-- Address Verification -->
+(!ADDRESS_VERIFICATION_DIALOG_OPTIONS!)
+
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50dc8ab51b6823ca"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5
+    }, 
+    'follow' : {
+      'services' : [
+        {'service': 'facebook', 'id': 'expressionsdecor'},
+        {'service': 'twitter', 'id': 'ExpressionsDeco'},
+        {'service': 'google_follow', 'id': '117223946102304177432'}
+      ]
+    },  
+    'whatsnext' : {},  
+    'recommended' : {} 
+  });
+</script>
+<!-- AddThis Smart Layers END -->
 
 </body>
 </html>
-
-(!PAGEINFO!)
