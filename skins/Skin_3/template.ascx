@@ -118,235 +118,231 @@ $(document).ready(function(){
 <!-- if using dynamic full width page sizes, the left-right align has no effect (obviously) -->
 
 <div id="wrap">
-<div id="main" class="clearfix">
-<div id="menu_container" runat="server" visible="false"></div>
+  <div id="main" class="clearfix">
+    <div id="menu_container" runat="server" visible="false"></div>
 
-<!-- header [begin] -->
-<!-- expHeader [begin] -->
-  <div id="expHeader" class="container">
-    <div class="row hide-on-phones">
+    <!-- header [begin] -->
+    <!-- expHeader [begin] -->
+    <div id="expHeader" class="container">
+      <!-- Standard Header Display -->
+      <div class="row hide-on-phones">
 
-      <div class="four columns">
-        <a href="default.aspx"><img id="headerlogo" src="skins/Skin_(!SKINID!)/images/expressions-site-logo.png"></a>
+        <div class="four columns">
+          <a href="default.aspx"><img id="headerlogo" src="skins/Skin_(!SKINID!)/images/expressions-site-logo.png"></a>
+        </div>
+
+        <div class="seven columns">
+        	<div id="headeruserinfo">(!USERNAME!)&#32;&#32;<a href="(!SIGNINOUT_LINK!)">(!SIGNINOUT_TEXT!)</a>&#32;&#124;&#32;<a href="account.aspx">My&#32;Account</a></div>
+          <div id="navSearch">(!XmlPackage Name="skin.search"!)<!--&#32;&#45;&#32;or&#32;&#45;&#32;--><br><a href="searchadv.aspx">Advanced Search <i class="main foundicon-search"></i></a></div>
+        </div>
+  	
+        <div class="one column">
+        	<div class="minibagmenu">
+        	<a href="shoppingcart.aspx" id="togminibag"><img src="skins/Skin_(!SKINID!)/images/bag_icon.png" class="bagicon" alt="Shopping Bag"></a>
+        	  <div class="bagiconnum">(!NUM_CART_ITEMS!)</div>
+        	  <!--<div id="minibag">(!MINICART_PLAIN!)</div>-->
+        	</div>
+        </div>
+
       </div>
-
-      <div class="seven columns">
-      	<div id="headeruserinfo">(!USERNAME!)&#32;&#32;<a href="(!SIGNINOUT_LINK!)">(!SIGNINOUT_TEXT!)</a>&#32;&#124;&#32;<a href="account.aspx">My&#32;Account</a></div>
-            <div id="navSearch">(!XmlPackage Name="skin.search"!)<!--&#32;&#45;&#32;or&#32;&#45;&#32;--><br><a href="searchadv.aspx">Advanced Search <i class="main foundicon-search"></i></a></div>
+      
+      <!--  Mobile Header Display  -->
+      <div class="row show-on-phones">
+        <div class="twelve columns text-center">
+          <a href="../"><img id="headerlogo" src="skins/Skin_(!SKINID!)/images/expressions-site-logo.png"></a>
+        </div>
       </div>
+      
+      <div class="row show-on-phones">
+      	<div class="twelve columns text-center">
+          <div id="headeruserinfo">(!USERNAME!)&#32;&#32;<a href="(!SIGNINOUT_LINK!)">(!SIGNINOUT_TEXT!)</a>&#32;&#124;&#32;<a href="account.aspx">My&#32;Account</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- expHeader [end] -->
+
+    <!-- navbar [begin] -->
+    <div id="topNav" class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <ul id="mainmenu">
+            <li><a href="default.aspx">HOME</a></li>
+            <li><a href="c-2-accessories.aspx">ACCESSORIES</a></li>
+            <li><a href="c-4-wall-decor.aspx">WALL DECOR</a></li>
+            <li><a href="c-5-lighting.aspx">LIGHTING</a></li>
+            <li><a href="c-6-furniture.aspx">FURNITURE</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- navbar [end] -->
+
+    <!-- Panel -->
+    <div id="dprotop">
+    	<div id="dpro">
+    		<div class="content clearfix">
+    			<div>
+    				(!XmlPackage Name="rev.manufacturers"!)
+    			</div>
+    		</div>
+    	</div>
+
+    	<!-- The tab on top -->
+    	<div class="tabcontainer">
+      	<div class="tab hide-on-tablets">
+      		<ul class="login">
+      			<li class="left">&nbsp;</li>
+      			<li id="toggle">
+      				<a id="open" class="open" href="#"><i class="general foundicon-plus"></i> Manufacturers</a>
+      				<a id="close" style="display: none;" class="close" href="#"><i class="general foundicon-remove"></i> Close Tab</a>
+      			</li>
+      			<li class="right">&nbsp;</li>
+      		</ul> 
+      	</div>
+    	</div>
+    	<!-- / top -->
 	
-	<div class="one column">
-	<div class="minibagmenu">
-		<a href="shoppingcart.aspx" id="togminibag"><img src="skins/Skin_(!SKINID!)/images/bag_icon.png" class="bagicon" alt="Shopping Bag"></a>
-		  <div class="bagiconnum">(!NUM_CART_ITEMS!)</div>
-		  <!--<div id="minibag">(!MINICART_PLAIN!)</div>-->
-		</div>
-	</div>
-
     </div>
-    
-    <div class="row show-on-phones">
+    <!-- / panel -->
 
-      <div class="twelve columns text-center">
-        <a href="../"><img id="headerlogo" src="skins/Skin_(!SKINID!)/images/expressions-site-logo.png"></a>
+    <!-- breadcrumbs [begin] -->
+    <div class="row">
+      <div class="twelve columns">
+        <ul class="breadcrumbs">
+          <li class="current"><span>(!SECTION_TITLE!)</span></li>
+        </ul>
       </div>
-
     </div>
-    
-    <div class="row show-on-phones">
-    	<div class="twelve columns text-center"><div id="headeruserinfo">(!USERNAME!)&#32;&#32;<a href="(!SIGNINOUT_LINK!)">(!SIGNINOUT_TEXT!)</a>&#32;&#124;&#32;<a href="account.aspx">My&#32;Account</a></div></div>
+    <!-- breadcrumbs [end] -->
+    <!-- header [end] -->
+
+
+    <div class="row">
+      <div class="twelve columns maincontent">
+        <!-- CONTENTS START -->
+        <asp:placeholder id="PageContent" runat="server"></asp:placeholder>
+        <!-- CONTENTS END -->
+      </div>
     </div>
-    
+
   </div>
- <!-- expHeader [end] -->
-
-
-<!-- navbar [begin] -->
-<div id="topNav" class="container">
-  <div class="row">
-  <div class="twelve columns">
-    <ul id="mainmenu">
-    <li><a href="default.aspx">HOME</a></li>
-    <li><a href="c-2-accessories.aspx">ACCESSORIES</a></li>
-    <li><a href="c-4-wall-decor.aspx">WALL DECOR</a></li>
-    <li><a href="c-5-lighting.aspx">LIGHTING</a></li>
-    <li><a href="c-6-furniture.aspx">FURNITURE</a></li>
-    </ul>
-  </div>
-  </div>
-</div>
-
-
-<!-- Panel -->
-<div id="dprotop">
-	<div id="dpro">
-		<div class="content clearfix">
-			<div>
-				(!XmlPackage Name="rev.manufacturers"!)
-			</div>
-		</div>
-	</div>
-
-	<!-- The tab on top -->
-	<div class="tabcontainer">
-	<div class="tab hide-on-tablets">
-		<ul class="login">
-			<li class="left">&nbsp;</li>
-			<li id="toggle">
-				<a id="open" class="open" href="#"><i class="general foundicon-plus"></i> Manufacturers</a>
-				<a id="close" style="display: none;" class="close" href="#"><i class="general foundicon-remove"></i> Close Tab</a>
-			</li>
-			<li class="right">&nbsp;</li>
-		</ul> 
-	</div>
-	</div>
-	<!-- / top -->
-	
-</div>
-<!--panel -->
-
-
-<!-- navbar [end] -->
-
-
-
-<!-- breadcrumbs [begin] -->
-<div class="row">
-<div class="twelve columns">
-<ul class="breadcrumbs">
-	<li class="current"><span>(!SECTION_TITLE!)</span></li>
-</ul>
-</div>
-</div>
-<!-- breadcrumbs [end] -->
-<!-- header [end] -->
-
-
-<div class="row">
-<div class="twelve columns maincontent">
-<!-- CONTENTS START -->
-<asp:placeholder id="PageContent" runat="server"></asp:placeholder>
-<!-- CONTENTS END -->
-</div>
-</div>
-
-</div>
 </div>
 
 
 <!-- footer [begin] -->
 <div id="footer">
 
-<div class="row socialBox hide-on-phones">
-	<div class="seven columns">
-		<div class="news"></div>
-	</div>
-	<div class="five columns">
-		<a href="http://www.house2home.us" target="_blank"><div class="expservices"></div></a>
-	</div>
-</div>
+  <div class="row socialBox hide-on-phones">
+  	<div class="seven columns">
+  		<div class="news"></div>
+  	</div>
+  	<div class="five columns">
+  		<a href="http://www.house2home.us" target="_blank"><div class="expservices"></div></a>
+  	</div>
+  </div>
 
-<div class="footerhr"></div>
+  <div class="footerhr"></div>
 
   <div class="row">
-	<div class="two columns">
-		<dl class="footer-nav">
-                  <dt>Accessories</dt>
-                  <dd><a href="c-12-decorative-accents.aspx">Decorative Accents</a></dd>
-                  <dd><a href="c-14-candleholders.aspx">Candleholders</a></dd>
-                  <dd><a href="c-15-baskets-boxes.aspx">Baskets & Boxes</a></dd>
-                  <dd><a href="c-10-picture-frames.aspx">Picture Frames</a></dd>
-                  <dd><a href="c-9-urns-jars.aspx">Urns & Jars</a></dd>
-                  <dd><a href="c-11-decorative-bowls.aspx">Decorative Bowls</a></dd>
-                  <dd><a href="c-8-vases.aspx">Vases</a></dd>
-			<dd><a href="c-29-trays.aspx">Trays</a></dd>
-			<dd><a href="c-30-finials.aspx">Finials</a></dd>
-			<dd><a href="c-31-planters.aspx">Planters</a></dd>
-			<dd><a href="c-32-sculpture.aspx">Sculpture</a></dd>
-			<dd><a href="c-45-floral.aspx">Floral</a></dd>
-		</dl>
-            
-      </div>
-      <div class="two columns">
-		<dl class="footer-nav">
-                  <dt>Lighting</dt>
-                  <dd><a href="c-24-floor-lamps.aspx">Floor Lamps</a></dd>
-                  <dd><a href="c-25-table-lamps.aspx">Table Lamps</a></dd>
-                  <dd><a href="c-27-hanging-lamps.aspx">Hanging Lamps</a></dd>
-			<dd><a href="c-33-lighted-sconces.aspx">Lighted Sconces</a></dd>
-		</dl>
-            <!--<dl class="footer-nav">
-                  <dt>Tabletop</dt>
-                  <dd><a href="c-18-entertaining.aspx">Entertaining</a></dd>
-                  <dd><a href="c-17-dining.aspx">Dining</a></dd>
-                  <dd><a href="c-16-kitchen.aspx">Kitchen</a></dd>
-                  <dd><a href="c-19-barware-accessories.aspx">Barware & Accessories</a></dd>
-		</dl>-->
-            <dl class="footer-nav">
-                  <dt>Wall Décor</dt>
-                  <dd><a href="c-20-racks-shelving.aspx">Racks & Shelving</a></dd>
-                  <dd><a href="c-21-sconces.aspx">Sconces</a></dd>
-                  <dd><a href="c-22-wall-clocks.aspx">Wall Clocks</a></dd>
-                  <dd><a href="c-23-wall-art.aspx">Wall Art</a></dd>
-                  <dd><a href="c-26-mirrors.aspx">Mirrors</a></dd>
-			<dd><a href="c-28-hanging-picture-frames.aspx">Hanging Frames</a></dd>
-		</dl>
-            
-	</div>
-      <div class="two columns">
-            
-            <dl class="footer-nav">
-                  <dt><a href="c-6-furniture.aspx">Furniture</a></dt>
-			<dd><a href="c-34-chairs.aspx">Chairs</a></dd>
-			<dd><a href="c-35-benches-ottomans.aspx">Benches & Ottomans</a></dd>
-			<dd><a href="c-36-pet-beds.aspx">Pet Beds</a></dd>
-			<dd><a href="c-40-tables-desks.aspx">Tables & Desks</a></dd>
-			<dd><a href="c-41-chests-cabinets.aspx">Chests & Cabinets</a></dd>
-			<dd><a href="c-43-fireplace.aspx">Fireplace</a></dd>
-			<dd><a href="c-44-accent-furniture.aspx">Accent Furniture</a></dd>
-		</dl>
-            <!--<dl class="footer-nav">
-                  <dt><a href="c-7-clearance.aspx">Clearance</a></dt>
-		</dl>-->
-            
-	</div>
+  	<div class="two columns">
+  		<dl class="footer-nav">
+        <dt>Accessories</dt>
+        <dd><a href="c-12-decorative-accents.aspx">Decorative Accents</a></dd>
+        <dd><a href="c-14-candleholders.aspx">Candleholders</a></dd>
+        <dd><a href="c-15-baskets-boxes.aspx">Baskets & Boxes</a></dd>
+        <dd><a href="c-10-picture-frames.aspx">Picture Frames</a></dd>
+        <dd><a href="c-9-urns-jars.aspx">Urns & Jars</a></dd>
+        <dd><a href="c-11-decorative-bowls.aspx">Decorative Bowls</a></dd>
+        <dd><a href="c-8-vases.aspx">Vases</a></dd>
+  			<dd><a href="c-29-trays.aspx">Trays</a></dd>
+  			<dd><a href="c-30-finials.aspx">Finials</a></dd>
+  			<dd><a href="c-31-planters.aspx">Planters</a></dd>
+  			<dd><a href="c-32-sculpture.aspx">Sculpture</a></dd>
+  			<dd><a href="c-45-floral.aspx">Floral</a></dd>
+  		</dl>        
+    </div>
+
+    <div class="two columns">
+  		<dl class="footer-nav">
+        <dt>Lighting</dt>
+        <dd><a href="c-24-floor-lamps.aspx">Floor Lamps</a></dd>
+        <dd><a href="c-25-table-lamps.aspx">Table Lamps</a></dd>
+        <dd><a href="c-27-hanging-lamps.aspx">Hanging Lamps</a></dd>
+  			<dd><a href="c-33-lighted-sconces.aspx">Lighted Sconces</a></dd>
+  		</dl>
+      <!--<dl class="footer-nav">
+        <dt>Tabletop</dt>
+        <dd><a href="c-18-entertaining.aspx">Entertaining</a></dd>
+        <dd><a href="c-17-dining.aspx">Dining</a></dd>
+        <dd><a href="c-16-kitchen.aspx">Kitchen</a></dd>
+        <dd><a href="c-19-barware-accessories.aspx">Barware & Accessories</a></dd>
+  		</dl>-->
+      <dl class="footer-nav">
+        <dt>Wall Décor</dt>
+        <dd><a href="c-20-racks-shelving.aspx">Racks & Shelving</a></dd>
+        <dd><a href="c-21-sconces.aspx">Sconces</a></dd>
+        <dd><a href="c-22-wall-clocks.aspx">Wall Clocks</a></dd>
+        <dd><a href="c-23-wall-art.aspx">Wall Art</a></dd>
+        <dd><a href="c-26-mirrors.aspx">Mirrors</a></dd>
+  			<dd><a href="c-28-hanging-picture-frames.aspx">Hanging Frames</a></dd>
+  		</dl>     
+  	</div>
+
+    <div class="two columns">
+      <dl class="footer-nav">
+        <dt><a href="c-6-furniture.aspx">Furniture</a></dt>
+  			<dd><a href="c-34-chairs.aspx">Chairs</a></dd>
+  			<dd><a href="c-35-benches-ottomans.aspx">Benches & Ottomans</a></dd>
+  			<dd><a href="c-36-pet-beds.aspx">Pet Beds</a></dd>
+  			<dd><a href="c-40-tables-desks.aspx">Tables & Desks</a></dd>
+  			<dd><a href="c-41-chests-cabinets.aspx">Chests & Cabinets</a></dd>
+  			<dd><a href="c-43-fireplace.aspx">Fireplace</a></dd>
+  			<dd><a href="c-44-accent-furniture.aspx">Accent Furniture</a></dd>
+  		</dl>
+      <!--<dl class="footer-nav">
+        <dt><a href="c-7-clearance.aspx">Clearance</a></dt>
+  		</dl>-->        
+  	</div>
+
     <div class="five columns dotborder">
-  	<div id="socialMedia">
-      find&nbsp;us&nbsp;on<br />
-<!--        <a href="http://www.facebook.com/expressionsdecor" target="_new" class="socialinkF"><i class="social foundicon-facebook"></i></a>
+    	<div id="socialMedia">find&nbsp;us&nbsp;on<br />
+        <!--
+        <a href="http://www.facebook.com/expressionsdecor" target="_new" class="socialinkF"><i class="social foundicon-facebook"></i></a>
         <a href="http://plus.google.com/u/0/b/117223946102304177432/117223946102304177432/posts" target="_new" class="socialinkG"><i class="social foundicon-google-plus"></i></a>
         <a href="http://www.twitter.com/ExpressionsDeco" target="_new" class="socialinkT"><i class="social foundicon-twitter"></i></a>
-        <a href="http://www.pinterest.com/expressionsdeco/" target="_new" class="socialinkP"><i class="social foundicon-pinterest"></i></a>-->
+        <a href="http://www.pinterest.com/expressionsdeco/" target="_new" class="socialinkP"><i class="social foundicon-pinterest"></i></a>
+        -->
 
-<!-- AddThis Follow BEGIN -->
-<div class="addthis_toolbox addthis_32x32_style addthis_default_style">
-<a class="addthis_button_facebook_follow" addthis:userid="expressionsdecor"></a>
-<a class="addthis_button_twitter_follow" addthis:userid="ExpressionsDeco"></a>
-<a class="addthis_button_google_follow" addthis:userid="117223946102304177432"></a>
-<a class="addthis_button_pinterest_follow" addthis:userid="expressionsdeco"></a>
-</div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50dc8ab51b6823ca"></script>
-<!-- AddThis Follow END -->
+        <!-- AddThis Follow BEGIN -->
+        <div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+          <a class="addthis_button_facebook_follow" addthis:userid="expressionsdecor"></a>
+          <a class="addthis_button_twitter_follow" addthis:userid="ExpressionsDeco"></a>
+          <a class="addthis_button_google_follow" addthis:userid="117223946102304177432"></a>
+          <a class="addthis_button_pinterest_follow" addthis:userid="expressionsdeco"></a>
+        </div>
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+        <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50dc8ab51b6823ca"></script>
+        <!-- AddThis Follow END -->
 
-	  <ul>
-		<li><a href="t-about.aspx">About us</a></li>
-		<li><a href="t-shipping.aspx">Shipping Info</a></li>
-		<li><a href="t-returns.aspx">Return Policy</a></li>
-		<li><a href="t-termsandconditions.aspx">Terms &#38; Conditions</a></li>
-		<li><a href="t-privacy.aspx">Your Privacy</a></li>
-		<li><a href="http://www.house2home.us" target="_blank">Design Services</a></li>
-      </ul>
-    </div>
-    <div>
-	<dl class="footer-nav">
-            	<dt>Customer Service</dt>
-                  <dd><a href="account.aspx"><i class="main foundicon-settings"></i> My Account</a></dd>
-                  <dd><a href="shoppingcart.aspx"><i class="main foundicon-cart"></i> My Shopping Bag</a></dd>
-                  <dd><a href="t-shopping.aspx"><i class="main foundicon-monitor"></i> Shopping Our Site</a></dd>
-                  <dd><a href="t-contact.aspx"><i class="main foundicon-phone"></i> Contact Us</a></dd>
-            </dl>
-    </div>
+    	  <ul>
+      		<li><a href="t-about.aspx">About us</a></li>
+      		<li><a href="t-shipping.aspx">Shipping Info</a></li>
+      		<li><a href="t-returns.aspx">Return Policy</a></li>
+      		<li><a href="t-termsandconditions.aspx">Terms &#38; Conditions</a></li>
+      		<li><a href="t-privacy.aspx">Your Privacy</a></li>
+      		<li><a href="http://www.house2home.us" target="_blank">Design Services</a></li>
+        </ul>
+      </div>
+      
+      <div>
+      	<dl class="footer-nav">
+        	<dt>Customer Service</dt>
+          <dd><a href="account.aspx"><i class="main foundicon-settings"></i> My Account</a></dd>
+          <dd><a href="shoppingcart.aspx"><i class="main foundicon-cart"></i> My Shopping Bag</a></dd>
+          <dd><a href="t-shopping.aspx"><i class="main foundicon-monitor"></i> Shopping Our Site</a></dd>
+          <dd><a href="t-contact.aspx"><i class="main foundicon-phone"></i> Contact Us</a></dd>
+        </dl>
+      </div>
     </div>
     
   </div>
@@ -359,27 +355,30 @@ $(document).ready(function(){
 </div>
 <!-- footer [end] -->
 
+
 <!-- Customer Support -->
-<!-- <div id="request-container">
-            <div class="request-caption-wrapper">
-                        <span class="request-caption">(!stringresource name="main.content.1"!) </span>
-                        <div class="request-code-wrapper">
-                                    <div class="request-generator-content">
-                                                <span class="request-code">---------------</span>
-                                    </div>
-                        </div>
-                        <div id="imgLoader" style="display: none">
-                                    <img src="/skins/Skin_(!SKINID!)/images/loading.gif" alt="" title="" />
-                        </div>
-            </div>
-            <%--*width:155px; width:155px\0; ie8 and ie6/7 css hack--%>
-            <div style="margin-left: 10px; float: left; width: 155px;">
-                        <a href="javascript:void(0);" class="generate-link">
-                                    <img src="/skins/Skin_(!SKINID!)/images/refresh-captcha.png" alt="" title="" />
-                        </a><a href="javascript:void(0);" class="copy-link">(!stringresource name="main.content.3"!)
-                        </a>
-            </div>
-</div> -->
+<!-- 
+<div id="request-container">
+  <div class="request-caption-wrapper">
+    <span class="request-caption">(!stringresource name="main.content.1"!) </span>
+    <div class="request-code-wrapper">
+      <div class="request-generator-content">
+        <span class="request-code">---------------</span>
+      </div>
+    </div>
+
+    <div id="imgLoader" style="display: none">
+      <img src="/skins/Skin_(!SKINID!)/images/loading.gif" alt="" title="" />
+    </div>
+  </div>
+            
+  <%--*width:155px; width:155px\0; ie8 and ie6/7 css hack--%>
+  <div style="margin-left: 10px; float: left; width: 155px;">
+    <a href="javascript:void(0);" class="generate-link"><img src="/skins/Skin_(!SKINID!)/images/refresh-captcha.png" alt="" title="" /></a>
+    <a href="javascript:void(0);" class="copy-link">(!stringresource name="main.content.3"!)</a>
+  </div>
+</div>
+-->
 
 <div class="footer-mobile-link">
 (!MOBILE_FULLMODE_SWITCHER!)
