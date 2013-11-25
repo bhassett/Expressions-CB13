@@ -88,17 +88,23 @@
         <xsl:value-of select="ise:Topic('SearchPageHeader')" disable-output-escaping="yes" />
 
         <form method="GET" action="search.aspx" id="SearchForm2" name="SearchForm2">
-          <div class="alert-box">
-            <xsl:value-of select="/root/QueryString/errormsg" />
-            <br />&#0160;&#0160;
-            <xsl:value-of select="ise:StringResource('search.aspx.3', $LocaleSetting)" disable-output-escaping="yes" />&#0160;
-            <input type="text" id="SearchTerm" name="SearchTerm" size="25" maxlength="70" value="{$pSearchTerm}" />
-            <xsl:value-of select="ise:GetSearchFormValidatorScript('SearchForm2', 'SearchTerm')" disable-output-escaping="yes" />
-            &#0160;<input type="submit" value="Search" name="B1" />
-          </div>
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr align="left">
+              <td width="100%" colspan="2">
+                <span style="color:red;font-weight:bold">
+                  <xsl:value-of select="/root/QueryString/errormsg" />
+                </span>
+                <br />&#0160;&#0160;
+                <xsl:value-of select="ise:StringResource('search.aspx.3', $LocaleSetting)" disable-output-escaping="yes" />&#0160;
+                <input type="text" id="SearchTerm" name="SearchTerm" size="25" maxlength="70" value="{$pSearchTerm}" />
+                <xsl:value-of select="ise:GetSearchFormValidatorScript('SearchForm2', 'SearchTerm')" disable-output-escaping="yes" />
+                &#0160;<input type="submit" value="Search" name="B1" />
+              </td>
+            </tr>
+          </table>
+
         </form>
 
-   <!--SHOW CATEGORY MATCHES-->
    <xsl:choose>
           <xsl:when test="ise:AppConfigBool('Search_ShowCategoriesInResults')='true' and count(/root/Categories/Category)>0">
           <br />
@@ -126,7 +132,6 @@
         </xsl:when>
   </xsl:choose>
 
-  <!--SHOW DEPARTMENT MATCHES-->
   <xsl:choose> 
 		    <xsl:when test="ise:AppConfigBool('Search_ShowDepartmentsInResults')='true' and count(/root/Departments/Department)>0">
           <br />
@@ -154,7 +159,6 @@
         </xsl:when>
   </xsl:choose>
 
-  <!--SHOW MANUFACTURER MATCHES-->
   <xsl:choose>
           <xsl:when test="ise:AppConfigBool('Search_ShowManufacturersInResults')='true' and count(/root/Manufacturers/Manufacturer)>0">
           <br />
@@ -184,33 +188,46 @@
 
 
 
-   <!--SHOW PRODUCT MATCHES-->
    <xsl:choose>
         <xsl:when test="ise:AppConfigBool('Search_ShowProductsInResults')='true' and count(/root/Products/Product)>0">
-        <div class="row">
-          <div class="twelve columns">
-            <p><img align="bottom" border="0" src="{concat('skins/Skin_', ise:SkinID(), '/images/matchingproducts.gif')}" /></p>
-          </div>
-        </div>
-
-        <script>
-         $(document).ready(function(){
-            $(".append-title-to-url").children("a").each(function(){
-              
-            var title = $(this).parent("div").attr("title");
-            $(this).attr("title", title);
-          
-             });
-          });
-        </script>
-
-        <div class="row">
-          <div class="twelve columns">
-            <xsl:apply-templates select="/root/Products/Product" />
-          </div>
-        </div>
+          <br />
+          <table width="100%" cellpadding="2" cellspacing="0" style="{concat('border-style: solid; border-width: 0px; border-color: #', ise:AppConfig('HeaderBGColor'))}">
+            <tr>
+              <td align="left" valign="top">
+                <img align="bottom" border="0" src="{concat('skins/Skin_', ise:SkinID(), '/images/matchingproducts.gif')}" />
+                <br />
+                <table width="100%" cellpadding="4" cellspacing="0" border="0" style="{ise:AppConfig('BoxFrameStyle')}">
+                  <tr>
+                    <td align="left" valign="top">
+                      <table cellpadding="0" border="0" cellspacing="1" width="100%">
+                        <tr>
+                          <td align="left">
+                            <b>
+                              <xsl:value-of select="ise:StringResource('search.aspx.6', $LocaleSetting)" disable-output-escaping="yes" />
+                            </b>
+                          </td>
+                          <td align="center">
+                            <b>
+                              <xsl:value-of select="ise:StringResource('AppConfig.CategoryPromptSingular', $LocaleSetting)" disable-output-escaping="yes" />
+                            </b>
+                          </td>
+                          <xsl:if test="ise:AppConfigBool('Search_ShowManufacturersInResults')='true'">
+                            <td align="center">
+                              <b>
+                                <xsl:value-of select="ise:StringResource('search.aspx.7', $LocaleSetting)" disable-output-escaping="yes" />
+                              </b>
+                            </td>
+                          </xsl:if>
+                        </tr>
+                        <xsl:apply-templates select="/root/Products/Product" />
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
         </xsl:when>
-
         <xsl:when test="ise:AppConfigBool('Search_ShowProductsInResults')='true' and count(/root/Products/Product)=0">
           <p align="left">
             <xsl:value-of select="ise:StringResource('search.aspx.8', $LocaleSetting)" disable-output-escaping="yes" />
@@ -219,7 +236,6 @@
         </xsl:when>  
    </xsl:choose>
 
-   <!--SHOW ATTRIBUTE MATCHES-->
    <xsl:choose>
         <xsl:when test="ise:AppConfigBool('Search_ShowAttributesInResults')='true' and count(/root/Attributes/Attribute)>0">
               <br />
@@ -324,9 +340,6 @@
             </xsl:otherwise>
           </xsl:choose>
         </xsl:param>
-        <xsl:variable name="ShortText">
-          <xsl:value-of select="concat(substring($pDisplayName, 1, 22), '&#8230;')" />
-        </xsl:variable>
         <xsl:if test="position()!=1">
           <tr>
             <td height="1" width="100%" class="LightCell">
@@ -336,43 +349,39 @@
                   <xsl:otherwise>3</xsl:otherwise>
                 </xsl:choose>
               </xsl:attribute>
+              <img src="images/spacer.gif" height="1" width="1" />
             </td>
           </tr>
         </xsl:if>
-        
-        <!-- Grid Display Infused -->
-        <div class="pgridDisplay">
-          <a href="{ise:ProductLink(Counter, ise:FormatStringForLink($pDisplayName), 0, '')}">
-              <xsl:value-of select="ise:DisplayImage('product', Counter, 'icon', SEAltText, 'AltText', 'center', ItemCode, boolean('true'))" disable-output-escaping="yes" /></a>
-          <div class="pgridLabel">
-          <xsl:choose>
-            <xsl:when test="string-length($pDisplayName)>22">
-              <span class="append-title-to-url" title="{$pDisplayName}">
-                <xsl:value-of select="ise:ProductLink(Counter, ise:FormatStringForLink($pDisplayName), 1, ise:Encode($ShortText))" disable-output-escaping="yes" />
-              </span>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="ise:ProductLink(Counter, ise:FormatStringForLink($pDisplayName), 1, ise:Encode($pDisplayName))" disable-output-escaping="yes" />
-            </xsl:otherwise>
-          </xsl:choose>
-          <xsl:if test="vName!=''">
-            -<xsl:value-of select="$vName" />
-          </xsl:if>
-          <br />
-          In 
-          <xsl:if test="CategoryID != '' and CategoryDisplayName != ''">
-            <a href="{ise:MakeEntityLink('category',CategoryID,CategoryDisplayName)}">
-              <xsl:value-of select="ise:Encode(CategoryDisplayName)" disable-output-escaping="yes" />
+        <tr>
+          <td valign="middle" align="left">
+
+            <a href="{ise:MakeEntityLink('product',Counter,$pDisplayName)}">
+              <xsl:value-of select="ise:Encode($pDisplayName)" disable-output-escaping="yes" />
+              <xsl:if test="vName!=''">
+                -<xsl:value-of select="$vName" />
+              </xsl:if>
             </a>
+          </td>
+          <td align="center">
+            <xsl:if test="CategoryID != '' and CategoryDisplayName != ''">
+              <a href="{ise:MakeEntityLink('category',CategoryID,CategoryDisplayName)}">
+                <xsl:value-of select="ise:Encode(CategoryDisplayName)" disable-output-escaping="yes" />
+              </a>
+            </xsl:if>
+            
+          </td>
+          <xsl:if test="ise:AppConfigBool('Search_ShowManufacturersInResults')='true'">
+            <td align="center">
+            
+              <xsl:if test="ManufacturerID != '' and ManufacturerDisplayName != ''">
+                <a href="{ise:MakeEntityLink('manufacturer',ManufacturerID,ManufacturerDisplayName)}">
+                  <xsl:value-of select="ise:Encode(ManufacturerDisplayName)" disable-output-escaping="yes" />
+                </a>
+              </xsl:if>
+            </td>
           </xsl:if>
-          <xsl:if test="ManufacturerID != '' and ManufacturerDisplayName != ''">
-            <br />
-            By <a href="{ise:MakeEntityLink('manufacturer',ManufacturerID,ManufacturerDisplayName)}">
-              <xsl:value-of select="ise:Encode(ManufacturerDisplayName)" disable-output-escaping="yes" />
-            </a>
-          </xsl:if>
-        </div>
-      </div>
+        </tr>
       </xsl:template>
       
       <xsl:template match="Category">
