@@ -14,38 +14,69 @@
     <asp:Literal ID="ValidationScript" runat="server"></asp:Literal>
     <asp:Literal ID="JSPopupRoutines" runat="server"></asp:Literal>
     <form id="CartForm" onsubmit="return Cart_Validator(this)" runat="server">
-    <b>
-        <asp:Literal ID="RedirectToSignInPageLiteral" runat="server"></asp:Literal></b>
+    <b><asp:Literal ID="RedirectToSignInPageLiteral" runat="server"></asp:Literal></b>
     <asp:Panel ID="BodyPanel" runat="server">
         <div style="width: 100%; height: 100%">
             <ise:Topic runat="server" ID="HeaderMsg" TopicName="CartPageHeader" />
             <asp:Literal ID="XmlPackage_ShoppingCartPageHeader" runat="server"></asp:Literal>
-            <table cellspacing="3" cellpadding="0" border="0" style="width: 100%">
-                <tr>
-                    <td>
+            <div class="row">
+            <div class="four columns">
+            <div class="panel">
+            <h4>Helpful Information</h4>
                         <asp:Panel ID="ShippingInformation" runat="server">
-                            <asp:Image ID="redarrow1" AlternateText="" runat="server" />&#0160;<a onclick="popuptopicwh('Shipping+Information','shipping',650,550,'yes')"
-                                href="javascript:void(0);"><asp:Literal ID="shoppingcartaspx8" runat="server"></asp:Literal></a><br />
+                            <asp:Image ID="redarrow1" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-globe"></i>&#0160;
+                            <!-- <a onclick="popuptopicwh('Shipping+Information','shipping',650,550,'yes')"
+                                href="javascript:void(0);"> -->
+                            <a href="#" data-reveal-id="shippingModal">
+                                <asp:Literal ID="shoppingcartaspx8" runat="server"></asp:Literal></a>
+                                <br />
+                                <div id="shippingModal" class="reveal-modal xlarge cartmodal">
+                                <ise:Topic runat="server" ID="ShippingTopic" TopicName="shipping" />
+                                <a class="close-reveal-modal">&#215;</a>
+                                </div>
                         </asp:Panel>
-                        <asp:Image ID="redarrow2" AlternateText="" runat="server" />&#0160;<a onclick="popuptopicwh('Return+Policy+Information','returns',650,550,'yes')"
-                            href="javascript:void(0);"><asp:Literal ID="shoppingcartaspx9" Text="(!shoppingcart.aspx.7!)"
-                                runat="server"></asp:Literal></a><br />
-                        <asp:Image ID="redarrow3" AlternateText="" runat="server" />&#0160;<a onclick="popuptopicwh('Privacy+Information','privacy',650,550,'yes')"
-                            href="javascript:void(0);"><asp:Literal ID="shoppingcartaspx10" Text="(!shoppingcart.aspx.8!)"
-                                runat="server"></asp:Literal></a><br />
+                        <asp:Image ID="redarrow2" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-refresh"></i>&#0160;
+                            <!-- <a onclick="popuptopicwh('Return+Policy+Information','returns',650,550,'yes')"
+                            href="javascript:void(0);"> -->
+                            <a href="#" data-reveal-id="returnsModal">
+                                <asp:Literal ID="shoppingcartaspx9" Text="(!shoppingcart.aspx.7!)"
+                                runat="server"></asp:Literal></a>
+                                <br />
+                                <div id="returnsModal" class="reveal-modal xlarge cartmodal">
+                                <ise:Topic runat="server" ID="ReturnsTopic" TopicName="returns" />
+                                <a class="close-reveal-modal">&#215;</a>
+                                </div>
+                        <asp:Image ID="redarrow3" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-lock"></i>&#0160;
+                            <!-- <a onclick="popuptopicwh('Privacy+Information','privacy',650,550,'yes')"
+                            href="javascript:void(0);"> -->
+                            <a href="#" data-reveal-id="privacyModal">
+                                <asp:Literal ID="shoppingcartaspx10" Text="(!shoppingcart.aspx.8!)"
+                                runat="server"></asp:Literal></a>
+                                <br />
                         <asp:Panel ID="AddresBookLlink" runat="server">
-                            <asp:Image ID="redarrow4" AlternateText="" runat="server" />&#0160;<a href="selectaddress.aspx?returnurl=shoppingcart.aspx&AddressType=Shipping"><asp:Literal
-                                ID="shoppingcartaspx11" Text="(!shoppingcart.aspx.9!)" runat="server"></asp:Literal></a><br />
+                            <asp:Image ID="redarrow4" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-address-book"></i>&#0160;
+                            <a href="selectaddress.aspx?returnurl=shoppingcart.aspx&AddressType=Shipping">
+                                <asp:Literal
+                                ID="shoppingcartaspx11" Text="(!shoppingcart.aspx.9!)" runat="server"></asp:Literal></a>
+                                <br />
+                                <div></div>
                         </asp:Panel>
                         &#160;<br />
-                    </td>
-                    <td valign="middle" align="right">
+            </div>
+            </div>
+
+            <div class="eight columns">
+                <div class="sbaglabel">shopping&#160;bag</div>
+            </div>
+            </div>
+
+                    <!-- <td valign="middle" align="right">
                         <asp:Button ID="btnContinueShoppingTop" Text="(!shoppingcart.cs.12!)" CssClass="site-button content"
                             runat="server" />&#160;
                         <asp:Button ID="btnCheckOutNowTop" Text="(!shoppingcart.cs.34!)" runat="server" CssClass="site-button CheckoutNowButton content" /><br />
-                    </td>
-                </tr>
-                <tr runat="server" id="AlternativeCheckoutsTop">
+                    </td> -->
+            <table runat="server" id="AlternativeCheckoutsTop">        
+                <tr>
                     <td colspan="2" align="right" style="height: 61px">
                         <table border="0">
                             <tr>
@@ -69,44 +100,37 @@
                     </td>
                 </tr>
             </table>
+            
             <asp:Panel ID="pnlCouponError" runat="Server" Visible="false">
-                <p>
-                    <asp:Label ID="CouponError" CssClass="errorLg" runat="Server"></asp:Label></p>
+                <p><asp:Label ID="CouponError" CssClass="errorLg" runat="Server"></asp:Label></p>
             </asp:Panel>
             <asp:Panel ID="pnlErrorMsg" runat="Server" Visible="false">
-                <p>
-                    <asp:Label ID="ErrorMsgLabel" CssClass="errorLg" runat="Server"></asp:Label></p>
+                <p><asp:Label ID="ErrorMsgLabel" CssClass="errorLg" runat="Server"></asp:Label></p>
             </asp:Panel>
             <asp:Panel ID="pnlRemovePhasedOutItemWithNoStockError" runat="Server" Visible="false">
-                <p>
-                    <asp:Label ID="RemovePhasedOutItemWithNoStockError" CssClass="errorLg" runat="Server"></asp:Label></p>
+                <p><asp:Label ID="RemovePhasedOutItemWithNoStockError" CssClass="errorLg" runat="Server"></asp:Label></p>
             </asp:Panel>
             <asp:Panel ID="pnlInventoryTrimmedError" runat="Server" Visible="false">
-                <p>
-                    <asp:Label ID="InventoryTrimmedError" CssClass="errorLg" runat="Server"></asp:Label></p>
+                <p><asp:Label ID="InventoryTrimmedError" CssClass="errorLg" runat="Server"></asp:Label></p>
             </asp:Panel>
             <asp:Panel ID="pnlMinimumQuantitiesUpdatedError" runat="Server" Visible="false">
-                <p>
-                    <asp:Label ID="MinimumQuantitiesUpdatedError" CssClass="errorLg" runat="Server"></asp:Label></p>
+                <p><asp:Label ID="MinimumQuantitiesUpdatedError" CssClass="errorLg" runat="Server"></asp:Label></p>
             </asp:Panel>
             <asp:Panel ID="pnlMeetsMinimumOrderAmountError" runat="Server" Visible="false">
-                <p>
-                    <asp:Label ID="MeetsMinimumOrderAmountError" CssClass="errorLg" runat="Server"></asp:Label></p>
+                <p><asp:Label ID="MeetsMinimumOrderAmountError" CssClass="errorLg" runat="Server"></asp:Label></p>
             </asp:Panel>
             <asp:Panel ID="pnlMeetsMinimumOrderWeightError" runat="Server" Visible="false">
-                <p>
-                    <asp:Label ID="MeetsMinimumOrderWeightError" CssClass="errorLg" runat="Server"></asp:Label></p>
+                <p><asp:Label ID="MeetsMinimumOrderWeightError" CssClass="errorLg" runat="Server"></asp:Label></p>
             </asp:Panel>
             <asp:Panel ID="pnlMeetsMinimumOrderQuantityError" runat="Server" Visible="false">
-                <p>
-                    <asp:Label ID="MeetsMinimumOrderQuantityError" CssClass="errorLg" runat="Server"></asp:Label></p>
+                <p><asp:Label ID="MeetsMinimumOrderQuantityError" CssClass="errorLg" runat="Server"></asp:Label></p>
             </asp:Panel>
             <asp:Panel ID="pnlMicropay_EnabledError" runat="Server" Visible="false">
                 <asp:Literal ID="Micropay_EnabledError" runat="Server"></asp:Literal></asp:Panel>
             <div style="clear: both">
             </div>
             <div class="hidden errorLg" id="required-error">
-                <asp:Literal ID="lRequiredError" runat="server" Visible="True" Text="(!leadform.aspx.16!)"></asp:Literal>
+                <asp:Literal ID="lRequiredError" runat="server" Visible="true" Text="(!leadform.aspx.16!)"></asp:Literal>
             </div>
             <br />
             <asp:Panel ID="pnlCartSummary" runat="server" HorizontalAlign="right" DefaultButton="btnUpdateCart1">
