@@ -27,6 +27,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/style.css" type="text/css">
+<!-- <link rel="stylesheet" href="skins/Skin_(!SKINID!)/custom.css" type="text/css" /> -->
 <link rel="Stylesheet" href="skins/Skin_(!SKINID!)/ui-lightness/jquery-ui-1.8.16.custom.css" type="text/css" />
 
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/foundation.css">
@@ -51,6 +52,7 @@
     <script type="text/javascript" src="jscripts/jquery/jquery.format.1.05.js"></script>
     <script type="text/javascript" src="jscripts/jquery/jquery.cbe.address.dialog.js"></script>
     <script type="text/javascript" src="jscripts/jquery/jquery.cbe.bubble.message.js"></script>
+    <script type="text/javascript" src="jscripts/jquery/jquery.loader.js"></script>
 
 
 <script src="javascripts/modernizr.foundation.js"></script>
@@ -98,6 +100,20 @@ $(document).ready(function(){
   });
 });
 </script>
+
+<!-- Global Loader -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").globalLoader({
+                autoHide: false,
+                image: 'images/ajax-loader.gif',
+                opacity: 0.3,
+                text: 'loading...'
+            });
+            //sample implementation to display the loader
+            //$("body").data("globalLoader").show();
+        });
+    </script>
 
 (!JAVASCRIPT_INCLUDES!)
 
@@ -389,50 +405,7 @@ $(document).ready(function(){
 
 <script src="javascripts/foundation.js"></script>
 <script src="javascripts/app.js"></script>
-
-
-<script type="text/javascript"> 
-   $(window).load(function() {
-       $('#homefeature').orbit({
-		animation: 'horizontal-push',			// fade, horizontal-slide, vertical-slide, horizontal-push
-		animationSpeed: 800,				// how fast animtions are
-		timer: true,					// true or false to have the timer
-		resetTimerOnClick: true,			// true resets the timer instead of pausing slideshow progress
-		advanceSpeed: 8000,				// if timer is enabled, time between transitions 
-		pauseOnHover: true,				// if you hover pauses the slider
-		startClockOnMouseOut: true,			// if clock should start on MouseOut
-		startClockOnMouseOutAfter: 1000,		// how long after MouseOut should the timer start again
-		directionalNav: false,				// manual advancing directional navs
-		captions: false,					// do you want captions?
-		captionAnimation: 'fade',			// fade, slideOpen, none
-		captionAnimationSpeed: 800,			// if so how quickly should they animate in
-		bullets: true,					// true or false to activate the bullet navigation
-		bulletThumbs: false,				// thumbnails for the bullets
-		bulletThumbLocation: '',			// location from this file where thumbs will be
-		afterSlideChange: function(){},		// empty function 
-		fluid: '980x367'
-	});
-	$('#recentFeature').orbit({
-		animation: 'horizontal-push',			// fade, horizontal-slide, vertical-slide, horizontal-push
-		animationSpeed: 1600,                // how fast animtions are
-		timer: false, 			 // true or false to have the timer
-		resetTimerOnClick: false,           // true resets the timer instead of pausing slideshow progress
-		advanceSpeed: 8000, 		 // if timer is enabled, time between transitions 
-		pauseOnHover: true, 		 // if you hover pauses the slider
-		startClockOnMouseOut: true, 	 // if clock should start on MouseOut
-		startClockOnMouseOutAfter: 1000, 	 // how long after MouseOut should the timer start again
-		directionalNav: true, 		 // manual advancing directional navs
-		captions: false, 			 // do you want captions?
-		captionAnimation: 'fade', 		 // fade, slideOpen, none
-		captionAnimationSpeed: 800, 	 // if so how quickly should they animate in
-		bullets: false,			 // true or false to activate the bullet navigation
-		bulletThumbs: false,		 // thumbnails for the bullets
-		bulletThumbLocation: '',		 // location from this file where thumbs will be
-		afterSlideChange: function(){}, 	 // empty function 
-		fluid: '809x116'
-	});
-   });
-</script>
+<script src="javascripts/orbit.js" type="text/javascript"></script>
 <script src="javascripts/slide.js" type="text/javascript"></script>
 
 
