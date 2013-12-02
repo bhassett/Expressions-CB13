@@ -481,6 +481,7 @@ div.expservices img {
 	text-decoration:none;
 	font-size:11px;
 	color:#999;
+	padding: 0 2px 2px 0;
 }
 
 #footer a:hover {
