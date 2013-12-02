@@ -43,10 +43,11 @@ namespace InterpriseSuiteEcommerce
             this.RequireCustomerRecord();
 
             RequireSecurePage();
-
+            
             ClearErrors();
 
             SectionTitle = AppLogic.GetString("AppConfig.CartPrompt", SkinID, ThisCustomer.LocaleSetting, true);
+
 
             if (!this.IsPostBack)
             {

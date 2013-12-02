@@ -25,41 +25,44 @@
             <h4>Helpful Information</h4>
                         <asp:Panel ID="ShippingInformation" runat="server">
                             <asp:Image ID="redarrow1" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-globe"></i>&#0160;
-                            <!-- <a onclick="popuptopicwh('Shipping+Information','shipping',650,550,'yes')"
-                                href="javascript:void(0);"> -->
-                            <a href="#" data-reveal-id="shippingModal">
+                            <a onclick="popuptopicwh('Shipping+Information','shipping',650,550,'yes')"
+                                href="javascript:void(0);">
+                            <!-- <a href="#" data-reveal-id="shippingModal"> -->
                                 <asp:Literal ID="shoppingcartaspx8" runat="server"></asp:Literal></a>
                                 <br />
-                                <div id="shippingModal" class="reveal-modal xlarge cartmodal">
+                                <!-- <div id="shippingModal" class="reveal-modal xlarge cartmodal">
                                 <ise:Topic runat="server" ID="ShippingTopic" TopicName="shipping" />
                                 <a class="close-reveal-modal">&#215;</a>
-                                </div>
+                                </div> -->
                         </asp:Panel>
                         <asp:Image ID="redarrow2" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-refresh"></i>&#0160;
-                            <!-- <a onclick="popuptopicwh('Return+Policy+Information','returns',650,550,'yes')"
-                            href="javascript:void(0);"> -->
-                            <a href="#" data-reveal-id="returnsModal">
+                            <a onclick="popuptopicwh('Return+Policy+Information','returns',650,550,'yes')"
+                            href="javascript:void(0);">
+                            <!-- <a href="#" data-reveal-id="returnsModal"> -->
                                 <asp:Literal ID="shoppingcartaspx9" Text="(!shoppingcart.aspx.7!)"
                                 runat="server"></asp:Literal></a>
                                 <br />
-                                <div id="returnsModal" class="reveal-modal xlarge cartmodal">
+                                <!-- <div id="returnsModal" class="reveal-modal xlarge cartmodal">
                                 <ise:Topic runat="server" ID="ReturnsTopic" TopicName="returns" />
                                 <a class="close-reveal-modal">&#215;</a>
-                                </div>
+                                </div> -->
                         <asp:Image ID="redarrow3" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-lock"></i>&#0160;
-                            <!-- <a onclick="popuptopicwh('Privacy+Information','privacy',650,550,'yes')"
-                            href="javascript:void(0);"> -->
-                            <a href="#" data-reveal-id="privacyModal">
+                            <a onclick="popuptopicwh('Privacy+Information','privacy',650,550,'yes')"
+                            href="javascript:void(0);">
+                            <!-- <a href="#" data-reveal-id="privacyModal"> -->
                                 <asp:Literal ID="shoppingcartaspx10" Text="(!shoppingcart.aspx.8!)"
                                 runat="server"></asp:Literal></a>
                                 <br />
+                                <!-- <div id="privacyModal" class="reveal-modal xlarge cartmodal">
+                                <ise:Topic runat="server" ID="PrivacyTopic" TopicName="privacy" />
+                                <a class="close-reveal-modal">&#215;</a>
+                                </div> -->
                         <asp:Panel ID="AddresBookLlink" runat="server">
                             <asp:Image ID="redarrow4" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-address-book"></i>&#0160;
                             <a href="selectaddress.aspx?returnurl=shoppingcart.aspx&AddressType=Shipping">
                                 <asp:Literal
                                 ID="shoppingcartaspx11" Text="(!shoppingcart.aspx.9!)" runat="server"></asp:Literal></a>
                                 <br />
-                                <div></div>
                         </asp:Panel>
                         &#160;<br />
             </div>
