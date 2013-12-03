@@ -437,9 +437,7 @@ $(document).ready(function(){
         {'service': 'pinterest', 'id': 'expressionsdeco'},
         {'service': 'instagram', 'id': 'expressionsdecor'}
       ]
-    },  
-    'whatsnext' : {}
-    
+    }
   });
 </script>
 <!-- AddThis Smart Layers END -->
