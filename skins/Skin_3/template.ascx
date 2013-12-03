@@ -27,7 +27,6 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/style.css" type="text/css">
-<!-- <link rel="stylesheet" href="skins/Skin_(!SKINID!)/custom.css" type="text/css" /> -->
 <link rel="Stylesheet" href="skins/Skin_(!SKINID!)/ui-lightness/jquery-ui-1.8.16.custom.css" type="text/css" />
 
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/foundation.css">
@@ -411,23 +410,6 @@ $(document).ready(function(){
 
 
 <!-- Google Analytics -->
-<script type="text/javascript">
-$(window).load(function () {
-	var pageTracking = $.trim(ise.Configuration.getConfigValue("GoogleAnalytics.PageTracking"));
-	var ecTracking = $.trim(ise.Configuration.getConfigValue("GoogleAnalytics.ConversionTracking"));
-	var gaAccount = $.trim(ise.Configuration.getConfigValue("GoogleAnalytics.TrackingCode"));
-	var orderNumber = getQueryString()["ordernumber"]; // get ordernumber query string
-	var imAtConfirmOrderPage = false;
-
-	if (typeof orderNumber != "undefined" && ecTracking == 'true') imAtConfirmOrderPage = true;
-
-	if ((pageTracking == 'true' || imAtConfirmOrderPage) && gaAccount != "GoogleAnalytics.TrackingCode") {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-}
-});
-</script>
 
 
 (!ADDRESS_VERIFICATION_DIALOG_LISTING!)
