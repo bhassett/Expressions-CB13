@@ -249,7 +249,7 @@ $(document).ready(function(){
 
   <div class="row socialBox hide-on-phones">
   	<div class="seven columns">
-  		<div class="news"></div>
+  		<div class="news"><!-- (!NEWS_SUMMARY!) --></div>
   	</div>
   	<div class="five columns">
   		<a href="http://www.house2home.us" target="_blank"><div class="expservices"></div></a>
