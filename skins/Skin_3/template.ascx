@@ -449,11 +449,14 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       'services' : [
         {'service': 'facebook', 'id': 'expressionsdecor'},
         {'service': 'twitter', 'id': 'ExpressionsDeco'},
-        {'service': 'google_follow', 'id': '117223946102304177432'}
+        {'service': 'google_follow', 'id': '117223946102304177432'},
+        {'service': 'linkedin', 'id': '2402396', 'usertype': 'company'},
+        {'service': 'pinterest', 'id': 'expressionsdeco'},
+        {'service': 'instagram', 'id': 'expressionsdecor'}
       ]
     },  
-    'whatsnext' : {},  
-    'recommended' : {} 
+    'whatsnext' : {}
+    
   });
 </script>
 <!-- AddThis Smart Layers END -->
