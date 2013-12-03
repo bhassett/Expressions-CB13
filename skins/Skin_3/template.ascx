@@ -330,14 +330,15 @@ $(document).ready(function(){
 
         <!-- AddThis Follow BEGIN -->
         <div class="addthis_toolbox addthis_32x32_style addthis_default_style">
-          <a class="addthis_button_facebook_follow" addthis:userid="expressionsdecor"></a>
-          <a class="addthis_button_twitter_follow" addthis:userid="ExpressionsDeco"></a>
-          <a class="addthis_button_google_follow" addthis:userid="117223946102304177432"></a>
-          <a class="addthis_button_pinterest_follow" addthis:userid="expressionsdeco"></a>
+        <a class="addthis_button_facebook_follow" addthis:userid="expressionsdecor"></a>
+        <a class="addthis_button_twitter_follow" addthis:userid="ExpressionsDeco"></a>
+        <a class="addthis_button_google_follow" addthis:userid="117223946102304177432"></a>
+        <a class="addthis_button_pinterest_follow" addthis:userid="expressionsdeco"></a>
+        <a class="addthis_button_instagram_follow" addthis:userid="expressionsdecor"></a>
         </div>
-        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-        <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50dc8ab51b6823ca"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50dc8ab51b6823ca"></script>
         <!-- AddThis Follow END -->
+
 
     	  <ul>
       		<li><a href="t-about.aspx">About us</a></li>
