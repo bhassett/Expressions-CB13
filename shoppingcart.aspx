@@ -78,9 +78,9 @@
                             runat="server" />&#160;
                         <asp:Button ID="btnCheckOutNowTop" Text="(!shoppingcart.cs.34!)" runat="server" CssClass="site-button CheckoutNowButton content" /><br />
                     </td> -->
-            <table runat="server" id="AlternativeCheckoutsTop">        
+            <!-- <table runat="server" id="AlternativeCheckoutsTop">        
                 <tr>
-                    <td colspan="2" align="right" style="height: 61px">
+                    <td colspan="2" align="right" style="height: 61px"> -->
                         <table border="0">
                             <tr>
                                 <td align="right" colspan="2">
@@ -100,9 +100,9 @@
                                 </td>
                             </tr>
                         </table>
-                    </td>
+            <!--         </td>
                 </tr>
-            </table>
+            </table> -->
             
             <asp:Panel ID="pnlCouponError" runat="Server" Visible="false">
                 <p><asp:Label ID="CouponError" CssClass="errorLg" runat="Server"></asp:Label></p>
@@ -135,6 +135,7 @@
             <div class="hidden errorLg" id="required-error">
                 <asp:Literal ID="lRequiredError" runat="server" Visible="true" Text="(!leadform.aspx.16!)"></asp:Literal>
             </div>
+            
             <br />
             <asp:Panel ID="pnlCartSummary" runat="server" HorizontalAlign="right" DefaultButton="btnUpdateCart1">
                 <asp:Literal ID="CartItems" runat="server"></asp:Literal>
@@ -183,8 +184,9 @@
                 <div class="clr">
                 </div>
             </asp:Panel>
-            <br />
+            
             <asp:Panel ID="pnlOrderOptions" runat="server" Visible="false">
+                <br />
                 <table width="100%" cellpadding="2" cellspacing="0" border="0" style="border-style: solid;
                     border-width: 0px; border-color: #444444">
                     <tr>
@@ -256,21 +258,23 @@
                 <div style="text-align: right;">
                     <asp:Button ID="btnUpdateCart2" runat="server" Text="(!shoppingcart.cs.33!)" CssClass="site-button content" /></div>
             </asp:Panel>
-            <br />
+            
             <asp:Panel ID="pnlUpsellProducts" runat="server" Visible="false">
                 <asp:Literal ID="UpsellProducts" runat="server"></asp:Literal>
+                <br />
                 <div style="text-align: right;">
                     <asp:Button ID="btnUpdateCart5" runat="server" Text="(!shoppingcart.cs.33!)" CssClass="site-button content"
                         Visible="false" /></div>
             </asp:Panel>
             <asp:Panel ID="pnlCoupon" runat="server" Visible="false" DefaultButton="btnUpdateCart3">
+                <br />
                 <table width="100%" cellpadding="2" cellspacing="0" border="0" style="border-style: solid;
                     border-width: 0px; border-color: #444444">
                     <tr>
                         <td align="left" valign="top">
-                            <asp:Image ID="ShoppingCartCoupon_gif" runat="server" /><br />
+                            <asp:Image ID="ShoppingCartCoupon_gif" runat="server" />
                             <table width="100%" cellpadding="4" cellspacing="0" border="0" style="border-style: solid;
-                                border-width: 1px; border-color: #444444;">
+                                border-width: 1px; border-color: #666;">
                                 <tr>
                                     <td align="left" valign="top">
                                         <asp:Label ID="shoppingcartcs31" runat="server" Text="(!shoppingcart.cs.9!)"></asp:Label>&#160;

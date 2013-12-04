@@ -10,7 +10,20 @@
 .cart-header-wrapper { display:none;}
 .cart-items-wrapper { border: none;}
 
+#pnlShippingCalculatorcontainer {
+border: none;
+background: #eee; }
 
+.cart-col-header {
+text-align: left; }
+
+.gotextright-basic {
+text-align: right;
+}
+
+.update-cart-layout {
+display: none;
+}
 
 /* -------------------------------------------------- 
    Table of Contents
