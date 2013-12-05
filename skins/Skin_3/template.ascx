@@ -24,6 +24,7 @@
 <title>(!METATITLE!)</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/style.css" type="text/css">
 <link rel="Stylesheet" href="skins/Skin_(!SKINID!)/ui-lightness/jquery-ui-1.8.16.custom.css" type="text/css" />
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/foundation.css">
@@ -47,8 +48,8 @@
 <script type="text/javascript" src="jscripts/jquery/jquery.cbe.address.dialog.js"></script>
 <script type="text/javascript" src="jscripts/jquery/jquery.cbe.bubble.message.js"></script>
 <script type="text/javascript" src="jscripts/jquery/jquery.loader.js"></script>
-<script src="javascripts/modernizr.foundation.js"></script>
-<script src="javascripts/jquery.easing.js"></script>
+<script type="text/javascript" src="javascripts/modernizr.foundation.js"></script>
+<script type="text/javascript" src="javascripts/jquery.easing.js"></script>
 
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -382,13 +383,13 @@ $(document).ready(function(){
 </div>
 
 <!-- Included JS Files -->
-<script src="javascripts/foundation.js"></script>
-<script src="javascripts/app.js"></script>
-<script src="javascripts/orbit.js" type="text/javascript"></script>
-<script src="javascripts/slide.js" type="text/javascript"></script>
+<script type="text/javascript" src="javascripts/foundation.js"></script>
+<script type="text/javascript" src="javascripts/app.js"></script>
+<script type="text/javascript" src="javascripts/orbit.js"></script>
+<script type="text/javascript" src="javascripts/slide.js"></script>
 
 <!-- Google Analytics -->
-<script>
+<script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
