@@ -441,10 +441,7 @@ $(document).ready(function(){
       'services' : [
         {'service': 'facebook', 'id': 'expressionsdecor'},
         {'service': 'twitter', 'id': 'ExpressionsDeco'},
-        {'service': 'google_follow', 'id': '117223946102304177432'},
-        {'service': 'linkedin', 'id': '2402396', 'usertype': 'company'},
-        {'service': 'pinterest', 'id': 'expressionsdeco'},
-        {'service': 'instagram', 'id': 'expressionsdecor'}
+        {'service': 'google_follow', 'id': '117223946102304177432'}
       ]
     }
   });
