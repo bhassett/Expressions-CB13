@@ -321,23 +321,20 @@ $(document).ready(function(){
 
     <div class="five columns dotborder">
     	<div id="socialMedia">find&nbsp;us&nbsp;on<br />
-        <!--
-        <a href="http://www.facebook.com/expressionsdecor" target="_new" class="socialinkF"><i class="social foundicon-facebook"></i></a>
-        <a href="http://plus.google.com/u/0/b/117223946102304177432/117223946102304177432/posts" target="_new" class="socialinkG"><i class="social foundicon-google-plus"></i></a>
-        <a href="http://www.twitter.com/ExpressionsDeco" target="_new" class="socialinkT"><i class="social foundicon-twitter"></i></a>
-        <a href="http://www.pinterest.com/expressionsdeco/" target="_new" class="socialinkP"><i class="social foundicon-pinterest"></i></a>
-        -->
-
+        
         <!-- AddThis Follow BEGIN -->
         <div class="addthis_toolbox addthis_32x32_style addthis_default_style">
         <a class="addthis_button_facebook_follow" addthis:userid="expressionsdecor"></a>
         <a class="addthis_button_twitter_follow" addthis:userid="ExpressionsDeco"></a>
         <a class="addthis_button_google_follow" addthis:userid="117223946102304177432"></a>
+        <br />
         <a class="addthis_button_pinterest_follow" addthis:userid="expressionsdeco"></a>
         <a class="addthis_button_instagram_follow" addthis:userid="expressionsdecor"></a>
+        <a class="addthis_button_linkedin_follow" addthis:userid="117223946102304177432" addthis:usertype="company"></a>
         </div>
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50dc8ab51b6823ca"></script>
         <!-- AddThis Follow END -->
+
 
 
     	  <ul>
@@ -373,8 +370,8 @@ $(document).ready(function(){
 
 
 <!-- Customer Support -->
-<!-- 
-<div id="request-container">
+ 
+<!-- <div id="request-container">
   <div class="request-caption-wrapper">
     <span class="request-caption">(!stringresource name="main.content.1"!) </span>
     <div class="request-code-wrapper">
@@ -393,8 +390,8 @@ $(document).ready(function(){
     <a href="javascript:void(0);" class="generate-link"><img src="/skins/Skin_(!SKINID!)/images/refresh-captcha.png" alt="" title="" /></a>
     <a href="javascript:void(0);" class="copy-link">(!stringresource name="main.content.3"!)</a>
   </div>
-</div>
--->
+</div> -->
+
 
 <div class="footer-mobile-link">
 (!MOBILE_FULLMODE_SWITCHER!)
