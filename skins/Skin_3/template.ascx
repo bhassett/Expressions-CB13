@@ -18,17 +18,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-
-<title>(!METATITLE!)</title>
-
 <meta name="description" content="(!METADESCRIPTION!)">
 <meta name="keywords" content="(!METAKEYWORDS!)">
 
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<title>(!METATITLE!)</title>
 
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/style.css" type="text/css">
 <link rel="Stylesheet" href="skins/Skin_(!SKINID!)/ui-lightness/jquery-ui-1.8.16.custom.css" type="text/css" />
-
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/foundation.css">
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/app.css">
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/icons-main.css">
@@ -40,23 +37,18 @@
     <link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/ie.css">
 <![endif]-->
 
-
-
-    <script type="text/javascript" src="jscripts/core.js"></script>
-    <script type="text/javascript" src="jscripts/jquery/jquery.min.v1.7.2.js"></script>
-    <script type="text/javascript" src="jscripts/jquery/jquery-ui-1.8.16.custom.min.js"></script>
-    <script type="text/javascript" src="jscripts/jquery/jquery.tmpl.min.js"></script>
-    <script type="text/javascript" src="jscripts/jquery/menu.js"></script>
-    <script type="text/javascript" src="jscripts/attribute.selectors.js"></script>
-    <script type="text/javascript" src="jscripts/jquery/jquery.format.1.05.js"></script>
-    <script type="text/javascript" src="jscripts/jquery/jquery.cbe.address.dialog.js"></script>
-    <script type="text/javascript" src="jscripts/jquery/jquery.cbe.bubble.message.js"></script>
-    <script type="text/javascript" src="jscripts/jquery/jquery.loader.js"></script>
-
-
+<script type="text/javascript" src="jscripts/core.js"></script>
+<script type="text/javascript" src="jscripts/jquery/jquery.min.v1.7.2.js"></script>
+<script type="text/javascript" src="jscripts/jquery/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="jscripts/jquery/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="jscripts/jquery/menu.js"></script>
+<script type="text/javascript" src="jscripts/attribute.selectors.js"></script>
+<script type="text/javascript" src="jscripts/jquery/jquery.format.1.05.js"></script>
+<script type="text/javascript" src="jscripts/jquery/jquery.cbe.address.dialog.js"></script>
+<script type="text/javascript" src="jscripts/jquery/jquery.cbe.bubble.message.js"></script>
+<script type="text/javascript" src="jscripts/jquery/jquery.loader.js"></script>
 <script src="javascripts/modernizr.foundation.js"></script>
 <script src="javascripts/jquery.easing.js"></script>
-
 
 <!-- Google Analytics -->
 <script type="text/javascript">
@@ -115,10 +107,7 @@ $(document).ready(function(){
     </script>
 
 (!JAVASCRIPT_INCLUDES!)
-
 </head>
-
-
 
 <body>
 <asp:Panel ID="pnlForm" runat="server" Visible="false"  />
@@ -335,8 +324,6 @@ $(document).ready(function(){
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50dc8ab51b6823ca"></script>
         <!-- AddThis Follow END -->
 
-
-
     	  <ul>
       		<li><a href="t-about.aspx">About us</a></li>
       		<li><a href="t-shipping.aspx">Shipping Info</a></li>
@@ -368,9 +355,7 @@ $(document).ready(function(){
 </div>
 <!-- footer [end] -->
 
-
 <!-- Customer Support -->
- 
 <!-- <div id="request-container">
   <div class="request-caption-wrapper">
     <span class="request-caption">(!stringresource name="main.content.1"!) </span>
@@ -392,20 +377,15 @@ $(document).ready(function(){
   </div>
 </div> -->
 
-
 <div class="footer-mobile-link">
 (!MOBILE_FULLMODE_SWITCHER!)
 </div>
 
 <!-- Included JS Files -->
-<!--<script src="javascripts/jquery.min.js"></script>-->
-
 <script src="javascripts/foundation.js"></script>
 <script src="javascripts/app.js"></script>
 <script src="javascripts/orbit.js" type="text/javascript"></script>
 <script src="javascripts/slide.js" type="text/javascript"></script>
-
-
 
 <!-- Google Analytics -->
 <script>
@@ -413,10 +393,8 @@ $(document).ready(function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-23764710-1', 'expressionsdecor.com');
   ga('send', 'pageview');
-
 </script>
 
 (!ADDRESS_VERIFICATION_DIALOG_LISTING!)
@@ -425,7 +403,6 @@ $(document).ready(function(){
 (!ADDRESS_VERIFICATION_DIALOG_OPTIONS!)
 
 <!-- AddThis Smart Layers BEGIN -->
-<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50dc8ab51b6823ca"></script>
 <script type="text/javascript">
   addthis.layers({
