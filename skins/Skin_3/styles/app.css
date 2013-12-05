@@ -25,6 +25,14 @@ text-align: right;
 display: none;
 }
 
+a:link {
+color: #69c;}
+
+a.PageNumber, a.PageNumber:link, a.PageNumber:visited, a.PageNumber:active, a.PageNumber:hover {
+color: #69c;
+text-decoration: none;
+}
+
 /* -------------------------------------------------- 
    Table of Contents
 -----------------------------------------------------
