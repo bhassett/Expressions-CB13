@@ -1,0 +1,127 @@
+<root>
+  <Entity>
+    <EntityID>4</EntityID>
+    <Name>$100 - $200</Name>
+    <ColWidth>4</ColWidth>
+    <Description>
+      <ml>
+        <locale name="en-US">$100 - $200</locale>
+      </ml>
+    </Description>
+    <WebDescription />
+    <SEKeywords />
+    <SEDescription />
+    <SETitle />
+    <SENoScript />
+    <SEAltText />
+    <ParentEntityID>0</ParentEntityID>
+    <SortOrder />
+    <SortByLooks />
+    <XmlPackage>entity.grid.xml.config</XmlPackage>
+    <MobileXmlPackage />
+    <Published>1</Published>
+    <SEName />
+    <PageSize>0</PageSize>
+    <TemplateName />
+  </Entity>
+  <Entity>
+    <EntityID>2</EntityID>
+    <Name>$20 - $50</Name>
+    <ColWidth>4</ColWidth>
+    <Description>
+      <ml>
+        <locale name="en-US">$20 - $50</locale>
+      </ml>
+    </Description>
+    <WebDescription />
+    <SEKeywords />
+    <SEDescription />
+    <SETitle />
+    <SENoScript />
+    <SEAltText />
+    <ParentEntityID>0</ParentEntityID>
+    <SortOrder />
+    <SortByLooks />
+    <XmlPackage>entity.grid.xml.config</XmlPackage>
+    <MobileXmlPackage />
+    <Published>1</Published>
+    <SEName />
+    <PageSize>0</PageSize>
+    <TemplateName />
+  </Entity>
+  <Entity>
+    <EntityID>5</EntityID>
+    <Name>$200 and above</Name>
+    <ColWidth>4</ColWidth>
+    <Description>
+      <ml>
+        <locale name="en-US">$200 and above</locale>
+      </ml>
+    </Description>
+    <WebDescription />
+    <SEKeywords />
+    <SEDescription />
+    <SETitle />
+    <SENoScript />
+    <SEAltText />
+    <ParentEntityID>0</ParentEntityID>
+    <SortOrder />
+    <SortByLooks />
+    <XmlPackage>entity.grid.xml.config</XmlPackage>
+    <MobileXmlPackage />
+    <Published>1</Published>
+    <SEName />
+    <PageSize>0</PageSize>
+    <TemplateName />
+  </Entity>
+  <Entity>
+    <EntityID>3</EntityID>
+    <Name>$50 - $100</Name>
+    <ColWidth>4</ColWidth>
+    <Description>
+      <ml>
+        <locale name="en-US">$50 - $100</locale>
+      </ml>
+    </Description>
+    <WebDescription />
+    <SEKeywords />
+    <SEDescription />
+    <SETitle />
+    <SENoScript />
+    <SEAltText />
+    <ParentEntityID>0</ParentEntityID>
+    <SortOrder />
+    <SortByLooks />
+    <XmlPackage>entity.grid.xml.config</XmlPackage>
+    <MobileXmlPackage />
+    <Published>1</Published>
+    <SEName />
+    <PageSize>0</PageSize>
+    <TemplateName />
+  </Entity>
+  <Entity>
+    <EntityID>1</EntityID>
+    <Name>Under $20</Name>
+    <ColWidth>4</ColWidth>
+    <Description>
+      <ml>
+        <locale name="en-US">Under $20</locale>
+      </ml>
+    </Description>
+    <WebDescription />
+    <SEKeywords />
+    <SEDescription />
+    <SETitle />
+    <SENoScript />
+    <SEAltText />
+    <ParentEntityID>0</ParentEntityID>
+    <SortOrder />
+    <SortByLooks />
+    <XmlPackage>entity.grid.xml.config</XmlPackage>
+    <MobileXmlPackage />
+    <Published>1</Published>
+    <SEName />
+    <PageSize>0</PageSize>
+    <TemplateName />
+  </Entity>
+</root>
