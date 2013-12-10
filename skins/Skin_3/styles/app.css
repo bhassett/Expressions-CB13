@@ -1160,7 +1160,7 @@ img[id*='EntityPic'] {
 /* Manufacturer Feature Image Left */
 .mancontainer {
 background-image: url('../../Skin_2/images/manubg-uttermost.jpg');
-width: 950px;
+max-width: 950px;
 height: 281px;
 margin: -7px auto 0;
 }
@@ -1168,7 +1168,7 @@ margin: -7px auto 0;
 background: rgba(79, 125, 139, 0.65);
 border: 1px solid white;
 border-radius: 10px 0 0 10px;
-width: 500px;
+max-width: 500px;
 padding: 0 25px;
 float: right;
 right: -1px;
