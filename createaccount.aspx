@@ -105,7 +105,7 @@
 
                   <div class="clear-both height-5"></div>
 
-                  <div class="form-controls-place-holder">
+                  <div class="form-controls-place-holder" style="visibility:hidden;">
                      <span class="form-controls-span label-outside" id="age-13-place-holder">
                         <asp:CheckBox ID="chkOver13" runat="server"/> <span class="checkbox-captions custom-font-style"><asp:Literal ID="litImOver13" runat="server">(!checkout1.aspx.39!)</asp:Literal></span>
                      </span>
