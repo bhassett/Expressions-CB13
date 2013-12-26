@@ -451,7 +451,6 @@ div.expservices img {
 
 .footerhr {
 	position: relative;
-	margin-bottom: -40px;
 	margin-bottom: -20px;
 	height: 1px;
 	background-color: #353535;
@@ -996,18 +995,27 @@ div.orbit-wrapper {
 }
 
 div[class*='featureRow'] {
-	margin:70px 0 35px;
-	border-top:1px dotted silver;
-	padding-top:10px;
+	margin: 20px 0 0;
+	border-bottom: 1px dotted silver;
+	padding-bottom: 20px;
 }
 
 div.featureRowTwo {
 	margin-bottom:0px;
 }
 
+div[class*='featureRow'] img {
+	margin-top: 20px;
+}
+
+div[class*='featureRow'] div {
+	text-align: center;
+}
+
 div[class*='featureRow'] h2 {
-	text-align:right;
-	line-height:28px;
+	padding-left:10px;
+	text-align:left;
+	line-height:15px;
 	color:#555;
 }
 
