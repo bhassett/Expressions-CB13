@@ -33,6 +33,15 @@ color: #69c;
 text-decoration: none;
 }
 
+@media handheld, only screen and (max-width: 767px) {
+	.row .phone-one, .row .phone-two, .row .phone-three, .row .phone-four {
+	margin-left: 2.2%;
+	float: left;
+	min-height: 1px;
+	position: relative;
+	padding: 0;
+	}
+}
 /* -------------------------------------------------- 
    Table of Contents
 -----------------------------------------------------
