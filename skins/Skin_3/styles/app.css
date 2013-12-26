@@ -452,6 +452,7 @@ div.expservices img {
 .footerhr {
 	position: relative;
 	margin-bottom: -40px;
+	margin-bottom: -20px;
 	height: 1px;
 	background-color: #353535;
 	border-top: 1px solid #0b0b0b;
