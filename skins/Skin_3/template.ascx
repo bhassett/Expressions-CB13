@@ -34,6 +34,9 @@
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/icons-social.css">
 <link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/slide.css">
 
+<link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/demo.css">
+
+
 <!--[if lt IE 9]>
     <link rel="stylesheet" href="skins/Skin_(!SKINID!)/styles/ie.css">
 <![endif]-->
@@ -237,14 +240,14 @@ $(document).ready(function(){
 <!-- footer [begin] -->
 <div id="footer">
 
-  <div class="row socialBox hide-on-phones">
+  <!-- <div class="row socialBox hide-on-phones">
   	<div class="seven columns">
-  		<div class="news"><!-- (!NEWS_SUMMARY!) --></div>
+  		<div class="news">(!NEWS_SUMMARY!)</div>
   	</div>
   	<div class="five columns">
   		<a href="http://www.house2home.us" target="_blank"><div class="expservices"></div></a>
   	</div>
-  </div>
+  </div> -->
 
   <div class="footerhr"></div>
 
@@ -381,6 +384,11 @@ $(document).ready(function(){
 <div class="footer-mobile-link">
 (!MOBILE_FULLMODE_SWITCHER!)
 </div>
+
+<!-- <div class="leftnavvy">
+  <h3>Browse Categories</h3>
+  <div class="EntityMenuAlignment">(!XmlPackage Name="rev.categories"!)</div>
+</div> -->
 
 <!-- Included JS Files -->
 <script type="text/javascript" src="javascripts/foundation.js"></script>
