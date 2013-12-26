@@ -4,9 +4,6 @@
    Testing Grounds
 -----------------------------------------------------*/
 
-
-
-
 .cart-header-wrapper { display:none;}
 .cart-items-wrapper { border: none;}
 
@@ -947,24 +944,24 @@ div.new-arrivals-wrapper .columns {
 }
 
 div.orbit-wrapper div.slider-nav span {
-width: 50px;
-height: 50px;
-text-indent: -9999px;
-position: absolute;
-z-index: 30;
-top: 50%;
-margin-top: -35px;
-cursor: pointer;
+	width: 50px;
+	height: 50px;
+	text-indent: -9999px;
+	position: absolute;
+	z-index: 30;
+	top: 50%;
+	margin-top: -35px;
+	cursor: pointer;
 }
 
 div.orbit-wrapper div.slider-nav span.left {
-background: url('../../Skin_2/images/navarrow-left.png');
-left: -28px;
+	background: url('../../Skin_2/images/navarrow-left.png');
+	left: -28px;
 }
 
 div.orbit-wrapper div.slider-nav span.right {
-background: url('../../Skin_2/images/navarrow-right.png');
-right: -37px;
+	background: url('../../Skin_2/images/navarrow-right.png');
+	right: -37px;
 }
 
 #recentFeature {
