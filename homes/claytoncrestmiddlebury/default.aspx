@@ -23,13 +23,11 @@
       
       <div class="large-7 columns">
           <ul class="breadcrumbs">
-            <li class="current"><a href="/homes/claytonnorris/">Clayton Homes - Norris Models</a></li>
+            <li class="current"><a href="/homes/claytoncrestmiddlebury/default.aspx">Clayton Homes - Crest Middlebury Models</a></li>
           </ul>
           <ul class="listing">
-          	<li><div class="large-6 columns"><a href="SuperD.aspx">Louisville Super D</a></div><div class="large-6 columns right"><em>Posted: 05/23/2013</em></div></li>
-            <li><div class="large-6 columns"><a href="Super60.aspx">Super 60</a></div><div class="large-6 columns right"><em>Posted: 05/23/2013</em></div></li>
-            <li><div class="large-6 columns"><a href="52SuperD.aspx">52 Super D</a></div><div class="large-6 columns right"><em>Posted: 05/23/2013</em></div></li>
-
+          	<li><div class="large-6 columns"><a href="HartElite6030.aspx">Hart Elite 6030</a></div><div class="large-6 columns right"><em>Posted: 01/17/2014</em></div></li>
+            <li><div class="large-6 columns"><a href="Heritage5628.aspx">Heritage 5628</a></div><div class="large-6 columns right"><em>Posted: 01/17/2014</em></div></li>
           </ul>
       </div>
       
