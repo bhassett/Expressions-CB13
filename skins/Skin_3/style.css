@@ -987,7 +987,7 @@ top: 2px;
 
 /* START - NEW UP-SELL/CROSS-SELL SECTIONS STYLES */
 
-.carousel { border-bottom: 1px solid black; height: 239px; /*width: 675px;*/ width: 708px; position: relative; }
+.carousel { border-bottom: 1px solid black; height: 239px; /*width: 675px;*/ /*width: 708px;*/ position: relative; }
 .carousel-wholesale-only { height: 200px; }
 .carousel-wholesale-only .arrow { margin-top: -25px; }
 .carousel .wrapper3 { height: 205px; /*width: 620px;*?/ /* .infiniteCarousel width - (.wrapper margin-left + .wrapper margin-right) */ width: 648px; overflow: auto; min-height: 10em; /*margin: 0 15px;*/ margin-left:30px; position: absolute; top: 0; height: 300px;/*border:solid 0px red;*/ }

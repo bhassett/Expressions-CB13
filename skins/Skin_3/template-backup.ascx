@@ -125,7 +125,8 @@ $(document).ready(function(){
 <!-- to left justify your pages, set text-align: center -->
 <!-- if using dynamic full width page sizes, the left-right align has no effect (obviously) -->
 
-<div id="main" class="clearfix">
+<div id="wrap">
+  <div id="main" class="clearfix">
     <div id="menu_container" runat="server" visible="false"></div>
 
     <!-- header [begin] -->
@@ -163,7 +164,6 @@ $(document).ready(function(){
       <div class="row show-on-phones">
       	<div class="twelve columns text-center">
           <div id="headeruserinfo">(!USERNAME!)&#32;&#32;<a href="(!SIGNINOUT_LINK!)">(!SIGNINOUT_TEXT!)</a>&#32;&#124;&#32;<a href="account.aspx">My&#32;Account</a></div>
-          <div id="navSearch">(!XmlPackage Name="skin.search"!)<!--&#32;&#45;&#32;or&#32;&#45;&#32;--><br><a href="searchadv.aspx">Advanced Search <i class="main foundicon-search"></i></a></div>
         </div>
       </div>
     </div>
@@ -185,7 +185,7 @@ $(document).ready(function(){
     </div>
     <!-- navbar [end] -->
 
-    <!-- Panel 
+    <!-- Panel -->
     <div id="dprotop">
     	<div id="dpro">
     		<div class="content clearfix">
@@ -195,7 +195,7 @@ $(document).ready(function(){
     		</div>
     	</div>
 
-    	
+    	<!-- The tab on top -->
     	<div class="tabcontainer">
       	<div class="tab hide-on-tablets">
       		<ul class="login">
@@ -208,12 +208,10 @@ $(document).ready(function(){
       		</ul> 
       	</div>
     	</div>
-    	
+    	<!-- / top -->
 	
     </div>
-    < / panel -->
-
-  <div class="bodypanel">
+    <!-- / panel -->
 
     <!-- breadcrumbs [begin] -->
     <div class="row">
@@ -236,9 +234,7 @@ $(document).ready(function(){
     </div>
 
   </div>
-
-<!--   </div>
-</div> -->
+</div>
 
 
 <!-- footer [begin] -->
@@ -256,7 +252,7 @@ $(document).ready(function(){
   <div class="footerhr"></div>
 
   <div class="row">
-  	<div class="three columns phone-two">
+  	<div class="two columns">
   		<dl class="footer-nav">
         <dt>Accessories</dt>
         <dd><a href="c-12-decorative-accents.aspx">Decorative Accents</a></dd>
@@ -271,10 +267,24 @@ $(document).ready(function(){
   			<dd><a href="c-31-planters.aspx">Planters</a></dd>
   			<dd><a href="c-32-sculpture.aspx">Sculpture</a></dd>
   			<dd><a href="c-45-floral.aspx">Floral</a></dd>
-  		</dl>
+  		</dl>        
     </div>
 
-    <div class="three columns phone-two">
+    <div class="two columns">
+  		<dl class="footer-nav">
+        <dt>Lighting</dt>
+        <dd><a href="c-24-floor-lamps.aspx">Floor Lamps</a></dd>
+        <dd><a href="c-25-table-lamps.aspx">Table Lamps</a></dd>
+        <dd><a href="c-27-hanging-lamps.aspx">Hanging Lamps</a></dd>
+  			<dd><a href="c-33-lighted-sconces.aspx">Lighted Sconces</a></dd>
+  		</dl>
+      <!--<dl class="footer-nav">
+        <dt>Tabletop</dt>
+        <dd><a href="c-18-entertaining.aspx">Entertaining</a></dd>
+        <dd><a href="c-17-dining.aspx">Dining</a></dd>
+        <dd><a href="c-16-kitchen.aspx">Kitchen</a></dd>
+        <dd><a href="c-19-barware-accessories.aspx">Barware & Accessories</a></dd>
+  		</dl>-->
       <dl class="footer-nav">
         <dt>Wall Décor</dt>
         <dd><a href="c-20-racks-shelving.aspx">Racks & Shelving</a></dd>
@@ -282,38 +292,27 @@ $(document).ready(function(){
         <dd><a href="c-22-wall-clocks.aspx">Wall Clocks</a></dd>
         <dd><a href="c-23-wall-art.aspx">Wall Art</a></dd>
         <dd><a href="c-26-mirrors.aspx">Mirrors</a></dd>
-        <dd><a href="c-28-hanging-picture-frames.aspx">Hanging Frames</a></dd>
-      </dl>
-      <dl class="footer-nav">
-        <dt>Lighting</dt>
-        <dd><a href="c-24-floor-lamps.aspx">Floor Lamps</a></dd>
-        <dd><a href="c-25-table-lamps.aspx">Table Lamps</a></dd>
-        <dd><a href="c-27-hanging-lamps.aspx">Hanging Lamps</a></dd>
-        <dd><a href="c-33-lighted-sconces.aspx">Lighted Sconces</a></dd>
-      </dl> 
+  			<dd><a href="c-28-hanging-picture-frames.aspx">Hanging Frames</a></dd>
+  		</dl>     
+  	</div>
+
+    <div class="two columns">
       <dl class="footer-nav">
         <dt><a href="c-6-furniture.aspx">Furniture</a></dt>
-        <dd><a href="c-34-chairs.aspx">Chairs</a></dd>
-        <dd><a href="c-35-benches-ottomans.aspx">Benches & Ottomans</a></dd>
-        <dd><a href="c-36-pet-beds.aspx">Pet Beds</a></dd>
-        <dd><a href="c-40-tables-desks.aspx">Tables & Desks</a></dd>
-        <dd><a href="c-41-chests-cabinets.aspx">Chests & Cabinets</a></dd>
-        <dd><a href="c-43-fireplace.aspx">Fireplace</a></dd>
-        <dd><a href="c-44-accent-furniture.aspx">Accent Furniture</a></dd>
-      </dl>   
+  			<dd><a href="c-34-chairs.aspx">Chairs</a></dd>
+  			<dd><a href="c-35-benches-ottomans.aspx">Benches & Ottomans</a></dd>
+  			<dd><a href="c-36-pet-beds.aspx">Pet Beds</a></dd>
+  			<dd><a href="c-40-tables-desks.aspx">Tables & Desks</a></dd>
+  			<dd><a href="c-41-chests-cabinets.aspx">Chests & Cabinets</a></dd>
+  			<dd><a href="c-43-fireplace.aspx">Fireplace</a></dd>
+  			<dd><a href="c-44-accent-furniture.aspx">Accent Furniture</a></dd>
+  		</dl>
+      <!--<dl class="footer-nav">
+        <dt><a href="c-7-clearance.aspx">Clearance</a></dt>
+  		</dl>-->        
   	</div>
 
-    <div class="three columns phone-two" style="margin-left:0">
-      <dl class="footer-nav">
-        <dt>Customer Service</dt>
-        <dd><a href="account.aspx"><i class="main foundicon-settings"></i> My Account</a></dd>
-        <dd><a href="shoppingcart.aspx"><i class="main foundicon-cart"></i> My Shopping Bag</a></dd>
-        <dd><a href="t-shopping.aspx"><i class="main foundicon-monitor"></i> Shopping Our Site</a></dd>
-        <dd><a href="t-contact.aspx"><i class="main foundicon-phone"></i> Contact Us</a></dd>
-      </dl>      
-  	</div>
-
-    <div class="three columns phone-two" style="margin-left:0">
+    <div class="five columns dotborder">
     	<div id="socialMedia">find&nbsp;us&nbsp;on<br />
         
         <!-- AddThis Follow BEGIN -->
@@ -338,18 +337,28 @@ $(document).ready(function(){
       		<li><a href="http://www.house2home.us" target="_blank">Design Services</a></li>
         </ul>
       </div>
+      
+      <div>
+      	<dl class="footer-nav">
+        	<dt>Customer Service</dt>
+          <dd><a href="account.aspx"><i class="main foundicon-settings"></i> My Account</a></dd>
+          <dd><a href="shoppingcart.aspx"><i class="main foundicon-cart"></i> My Shopping Bag</a></dd>
+          <dd><a href="t-shopping.aspx"><i class="main foundicon-monitor"></i> Shopping Our Site</a></dd>
+          <dd><a href="t-contact.aspx"><i class="main foundicon-phone"></i> Contact Us</a></dd>
+        </dl>
+      </div>
     </div>
     
   </div>
   
   <div id="copyright" class="row">
-    <div class="twelve columns phone-four">&#169; 2011(!COPYRIGHTYEARS!) Expressions by Décor &#38; More, Inc. All rights reserved.</div>
+    <div class="six columns">&#169; 2011(!COPYRIGHTYEARS!) Expressions by Décor &#38; More, Inc. All rights reserved.</div>
+    <div class="six columns"></div>
   </div>
 
 </div>
 <!-- footer [end] -->
 
-</div>
 <!-- Customer Support -->
 <!-- <div id="request-container">
   <div class="request-caption-wrapper">
@@ -372,9 +381,9 @@ $(document).ready(function(){
   </div>
 </div> -->
 
-<!-- <div class="footer-mobile-link">
+<div class="footer-mobile-link">
 (!MOBILE_FULLMODE_SWITCHER!)
-</div> -->
+</div>
 
 <!-- <div class="leftnavvy">
   <h3>Browse Categories</h3>

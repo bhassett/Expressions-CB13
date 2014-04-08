@@ -4,6 +4,33 @@
    Testing Grounds
 -----------------------------------------------------*/
 
+table {
+-moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+margin: 9px 0 9px;
+border: none;
+}
+
+.bodypanel {
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 2em;
+}
+
+.homeblock {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.gridBody {
+border: none;
+}
+
+.grid-item .item-title {
+text-align: left;
+}
+
 .cart-header-wrapper { display:none;}
 .cart-items-wrapper { border: none;}
 
@@ -19,6 +46,10 @@ text-align: right;
 }
 
 .update-cart-layout {
+display: none;
+}
+
+span[id*='lblPriceCaption'] {
 display: none;
 }
 
@@ -62,10 +93,10 @@ text-decoration: none;
 /* Force footer to bottom of page */
 * { margin:0; padding:0; } 
 
-html, body, #wrap { height: 100%; }
+/*html, body, #wrap { height: 100%; }*/
 
 body {
-	background:#2a2a2a;
+	background:#fff;
 }
 
 table tbody tr td {
@@ -84,12 +115,12 @@ body > #wrap {
 	text-shadow: none;
 }
 
-#main { padding-bottom: 590px; }  /* must be same height as the footer */
+/*#main { padding-bottom: 590px; }*/  /* must be same height as the footer */
 
 #footer {
 	position: relative;
-	margin-top: -500px; /* negative value of footer height */
-	height: 500px;
+	/*margin-top: -500px;*/ /* negative value of footer height */
+	/*height: 500px;*/
 	clear:both;
 	background:#2a2a2a;
 } 
@@ -103,7 +134,7 @@ body > #wrap {
 .clearfix {display: inline-block;}
 /* Hides from IE-mac \*/
 * html .clearfix { height: 1%;}
-.clearfix {display: block;}
+.clearfix {display: block; clear: both;}
 /* End hide from IE-mac */
 
 #mainmenu {
@@ -144,6 +175,16 @@ body > #wrap {
 #mainmenu a:hover {
   background: #705534;
 }
+
+	@media handheld, only screen and (max-width: 767px) {
+	#mainmenu {
+	  text-align: center;
+	}
+	#mainmenu a {
+		font-size: .5em;
+		padding: 12px .8em 10px .8em;
+	}
+	}
 
 /* PNG fix for IE6 */
 img, .png {
@@ -280,6 +321,13 @@ display: inline;
 	width:100%;
 	text-align:right;
 }
+
+@media handheld, only screen and (max-width: 767px) {
+	#headeruserinfo {
+		text-align:center;
+	}
+}
+
 #headeruserinfo a {
 	line-height: 14px;
 	color: #fff;
@@ -300,6 +348,19 @@ display: inline;
 	font-size:11px;
 	color:#fff;
 	text-align:center;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	#navSearch {
+		width: 100%;
+		padding: 0;
+		float: left;
+		margin: 1.5em auto 0;
+		display: inline;
+		font-size: 11px;
+		color: #fff;
+		text-align: center;
+	}
 }
 
 #navSearch a {
@@ -323,15 +384,16 @@ display: inline;
 }
 
 ul.breadcrumbs {
-	top: -35px;
-	position: absolute;
-	width: 100%;
-	padding: 7px 0 7px 10px;
-	margin-left: -6px;
-	-moz-box-shadow: 0 1px 5px #6D6D6D;
+	/*top: -35px;*/
+	/*position: absolute;*/
+	/*width: 100%;*/
+	/*padding: 7px 0 7px 10px;*/
+	/*margin-left: -6px;*/
+	margin-bottom: 0;
+	/*-moz-box-shadow: 0 1px 5px #6D6D6D;
 	-webkit-box-shadow: 0 1px 5px #6D6D6D;
-	box-shadow: 0 1px 5px #6D6D6D;
-	border: 1px solid white;
+	box-shadow: 0 1px 5px #6D6D6D;*/
+	border: 1px solid #ccc;
 }
 
 ul.breadcrumbs li a, ul.breadcrumbs li span {
@@ -358,6 +420,7 @@ padding-left: 12px;
 
 .footer-nav {
 	margin-top:10px;
+	margin-bottom:2em;
 }
 
 .footer-nav:first-child {
@@ -522,12 +585,13 @@ div.expservices img {
 	color:#999;
 }
 
+
 #socialMedia {
 	font-size:12px;
 	font-weight:800;
 	margin-bottom: 15px;
 	color:#999;
-	float:right
+	float:left
 }
 
 #socialMedia ul {
@@ -560,12 +624,20 @@ div.expservices img {
   margin-top:20px;
 }
 
+	@media handheld, only screen and (max-width: 767px) {
+		#copyright div {
+		  font-size:.9em;
+		}
+	}
+
+/*
 .dotborder {
 	margin-left:10% !important;
 	border-left:1px solid #202020;
 
 	padding-left:20px;
 }
+*/
 
 div.pagination {
 	margin: 0 10px;
@@ -997,12 +1069,18 @@ div[class*='featureRow'] {
 	padding-bottom: 20px;
 }
 
+div[class*='featureRow'] a {
+	font-size: 0.75em;
+}
+
 div.featureRowTwo {
 	margin-bottom:0px;
 }
 
 div[class*='featureRow'] img {
 	margin-top: 20px;
+	border: 1px solid #dedede;
+	padding: 2px;
 }
 
 div[class*='featureRow'] div {
@@ -1012,7 +1090,7 @@ div[class*='featureRow'] div {
 div[class*='featureRow'] h2 {
 	padding-left:10px;
 	text-align:left;
-	line-height:15px;
+	line-height:1;
 	color:#555;
 }
 
@@ -1037,7 +1115,14 @@ div[class*='featureRow'] p {
 #ProductTextCol {
 	float:left;
 	margin-left:0;
-	margin-top:60px;
+	/*margin-top:60px;*/
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	#ProductTextCol {
+	float:left;
+	margin:0 1em;
+	}
 }
 
 .ProductTextCol img {
@@ -1069,9 +1154,20 @@ div[id*='pnlStockHint'] {
 	padding-bottom:1px;
 }
 
-div[id*='pnlImageMultiples'] {
+img[class*='product-image'] {
+	border: 1px solid #dedede;
+}
+
+/*div[id*='pnlImageMultiples'] {
 	margin:0 0 30px 89px;	
 	float:left;
+}*/
+
+@media handheld, only screen and (max-width: 767px) {
+	div[id*='pnlImageMultiples'] {
+	margin:0 0 1em 3em;	
+	float:left;
+	}
 }
 
 div[id*='pnlImageMultiples'] img {
@@ -1094,6 +1190,7 @@ div.pi {
 	-moz-border-radius: 6px 6px 0 0;
 	margin-bottom: 10px;
 	margin-top:10px;
+	width: 100%;
 }
 
 div.summ {
@@ -1147,7 +1244,6 @@ td.tabletitle {
 .CatImageCell {
 	height:250px!important;
 	border:2px solid #ccc;
-	padding: 10px 10px 0 10px;
 	display:inline-block;
 	float:left;
 	margin:0 0 -2px -2px;
@@ -1160,8 +1256,9 @@ td.tabletitle {
 }
 
 img[id*='EntityPic'] {
-	width:190px;
-	height:190px;
+	width: 170px;
+	height: 170px;
+	margin: 10px;
 }
 
 .EntAdvertPanel {
@@ -1169,7 +1266,7 @@ img[id*='EntityPic'] {
 	height:264px!important;
 	width:344px;
 	float:left;
-	margin-left:-47px
+	margin-left:-107px
 }
 
 
