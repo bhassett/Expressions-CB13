@@ -9,6 +9,17 @@
     }
 </script>
 
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-23764710-1', 'expressionsdecor.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -54,31 +65,6 @@
 <script type="text/javascript" src="javascripts/modernizr.foundation.js"></script>
 <script type="text/javascript" src="javascripts/jquery.easing.js"></script>
 
-<!-- Google Analytics -->
-<script type="text/javascript">
-var _gaq = _gaq || [];
-$(window).load(function () {
-	var pageTracking = ise.Configuration.getConfigValue("GoogleAnalytics.PageTracking");
-	var ecTracking = ise.Configuration.getConfigValue("GoogleAnalytics.ConversionTracking");
-	var gaAccount = ise.Configuration.getConfigValue("GoogleAnalytics.TrackingCode");
-
-	var orderNumber = getQueryString()["ordernumber"]; // get ordernumber query string
-
-	var imAtConfirmOrderPage = false;
-
-	if (typeof orderNumber != "undefined" && ecTracking == 'true') { // verify if ordernumber query string is defined and ecTracking app config is  true
-	imAtConfirmOrderPage = true;
-	}
-
-	if ((pageTracking == 'true' || imAtConfirmOrderPage) && gaAccount != "") { // verify if pageTracking app config is true OR current page is orderconfirmation.aspx
-
-//  uncomment to test your Google Analytics on localhost:
-// _gaq.push(['_setDomainName', 'none']); 
-_gaq.push(['_setAccount', gaAccount]); // set google analytics account (see app config GoogleAnalytics.TrackingCode
-_gaq.push(['_trackPageview']); // request page tracking
-}
-});
-</script>
 
 <!-- IE Fix for HTML5 Tags -->
 <!--[if lt IE 9]>
@@ -387,16 +373,6 @@ $(document).ready(function(){
 <script type="text/javascript" src="javascripts/orbit.js"></script>
 <script type="text/javascript" src="javascripts/slide.js"></script>
 
-<!-- Google Analytics -->
-<script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-23764710-1', 'expressionsdecor.com');
-  ga('send', 'pageview');
-</script>
-
 (!ADDRESS_VERIFICATION_DIALOG_LISTING!)
 
 <!-- Address Verification -->
@@ -421,6 +397,22 @@ $(document).ready(function(){
   });
 </script>
 <!-- AddThis Smart Layers END -->
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 986485184;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/986485184/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
 
 </body>
 </html>
