@@ -220,6 +220,27 @@ namespace InterpriseSuiteEcommerce
                         {
                             ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), DB.GetNewGUID(), AppLogic.GAEcommerceTracking(ThisCustomer), false);
                         }
+                        // Google AdWords conversion trackng code (added 7-10-14)
+                        {
+                            writer.Write("<!-- Google Code for Sales Conversion Page --> <script type='text/javascript'> ");
+                            writer.Write("/* <![CDATA[ */ ");
+                            writer.Write("var google_conversion_id = 986485184; ");
+                            writer.Write("var google_conversion_language = 'en'; ");
+                            writer.Write("var google_conversion_format = '2'; ");
+                            writer.Write("var google_conversion_color = 'ffffff'; ");
+                            writer.Write("var google_conversion_label = 'u53nCIDh8woQwKOy1gM'; var google_conversion_value = 1.00; var google_remarketing_only = false; ");
+                            writer.Write("/* ]]> */ ");
+                            writer.Write("</script> ");
+                            writer.Write("<script type='text/javascript' ");
+                            writer.Write("src='//www.googleadservices.com/pagead/conversion.js'> ");
+                            writer.Write("</script> ");
+                            writer.Write("<noscript> ");
+                            writer.Write("<div style='display:inline;''> ");
+                            writer.Write("<img height='1' width='1' style='border-style:none;' alt='' ");
+                            writer.Write("src='//www.googleadservices.com/pagead/conversion/986485184/?value=1.00&amp;label=u53nCIDh8woQwKOy1gM&amp;guid=ON&amp;script=0'/> ");
+                            writer.Write("</div> ");
+                            writer.Write("</noscript> ");
+                        }
 
                         #endregion
 
