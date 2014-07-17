@@ -385,16 +385,9 @@ display: inline;
 }
 
 ul.breadcrumbs {
-	/*top: -35px;*/
-	/*position: absolute;*/
-	/*width: 100%;*/
-	/*padding: 7px 0 7px 10px;*/
-	/*margin-left: -6px;*/
 	margin-bottom: 0;
-	/*-moz-box-shadow: 0 1px 5px #6D6D6D;
-	-webkit-box-shadow: 0 1px 5px #6D6D6D;
-	box-shadow: 0 1px 5px #6D6D6D;*/
-	border: 1px solid #ccc;
+	border: none;
+	background-color: transparent;
 }
 
 ul.breadcrumbs li a, ul.breadcrumbs li span {
