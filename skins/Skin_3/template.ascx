@@ -121,7 +121,7 @@ $(document).ready(function(){
       <div class="row hide-on-phones">
 
         <div class="four columns">
-          <a href="default.aspx"><img id="headerlogo" src="skins/Skin_(!SKINID!)/images/expressions-site-logo.png"></a>
+          <a href="/"><img id="headerlogo" src="skins/Skin_(!SKINID!)/images/expressions-site-logo.png"></a>
         </div>
 
         <div class="seven columns">
@@ -142,7 +142,7 @@ $(document).ready(function(){
       <!--  Mobile Header Display  -->
       <div class="row show-on-phones">
         <div class="twelve columns text-center">
-          <a href="../"><img id="headerlogo" src="skins/Skin_(!SKINID!)/images/expressions-site-logo.png"></a>
+          <a href="/"><img id="headerlogo" src="skins/Skin_(!SKINID!)/images/expressions-site-logo.png"></a>
         </div>
       </div>
       
@@ -160,7 +160,7 @@ $(document).ready(function(){
       <div class="row">
         <div class="twelve columns">
           <ul id="mainmenu">
-            <li><a href="default.aspx">HOME</a></li>
+            <li><a href="/">HOME</a></li>
             <li><a href="c-2-accessories.aspx">ACCESSORIES</a></li>
             <li><a href="c-4-wall-decor.aspx">WALL DECOR</a></li>
             <li><a href="c-5-lighting.aspx">LIGHTING</a></li>
@@ -170,34 +170,6 @@ $(document).ready(function(){
       </div>
     </div>
     <!-- navbar [end] -->
-
-    <!-- Panel 
-    <div id="dprotop">
-    	<div id="dpro">
-    		<div class="content clearfix">
-    			<div>
-    				(!XmlPackage Name="rev.manufacturers"!)
-    			</div>
-    		</div>
-    	</div>
-
-    	
-    	<div class="tabcontainer">
-      	<div class="tab hide-on-tablets">
-      		<ul class="login">
-      			<li class="left">&nbsp;</li>
-      			<li id="toggle">
-      				<a id="open" class="open" href="#"><i class="general foundicon-plus"></i> Manufacturers</a>
-      				<a id="close" style="display: none;" class="close" href="#"><i class="general foundicon-remove"></i> Close Tab</a>
-      			</li>
-      			<li class="right">&nbsp;</li>
-      		</ul> 
-      	</div>
-    	</div>
-    	
-	
-    </div>
-    < / panel -->
 
   <div class="bodypanel">
 
