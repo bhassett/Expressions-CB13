@@ -186,6 +186,11 @@ $(document).ready(function(){
 
 
     <div class="row">
+      <div class="twelve columns freeship"><h1>FREE Shipping on ALL orders... ALWAYS!</h1>Free Standard Shipping (3–5 business days). Oversized handling fees may apply. Valid on shipping to the 48 contiguous states, as well as APO/FPO.</div>
+    </div>
+
+
+    <div class="row">
       <div class="twelve columns maincontent">
         <!-- CONTENTS START -->
         <asp:placeholder id="PageContent" runat="server"></asp:placeholder>

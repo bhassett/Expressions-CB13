@@ -3,6 +3,25 @@
 /* -------------------------------------------------- 
    Testing Grounds
 -----------------------------------------------------*/
+.freeship {
+background-color: #363636;
+padding: .5em 0;
+color: white;
+font-weight: bold;
+font-size: .7em;
+text-align: center;
+/*-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;*/
+margin-bottom: .25em;
+}
+
+.freeship h1 {
+	color: white;
+	font-size: 4em;
+	letter-spacing: -.05em;
+	margin: 0 !important;
+}
 
 table {
 -moz-border-radius: 0px;
