@@ -1,7 +1,7 @@
 /* Custom styles for Expressions Web site by Brian Hassett
 
 /* -------------------------------------------------- 
-   Testing Grounds
+   Beta Testing
 -----------------------------------------------------*/
 .freeship {
 background-color: #363636;
@@ -1148,11 +1148,19 @@ div[class*='featureRow'] p {
 	text-align:justify;
 }
 
-span[id*='lblPriceCaption'], span[id*='lblPrice'] {
-	font-size:16px;
+.gridwithprices span[id*='lblPriceCaption'], .gridwithprices span[id*='lblPrice'] {
+	font-size:1.5em;
 }
 
-span[id*='lblPrice'] {
+.gridwithprices span[id*='lblPrice'] {
+	font-weight:bold;
+}
+
+.pi span[id*='lblPriceCaption'], .pi span[id*='lblPrice'] {
+	font-size:2.5em;
+}
+
+.pi span[id*='lblPrice'] {
 	font-weight:bold;
 }
 
