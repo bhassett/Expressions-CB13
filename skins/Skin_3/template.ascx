@@ -17,6 +17,7 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-23764710-1', 'expressionsdecor.com');
   ga('require', 'displayfeatures');
+  ga('require', 'ecommerce');
   ga('send', 'pageview');
 </script>
 
@@ -217,6 +218,12 @@ $(document).ready(function(){
   </div> -->
 
   <div class="footerhr"></div>
+
+  <div class="footerpaymethod">
+    <div class="paymethod">
+      <span>We Accept <img src="skins/Skin_(!SKINID!)/images/billmethod-icons.png"></span>
+    </div>
+  </div>
 
   <div class="row">
   	<div class="three columns phone-two">

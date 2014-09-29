@@ -3,6 +3,31 @@
 /* -------------------------------------------------- 
    Beta Testing
 -----------------------------------------------------*/
+.footerpaymethod {
+background: #222;
+width: 100%;
+max-width: 100%;
+padding-top: 1.5em;
+margin: 0 auto;
+}
+
+.paymethod {
+text-align: center;
+background: #222;
+padding: 1em;
+border-top: 1px solid #333;
+border-bottom: 1px solid #111;
+}
+
+.paymethod span {
+color: #999;
+font-weight: bold;
+}
+
+#KitSideBar {
+display: none;
+}
+
 .freeship {
 background-color: #363636;
 padding: .5em 0;
