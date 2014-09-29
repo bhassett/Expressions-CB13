@@ -2,7 +2,6 @@ User-agent: *
 Disallow: /bin/
 Disallow: /descriptions/
 Disallow: /download/
-Disallow: /images/
 Disallow: /skins/
 Disallow: /EntityHelper/
 Disallow: /ActionService.asmx
@@ -55,7 +54,6 @@ Disallow: /selectaddress_process.aspx
 Disallow: /tableorder_process.aspx
 Disallow: /Version.aspx
 Disallow: /wishlist.aspx
-Disallow: /watermark.axd
 
 
 
