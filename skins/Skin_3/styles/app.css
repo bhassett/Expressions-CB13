@@ -3,6 +3,22 @@
 /* -------------------------------------------------- 
    Beta Testing
 -----------------------------------------------------*/
+.sections-place-holder {
+/* for checkout1 */
+border: none;
+text-align: left;
+padding: 1em;
+}
+
+.section-header {
+font-size: 1.75em;
+font-weight: bold;
+background: #ccc;
+padding: 1em;
+}
+
+#shipping-info-button-place-holder, #shipping-method-button-place-holder, #billing-method-button-place-holder, #profile-info-button-place-holder, .button-place-holder {text-align: left}
+
 .footerpaymethod {
 /* for footer */
 background: #222;

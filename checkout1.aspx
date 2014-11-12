@@ -73,7 +73,7 @@
                     <div id="save-shipping-button">
                             <div id="save-shipping-loader"></div>
                             <div id="save-shipping-button-place-holder">
-                            <input type="button" value="Continue" id="opc-submit-step-1" class="site-button"/> 
+                            <input type="button" value="Update Shipping Address" id="opc-submit-step-1" class="site-button"/> 
                             </div>
                     </div>
                 </div>
@@ -165,7 +165,8 @@
                     <%-- shipping method control continue button starts here --%>
                     <div id="shipping-method-button-place-holder">
                        <div id="save-shipping-method-button">
-                            <input type="button" value="Continue" id="opc-submit-step-2" class="site-button"/>
+                            <input type="button" value="Confirm Shipping Method" id="opc-submit-step-2" class="site-button"/>
+                            <font color=red>Please confirm your shipping method before proceeding.</font>
                        </div>
                        <div id="save-shipping-method-loader"></div>
                     </div>
@@ -266,7 +267,7 @@
              <%-- payment section continue button starts here --%>   
              <div id="billing-method-button-place-holder">
                 <div id="billing-method-button">
-                    <input type="button" value="Continue" id="opc-submit-step-3" class="site-button"/>
+                    <input type="button" value="Select Payment Method" id="opc-submit-step-3" class="site-button"/>
                 </div>
                 <div id="save-billing-method-loader"></div>
              </div>
@@ -318,9 +319,11 @@
             <div class="clear-both height-5"></div>
             <div class="clear-both height-12"></div>
         </div>
+        <div class="alert-box success">You will still be able to review your order before submitting it.</div>
        <%-- billing details section ends here --%>   
 
       </div>
+
       <%-- div section wrapper ends here --%>
 
       <div class="clear-both height-12"></div>

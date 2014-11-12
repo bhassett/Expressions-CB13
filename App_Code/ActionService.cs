@@ -1014,7 +1014,7 @@ public class ActionService : System.Web.Services.WebService
                     listResources.Add(new GlobalConfig(key, value));
 
                     key = "final-button-text";
-                    value = CommonLogic.IIF(AppLogic.AppConfigBool("Checkout.UseOnePageCheckout.UseFinalReviewOrderPage"), "Continue", "Place Order");
+                    value = CommonLogic.IIF(AppLogic.AppConfigBool("Checkout.UseOnePageCheckout.UseFinalReviewOrderPage"), "Review Order", "Place Order");
                     listResources.Add(new GlobalConfig(key, value));
 
                     key = "contact-name";
