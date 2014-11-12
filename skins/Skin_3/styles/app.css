@@ -31,6 +31,13 @@ font-weight: bold;
 display: none;
 }
 
+.KitTable {
+ max-width: 100%;
+ min-width: 320px
+}
+
+.KitContainer {display: none;}
+
 .freeship {
 /* for header */
 background-color: #363636;
