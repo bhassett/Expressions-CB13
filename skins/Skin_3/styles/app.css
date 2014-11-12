@@ -4,6 +4,7 @@
    Beta Testing
 -----------------------------------------------------*/
 .footerpaymethod {
+/* for footer */
 background: #222;
 width: 100%;
 max-width: 100%;
@@ -12,6 +13,7 @@ margin: 0 auto;
 }
 
 .paymethod {
+/* for footer */
 text-align: center;
 background: #222;
 padding: 1em;
@@ -20,6 +22,7 @@ border-bottom: 1px solid #111;
 }
 
 .paymethod span {
+/* for footer */
 color: #999;
 font-weight: bold;
 }
@@ -29,6 +32,7 @@ display: none;
 }
 
 .freeship {
+/* for header */
 background-color: #363636;
 padding: .5em 0;
 color: white;
@@ -42,6 +46,7 @@ margin-bottom: .25em;
 }
 
 .freeship h1 {
+/* for header */
 	color: white;
 	font-size: 4em;
 	letter-spacing: -.05em;
@@ -49,6 +54,7 @@ margin-bottom: .25em;
 }
 
 table {
+/* global override */
 -moz-border-radius: 0px;
 -webkit-border-radius: 0px;
 border-radius: 0px;
