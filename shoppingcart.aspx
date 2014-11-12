@@ -27,36 +27,21 @@
                             <asp:Image ID="redarrow1" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-globe"></i>&#0160;
                             <a onclick="popuptopicwh('Shipping+Information','shipping',650,550,'yes')"
                                 href="javascript:void(0);">
-                            <!-- <a href="#" data-reveal-id="shippingModal"> -->
                                 <asp:Literal ID="shoppingcartaspx8" runat="server"></asp:Literal></a>
                                 <br />
-                                <!-- <div id="shippingModal" class="reveal-modal xlarge cartmodal">
-                                <ise:Topic runat="server" ID="ShippingTopic" TopicName="shipping" />
-                                <a class="close-reveal-modal">&#215;</a>
-                                </div> -->
                         </asp:Panel>
                         <asp:Image ID="redarrow2" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-refresh"></i>&#0160;
                             <a onclick="popuptopicwh('Return+Policy+Information','returns',650,550,'yes')"
                             href="javascript:void(0);">
-                            <!-- <a href="#" data-reveal-id="returnsModal"> -->
                                 <asp:Literal ID="shoppingcartaspx9" Text="(!shoppingcart.aspx.7!)"
                                 runat="server"></asp:Literal></a>
                                 <br />
-                                <!-- <div id="returnsModal" class="reveal-modal xlarge cartmodal">
-                                <ise:Topic runat="server" ID="ReturnsTopic" TopicName="returns" />
-                                <a class="close-reveal-modal">&#215;</a>
-                                </div> -->
                         <asp:Image ID="redarrow3" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-lock"></i>&#0160;
                             <a onclick="popuptopicwh('Privacy+Information','privacy',650,550,'yes')"
                             href="javascript:void(0);">
-                            <!-- <a href="#" data-reveal-id="privacyModal"> -->
                                 <asp:Literal ID="shoppingcartaspx10" Text="(!shoppingcart.aspx.8!)"
                                 runat="server"></asp:Literal></a>
                                 <br />
-                                <!-- <div id="privacyModal" class="reveal-modal xlarge cartmodal">
-                                <ise:Topic runat="server" ID="PrivacyTopic" TopicName="privacy" />
-                                <a class="close-reveal-modal">&#215;</a>
-                                </div> -->
                         <asp:Panel ID="AddresBookLlink" runat="server">
                             <asp:Image ID="redarrow4" AlternateText="" runat="server" Visible="false" /><i class="main foundicon-address-book"></i>&#0160;
                             <a href="selectaddress.aspx?returnurl=shoppingcart.aspx&AddressType=Shipping">
@@ -286,7 +271,8 @@
                     </tr>
                 </table>
                 <div style="text-align: right">
-                    <asp:Button ID="btnUpdateCart3" runat="server" Text="(!shoppingcart.cs.33!)" CssClass="site-button content" />
+                    <asp:Button ID="btnUpdateCart3" runat="server" Visible="false" Text="(!shoppingcart.cs.33!)" CssClass="site-button content" />
+
                 </div>
             </asp:Panel>
             <br />
@@ -312,23 +298,20 @@
                 </table>
                 <div style="text-align: right">
                     <asp:Button ID="btnUpdateCart4" runat="server" Text="(!shoppingcart.cs.33!)" CssClass="site-button content" />
+
                 </div>
             </asp:Panel>
             <br />
+
+                <div style="text-align: right">
+                    <asp:Button ID="btnContinueShoppingBottom" Text="(!shoppingcart.cs.12!)" CssClass="site-button content" runat="server" Visible="false" />&#160;
+
+                    <asp:Button ID="btnUpdateCart8" runat="server" Text="(!shoppingcart.cs.33!)" CssClass="site-button content" />&#160;
+                
+                    <asp:Button ID="btnCheckOutNowBottom" Text="(!shoppingcart.cs.34!)" runat="server" CssClass="site-button CheckoutNowButton content" />
+                </div>
+
             <table cellspacing="3" cellpadding="0" width="100%" border="0">
-                <tr>
-                    <td>
-                        &#160;
-                    </td>
-                    <td valign="bottom" align="right">
-                        <asp:Button ID="btnContinueShoppingBottom" Text="(!shoppingcart.cs.12!)" CssClass="site-button content"
-                            runat="server" />&#160;
-                        <asp:Button ID="btnCheckOutNowBottom" Text="(!shoppingcart.cs.34!)" runat="server"
-                            CssClass="site-button CheckoutNowButton content" />
-                        <br />
-                        <br />
-                    </td>
-                </tr>
                 <tr runat="server" id="AlternativeCheckoutsBottom">
                     <td colspan="2" align="right" style="height: 61px">
                         <table border="0">
