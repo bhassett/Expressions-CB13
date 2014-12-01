@@ -17,7 +17,9 @@ background: #ccc;
 padding: 1em;
 }
 
-#shipping-info-button-place-holder, #shipping-method-button-place-holder, #billing-method-button-place-holder, #profile-info-button-place-holder, .button-place-holder {text-align: left}
+#shipping-info-button-place-holder, #shipping-method-button-place-holder, #billing-method-button-place-holder, #profile-info-button-place-holder, .button-place-holder {
+text-align: left
+}
 
 .footerpaymethod {
 /* for footer */

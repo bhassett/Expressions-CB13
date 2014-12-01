@@ -1406,7 +1406,7 @@ color:#fff;font-size: 11px;font-weight: bold; padding: 5px;text-transform: upper
 
 .checkbox-captions{position: relative; top: -3px;}
 .control-disabled{background:#ccc !important;}
-.light-style-input{ background : none repeat scroll 0 0 white;border: 1px solid #CCCCCC;padding: 3px 2px;font-size:11px;}   
+.light-style-input{ background : none repeat scroll 0 0 white;border: 1px solid #CCCCCC;padding: 3px 2px;font-size:1em;}   
 .support-disable-caption{color:#ccc;}     
 .form-controls-span, .form-field-span{display:inline-block; position:relative;}        
 .error-message{color:red;}
@@ -1416,7 +1416,7 @@ color:#fff;font-size: 11px;font-weight: bold; padding: 5px;text-transform: upper
 .clear-both{clear:both;height:1px;}
 .float-left{float:left;}
 .float-right{float:right;}
-.height-5{height:5px;}
+.height-5{height:.6em;}
 .height-12{height: 12px;}
 .height-17{height: 17px;}
 .height-20{height: 20px;}
@@ -1428,7 +1428,7 @@ color:#fff;font-size: 11px;font-weight: bold; padding: 5px;text-transform: upper
 .ul-list-no-style{list-style: none outside none;}
 .no-margin{ margin:0; }
 .normal-font-style{font-style: normal !important;font-weight: normal !important;   }
-.custom-font-style{ font-size:11px; font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif; }
+.custom-font-style{ font-size:1em; font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif; }
 .capitalize-text{ text-transform: capitalize;   }
 .wrap{white-space: none;white-space: nowrap;white-space: pre;white-space: pre-wrap;      /* CSS 2.1 */ white-space: pre-line;      /* CSS 2.1 */ white-space: inherit;   }
 .width-full{width:100%; }
