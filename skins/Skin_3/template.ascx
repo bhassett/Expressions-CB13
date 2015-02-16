@@ -186,12 +186,22 @@ $(document).ready(function(){
     <!-- header [end] -->
 
 
-    <div class="row">
+    <div class="row hide-on-phones">
       <div class="twelve columns freeship"><h1>FREE Shipping on ALL orders... ALWAYS!</h1>Free Standard Shipping (3–5 business days). Oversized handling fees may apply. Valid on shipping to the 48 contiguous states, as well as APO/FPO.</div>
+    </div>
+
+    <div class="row show-on-phones">
+      <div class="twelve columns freeship"><h1>FREE Shipping</h1>Free Standard Shipping (3–5 business days). Oversized handling fees may apply. Valid on shipping to the 48 contiguous states, as well as APO/FPO.</div>
     </div>
 
 
     <div class="row">
+      
+      <!-- <div class="leftnavvy">
+          <img src="skins/Skin_(!SKINID!)/images/left_header_browse_cat.jpg" alt="" width="209"height="24" class="leftnavvy_header" />
+          <div class="EntityMenuAlignment">(!XmlPackage Name="rev.categories"!)</div>
+      </div> -->
+
       <div class="twelve columns maincontent">
         <!-- CONTENTS START -->
         <asp:placeholder id="PageContent" runat="server"></asp:placeholder>
